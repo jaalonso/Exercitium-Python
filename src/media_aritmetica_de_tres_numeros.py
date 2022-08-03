@@ -1,7 +1,7 @@
 # media_aritmetica_de_tres_numeros.py
 # Media aritmética de tres números.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 8-agosto-2022
+# Sevilla, 8-Agosto-2022
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
