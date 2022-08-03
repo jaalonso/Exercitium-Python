@@ -8,4 +8,13 @@ programación con Haskell y con Python. En el blog, para cada problema,
 se publican distintas soluciones tanto en Haskell como en Python para
 poder compararlas.
 
+Notas:
++ Los ejemplos se puede verificar con [[https://python-poetry.org/][poetry]] y  [[https://docs.pytest.org/en/7.1.x/][pytest]]:
+  : poetry run pytest
++ Los tipos se pueden verificar con [[http://mypy-lang.org/][mypy]]. Por ejemplo,
+  : src> mypy media_aritmetica_de_tres_numeros.py
+  : Success: no issues found in 1 source file
+
+* Ejercicios
+
 + L08-08-22 [[./src/media_aritmetica_de_tres_numeros.py][Media aritmética de tres números]].
