@@ -1,0 +1,9 @@
+#+TITLE: Soluciones de los problemas de Exercitium con Python
+
+Este repositorio contiene las soluciones de los problemas de [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]]
+con Python.
+
+En principio, los ejercicios son de un curso de introducción a la
+programación con Haskell y con Python. En el blog, para cada problema,
+se publican distintas soluciones tanto en Haskell como en Python para
+poder compararlas.
