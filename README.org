@@ -8,4 +8,4 @@ programación con Haskell y con Python. En el blog, para cada problema,
 se publican distintas soluciones tanto en Haskell como en Python para
 poder compararlas.
 
-+ L08-08-22 [[./src/Media_aritmetica_de_tres_numeros.py][Media aritmética de tres números]].
++ L08-08-22 [[./src/media_aritmetica_de_tres_numeros.py][Media aritmética de tres números]].
