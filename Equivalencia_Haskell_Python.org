@@ -10,6 +10,7 @@
 | x + y   | x + y  |
 | x * y   | x * y  |
 | x / y   | x / y  |
+| x ^ y   | x ** y |
 |---------+--------|
 
 ** Funciones sobre enteros
