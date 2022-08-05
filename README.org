@@ -21,3 +21,4 @@ Notas:
 + M09-08-22 [[./src/suma_de_monedas.py][Suma de monedas]].
 + X10-08-22 [[./src/volumen_de_la_esfera.py][Volumen de la esfera]].
 + J11-08-22 [[./src/area_corona_circular.py][Área de la corona circular]].
++ V12-08-22 [[./src/ultimo_digito.py][Último dígito]].
