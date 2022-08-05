@@ -14,17 +14,6 @@
 #    media3(-3, 0, 3)  ==  0.0
 # ---------------------------------------------------------------------
 
-# 1ª solución
-# ===========
-
-def media3a(x, y, z):
+def media3(x, y, z):
     # type: (float, float, float) -> float
     return (x + y + z)/3
-
-
-# 2ª solución
-# ===========
-
-def media3b(x, y, z):
-    # type: (float, float, float) -> float
-    return sum([x, y, z]) / 3
