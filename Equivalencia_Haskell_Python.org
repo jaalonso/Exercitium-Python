@@ -1,0 +1,41 @@
+#+TITLE: Equivalencia entre Haskell y Python
+
+* Funciones aritméticas
+
+** Funciones sobre números
+
+|---------+--------|
+| Haskell | Python |
+|---------+--------|
+| x + y   | x + y  |
+| x * y   | x * y  |
+| x / y   | x / y  |
+|---------+--------|
+
+** Funciones sobre enteros
+
+|---------+--------|
+| Haskell | Python |
+|---------+--------|
+| rem a b | a % b  |
+|---------+--------|
+
+** Funciones sobre reales
+
+|---------+---------|
+| Haskell | Python  |
+|---------+---------|
+| pi      | math.pi |
+|---------+---------|
+
+* Tipos
+
+** Tipos básicos
+
+|---------+--------|
+| Haskell | Python |
+|---------+--------|
+| Double  | float  |
+| Float   | float  |
+| Int     | int    |
+|---------+--------|
