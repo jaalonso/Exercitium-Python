@@ -35,13 +35,15 @@
 
 ** Funciones elementales
 
-|----------+---------|
-| Haskell  | Python  |
-|----------+---------|
-| head xs  | xs[0]   |
-| tail xs  | xs[1:]  |
-| xs ++ ys | xs + ys |
-|----------+---------|
+|-----------+---------|
+| Haskell   | Python  |
+|-----------+---------|
+| xs ++ ys  | xs + ys |
+| head xs   | xs[0]   |
+| tail xs   | xs[1:]  |
+| take n xs | xs[n:]  |
+| drop n xs | xs[:n]  |
+|-----------+---------|
 
 * Tipos
 
