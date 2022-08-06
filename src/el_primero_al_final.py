@@ -25,4 +25,6 @@ def rota1a(xs):
 
 
 def rota1b(xs):
-    return xs[1:].append(xs[0])
+    ys = xs[1:]
+    ys.append(xs[0])
+    return ys
