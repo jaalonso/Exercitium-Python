@@ -13,11 +13,16 @@
 #    rota1(['a', 'b', 'c']) == ['b', 'c', 'a']
 # ---------------------------------------------------------------------
 
-from typing import List, TypeVar
+# 1ª solución
+# ===========
 
-A = TypeVar("A")
 
-
-def rota1(xs):
-    # type: (List[A]) -> List[A]
+def rota1a(xs):
     return xs[1:] + [xs[0]]
+
+# 2ª solución
+# ===========
+
+
+def rota1b(xs):
+    return xs[1:].append(xs[0])
