@@ -6,14 +6,20 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    rota :: Int -> [a] -> [a]
-# tal que (rota n xs) es la lista obtenida poniendo los n primeros
+#    rota : (int, List[A]) -> List[A]
+# tal que rota(n, xs) es la lista obtenida poniendo los n primeros
 # elementos de xs al final de la lista. Por ejemplo,
-#    rota 1 [3,2,5,7]  ==  [2,5,7,3]
-#    rota 2 [3,2,5,7]  ==  [5,7,3,2]
-#    rota 3 [3,2,5,7]  ==  [7,3,2,5]
+#    rota(1, [3, 2, 5, 7]) == [2, 5, 7, 3]
+#    rota(2, [3, 2, 5, 7]) == [5, 7, 3, 2]
+#    rota(3, [3, 2, 5, 7]) == [7, 3, 2, 5]
 # ---------------------------------------------------------------------
 
 
+from typing import List, TypeVar
+
+A = TypeVar('A')
+
+
 def rota(n, xs):
+    # type: (int, List[A]) -> List[A]
     return xs[n:] + xs[:n]
