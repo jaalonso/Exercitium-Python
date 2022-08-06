@@ -16,5 +16,4 @@ from math import pi
 
 
 def volumenEsfera(r):
-    # type: (float) -> float
     return (4 / 3) * pi * r ** 3
