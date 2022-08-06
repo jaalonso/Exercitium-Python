@@ -38,7 +38,7 @@
 | Haskell  | Python |
 |----------+--------|
 | head xs  | xs[0]  |
-| tail(xs) | xs[1:] |
+| tail xs  | xs[1:] |
 |----------+--------|
 
 * Tipos
