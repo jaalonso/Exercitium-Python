@@ -34,12 +34,13 @@
 
 ** Funciones elementales
 
-|----------+--------|
-| Haskell  | Python |
-|----------+--------|
-| head xs  | xs[0]  |
-| tail xs  | xs[1:] |
-|----------+--------|
+|----------+---------|
+| Haskell  | Python  |
+|----------+---------|
+| head xs  | xs[0]   |
+| tail xs  | xs[1:]  |
+| xs ++ ys | xs + ys |
+|----------+---------|
 
 * Tipos
 
