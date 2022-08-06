@@ -15,5 +15,4 @@
 
 
 def maxTres(x, y, z):
-    # type: (int, int, int) -> int
     return max(x, max(y, z))
