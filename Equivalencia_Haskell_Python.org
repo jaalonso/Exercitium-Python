@@ -30,6 +30,17 @@
 | pi      | math.pi |
 |---------+---------|
 
+* Funciones sobre listas
+
+** Funciones elementales
+
+|----------+--------|
+| Haskell  | Python |
+|----------+--------|
+| head xs  | xs[0]  |
+| tail(xs) | xs[1:] |
+|----------+--------|
+
 * Tipos
 
 ** Tipos básicos
