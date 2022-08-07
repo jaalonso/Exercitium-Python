@@ -13,3 +13,6 @@
 #    palindromo([3, 2, 5, 2, 3])     ==  True
 #    palindromo([3, 2, 5, 6, 2, 3])  ==  False
 # ---------------------------------------------------------------------
+
+def palindromo(xs):
+    return xs == list(reversed(xs))
