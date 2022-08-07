@@ -37,24 +37,13 @@
 
 ** Funciones elementales
 
-|-----------+---------|
-| Haskell   | Python  |
-|-----------+---------|
-| xs ++ ys  | xs + ys |
-| head xs   | xs[0]   |
-| tail xs   | xs[1:]  |
-| take n xs | xs[n:]  |
-| drop n xs | xs[:n]  |
-|-----------+---------|
-
-* Tipos
-
-** Tipos básicos
-
-|---------+--------|
-| Haskell | Python |
-|---------+--------|
-| Double  | float  |
-| Float   | float  |
-| Int     | int    |
-|---------+--------|
+|------------+--------------------|
+| Haskell    | Python             |
+|------------+--------------------|
+| xs ++ ys   | xs + ys            |
+| head xs    | xs[0]              |
+| tail xs    | xs[1:]             |
+| take n xs  | xs[n:]             |
+| drop n xs  | xs[:n]             |
+| reverse xs | list(reversed(xs)) |
+|------------+--------------------|
