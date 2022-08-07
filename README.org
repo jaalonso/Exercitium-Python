@@ -24,4 +24,5 @@ Notas:
 + V12-08-22 [[./src/ultimo_digito.py][Último dígito]].
 + L15-08-22 [[./src/maximo_de_tres_numeros.py][Máximo de tres números]].
 + M16-08-22 [[./src/el_primero_al_final.py][El primero al final]].
-+ x17-08-22 [[./src/los_primeros_al_final.py][los primeros al final]].
++ X17-08-22 [[./src/los_primeros_al_final.py][Los primeros al final]].
++ J18-08-22 [[./src/rango_de_una_lista.py][Rango de una lista]].
