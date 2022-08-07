@@ -12,5 +12,9 @@
 #    rango([3, 2, 7, 5]) == [2, 7]
 # ---------------------------------------------------------------------
 
+from typing import List
+
+
 def rango(xs):
+    # type: (List[int]) -> List[int]
     return [min(xs), max(xs)]
