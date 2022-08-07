@@ -4,16 +4,18 @@
 
 ** Funciones sobre números
 
-|---------+-----------|
-| Haskell | Python    |
-|---------+-----------|
-| x + y   | x + y     |
-| x - y   | x - y     |
-| x * y   | x * y     |
-| x / y   | x / y     |
-| x ^ y   | x ** y    |
-| max x y | max(x, y) |
-|---------+-----------|
+|------------+-----------|
+| Haskell    | Python    |
+|------------+-----------|
+| x + y      | x + y     |
+| x - y      | x - y     |
+| x * y      | x * y     |
+| x / y      | x / y     |
+| x ^ y      | x ** y    |
+| max x y    | max(x, y) |
+| minimum xs | min(x)    |
+| maximum xs | max(xs)   |
+|------------+-----------|
 
 ** Funciones sobre enteros
 
