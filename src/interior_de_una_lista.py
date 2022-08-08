@@ -14,7 +14,7 @@
 
 # 1ª solución
 def interior1(xs):
-    return xs[1][:-1]
+    return xs[1:][:-1]
 
 
 # 2ª solución
