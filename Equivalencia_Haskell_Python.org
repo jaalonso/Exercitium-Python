@@ -45,5 +45,6 @@
 | tail xs    | xs[1:]             |
 | take n xs  | xs[n:]             |
 | drop n xs  | xs[:n]             |
+| init xs    | xs[:-1]            |
 | reverse xs | list(reversed(xs)) |
 |------------+--------------------|
