@@ -12,11 +12,18 @@
 #    interior([2, 5, 3, 7, 3])  ==  [5, 3, 7]
 # ---------------------------------------------------------------------
 
+from typing import List, TypeVar
+
+A = TypeVar('A')
+
+
 # 1ª solución
 def interior1(xs):
+    # type: (List[A]) -> List[A]
     return xs[1:][:-1]
 
 
 # 2ª solución
 def interior2(xs):
+    # type: (List[A]) -> List[A]
     return xs[1:-1]
