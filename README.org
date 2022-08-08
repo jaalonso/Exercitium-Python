@@ -27,3 +27,4 @@ Notas:
 + X17-08-22 [[./src/los_primeros_al_final.py][Los primeros al final]].
 + J18-08-22 [[./src/rango_de_una_lista.py][Rango de una lista]].
 + V19-08-02 [[./src/reconocimiento_de_palindromos.py][Reconocimiento de palíndromos]].
++ L22-08-22 [[./src/interior_de_una_lista.py][Interior de una lista]].
