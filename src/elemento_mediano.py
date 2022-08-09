@@ -1,4 +1,4 @@
-# Elemento_mediano.py
+# elemento_mediano.py
 # Elemento mediano.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 26-agosto-2022
@@ -17,5 +17,4 @@
 
 
 def mediano(x, y, z):
-    # type: (int, int, int) -> int
     return x + y + z - min([x, y, z]) - max([x, y, z])
