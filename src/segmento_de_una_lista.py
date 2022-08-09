@@ -14,14 +14,8 @@
 #    segmento(5, 3, [3, 4, 1, 2, 7, 9, 0])  ==  []
 # ---------------------------------------------------------------------
 
-from typing import List, TypeVar
-
-A = TypeVar('A')
-
-
 # 1ª definición
 def segmento1(m, n, xs):
-    # type: (int, int, List[A]) -> List[A]
     ys = xs[:n]
     return ys[m - 1:]
 
