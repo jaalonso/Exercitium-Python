@@ -17,4 +17,9 @@
 
 
 def sumaMonedas(a, b, c, d, e):
+    # type: (int, int, int, int, int) -> int
     return 1 * a + 2 * b + 5 * c + 10 * d + 20 * e
+
+# Comprobación de tipo
+#    src> mypy suma_de_monedas.py
+#    Success: no issues found in 1 source file
