@@ -29,3 +29,4 @@ Notas:
 + V19-08-02 [[./src/reconocimiento_de_palindromos.py][Reconocimiento de palíndromos]].
 + L22-08-22 [[./src/interior_de_una_lista.py][Interior de una lista]].
 + M23-08-22 [[./src/elementos_finales.py][Elementos finales]].
++ X24-08-22 [[./src/segmento_de_una_lista.py][Segmento de una lista]].
