@@ -19,7 +19,13 @@ from typing import List, TypeVar
 A = TypeVar('A')
 
 
-def segmento(m, n, xs):
+# 1ª definición
+def segmento1(m, n, xs):
     # type: (int, int, List[A]) -> List[A]
     ys = xs[:n]
     return ys[m - 1:]
+
+
+# 2ª definición
+def segmento2(m, n, xs):
+    return xs[m-1:n]
