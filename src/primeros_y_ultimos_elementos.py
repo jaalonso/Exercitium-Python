@@ -1,4 +1,4 @@
-# Primeros_y_ultimos_elementos.py
+# primeros_y_ultimos_elementos.py
 # Primeros y últimos elementos.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 25-agosto-2022
