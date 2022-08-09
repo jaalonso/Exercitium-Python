@@ -31,3 +31,4 @@ Notas:
 + M23-08-22 [[./src/elementos_finales.py][Elementos finales]].
 + X24-08-22 [[./src/segmento_de_una_lista.py][Segmento de una lista]].
 + J25-08-22 [[./src/primeros_y_ultimos_elementos.py][Primeros y últimos elementos]].
++ V26-08-22 [[./src/elemento_mediano.py][Elemento mediano]].
