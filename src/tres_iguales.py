@@ -1,4 +1,4 @@
-# Tres_iguales.py
+# tres_iguales.py
 # Tres iguales
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 29-agosto-2022
