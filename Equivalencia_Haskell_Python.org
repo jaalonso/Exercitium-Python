@@ -33,6 +33,18 @@
 | pi      | math.pi |
 |---------+---------|
 
+* Funciones lógicas
+
+** Operadores lógicos
+
+|---------+---------|
+| Haskell | Python  |
+|---------+---------|
+| True    | True    |
+| False   | False   |
+| p && q  | p and q |
+|---------+---------|
+
 * Funciones sobre listas
 
 ** Funciones elementales
