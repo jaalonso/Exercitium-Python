@@ -14,7 +14,7 @@
 # ---------------------------------------------------------------------
 
 # 1ª definición
-def tresIguales(x, y, z):
+def tresIguales1(x, y, z):
     # type: (int, int, int) -> bool
     return x == y & y == z
 
