@@ -15,7 +15,7 @@
 
 # 1ª definición
 def tresIguales1(x, y, z):
-    return x == y & y == z
+    return x == y and y == z
 
 
 # 2ª definición
