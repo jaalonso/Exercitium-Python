@@ -15,5 +15,4 @@
 
 
 def tresDiferentes(x, y, z):
-    # type: (int, int, int) -> bool
     return x != y and x != z and y != z
