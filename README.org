@@ -34,3 +34,4 @@ Notas:
 + V26-08-22 [[./src/elemento_mediano.py][Elemento mediano]].
 + L29-08-22 [[./src/tres_iguales.py][Tres iguales]].
 + M30-08-22 [[./src/tres_diferentes.py][Tres diferentes]].
++ X31-08-22 [[./src/division_segura.py][División segura]].
