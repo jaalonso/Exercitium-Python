@@ -17,7 +17,7 @@
 def divisionSegura1(x, y):
     if y == 0:
         return 9999.0
-    return x/float(y)
+    return x/y
 
 
 # 2ª definición
@@ -26,4 +26,4 @@ def divisionSegura2(x, y):
         case 0:
             return 9999.0
         case _:
-            return x/float(y)
+            return x/y
