@@ -45,6 +45,7 @@
 | True    | True    |
 | False   | False   |
 | p && q  | p and q |
+| not p   | not p   |
 |---------+---------|
 
 * Funciones sobre listas
