@@ -36,3 +36,4 @@ Notas:
 + M30-08-22 [[./src/tres_diferentes.py][Tres diferentes]].
 + X31-08-22 [[./src/division_segura.py][División segura]].
 + J01-09-22 [[./src/disyuncion_excluyente.py][Disyunción excluyente]].
++ V02-09-22 [[./src/mayor_rectangulo.py][Mayor rectángulo]].
