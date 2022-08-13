@@ -13,9 +13,9 @@
 #                      -> tuple[float, float]
 # tal que mayorRectangulo(r1, r2) es el rectángulo de mayor área entre
 # r1 y r2. Por ejemplo,
-#    mayorRectangulo((4,6), (3,7))  ==  (4,6)
-#    mayorRectangulo((4,6), (3,8))  ==  (4,6)
-#    mayorRectangulo((4,6), (3,9))  ==  (3,9)
+#    mayorRectangulo((4, 6), (3, 7))  ==  (4, 6)
+#    mayorRectangulo((4, 6), (3, 8))  ==  (4, 6)
+#    mayorRectangulo((4, 6), (3, 9))  ==  (3, 9)
 # ---------------------------------------------------------------------
 
 def mayorRectangulo(r1, r2):
