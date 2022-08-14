@@ -13,13 +13,6 @@
 #    intercambia((5,2))  ==  (2,5)
 # ---------------------------------------------------------------------
 
-from typing import TypeVar
-
-A = TypeVar('A')
-B = TypeVar('B')
-
-
 def intercambia(p):
-    # type: (tuple[A, B]) -> tuple[B, A]
     (x, y) = p
     return (y, x)
