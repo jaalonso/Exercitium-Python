@@ -37,3 +37,4 @@ Notas:
 + X31-08-22 [[./src/division_segura.py][División segura]].
 + J01-09-22 [[./src/disyuncion_excluyente.py][Disyunción excluyente]].
 + V02-09-22 [[./src/mayor_rectangulo.py][Mayor rectángulo]].
++ L05-06-22 [[./src/Intercambio_de_componentes_de_un_par.hs][Intercambio de componentes de un par]].
