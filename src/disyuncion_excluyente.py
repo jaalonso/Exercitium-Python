@@ -39,7 +39,7 @@ def xor2(x, y):
     return y
 
 
-# 3ª solucón
+# 3ª solución
 def xor3(x, y):
     return (x or y) and not(x and y)
 
