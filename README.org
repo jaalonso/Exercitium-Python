@@ -38,3 +38,4 @@ Notas:
 + J01-09-22 [[./src/disyuncion_excluyente.py][Disyunción excluyente]].
 + V02-09-22 [[./src/mayor_rectangulo.py][Mayor rectángulo]].
 + L05-06-22 [[./src/intercambio_de_componentes_de_un_par.py][Intercambio de componentes de un par]].
++ M06-09-22 [[./src/distancia_entre_dos_puntos.py][Distancia entre dos puntos]].
