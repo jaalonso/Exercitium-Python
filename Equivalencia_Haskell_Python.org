@@ -29,11 +29,12 @@
 
 ** Funciones sobre reales
 
-|---------+---------|
-| Haskell | Python  |
-|---------+---------|
-| pi      | math.pi |
-|---------+---------|
+|---------+--------------|
+| Haskell | Python       |
+|---------+--------------|
+| pi      | math.pi      |
+| sqrt x  | math.sqrt(x) |
+|---------+--------------|
 
 * Funciones lógicas
 
