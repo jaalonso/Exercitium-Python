@@ -12,18 +12,24 @@
 #    finales(3, [2, 5, 4, 7, 9, 6])  ==  [7, 9, 6]
 # ---------------------------------------------------------------------
 
+from hypothesis import given, strategies as st
 
 # 1ª definición
 def finales1(n, xs):
     return xs[len(xs) - n:]
 
-
 # 2ª definición
 def finales2(n, xs):
+    if n == 0:
+        return []
     return xs[-n:]
-
 
 # 3ª definición
 def finales3(n, xs):
     ys = list(reversed(xs))
     return list(reversed(ys[:n]))
+
+# La propiedad es
+@given(st.integers(), st.lists(st.integers()))
+def test_equiv_finales(n, xs):
+    assert finales1(n, xs) == finales2(n, xs) == finales3(n, xs)
