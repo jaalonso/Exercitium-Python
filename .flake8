@@ -1,0 +1,4 @@
+[flake8]
+extend-ignore =
+    # E302: Doble línea en blanco
+    E302,
