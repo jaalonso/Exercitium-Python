@@ -33,3 +33,7 @@ def finales3(n, xs):
 @given(st.integers(), st.lists(st.integers()))
 def test_equiv_finales(n, xs):
     assert finales1(n, xs) == finales2(n, xs) == finales3(n, xs)
+
+# La comprobación es
+#    src> poetry run pytest -q elementos_finales.py
+#    1 passed in 0.18s
