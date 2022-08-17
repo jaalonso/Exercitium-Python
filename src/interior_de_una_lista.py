@@ -13,6 +13,7 @@
 # ---------------------------------------------------------------------
 
 from typing import List, TypeVar
+from hypothesis import given, strategies as st
 
 A = TypeVar('A')
 
@@ -25,3 +26,12 @@ def interior1(xs):
 def interior2(xs):
     # type: (List[A]) -> List[A]
     return xs[1:-1]
+
+# La propiedad de equivalencia es
+@given(st.lists(st.integers()))
+def test_triangular(xs):
+    assert interior1(xs) == interior2(xs)
+
+# La comprobación es
+#    src> poetry run pytest -q interior_de_una_lista.py
+#    1 passed in 0.21s
