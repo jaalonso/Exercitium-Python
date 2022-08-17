@@ -15,13 +15,15 @@
 #    False | False | False
 #
 # Definir la función
-#    xor :: (bool, bool) -> bool
+#    xor : (bool, bool) -> bool
 # tal que xor(x, y) es la disyunción excluyente de x e y. Por ejemplo,
 #    xor(True, True) == False
 #    xor(True, False) == True
 #    xor(False, True) == True
 #    xor(False, False) == False
 # ---------------------------------------------------------------------
+
+from hypothesis import given, strategies as st
 
 # 1ª solución
 def xor1(x, y):
@@ -31,24 +33,33 @@ def xor1(x, y):
         case False, True: return True
         case False, False: return False
 
-
 # 2ª solución
 def xor2(x, y):
+    # type: (bool, bool) -> bool
     if x:
         return not y
     return y
 
-
 # 3ª solución
 def xor3(x, y):
+    # type: (bool, bool) -> bool
     return (x or y) and not(x and y)
-
 
 # 4ª solución
 def xor4(x, y):
+    # type: (bool, bool) -> bool
     return (x and not y) or (y and not x)
-
 
 # 5ª solución
 def xor5(x, y):
+    # type: (bool, bool) -> bool
     return x != y
+
+# La propiedad de equivalencia es
+@given(st.booleans(), st.booleans())
+def test_equiv_xor(x, y):
+    assert xor1(x, y) == xor2(x, y) == xor3(x, y) == xor4(x, y) == xor5(x, y)
+
+# La comprobación es
+#    src> poetry run pytest -q disyuncion_excluyente.py
+#    1 passed in 0.11s
