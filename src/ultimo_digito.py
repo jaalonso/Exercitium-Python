@@ -6,12 +6,12 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    ultimoDigito :: Int -> Int
-# tal que (ultimoDigito x) es el último dígito del número x. Por
+#    ultimoDigito : (int) -> int
+# tal que ultimoDigito(x) es el último dígito del número x. Por
 # ejemplo,
 #    ultimoDigito(325) == 5
 # ---------------------------------------------------------------------
 
-
 def ultimoDigito(x):
+    # type: (int) -> int
     return x % 10
