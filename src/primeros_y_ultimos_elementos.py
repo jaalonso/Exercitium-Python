@@ -12,5 +12,10 @@
 #    extremos(3, [2, 6, 7, 1, 2, 4, 5, 8, 9, 2, 3])  ==  [2, 6, 7, 9, 2, 3]
 # ---------------------------------------------------------------------
 
+from typing import List, TypeVar
+
+A = TypeVar('A')
+
 def extremos(n, xs):
+    # type: (int, List[A]) -> List[A]
     return xs[:n] + xs[-n:]
