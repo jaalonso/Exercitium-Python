@@ -14,6 +14,10 @@
 #    rota(3, [3, 2, 5, 7]) == [7, 3, 2, 5]
 # ---------------------------------------------------------------------
 
+from typing import List, TypeVar
+
+A = TypeVar('A')
 
 def rota(n, xs):
+    # type: (int, List[A]) -> List[A]
     return xs[n:] + xs[:n]
