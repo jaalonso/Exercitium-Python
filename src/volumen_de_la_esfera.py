@@ -1,4 +1,4 @@
-# Volumen_de_la_esfera.py
+# volumen_de_la_esfera.py
 # Volumen de la esfera.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 10-agosto-2022
@@ -14,6 +14,6 @@
 
 from math import pi
 
-
 def volumenEsfera(r):
+    # type: (float) -> float
     return (4 / 3) * pi * r ** 3
