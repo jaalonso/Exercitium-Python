@@ -16,6 +16,8 @@ from hypothesis import given, strategies as st
 
 # 1ª definición
 def finales1(n, xs):
+    if len(xs) <= n:
+        return xs
     return xs[len(xs) - n:]
 
 # 2ª definición
