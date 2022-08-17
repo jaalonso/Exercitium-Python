@@ -31,7 +31,7 @@ def finales3(n, xs):
     ys = list(reversed(xs))
     return list(reversed(ys[:n]))
 
-# La propiedad es
+# La propiedad de equivalencia es
 @given(st.integers(min_value=0), st.lists(st.integers()))
 def test_equiv_finales(n, xs):
     assert finales1(n, xs) == finales2(n, xs) == finales3(n, xs)
