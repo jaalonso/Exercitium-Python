@@ -11,8 +11,28 @@
 # coordenadas del punto p. Por ejemplo,
 #    intercambia((2,5))  ==  (5,2)
 #    intercambia((5,2))  ==  (2,5)
+#
+# Comprobar con Hypothesis que la función intercambia es
+# idempotente; es decir, si se aplica dos veces es lo mismo que no
+# aplicarla ninguna.
 # ---------------------------------------------------------------------
 
+from typing import TypeVar, Tuple
+from hypothesis import given, strategies as st
+
+A = TypeVar('A')
+B = TypeVar('B')
+
 def intercambia(p):
+    # type: (Tuple[A, B]) -> Tuple[B, A]
     (x, y) = p
     return (y, x)
+
+# La propiedad de es
+@given(st.tuples(st.integers(), st.integers()))
+def test_equiv_intercambia(p):
+    assert intercambia(intercambia(p)) == p
+
+# La comprobación es
+#    src> poetry run pytest -q intercambio_de_componentes_de_un_par.py
+#    1 passed in 0.15s
