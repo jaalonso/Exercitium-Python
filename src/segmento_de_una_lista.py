@@ -14,12 +14,27 @@
 #    segmento(5, 3, [3, 4, 1, 2, 7, 9, 0])  ==  []
 # ---------------------------------------------------------------------
 
+from typing import List, TypeVar
+from hypothesis import given, strategies as st
+
+A = TypeVar('A')
+
 # 1ª definición
 def segmento1(m, n, xs):
+    # type: (int, int, List[A]) -> List[A]
     ys = xs[:n]
     return ys[m - 1:]
 
-
 # 2ª definición
 def segmento2(m, n, xs):
+    # type: (int, int, List[A]) -> List[A]
     return xs[m-1:n]
+
+# La propiedad es
+@given(st.integers(), st.integers(), st.lists(st.integers()))
+def test_equiv_segmento(m, n, xs):
+    assert segmento1(m, n, xs) == segmento2(m, n, xs)
+
+# La comprobación es
+#    src> poetry run pytest -q segmento_de_una_lista.py
+#    1 passed in 0.19s
