@@ -16,6 +16,6 @@
 
 from math import pi
 
-
 def areaDeCoronaCircular(r1, r2):
+    # type: (float, float) -> float
     return pi * (r2 ** 2 - r1 ** 2)
