@@ -13,17 +13,30 @@
 #    divisionSegura(7, 0)  ==  9999.0
 # ---------------------------------------------------------------------
 
+from hypothesis import given, strategies as st
+
 # 1ª definición
 def divisionSegura1(x, y):
+    # type: (float, float) -> float
     if y == 0:
         return 9999.0
     return x/y
 
-
 # 2ª definición
 def divisionSegura2(x, y):
+    # type: (float, float) -> float
     match y:
         case 0:
             return 9999.0
         case _:
             return x/y
+
+# La propiedad de equivalencia es
+@given(st.floats(allow_nan=False, allow_infinity=False),
+       st.floats(allow_nan=False, allow_infinity=False))
+def test_equiv_divisionSegura(x, y):
+    assert divisionSegura1(x, y) == divisionSegura2(x, y)
+
+# La comprobación es
+#    src> poetry run pytest -q division_segura.py
+#    1 passed in 0.37s
