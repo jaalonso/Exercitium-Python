@@ -27,11 +27,29 @@ def distancia(p1, p2):
     return sqrt((x1-x2)**2+(y1-y2)**2)
 
 # La propiedad es
-@given(st.tuples(st.integers(), st.integers()),
-       st.tuples(st.integers(), st.integers()),
-       st.tuples(st.integers(), st.integers()))
+cota = 2 ** 30
+
+@given(st.tuples(st.integers(min_value=0, max_value=cota),
+                 st.integers(min_value=0, max_value=cota)),
+       st.tuples(st.integers(min_value=0, max_value=cota),
+                 st.integers(min_value=0, max_value=cota)),
+       st.tuples(st.integers(min_value=0, max_value=cota),
+                 st.integers(min_value=0, max_value=cota)))
 def test_triangular(p1, p2, p3):
     assert distancia(p1, p3) <= distancia(p1, p2) + distancia(p2, p3)
 
 # La comprobación es
-#    >>> test_triangular()
+#    src> poetry run pytest -q distancia_entre_dos_puntos.py
+#    1 passed in 0.38s
+
+# Nota: Por problemas de redondeo, la propiedad no se cumple en
+# general. Por ejemplo,
+#    λ> p1 = (0, 9147936743096483)
+#    λ> p2 = (0, 3)
+#    λ> p3 = (0, 2)
+#    λ> distancia(p1, p3) <= distancia(p1, p2) + distancia (p2. p3)
+#    False
+#    λ> distancia(p1, p3)
+#    9147936743096482.0
+#    λ> distancia(p1, p2) + distancia(p2, p3)
+#    9147936743096480.05
