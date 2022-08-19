@@ -1,4 +1,4 @@
-# Mayor_numero_con_dos_digitos_dados.py
+# mayor_numero_con_dos_digitos_dados.py
 # Mayor número con dos dígitos dados.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 8-septiembre-2022
