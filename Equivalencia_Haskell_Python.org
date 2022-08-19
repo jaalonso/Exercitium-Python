@@ -15,8 +15,9 @@
 | x / y      | x / y     |
 | x ^ y      | x ** y    |
 | max x y    | max(x, y) |
-| minimum xs | min(x)    |
+| min x y    | min(x, y) |
 | maximum xs | max(xs)   |
+| minimum xs | min(x)    |
 |------------+-----------|
 
 ** Funciones sobre enteros
