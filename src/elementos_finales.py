@@ -6,28 +6,31 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    finales : (int, List[A]) -> List[A]
+#    finales : (int, list[A]) -> list[A]
 # tal que finales(n, xs) es la lista formada por los n finales
 # elementos de xs. Por ejemplo,
 #    finales(3, [2, 5, 4, 7, 9, 6])  ==  [7, 9, 6]
 # ---------------------------------------------------------------------
 
+from typing import TypeVar
 from hypothesis import given, strategies as st
 
+A = TypeVar('A')
+
 # 1ª definición
-def finales1(n, xs):
+def finales1(n: int, xs: list[A]) -> list[A]:
     if len(xs) <= n:
         return xs
     return xs[len(xs) - n:]
 
 # 2ª definición
-def finales2(n, xs):
+def finales2(n: int, xs: list[A]) -> list[A]:
     if n == 0:
         return []
     return xs[-n:]
 
 # 3ª definición
-def finales3(n, xs):
+def finales3(n: int, xs: list[A]) -> list[A]:
     ys = list(reversed(xs))
     return list(reversed(ys[:n]))
 
