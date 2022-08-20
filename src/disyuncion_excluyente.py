@@ -34,25 +34,21 @@ def xor1(x, y):
         case False, False: return False
 
 # 2ª solución
-def xor2(x, y):
-    # type: (bool, bool) -> bool
+def xor2(x: bool, y: bool) -> bool:
     if x:
         return not y
     return y
 
 # 3ª solución
-def xor3(x, y):
-    # type: (bool, bool) -> bool
+def xor3(x: bool, y: bool) -> bool:
     return (x or y) and not(x and y)
 
 # 4ª solución
-def xor4(x, y):
-    # type: (bool, bool) -> bool
+def xor4(x: bool, y: bool) -> bool:
     return (x and not y) or (y and not x)
 
 # 5ª solución
-def xor5(x, y):
-    # type: (bool, bool) -> bool
+def xor5(x: bool, y: bool) -> bool:
     return x != y
 
 # La propiedad de equivalencia es
