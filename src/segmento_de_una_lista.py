@@ -6,7 +6,7 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    segmento : (int, int, List[A]) -> List[A]
+#    segmento : (int, int, list[A]) -> list[A]
 # tal que segmento(m, n, xs) es la lista de los elementos de xs
 # comprendidos entre las posiciones m y n. Por ejemplo,
 #    segmento(3, 4, [3, 4, 1, 2, 7, 9, 0])  ==  [1, 2]
@@ -14,20 +14,18 @@
 #    segmento(5, 3, [3, 4, 1, 2, 7, 9, 0])  ==  []
 # ---------------------------------------------------------------------
 
-from typing import List, TypeVar
+from typing import TypeVar
 from hypothesis import given, strategies as st
 
 A = TypeVar('A')
 
 # 1ª definición
-def segmento1(m, n, xs):
-    # type: (int, int, List[A]) -> List[A]
+def segmento1(m: int, n: int, xs: list[A]) -> list[A]:
     ys = xs[:n]
     return ys[m - 1:]
 
 # 2ª definición
-def segmento2(m, n, xs):
-    # type: (int, int, List[A]) -> List[A]
+def segmento2(m: int, n: int, xs: list[A]) -> list[A]:
     return xs[m-1:n]
 
 # La propiedad de equivalencia es
