@@ -6,7 +6,7 @@
 
 # ---------------------------------------------------------------------
 # Definir una función
-#    ciclo : (List[A]) -> List[A]
+#    ciclo : (list[A]) -> list[A]
 # tal que ciclo(xs) es la lista obtenida permutando cíclicamente los
 # elementos de la lista xs, pasando el último elemento al principio de
 # la lista. Por ejemplo,
@@ -18,13 +18,12 @@
 # decir, la longitud de (ciclo xs) es la misma que la de xs.
 # ---------------------------------------------------------------------
 
-from typing import TypeVar, List
+from typing import TypeVar
 from hypothesis import given, strategies as st
 
 A = TypeVar('A')
 
-def ciclo(xs):
-    # type: (List[A]) -> List[A]
+def ciclo(xs: list[A]) -> list[A]:
     if xs:
         return [xs[-1]] + xs[:-1]
     return []
