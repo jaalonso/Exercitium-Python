@@ -14,6 +14,5 @@
 #    media3(-3, 0, 3)  ==  0.0
 # ---------------------------------------------------------------------
 
-def media3(x, y, z):
-    # type: (float, float, float) -> float
+def media3(x: float, y: float, z: float) -> float:
     return (x + y + z)/3
