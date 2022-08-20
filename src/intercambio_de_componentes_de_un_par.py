@@ -17,14 +17,13 @@
 # aplicarla ninguna.
 # ---------------------------------------------------------------------
 
-from typing import TypeVar, Tuple
+from typing import TypeVar
 from hypothesis import given, strategies as st
 
 A = TypeVar('A')
 B = TypeVar('B')
 
-def intercambia(p):
-    # type: (Tuple[A, B]) -> Tuple[B, A]
+def intercambia(p: tuple[A, B]) -> tuple[B, A]:
     (x, y) = p
     return (y, x)
 
