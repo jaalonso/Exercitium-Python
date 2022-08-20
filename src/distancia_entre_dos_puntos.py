@@ -20,8 +20,8 @@
 from math import sqrt
 from hypothesis import given, strategies as st
 
-def distancia(p1, p2):
-    # type: (tuple[float, float], tuple[float, float]) -> float
+def distancia(p1: tuple[float, float],
+              p2: tuple[float, float]) -> float:
     (x1, y1) = p1
     (x2, y2) = p2
     return sqrt((x1-x2)**2+(y1-y2)**2)
