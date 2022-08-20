@@ -14,13 +14,11 @@
 # ---------------------------------------------------------------------
 
 # 1ª definición
-def numeroMayor1(x, y):
-    # type: (int, int) -> int
+def numeroMayor1(x: int, y: int) -> int:
     return 10 * max(x, y) + min(x, y)
 
 # 2ª definición
-def numeroMayor2(x, y):
-    # type: (int, int) -> int
+def numeroMayor2(x: int, y: int) -> int:
     if x > y:
         return 10 * x + y
     return 10 * y + x
