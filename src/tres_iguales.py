@@ -16,13 +16,11 @@
 from hypothesis import given, strategies as st
 
 # 1ª definición
-def tresIguales1(x, y, z):
-    # type: (int, int, int) -> bool
+def tresIguales1(x: int, y: int, z: int) -> bool:
     return x == y and y == z
 
 # 2ª definición
-def tresIguales2(x, y, z):
-    # type: (int, int, int) -> bool
+def tresIguales2(x: int, y: int, z: int) -> bool:
     return x == y == z
 
 # La propiedad de equivalencia es
