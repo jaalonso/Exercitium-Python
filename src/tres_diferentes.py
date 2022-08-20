@@ -13,6 +13,5 @@
 #    tresDiferentes(3, 5, 3)  ==  False
 # ---------------------------------------------------------------------
 
-def tresDiferentes(x, y, z):
-    # type: (int, int, int) -> bool
+def tresDiferentes(x: int, y: int, z: int) -> bool:
     return x != y and x != z and y != z
