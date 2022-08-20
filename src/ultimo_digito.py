@@ -12,6 +12,5 @@
 #    ultimoDigito(325) == 5
 # ---------------------------------------------------------------------
 
-def ultimoDigito(x):
-    # type: (int) -> int
+def ultimoDigito(x: int) -> int:
     return x % 10
