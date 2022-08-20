@@ -15,6 +15,5 @@
 #    mediano(2, 6, 6) == 6
 # ---------------------------------------------------------------------
 
-def mediano(x, y, z):
-    # type: (int, int, int) -> int
+def mediano(x: int, y: int, z: int) -> int:
     return x + y + z - min([x, y, z]) - max([x, y, z])
