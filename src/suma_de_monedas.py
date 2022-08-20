@@ -15,6 +15,5 @@
 #    sumaMonedas(1, 1, 1, 1, 1)  ==  38
 # ---------------------------------------------------------------------
 
-def sumaMonedas(a, b, c, d, e):
-    # type: (int, int, int, int, int) -> int
+def sumaMonedas(a: int, b: int, c: int, d: int, e: int) -> int:
     return 1 * a + 2 * b + 5 * c + 10 * d + 20 * e
