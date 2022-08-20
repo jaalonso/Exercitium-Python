@@ -6,25 +6,23 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    interior : (List[A]) -> List[A]
+#    interior : (list[A]) -> list[A]
 # tal que interior(xs) es la lista obtenida eliminando los extremos de
 # la lista xs. Por ejemplo,
 #    interior([2, 5, 3, 7, 3])  ==  [5, 3, 7]
 # ---------------------------------------------------------------------
 
-from typing import List, TypeVar
+from typing import TypeVar
 from hypothesis import given, strategies as st
 
 A = TypeVar('A')
 
 # 1ª solución
-def interior1(xs):
-    # type: (List[A]) -> List[A]
+def interior1(xs: list[A]) -> list[A]:
     return xs[1:][:-1]
 
 # 2ª solución
-def interior2(xs):
-    # type: (List[A]) -> List[A]
+def interior2(xs: list[A]) -> list[A]:
     return xs[1:-1]
 
 # La propiedad de equivalencia es
