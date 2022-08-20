@@ -13,21 +13,19 @@
 #    rota1(['a', 'b', 'c']) == ['b', 'c', 'a']
 # ---------------------------------------------------------------------
 
-from typing import List, TypeVar
+from typing import TypeVar
 from hypothesis import given, strategies as st
 
 A = TypeVar('A')
 
 # 1ª solución
-def rota1a(xs):
-    # type: (List[A]) -> List[A]
+def rota1a(xs: list[A]) -> list[A]:
     if xs == []:
         return []
     return xs[1:] + [xs[0]]
 
 # 2ª solución
-def rota1b(xs):
-    # type: (List[A]) -> List[A]
+def rota1b(xs: list[A]) -> list[A]:
     if xs == []:
         return []
     ys = xs[1:]
@@ -36,7 +34,7 @@ def rota1b(xs):
 
 # La equivalencia de las definiciones es
 @given(st.lists(st.integers()))
-def test_rota1(xs):
+def test_rota1(xs: list[int]) -> None:
     assert rota1a(xs) == rota1b(xs)
 
 # La comprobación es
