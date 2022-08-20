@@ -16,15 +16,13 @@
 from hypothesis import given, strategies as st
 
 # 1ª definición
-def divisionSegura1(x, y):
-    # type: (float, float) -> float
+def divisionSegura1(x: float, y: float) -> float:
     if y == 0:
         return 9999.0
     return x/y
 
 # 2ª definición
-def divisionSegura2(x, y):
-    # type: (float, float) -> float
+def divisionSegura2(x: float, y: float) -> float:
     match y:
         case 0:
             return 9999.0
