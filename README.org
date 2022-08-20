@@ -41,3 +41,4 @@ Notas:
 + M06-09-22 [[./src/distancia_entre_dos_puntos.py][Distancia entre dos puntos]].
 + X07-09-22 [[./src/permutacion_ciclica.py][Permutación cíclica]].
 + J08-09-22 [[./src/mayor_numero_con_dos_digitos_dados.py][Mayor número con dos dígitos dados]].
++ V09-09-22 [[./src/numero_de_raices_de_la_ecuacion_de_segundo_grado.py][Número de raíces de la ecuación de segundo grado]].
