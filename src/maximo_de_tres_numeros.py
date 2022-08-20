@@ -13,6 +13,5 @@
 #    maxTres(6, 7, 9)  ==  9
 # ---------------------------------------------------------------------
 
-def maxTres(x, y, z):
-    # type: (int, int, int) -> int
+def maxTres(x: int, y: int, z: int) -> int:
     return max(x, max(y, z))
