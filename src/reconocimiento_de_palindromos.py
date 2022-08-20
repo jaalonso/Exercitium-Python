@@ -14,10 +14,9 @@
 #    palindromo([3, 2, 5, 6, 2, 3])  ==  False
 # ---------------------------------------------------------------------
 
-from typing import List, TypeVar
+from typing import TypeVar
 
 A = TypeVar('A')
 
-def palindromo(xs):
-    # type: (List[A]) -> bool
+def palindromo(xs: list[A]) -> bool:
     return xs == list(reversed(xs))
