@@ -1,4 +1,4 @@
-# Formula_de_Heron_para_el_area_de_un_triangulo.py
+# formula_de_Heron_para_el_area_de_un_triangulo.py
 # Fórmula de Herón para el área de un triángulo.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 13-septiembre-2022
