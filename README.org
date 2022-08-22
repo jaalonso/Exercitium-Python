@@ -43,3 +43,4 @@ Notas:
 + J08-09-22 [[./src/mayor_numero_con_dos_digitos_dados.py][Mayor número con dos dígitos dados]].
 + V09-09-22 [[./src/numero_de_raices_de_la_ecuacion_de_segundo_grado.py][Número de raíces de la ecuación de segundo grado]].
 + L12-09-22 [[./src/raices_de_la_ecuacion_de_segundo_grado.py][Raíces de la ecuación de segundo grado]].
++ M13-09-22 [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
