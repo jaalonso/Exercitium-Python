@@ -17,18 +17,18 @@ Notas:
 
 * Ejercicios
 
-+ L08-08-22 [[./src/media_aritmetica_de_tres_numeros.py][Media aritmética de tres números]].
-+ M09-08-22 [[./src/suma_de_monedas.py][Suma de monedas]].
-+ X10-08-22 [[./src/volumen_de_la_esfera.py][Volumen de la esfera]].
-+ J11-08-22 [[./src/area_corona_circular.py][Área de la corona circular]].
-+ V12-08-22 [[./src/ultimo_digito.py][Último dígito]].
-+ L15-08-22 [[./src/maximo_de_tres_numeros.py][Máximo de tres números]].
-+ M16-08-22 [[./src/el_primero_al_final.py][El primero al final]].
-+ X17-08-22 [[./src/los_primeros_al_final.py][Los primeros al final]].
-+ J18-08-22 [[./src/rango_de_una_lista.py][Rango de una lista]].
-+ V19-08-02 [[./src/reconocimiento_de_palindromos.py][Reconocimiento de palíndromos]].
-+ L22-08-22 [[./src/interior_de_una_lista.py][Interior de una lista]].
-+ M23-08-22 [[./src/elementos_finales.py][Elementos finales]].
++ 08-08-22 [[./src/media_aritmetica_de_tres_numeros.py][Media aritmética de tres números]].
++ 09-08-22 [[./src/suma_de_monedas.py][Suma de monedas]].
++ 10-08-22 [[./src/volumen_de_la_esfera.py][Volumen de la esfera]].
++ 11-08-22 [[./src/area_corona_circular.py][Área de la corona circular]].
++ 12-08-22 [[./src/ultimo_digito.py][Último dígito]].
++ 15-08-22 [[./src/maximo_de_tres_numeros.py][Máximo de tres números]].
++ 16-08-22 [[./src/el_primero_al_final.py][El primero al final]].
++ 17-08-22 [[./src/los_primeros_al_final.py][Los primeros al final]].
++ 18-08-22 [[./src/rango_de_una_lista.py][Rango de una lista]].
++ 19-08-02 [[./src/reconocimiento_de_palindromos.py][Reconocimiento de palíndromos]].
++ 22-08-22 [[./src/interior_de_una_lista.py][Interior de una lista]].
++ 23-08-22 [[./src/elementos_finales.py][Elementos finales]].
 + X24-08-22 [[./src/segmento_de_una_lista.py][Segmento de una lista]].
 + J25-08-22 [[./src/primeros_y_ultimos_elementos.py][Primeros y últimos elementos]].
 + V26-08-22 [[./src/elemento_mediano.py][Elemento mediano]].
@@ -44,3 +44,4 @@ Notas:
 + V09-09-22 [[./src/numero_de_raices_de_la_ecuacion_de_segundo_grado.py][Número de raíces de la ecuación de segundo grado]].
 + L12-09-22 [[./src/raices_de_la_ecuacion_de_segundo_grado.py][Raíces de la ecuación de segundo grado]].
 + M13-09-22 [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
++ J14-09-22 [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
