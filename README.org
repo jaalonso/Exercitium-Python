@@ -29,7 +29,7 @@ Notas:
 + 19-08-02 [[./src/reconocimiento_de_palindromos.py][Reconocimiento de palíndromos]].
 + 22-08-22 [[./src/interior_de_una_lista.py][Interior de una lista]].
 + 23-08-22 [[./src/elementos_finales.py][Elementos finales]].
-+ X24-08-22 [[./src/segmento_de_una_lista.py][Segmento de una lista]].
++ 24-08-22 [[./src/segmento_de_una_lista.py][Segmento de una lista]].
 + J25-08-22 [[./src/primeros_y_ultimos_elementos.py][Primeros y últimos elementos]].
 + V26-08-22 [[./src/elemento_mediano.py][Elemento mediano]].
 + L29-08-22 [[./src/tres_iguales.py][Tres iguales]].
@@ -45,3 +45,4 @@ Notas:
 + L12-09-22 [[./src/raices_de_la_ecuacion_de_segundo_grado.py][Raíces de la ecuación de segundo grado]].
 + M13-09-22 [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
 + J14-09-22 [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
++ V15-09-22 [[./src/numeros_racionales.py][Números racionales]].
