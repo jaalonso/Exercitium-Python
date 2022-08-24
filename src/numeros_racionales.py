@@ -48,7 +48,7 @@ def formaReducida(x: Racional) -> Racional:
     if a == 0:
         return (0, 1)
     c = gcd(a, b)
-    return (a % c, b % c)
+    return (a // c, b // c)
 
 def sumaRacional(x: Racional,
                  y: Racional) -> Racional:
