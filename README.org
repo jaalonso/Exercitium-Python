@@ -46,5 +46,4 @@ Notas:
 + M13-09-22 [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
 + X14-09-22 [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
 + J15-09-22 [[./src/numeros_racionales.py][Números racionales]].
-+ V16-09-22 [[./src/reconocimiento_de_subconjunto.py
-][Reconocimiento de subconjunto]].
++ V16-09-22 [[./src/reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
