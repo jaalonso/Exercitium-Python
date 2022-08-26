@@ -64,8 +64,7 @@ def test_subconjunto(xs, ys):
 # =========================
 
 def tiempo(e):
-    """Tiempo medio (en segundos) de 10 evaluaciones de la expresión e.
-    """
+    """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
 
