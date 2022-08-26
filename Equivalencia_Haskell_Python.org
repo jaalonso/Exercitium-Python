@@ -68,3 +68,9 @@
 | null xs    | xs                    |
 | all p xs   | all(p(x) for x in xs) |
 |------------+-----------------------|
+
+* Funciones sobre conjuntos
+
+|--------------------+----------|
+| xs `isSubsetOf` ys | xs <= ys |
+|--------------------+----------|
