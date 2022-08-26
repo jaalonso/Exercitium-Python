@@ -47,3 +47,4 @@ Notas:
 + X14-09-22 [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
 + J15-09-22 [[./src/numeros_racionales.py][Números racionales]].
 + V16-09-22 [[./src/reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
++ L19-09-22 [[./src/igualdad_de_conjuntos.py][Igualdad de conjuntos]].
