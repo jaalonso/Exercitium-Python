@@ -57,12 +57,13 @@
 |------------+--------------------|
 | Haskell    | Python             |
 |------------+--------------------|
-| xs ++ ys   | xs + ys            |
+| drop n xs  | xs[:n]             |
+| elem x ys  | x in ys            |
 | head xs    | xs[0]              |
+| init xs    | xs[:-1]            |
+| length xs  | len(xs)            |
+| reverse xs | list(reversed(xs)) |
 | tail xs    | xs[1:]             |
 | take n xs  | xs[n:]             |
-| drop n xs  | xs[:n]             |
-| init xs    | xs[:-1]            |
-| reverse xs | list(reversed(xs)) |
-| length xs  | len(xs)            |
+| xs ++ ys   | xs + ys            |
 |------------+--------------------|
