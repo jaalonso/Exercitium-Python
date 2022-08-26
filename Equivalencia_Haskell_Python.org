@@ -54,16 +54,17 @@
 
 ** Funciones elementales
 
-|------------+--------------------|
-| Haskell    | Python             |
-|------------+--------------------|
-| drop n xs  | xs[:n]             |
-| elem x ys  | x in ys            |
-| head xs    | xs[0]              |
-| init xs    | xs[:-1]            |
-| length xs  | len(xs)            |
-| reverse xs | list(reversed(xs)) |
-| tail xs    | xs[1:]             |
-| take n xs  | xs[n:]             |
-| xs ++ ys   | xs + ys            |
-|------------+--------------------|
+|------------+-----------------------|
+| Haskell    | Python                |
+|------------+-----------------------|
+| elem x ys  | x in ys               |
+| head xs    | xs[0]                 |
+| take n xs  | xs[n:]                |
+| drop n xs  | xs[:n]                |
+| init xs    | xs[:-1]               |
+| tail xs    | xs[1:]                |
+| length xs  | len(xs)               |
+| reverse xs | list(reversed(xs))    |
+| null xs    | xs                    |
+| all p xs   | all(p(x) for x in xs) |
+|------------+-----------------------|
