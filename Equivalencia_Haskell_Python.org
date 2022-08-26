@@ -69,8 +69,19 @@
 | all p xs   | all(p(x) for x in xs) |
 |------------+-----------------------|
 
-* Funciones sobre conjuntos
+** Funciones de Data.List
 
+|------------+-----------------------|
+| Haskell    | Python                |
+|------------+-----------------------|
+| sort xs    |                       |
+| nub xs     |                       |
+|------------+-----------------------|
+
+* Funciones sobre conjuntos (de Data.Set)
+
+|--------------------+----------|
+| Haskell            | Python   |
 |--------------------+----------|
 | xs `isSubsetOf` ys | xs <= ys |
 |--------------------+----------|
