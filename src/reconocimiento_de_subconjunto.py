@@ -66,15 +66,16 @@ def test_subconjunto(xs, ys):
 def tiempo(e):
     """Tiempo medio (en segundos) de 10 evaluaciones de la expresión e.
     """
-    return Timer(e, "", default_timer, globals()).timeit(10) / 10
+    t = Timer(e, "", default_timer, globals()).timeit(1)
+    print(f"{t:0.2f} segundos")
 
 # La comparación es
 #    >>> xs = list(range(20000))
 #    >>> tiempo('subconjunto1(xs, xs)')
-#    1.2694050386000526
+#    1.27 segundos
 #    >>> tiempo('subconjunto2(xs, xs)')
-#    1.9486201640998844
+#    1.84 segundos
 #    >>> tiempo('subconjunto3(xs, xs)')
-#    1.2683724896000057
+#    1.19 segundos
 #    >>> tiempo('subconjunto4(xs, xs)')
-#    0.0030952897999668495
+#    0.01 segundos
