@@ -32,10 +32,17 @@ def rota1b(xs: list[A]) -> list[A]:
     ys.append(xs[0])
     return ys
 
+# 3ª solución
+def rota1c(xs: list[A]) -> list[A]:
+    if xs == []:
+        return []
+    y, *ys = xs
+    return ys + [y]
+
 # La equivalencia de las definiciones es
 @given(st.lists(st.integers()))
 def test_rota1(xs: list[int]) -> None:
-    assert rota1a(xs) == rota1b(xs)
+    assert rota1a(xs) == rota1b(xs) == rota1c(xs)
 
 # La comprobación es
 #    src> poetry run pytest -q el_primero_al_final.py
