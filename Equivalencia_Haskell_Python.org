@@ -54,20 +54,21 @@
 
 ** Funciones elementales
 
-|------------+-----------------------|
-| Haskell    | Python                |
-|------------+-----------------------|
-| elem x ys  | x in ys               |
-| head xs    | xs[0]                 |
-| take n xs  | xs[n:]                |
-| drop n xs  | xs[:n]                |
-| init xs    | xs[:-1]               |
-| tail xs    | xs[1:]                |
-| length xs  | len(xs)               |
-| reverse xs | list(reversed(xs))    |
-| null xs    | xs                    |
-| all p xs   | all(p(x) for x in xs) |
-|------------+-----------------------|
+|--------------+-----------------------|
+| Haskell      | Python                |
+|--------------+-----------------------|
+| elem x ys    | x in ys               |
+| notElem x ys | x not in ys           |
+| head xs      | xs[0]                 |
+| take n xs    | xs[n:]                |
+| drop n xs    | xs[:n]                |
+| init xs      | xs[:-1]               |
+| tail xs      | xs[1:]                |
+| length xs    | len(xs)               |
+| reverse xs   | list(reversed(xs))    |
+| null xs      | xs                    |
+| all p xs     | all(p(x) for x in xs) |
+|--------------+-----------------------|
 
 ** Funciones de Data.List
 
