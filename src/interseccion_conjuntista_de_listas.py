@@ -6,11 +6,11 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    interseccion :: Eq a => [a] -> [a] -> [a]
-# tal que (interseccion xs ys) es la intersección de las listas sin
+#    interseccion : (list[A], list[A]) -> list[A]
+# tal que interseccion(xs, ys) es la intersección de las listas sin
 # elementos repetidos xs e ys. Por ejemplo,
-#    interseccion [3,2,5] [5,7,3,4]  ==  [3,5]
-#    interseccion [3,2,5] [9,7,6,4]  ==  []
+#    interseccion([3, 2, 5], [5, 7, 3, 4]) == [3, 5]
+#    interseccion([3, 2, 5], [9, 7, 6, 4]) == []
 # ---------------------------------------------------------------------
 
 from typing import TypeVar
