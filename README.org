@@ -50,3 +50,4 @@ Notas:
 + L19-09-22 [[./src/igualdad_de_conjuntos.py][Igualdad de conjuntos]].
 + M20-09-22 [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
 + X21-09-22 [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
++ J22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
