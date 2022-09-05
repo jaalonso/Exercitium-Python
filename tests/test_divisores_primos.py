@@ -1,4 +1,9 @@
-from src.divisores_primos import *
+from src.divisores_primos import \
+    divisoresPrimos1, \
+    divisoresPrimos2, \
+    divisoresPrimos3, \
+    divisoresPrimos4
+
 
 def test_divisoresPrimos():
     assert divisoresPrimos1(40) == [2, 5]
