@@ -56,7 +56,7 @@ def diferencia4(xs: list[A], ys: list[A]) -> list[A]:
 
 # Comprobación de equivalencia
 # ============================
-#
+
 # La propiedad es
 @given(st.lists(st.integers()),
        st.lists(st.integers()))
