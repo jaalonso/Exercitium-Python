@@ -51,3 +51,4 @@ Notas:
 + M20-09-22 [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
 + X21-09-22 [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
 + J22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
++ V23-09-22 [[./src/divisores_primos.py][Divisores primos]].
