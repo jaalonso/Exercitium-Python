@@ -19,7 +19,10 @@ from operator import mul
 from functools import reduce
 from timeit import Timer, default_timer
 from sympy import primefactors
+from sys import setrecursionlimit
 from hypothesis import given, strategies as st
+
+setrecursionlimit(10**6)
 
 # 1ª solución
 # ===========
@@ -64,21 +67,27 @@ def divisoresPrimos2(x: int) -> list[int]:
 # 3ª solución
 # ===========
 
+# reducido(m, x) es el resultado de dividir repetidamente m por x,
+# mientras sea divisible. Por ejemplo,
+#    reducido(36, 2)  ==  9
+def reducido(m: int, x: int) -> int:
+    if m % x == 0:
+        return reducido(m // x, x)
+    return m
+
 def divisoresPrimos3(n: int) -> list[int]:
-    xs = []
     if n % 2 == 0:
-        xs.append(2)
-    while n % 2 == 0:
-        n = n // 2
-        if n == 1:
-            return xs
-    for x in range(3, n + 1, 2):
-        if n % x == 0:
-            xs.append(x)
-            while n % x == 0:
-                n = n // x
-                if n == 1:
-                    return xs
+        return [2] + divisoresPrimos3(reducido(n, 2))
+
+    def aux(m, xs):
+        if m == 1:
+            return []
+        if xs == []:
+            return []
+        if m % xs[0] == 0:
+            return [xs[0]] + aux(reducido(m, xs[0]), xs[1:])
+        return aux(m, xs[1:])
+    return aux(n, range(3, n + 1, 2))
 
 # 4ª solución
 # ===========
@@ -99,7 +108,7 @@ def test_divisoresPrimos(n):
 
 # La comprobación es
 #    src> poetry run pytest -q divisores_primos.py
-#    1 passed in 0.39s
+#    1 passed in 0.70s
 
 # Comparación de eficiencia
 # =========================
@@ -130,6 +139,6 @@ def producto(xs: list[int]) -> int:
 #    0.00 segundos
 #
 #    >>> tiempo('divisoresPrimos3(producto(list(range(1, 10001))))')
-#    1.96 segundos
+#    3.00 segundos
 #    >>> tiempo('divisoresPrimos4(producto(list(range(1, 10001))))')
 #    0.24 segundos
