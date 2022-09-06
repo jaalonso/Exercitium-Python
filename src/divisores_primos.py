@@ -18,8 +18,8 @@ from math import sqrt
 from operator import mul
 from functools import reduce
 from timeit import Timer, default_timer
-from sympy import primefactors
 from sys import setrecursionlimit
+from sympy import primefactors
 from hypothesis import given, strategies as st
 
 setrecursionlimit(10**6)
