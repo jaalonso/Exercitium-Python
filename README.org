@@ -53,3 +53,4 @@ Notas:
 + J22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
 + V23-09-22 [[./src/divisores_primos.py][Divisores primos]].
 + L26-09-22 [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
++ M27-09-22 [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
