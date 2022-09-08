@@ -9,9 +9,9 @@
 #    sumaDeCuadrados : (int) -> int
 # tal sumaDeCuadrados(n) es la suma de los xuadrados de los n primeros
 # números naturales. Por ejemplo,
-#    suma(3)   ==  14
-#    suma(100) ==  338350
-#    len(str(suma2(10**100)))  ==  300
+#    sumaDeCuadrados(3)   ==  14
+#    sumaDeCuadrados(100) ==  338350
+#    len(str(sumaDeCuadrados2(10**100)))  ==  300
 # ---------------------------------------------------------------------
 
 from operator import add
