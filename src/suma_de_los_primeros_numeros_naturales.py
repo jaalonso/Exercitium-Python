@@ -90,8 +90,6 @@ def tiempo(e):
     print(f"{t:0.2f} segundos")
 
 # La comparación es
-#    >>> tiempo('suma3(20000)')
-#    0.04 segundos
 #    >>> tiempo('suma1(20000)')
 #    0.00 segundos
 #    >>> tiempo('suma2(20000)')
