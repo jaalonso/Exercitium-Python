@@ -54,3 +54,4 @@ Notas:
 + V23-09-22 [[./src/divisores_primos.py][Divisores primos]].
 + L26-09-22 [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
 + M27-09-22 [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
++ X28-09-22 [[./src/suma_de_los_cuadrados_de_los_primeros_numeros_naturales.py][Suma de los cuadrados de los primeros números naturales]].
