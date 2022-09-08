@@ -6,10 +6,12 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    suma : (int) -> int
-# tal suma(n) es la suma de los n primeros números. Por ejemplo,
-#    suma(3)  ==  6
-#    len(str(suma2(10**100)))  ==  200
+#    sumaDeCuadrados : (int) -> int
+# tal sumaDeCuadrados(n) es la suma de los xuadrados de los n primeros
+# números naturales. Por ejemplo,
+#    suma(3)   ==  14
+#    suma(100) ==  338350
+#    len(str(suma2(10**100)))  ==  300
 # ---------------------------------------------------------------------
 
 from operator import add
