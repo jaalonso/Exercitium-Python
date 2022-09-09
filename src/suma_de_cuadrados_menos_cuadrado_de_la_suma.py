@@ -6,12 +6,12 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    euler6 :: Integer -> Integer
-# tal que (euler6 n) es la diferencia entre el cuadrado de la suma
+#    euler6 : (int) -> int
+# tal que euler6(n) es la diferencia entre el cuadrado de la suma
 # de los n primeros números y la suma de los cuadrados de los n
 # primeros números. Por ejemplo,
-#    euler6 10       ==  2640
-#    euler6 (10^10)  ==  2500000000166666666641666666665000000000
+#    euler6(10)       ==  2640
+#    euler6(10^10)  ==  2500000000166666666641666666665000000000
 #
 # Nota: Este ejercicio está basado en el problema 6 del proyecto Euler
 # https://www.projecteuler.net/problem=6
