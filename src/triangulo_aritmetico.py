@@ -14,17 +14,17 @@
 #    16 17 18 19 20 21
 #
 # Definir las funciones
-#    linea     :: Integer -> [Integer]
-#    triangulo :: Integer -> [[Integer]]
+#    linea : (int) -> list[int]
+#    triangulo : (int) -> list[list[int]]
 # tales que
-# + (linea n) es la línea n-ésima de los triángulos aritméticos. Por
+# + linea(n) es la línea n-ésima de los triángulos aritméticos. Por
 #   ejemplo,
-#      linea 4  ==  [7,8,9,10]
-#      linea 5  ==  [11,12,13,14,15]
-#      head (linea (10^20)) == 4999999999999999999950000000000000000001
-# + (triangulo n) es el triángulo aritmético de altura n. Por ejemplo,
-#      triangulo 3  ==  [[1],[2,3],[4,5,6]]
-#      triangulo 4  ==  [[1],[2,3],[4,5,6],[7,8,9,10]]
+#      linea(4)  ==  [7, 8, 9, 10]
+#      linea(5)  ==  [11, 12, 13, 14, 15]
+#      linea(10**8)[0] == 4999999950000001
+# + triangulo(n) es el triángulo aritmético de altura n. Por ejemplo,
+#      triangulo(3)  ==  [[1], [2, 3], [4, 5, 6]]
+#      triangulo(4)  ==  [[1], [2, 3], [4, 5, 6], [7, 8, 9, 10]]
 # ---------------------------------------------------------------------
 
 from timeit import Timer, default_timer
