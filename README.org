@@ -51,6 +51,7 @@ Notas:
 + M20-09-22 [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
 + X21-09-22 [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
 + J22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
++ J22-09-22 [[./src/divisores_de_un_numero.py][Divisores de un número]]. (a las 18:00)
 + V23-09-22 [[./src/divisores_primos.py][Divisores primos]].
 + L26-09-22 [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
 + M27-09-22 [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
