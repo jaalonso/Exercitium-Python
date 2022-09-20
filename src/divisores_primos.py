@@ -19,7 +19,7 @@ from operator import mul
 from functools import reduce
 from timeit import Timer, default_timer
 from sys import setrecursionlimit
-from sympy import primefactors
+from sympy import divisors, isprime, primefactors
 from hypothesis import given, strategies as st
 
 setrecursionlimit(10**6)
@@ -92,7 +92,13 @@ def divisoresPrimos3(n: int) -> list[int]:
 # 4ª solución
 # ===========
 
-def divisoresPrimos4(n):
+def divisoresPrimos4(x: int) -> list[int]:
+    return [n for n in divisors(x) if isprime(n)]
+
+# 5ª solución
+# ===========
+
+def divisoresPrimos5(n):
     return primefactors(n)
 
 # Comprobación de equivalencia
@@ -104,7 +110,8 @@ def test_divisoresPrimos(n):
     assert divisoresPrimos1(n) ==\
            divisoresPrimos2(n) ==\
            divisoresPrimos3(n) ==\
-           divisoresPrimos4(n)
+           divisoresPrimos4(n) ==\
+           divisoresPrimos5(n)
 
 # La comprobación es
 #    src> poetry run pytest -q divisores_primos.py
@@ -130,15 +137,26 @@ def producto(xs: list[int]) -> int:
 #    0.00 segundos
 #    >>> tiempo('divisoresPrimos4(producto(list(range(1, 12))))')
 #    0.00 segundos
+#    >>> tiempo('divisoresPrimos5(producto(list(range(1, 12))))')
+#    0.00 segundos
 #
 #    >>> tiempo('divisoresPrimos2(producto(list(range(1, 17))))')
 #    14.21 segundos
 #    >>> tiempo('divisoresPrimos3(producto(list(range(1, 17))))')
 #    0.00 segundos
 #    >>> tiempo('divisoresPrimos4(producto(list(range(1, 17))))')
+#    0.01 segundos
+#    >>> tiempo('divisoresPrimos5(producto(list(range(1, 17))))')
+#    0.00 segundos
+#
+#    >>> tiempo('divisoresPrimos3(producto(list(range(1, 32))))')
+#    0.00 segundos
+#    >>> tiempo('divisoresPrimos4(producto(list(range(1, 32))))')
+#    4.59 segundos
+#    >>> tiempo('divisoresPrimos5(producto(list(range(1, 32))))')
 #    0.00 segundos
 #
 #    >>> tiempo('divisoresPrimos3(producto(list(range(1, 10001))))')
 #    3.00 segundos
-#    >>> tiempo('divisoresPrimos4(producto(list(range(1, 10001))))')
+#    >>> tiempo('divisoresPrimos5(producto(list(range(1, 10001))))')
 #    0.24 segundos
