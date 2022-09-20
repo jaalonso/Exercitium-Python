@@ -2,7 +2,8 @@ from src.divisores_primos import \
     divisoresPrimos1, \
     divisoresPrimos2, \
     divisoresPrimos3, \
-    divisoresPrimos4
+    divisoresPrimos4, \
+    divisoresPrimos5
 
 
 def test_divisoresPrimos():
@@ -14,3 +15,5 @@ def test_divisoresPrimos():
     assert divisoresPrimos3(70) == [2, 5, 7]
     assert divisoresPrimos4(40) == [2, 5]
     assert divisoresPrimos4(70) == [2, 5, 7]
+    assert divisoresPrimos5(40) == [2, 5]
+    assert divisoresPrimos5(70) == [2, 5, 7]
