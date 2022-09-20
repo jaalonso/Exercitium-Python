@@ -42,16 +42,16 @@ Notas:
 + 07-09-22 [[./src/permutacion_ciclica.py][Permutación cíclica]].
 + 08-09-22 [[./src/mayor_numero_con_dos_digitos_dados.py][Mayor número con dos dígitos dados]].
 + V09-09-22 [[./src/numero_de_raices_de_la_ecuacion_de_segundo_grado.py][Número de raíces de la ecuación de segundo grado]].
-+ L12-09-22 [[./src/raices_de_la_ecuacion_de_segundo_grado.py][Raíces de la ecuación de segundo grado]].
-+ M13-09-22 [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
-+ X14-09-22 [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
-+ J15-09-22 [[./src/numeros_racionales.py][Números racionales]].
-+ V16-09-22 [[./src/reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
-+ L19-09-22 [[./src/igualdad_de_conjuntos.py][Igualdad de conjuntos]].
-+ M20-09-22 [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
++ 12-09-22 [[./src/raices_de_la_ecuacion_de_segundo_grado.py][Raíces de la ecuación de segundo grado]].
++ 13-09-22 [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
++ 14-09-22 [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
++ 15-09-22 [[./src/numeros_racionales.py][Números racionales]].
++ 16-09-22 [[./src/reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
++ 19-09-22 [[./src/igualdad_de_conjuntos.py][Igualdad de conjuntos]].
++ 20-09-22 [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
 + X21-09-22 [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
 + J22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
-+ J22-09-22 [[./src/divisores_de_un_numero.py][Divisores de un número]]. (a las 18:00)
++ J22-09-22 [[./src/divisores_de_un_numero.py][Divisores de un número]].
 + V23-09-22 [[./src/divisores_primos.py][Divisores primos]].
 + L26-09-22 [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
 + M27-09-22 [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
