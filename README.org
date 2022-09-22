@@ -58,4 +58,5 @@ Notas:
 + X28-09-22 [[./src/suma_de_los_cuadrados_de_los_primeros_numeros_naturales.py][Suma de los cuadrados de los primeros números naturales]].
 + X29-09-22 [[./src/suma_de_cuadrados_menos_cuadrado_de_la_suma.py][Suma de cuadrados menos cuadrado de la suma]].
 + J30-09-22 [[./src/triangulo_aritmetico.py][Triángulo aritmético]].
++ S01-10-22 [[./src/suma_de_divisores.py][Suma de divisores]].
 + L03-10-22 [[./src/numeros_perfectos.py][Números perfectos]].
