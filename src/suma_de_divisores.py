@@ -8,11 +8,10 @@
 # Definir la función
 #    sumaDivisores : (int) -> int
 # tal que (sumaDivisores x) es la suma de los divisores de x. Por ejemplo,
-#    sumaDivisores(12)                 ==  28
-#    sumaDivisores(25=                 ==  31
-#    sumaDivisores (product [1..25])  ==  93383273455325195473152000
-#    length (show (sumaDivisores (product [1..30000])))  ==  121289
-#    maximum (map sumaDivisores [1..2*10^6])             ==  8851392
+#    sumaDivisores(12)                ==  28
+#    sumaDivisores(25)                ==  31
+#    sumaDivisores (reduce(mul, range(1, 26)))  ==  93383273455325195473152000
+#    len(str(sumaDivisores6(reduce(mul, range(1, 30001)))))  ==  121289
 # ---------------------------------------------------------------------
 
 from operator import mul
