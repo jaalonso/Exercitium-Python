@@ -1,4 +1,4 @@
-# guma_de_divisores.py
+# suma_de_divisores.py
 # Suma de divisores.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 1-octubre-2022
