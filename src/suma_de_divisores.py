@@ -7,7 +7,7 @@
 # ---------------------------------------------------------------------
 # Definir la función
 #    sumaDivisores : (int) -> int
-# tal que (sumaDivisores x) es la suma de los divisores de x. Por ejemplo,
+# tal que sumaDivisores(x) es la suma de los divisores de x. Por ejemplo,
 #    sumaDivisores(12)                ==  28
 #    sumaDivisores(25)                ==  31
 #    sumaDivisores (reduce(mul, range(1, 26)))  ==  93383273455325195473152000
