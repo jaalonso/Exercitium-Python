@@ -14,13 +14,15 @@
 #    len(divisoresPrimos4(producto(list(range(1, 20001))))) == 2262
 # ------------------------------------------------------------------------
 
+from functools import reduce
 from math import sqrt
 from operator import mul
-from functools import reduce
-from timeit import Timer, default_timer
 from sys import setrecursionlimit
+from timeit import Timer, default_timer
+
+from hypothesis import given
+from hypothesis import strategies as st
 from sympy import divisors, isprime, primefactors
-from hypothesis import given, strategies as st
 
 setrecursionlimit(10**6)
 

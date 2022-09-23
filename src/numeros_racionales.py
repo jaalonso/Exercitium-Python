@@ -39,7 +39,9 @@
 # ---------------------------------------------------------------------
 
 from math import gcd
-from hypothesis import given, assume, strategies as st
+
+from hypothesis import assume, given
+from hypothesis import strategies as st
 
 Racional = tuple[int, int]
 

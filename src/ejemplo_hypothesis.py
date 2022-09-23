@@ -1,4 +1,5 @@
-from hypothesis import given, strategies as st, settings, Verbosity
+from hypothesis import Verbosity, given, settings
+from hypothesis import strategies as st
 
 
 @given(st.integers(), st.integers())

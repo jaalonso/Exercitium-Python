@@ -14,10 +14,12 @@
 # Comprobar con Hypothesis que la unión es conmutativa.
 # ---------------------------------------------------------------------
 
-from typing import TypeVar
-from timeit import Timer, default_timer
 from sys import setrecursionlimit
-from hypothesis import given, strategies as st
+from timeit import Timer, default_timer
+from typing import TypeVar
+
+from hypothesis import given
+from hypothesis import strategies as st
 
 setrecursionlimit(10**6)
 

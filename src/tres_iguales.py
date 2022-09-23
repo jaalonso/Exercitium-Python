@@ -13,7 +13,9 @@
 #    tresIguales(4, 3, 4)  ==  False
 # ---------------------------------------------------------------------
 
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 
 # 1ª definición
 def tresIguales1(x: int, y: int, z: int) -> bool:

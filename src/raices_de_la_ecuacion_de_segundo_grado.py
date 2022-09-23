@@ -18,7 +18,10 @@
 # ---------------------------------------------------------------------
 
 from math import sqrt
-from hypothesis import given, assume, strategies as st
+
+from hypothesis import assume, given
+from hypothesis import strategies as st
+
 
 def raices(a: float, b: float, c: float) -> list[float]:
     d = b**2 - 4*a*c

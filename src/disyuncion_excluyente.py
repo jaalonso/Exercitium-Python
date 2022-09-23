@@ -23,7 +23,9 @@
 #    xor(False, False) == False
 # ---------------------------------------------------------------------
 
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 
 # 1ª solución
 def xor1(x, y):

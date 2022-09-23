@@ -19,9 +19,11 @@
 # ---------------------------------------------------------------------
 
 from math import sqrt
-from sympy import divisors
 from timeit import Timer, default_timer
-from hypothesis import given, strategies as st
+
+from hypothesis import given
+from hypothesis import strategies as st
+from sympy import divisors
 
 # 1ª solución
 # ===========

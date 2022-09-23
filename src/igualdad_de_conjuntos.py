@@ -15,9 +15,11 @@
 #    iguales([2, 3], [4, 5])       == False
 # ---------------------------------------------------------------------
 
-from typing import Any
 from timeit import Timer, default_timer
-from hypothesis import given, strategies as st
+from typing import Any
+
+from hypothesis import given
+from hypothesis import strategies as st
 
 # 1ª solución
 # ===========

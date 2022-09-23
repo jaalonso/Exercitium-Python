@@ -15,10 +15,12 @@
 #  ---------------------------------------------------------------------
 
 from math import factorial, sqrt
-from timeit import Timer, default_timer
 from sys import setrecursionlimit
+from timeit import Timer, default_timer
+
+from hypothesis import given
+from hypothesis import strategies as st
 from sympy import divisors
-from hypothesis import given, strategies as st
 
 setrecursionlimit(10**6)
 

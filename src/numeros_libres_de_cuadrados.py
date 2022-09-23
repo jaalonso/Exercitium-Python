@@ -19,10 +19,12 @@
 #    libreDeCuadrados (product (take 30000 primes))  ==  True
 # ---------------------------------------------------------------------
 
-from timeit import Timer, default_timer
 from sys import setrecursionlimit
+from timeit import Timer, default_timer
+
+from hypothesis import given
+from hypothesis import strategies as st
 from sympy import primefactors, primerange
-from hypothesis import given, strategies as st
 
 setrecursionlimit(10**6)
 

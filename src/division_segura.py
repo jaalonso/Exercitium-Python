@@ -13,7 +13,9 @@
 #    divisionSegura(7, 0)  ==  9999.0
 # ---------------------------------------------------------------------
 
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 
 # 1ª definición
 def divisionSegura1(x: float, y: float) -> float:

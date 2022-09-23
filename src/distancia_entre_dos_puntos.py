@@ -18,7 +18,10 @@
 # ---------------------------------------------------------------------
 
 from math import sqrt
-from hypothesis import given, strategies as st
+
+from hypothesis import given
+from hypothesis import strategies as st
+
 
 def distancia(p1: tuple[float, float],
               p2: tuple[float, float]) -> float:

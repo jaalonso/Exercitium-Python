@@ -14,11 +14,14 @@
 #    len(str(sumaDeCuadrados2(10**100)))  ==  300
 # ---------------------------------------------------------------------
 
-from operator import add
 from functools import reduce
+from operator import add
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
-from hypothesis import given, strategies as st
+
+from hypothesis import given
+from hypothesis import strategies as st
+
 setrecursionlimit(10**6)
 
 # 1ª solución

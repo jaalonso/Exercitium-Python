@@ -17,7 +17,7 @@
 #    [['mora', 'roma', 'ramo'], ['pirata', 'patria'], ['ana']]
 # ----------------------------------------------------------------------
 
-from typing import List, Dict
+from typing import Dict, List
 
 
 def ordenada(c):

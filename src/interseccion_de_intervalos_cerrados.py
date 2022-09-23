@@ -26,7 +26,8 @@
 # conmutativa.
 # ---------------------------------------------------------------------
 
-from hypothesis import given, assume, strategies as st
+from hypothesis import assume, given
+from hypothesis import strategies as st
 
 Rectangulo = list[float]
 

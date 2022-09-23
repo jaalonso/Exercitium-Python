@@ -14,12 +14,14 @@
 #    len(str(sumaDivisores6(reduce(mul, range(1, 30001)))))  ==  121289
 # ---------------------------------------------------------------------
 
-from operator import mul
 from functools import reduce
-from timeit import Timer, default_timer
+from operator import mul
 from sys import setrecursionlimit
-from sympy import divisors, divisor_sigma, factorint
-from hypothesis import given, strategies as st
+from timeit import Timer, default_timer
+
+from hypothesis import given
+from hypothesis import strategies as st
+from sympy import divisor_sigma, divisors, factorint
 
 setrecursionlimit(10**6)
 
