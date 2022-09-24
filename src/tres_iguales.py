@@ -27,7 +27,7 @@ def tresIguales2(x: int, y: int, z: int) -> bool:
 
 # La propiedad de equivalencia es
 @given(st.integers(), st.integers(), st.integers())
-def test_equiv_tresIguales(x, y, z):
+def test_equiv_tresIguales(x: int, y: int, z: int) -> None:
     assert tresIguales1(x, y, z) == tresIguales2(x, y, z)
 
 # La comprobación es
