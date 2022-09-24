@@ -128,7 +128,7 @@ def sumaDeCuadrados6(n: int) -> int:
 
 # La propiedad es
 @given(st.integers(min_value=1, max_value=1000))
-def test_euler6(n):
+def test_euler6(n: int) -> None:
     r = euler6a(n)
     assert euler6b(n) == r
     assert euler6c(n) == r
@@ -143,7 +143,7 @@ def test_euler6(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
