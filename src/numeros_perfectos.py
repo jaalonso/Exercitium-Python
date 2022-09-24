@@ -70,7 +70,7 @@ def perfectos2(n: int) -> list[int]:
 
 # La propiedad es
 @given(st.integers(min_value=2, max_value=1000))
-def test_perfectos(n):
+def test_perfectos(n: int) -> None:
     assert perfectos1(n) == perfectos2(n)
 
 # La comprobación es
@@ -80,7 +80,7 @@ def test_perfectos(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
