@@ -38,7 +38,7 @@ def finales3(n: int, xs: list[A]) -> list[A]:
 
 # La propiedad de equivalencia es
 @given(st.integers(min_value=0), st.lists(st.integers()))
-def test_equiv_finales(n, xs):
+def test_equiv_finales(n: int, xs: list[int]) -> None:
     assert finales1(n, xs) == finales2(n, xs) == finales3(n, xs)
 
 # La comprobación es
