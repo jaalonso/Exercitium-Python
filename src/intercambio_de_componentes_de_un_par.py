@@ -31,7 +31,7 @@ def intercambia(p: tuple[A, B]) -> tuple[B, A]:
 
 # La propiedad de es
 @given(st.tuples(st.integers(), st.integers()))
-def test_equiv_intercambia(p):
+def test_equiv_intercambia(p: tuple[int, int]) -> None:
     assert intercambia(intercambia(p)) == p
 
 # La comprobación es
