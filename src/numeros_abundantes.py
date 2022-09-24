@@ -65,7 +65,7 @@ def numeroAbundante2(x: int) -> bool:
 
 # La propiedad es
 @given(st.integers(min_value=2, max_value=1000))
-def test_numeroAbundante(n):
+def test_numeroAbundante(n: int) -> None:
     assert numeroAbundante1(n) == numeroAbundante2(n)
 
 # La comprobación es
@@ -75,7 +75,7 @@ def test_numeroAbundante(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
