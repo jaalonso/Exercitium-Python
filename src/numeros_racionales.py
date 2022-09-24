@@ -74,7 +74,9 @@ def igualdadRacional(x: Racional,
 @given(st.tuples(st.integers(), st.integers()),
        st.tuples(st.integers(), st.integers()),
        st.tuples(st.integers(), st.integers()))
-def test_prop_distributiva(x, y, z):
+def test_prop_distributiva(x: tuple[int, int],
+                           y: tuple[int, int],
+                           z: tuple[int, int]) -> None:
     (_, x2) = x
     (_, y2) = y
     (_, z2) = z
