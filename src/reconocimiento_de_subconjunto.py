@@ -52,7 +52,7 @@ def subconjunto4(xs: list[A],
 # La propiedad es
 @given(st.lists(st.integers()),
        st.lists(st.integers()))
-def test_subconjunto(xs, ys):
+def test_subconjunto(xs: list[int], ys: list[int]) -> None:
     assert subconjunto1(xs, ys)\
            == subconjunto2(xs, ys)\
            == subconjunto3(xs, ys)\
@@ -65,7 +65,7 @@ def test_subconjunto(xs, ys):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
