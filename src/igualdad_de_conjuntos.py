@@ -45,7 +45,7 @@ def iguales2(xs: list[Any],
 # La propiedad es
 @given(st.lists(st.integers()),
        st.lists(st.integers()))
-def test_iguales(xs, ys):
+def test_iguales(xs: list[int], ys: list[int]) -> None:
     assert iguales1(xs, ys) == iguales2(xs, ys)
 
 # La comprobación es
@@ -55,7 +55,7 @@ def test_iguales(xs, ys):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
