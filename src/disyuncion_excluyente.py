@@ -23,12 +23,13 @@
 #    xor(False, False) == False
 # ---------------------------------------------------------------------
 
+from typing import Any
+
 from hypothesis import given
 from hypothesis import strategies as st
 
-
 # 1ª solución
-def xor1(x, y):
+def xor1(x: bool, y: bool) -> Any:
     match x, y:
         case True,  True: return False
         case True,  False: return True
@@ -55,7 +56,7 @@ def xor5(x: bool, y: bool) -> bool:
 
 # La propiedad de equivalencia es
 @given(st.booleans(), st.booleans())
-def test_equiv_xor(x, y):
+def test_equiv_xor(x: bool, y: bool) -> None:
     assert xor1(x, y) == xor2(x, y) == xor3(x, y) == xor4(x, y) == xor5(x, y)
 
 # La comprobación es

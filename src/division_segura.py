@@ -34,7 +34,7 @@ def divisionSegura2(x: float, y: float) -> float:
 # La propiedad de equivalencia es
 @given(st.floats(allow_nan=False, allow_infinity=False),
        st.floats(allow_nan=False, allow_infinity=False))
-def test_equiv_divisionSegura(x, y):
+def test_equiv_divisionSegura(x: float, y: float) -> None:
     assert divisionSegura1(x, y) == divisionSegura2(x, y)
 
 # La comprobación es
