@@ -29,7 +29,7 @@ def interior2(xs: list[A]) -> list[A]:
 
 # La propiedad de equivalencia es
 @given(st.lists(st.integers()))
-def test_interior(xs):
+def test_interior(xs: list[int]) -> None:
     assert interior1(xs) == interior2(xs)
 
 # La comprobación es
