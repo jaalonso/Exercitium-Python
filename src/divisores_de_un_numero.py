@@ -115,7 +115,7 @@ def divisores8(n: int) -> list[int]:
 
 # La propiedad es
 @given(st.integers(min_value=2, max_value=1000))
-def test_divisores(n):
+def test_divisores(n: int) -> None:
     assert divisores1(n) ==\
            divisores2(n) ==\
            divisores3(n) ==\
@@ -132,7 +132,7 @@ def test_divisores(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
