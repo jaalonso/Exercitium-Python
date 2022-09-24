@@ -32,7 +32,7 @@ def ciclo(xs: list[A]) -> list[A]:
 
 # La propiedad de es
 @given(st.lists(st.integers()))
-def test_equiv_ciclo(xs):
+def test_equiv_ciclo(xs: list[int]) -> None:
     assert len(ciclo(xs)) == len(xs)
 
 # La comprobación es
