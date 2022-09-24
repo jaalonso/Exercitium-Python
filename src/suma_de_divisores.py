@@ -22,6 +22,7 @@ from timeit import Timer, default_timer
 from hypothesis import given
 from hypothesis import strategies as st
 from sympy import divisor_sigma, divisors, factorint
+from typing import Any
 
 setrecursionlimit(10**6)
 
@@ -71,7 +72,7 @@ def sumaDivisores3(n: int) -> int:
 #        p(1)-1                p(2)-1                  p(n)-1
 # Ver la demostración en http://bit.ly/2zUXZPc
 
-def sumaDivisores4(n: int) -> int:
+def sumaDivisores4(n: Any) -> Any:
     return reduce(mul, [(p ** (e + 1) - 1) // (p - 1)
                         for (p, e) in factorint(n).items()])
 
@@ -94,7 +95,7 @@ def sumaDivisores5(n: int) -> int:
 # 6ª solución
 # ===========
 
-def sumaDivisores6(n: int) -> int:
+def sumaDivisores6(n: Any) -> Any:
     return divisor_sigma(n, 1)
 
 # Comprobación de equivalencia
