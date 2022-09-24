@@ -60,3 +60,4 @@ Notas:
 + J30-09-22 [[./src/triangulo_aritmetico.py][Triángulo aritmético]].
 + S01-10-22 [[./src/suma_de_divisores.py][Suma de divisores]].
 + L03-10-22 [[./src/numeros_perfectos.py][Números perfectos]].
++ M04-10-22 [[./src/numeros_abundantes.py][Números abundantes]].
