@@ -81,7 +81,7 @@ def divisoresPrimos3(n: int) -> list[int]:
     if n % 2 == 0:
         return [2] + divisoresPrimos3(reducido(n, 2))
 
-    def aux(m, xs):
+    def aux(m: int, xs: list[int]) -> list[int]:
         if m == 1:
             return []
         if xs == []:
@@ -89,7 +89,7 @@ def divisoresPrimos3(n: int) -> list[int]:
         if m % xs[0] == 0:
             return [xs[0]] + aux(reducido(m, xs[0]), xs[1:])
         return aux(m, xs[1:])
-    return aux(n, range(3, n + 1, 2))
+    return aux(n, list(range(3, n + 1, 2)))
 
 # 4ª solución
 # ===========
@@ -100,7 +100,7 @@ def divisoresPrimos4(x: int) -> list[int]:
 # 5ª solución
 # ===========
 
-def divisoresPrimos5(n):
+def divisoresPrimos5(n: int) -> list[int]:
     return primefactors(n)
 
 # Comprobación de equivalencia
@@ -108,7 +108,7 @@ def divisoresPrimos5(n):
 
 # La propiedad es
 @given(st.integers(min_value=2, max_value=1000))
-def test_divisoresPrimos(n):
+def test_divisoresPrimos(n: int) -> None:
     assert divisoresPrimos1(n) ==\
            divisoresPrimos2(n) ==\
            divisoresPrimos3(n) ==\
@@ -122,7 +122,7 @@ def test_divisoresPrimos(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
