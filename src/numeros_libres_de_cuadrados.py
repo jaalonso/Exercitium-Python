@@ -57,12 +57,12 @@ def divisoresPrimos1(x: int) -> list[int]:
 
 # producto(xs) es el producto de los elementos de xs. Por ejemplo,
 #    producto([3, 2, 5])  ==  30
-def producto(xs):
+def producto(xs: list[int]) -> int:
     if xs:
         return xs[0] * producto(xs[1:])
     return 1
 
-def libreDeCuadrados2(x):
+def libreDeCuadrados2(x: int) -> bool:
     return x == producto(divisoresPrimos1(x))
 
 # 3ª solución
@@ -72,7 +72,7 @@ def libreDeCuadrados3(n: int) -> bool:
     if n % 2 == 0:
         return n % 4 != 0 and libreDeCuadrados3(n // 2)
 
-    def aux(m, xs):
+    def aux(m: int, xs: list[int]) -> bool:
         if m == 1:
             return True
         if xs == []:
@@ -80,12 +80,12 @@ def libreDeCuadrados3(n: int) -> bool:
         if m % xs[0] == 0:
             return m % (xs[0]**2) != 0 and aux(m // xs[0], xs[1:])
         return aux(m, xs[1:])
-    return aux(n, range(3, n + 1, 2))
+    return aux(n, list(range(3, n + 1, 2)))
 
 # 4ª solución
 # ===========
 
-def libreDeCuadrados4(x):
+def libreDeCuadrados4(x: int) -> bool:
     return x == producto(primefactors(x))
 
 # Comprobación de equivalencia
@@ -93,7 +93,7 @@ def libreDeCuadrados4(x):
 
 # La propiedad es
 @given(st.integers(min_value=2, max_value=1000))
-def test_libreDeCuadrados(n):
+def test_libreDeCuadrados(n: int) -> None:
     assert libreDeCuadrados1(n) ==\
            libreDeCuadrados2(n) ==\
            libreDeCuadrados3(n) ==\
@@ -106,7 +106,7 @@ def test_libreDeCuadrados(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
