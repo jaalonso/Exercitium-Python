@@ -45,7 +45,7 @@ def interseccion(i1: Rectangulo,
 
 # La propiedad es
 @given(st.floats(), st.floats(), st.floats(), st.floats())
-def test_prop_raices(a1, b1, a2, b2):
+def test_prop_raices(a1: float, b1: float, a2: float, b2: float) -> None:
     assume(a1 <= b1 and a2 <= b2)
     assert interseccion([a1, b1], [a2, b2]) == interseccion([a2, b2], [a1, b1])
 
