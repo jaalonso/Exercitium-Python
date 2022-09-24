@@ -45,7 +45,7 @@ def casiIguales(x: float, y: float) -> bool:
 @given(st.floats(min_value=-100, max_value=100),
        st.floats(min_value=-100, max_value=100),
        st.floats(min_value=-100, max_value=100))
-def test_prop_raices(a, b, c):
+def test_prop_raices(a: float, b: float, c: float) -> None:
     assume(abs(a) > 0.1)
     xs = raices(a, b, c)
     assume(xs)
