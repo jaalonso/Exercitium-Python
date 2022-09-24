@@ -62,7 +62,7 @@ def interseccion4(xs: list[A], ys: list[A]) -> list[A]:
 # La propiedad es
 @given(st.lists(st.integers()),
        st.lists(st.integers()))
-def test_interseccion(xs, ys):
+def test_interseccion(xs: list[int], ys: list[int]) -> None:
     xs1 = list(set(xs))
     ys1 = list(set(ys))
     assert sorted(interseccion1(xs1, ys1)) ==\
@@ -77,7 +77,7 @@ def test_interseccion(xs, ys):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
