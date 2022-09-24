@@ -32,7 +32,7 @@ def segmento2(m: int, n: int, xs: list[A]) -> list[A]:
 
 # La propiedad de equivalencia es
 @given(st.integers(), st.integers(), st.lists(st.integers()))
-def test_equiv_segmento(m, n, xs):
+def test_equiv_segmento(m: int, n: int, xs: list[int]) -> None:
     assert segmento1(m, n, xs) == segmento2(m, n, xs)
 
 # La comprobación es
