@@ -64,7 +64,7 @@ def linea3(n: int) -> list[int]:
 # =====================================
 
 @given(st.integers(min_value=1, max_value=1000))
-def test_suma(n):
+def test_suma(n: int) -> None:
     r = linea1(n)
     assert linea2(n) == r
     assert linea3(n) == r
@@ -76,7 +76,7 @@ def test_suma(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
@@ -111,7 +111,7 @@ def triangulo3(n: int) -> list[list[int]]:
 # =========================================
 
 @given(st.integers(min_value=1, max_value=1000))
-def test_triangulo(n):
+def test_triangulo(n: int) -> None:
     r = triangulo1(n)
     assert triangulo2(n) == r
     assert triangulo3(n) == r
