@@ -72,7 +72,7 @@ def suma6(n: int) -> int:
 
 # La propiedad es
 @given(st.integers(min_value=1, max_value=1000))
-def test_suma(n):
+def test_suma(n: int) -> None:
     r = suma1(n)
     assert suma2(n) == r
     assert suma3(n) == r
@@ -87,7 +87,7 @@ def test_suma(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
