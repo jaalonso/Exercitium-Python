@@ -38,7 +38,9 @@ cota = 2 ** 30
                  st.integers(min_value=0, max_value=cota)),
        st.tuples(st.integers(min_value=0, max_value=cota),
                  st.integers(min_value=0, max_value=cota)))
-def test_triangular(p1, p2, p3):
+def test_triangular(p1: tuple[int, int],
+                    p2: tuple[int, int],
+                    p3: tuple[int, int]) -> None:
     assert distancia(p1, p3) <= distancia(p1, p2) + distancia(p2, p3)
 
 # La comprobación es
