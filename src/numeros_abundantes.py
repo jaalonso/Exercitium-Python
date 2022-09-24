@@ -11,15 +11,15 @@
 # (= 1 + 2 + 3 + 4 + 6), pero 5 y 28 no lo son.
 #
 # Definir la función
-#    numeroAbundante :: Int -> Bool
-# tal que (numeroAbundante n) se verifica si n es un número
+#    numeroAbundante : (int) -> bool
+# tal que numeroAbundante(n) se verifica si n es un número
 # abundante. Por ejemplo,
-#    numeroAbundante 5  == False
-#    numeroAbundante 12 == True
-#    numeroAbundante 28 == False
-#    numeroAbundante 30 == True
-#    numeroAbundante 100000000  ==  True
-#    numeroAbundante 100000001  ==  False
+#    numeroAbundante(5)  == False
+#    numeroAbundante(12) == True
+#    numeroAbundante(28) == False
+#    numeroAbundante(30) == True
+#    numeroAbundante(100000000)  ==  True
+#    numeroAbundante(100000001)  ==  False
 # ---------------------------------------------------------------------
 
 from timeit import Timer, default_timer
