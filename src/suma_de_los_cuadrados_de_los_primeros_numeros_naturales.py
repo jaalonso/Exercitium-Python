@@ -74,7 +74,7 @@ def sumaDeCuadrados6(n: int) -> int:
 
 # La propiedad es
 @given(st.integers(min_value=1, max_value=1000))
-def test_sumaDeCuadrados(n):
+def test_sumaDeCuadrados(n: int) -> None:
     r = sumaDeCuadrados1(n)
     assert sumaDeCuadrados2(n) == r
     assert sumaDeCuadrados3(n) == r
@@ -89,7 +89,7 @@ def test_sumaDeCuadrados(n):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
