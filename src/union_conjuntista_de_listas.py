@@ -63,7 +63,7 @@ def union4(xs: list[A], ys: list[A]) -> list[A]:
 # La propiedad es
 @given(st.lists(st.integers()),
        st.lists(st.integers()))
-def test_union(xs, ys):
+def test_union(xs: list[int], ys: list[int]) -> None:
     xs1 = list(set(xs))
     ys1 = list(set(ys))
     assert sorted(union1(xs1, ys1)) ==\
@@ -78,7 +78,7 @@ def test_union(xs, ys):
 # Comparación de eficiencia
 # =========================
 
-def tiempo(e):
+def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
@@ -108,7 +108,7 @@ def iguales(xs: list[A], ys: list[A]) -> bool:
 # La propiedad es
 @given(st.lists(st.integers()),
        st.lists(st.integers()))
-def test_union_conmutativa(xs, ys):
+def test_union_conmutativa(xs: list[int], ys: list[int]) -> None:
     xs1 = list(set(xs))
     ys1 = list(set(ys))
     assert iguales(union1(xs1, ys1), union1(ys1, xs1))
