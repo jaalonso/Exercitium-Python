@@ -11,12 +11,12 @@
 # (= 1 + 2 + 3 + 4 + 6), pero 5 y 28 no lo son.
 #
 # Definir la función
-#    numerosAbundantesMenores :: Integer -> [Integer]
-# tal que (numerosAbundantesMenores n) es la lista de números
+#    numerosAbundantesMenores : (int) -> list[Int]
+# tal que numerosAbundantesMenores(n) es la lista de números
 # abundantes menores o iguales que n. Por ejemplo,
-#    numerosAbundantesMenores 50  ==  [12,18,20,24,30,36,40,42,48]
-#    numerosAbundantesMenores 48  ==  [12,18,20,24,30,36,40,42,48]
-#    length (numerosAbundantesMenores (10^6)) ==  247545
+#    numerosAbundantesMenores(50)  ==  [12,18,20,24,30,36,40,42,48]
+#    numerosAbundantesMenores(48)  ==  [12,18,20,24,30,36,40,42,48]
+#    leng(numerosAbundantesMenores(10**6)) ==  247545
 # ---------------------------------------------------------------------
 
 from timeit import Timer, default_timer
