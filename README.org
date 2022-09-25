@@ -61,3 +61,4 @@ Notas:
 + S01-10-22 [[./src/suma_de_divisores.py][Suma de divisores]].
 + L03-10-22 [[./src/numeros_perfectos.py][Números perfectos]].
 + M04-10-22 [[./src/numeros_abundantes.py][Números abundantes]].
++ X05-10-22 [[./src/numeros_abundantes_menores_o_iguales_que_n.py][Números abundantes menores o iguales que n]].
