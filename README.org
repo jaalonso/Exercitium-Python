@@ -63,3 +63,4 @@ Notas:
 + M04-10-22 [[./src/numeros_abundantes.py][Números abundantes]].
 + X05-10-22 [[./src/numeros_abundantes_menores_o_iguales_que_n.py][Números abundantes menores o iguales que n]].
 + J06-10-22 [[./src/todos_los_abundantes_hasta_n_son_pares.py][Todos los abundantes hasta n son pares]].
++ V07-10-22 [[./src/numeros_abundantes_impares.py][Números abundantes impares]].
