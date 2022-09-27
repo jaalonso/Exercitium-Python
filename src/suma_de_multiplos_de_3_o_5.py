@@ -23,6 +23,7 @@
 
 from math import gcd
 from timeit import Timer, default_timer
+
 from hypothesis import given
 from hypothesis import strategies as st
 
