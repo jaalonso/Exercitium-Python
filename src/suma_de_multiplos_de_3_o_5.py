@@ -119,7 +119,7 @@ def tiempo(e: str) -> None:
 #    0.69 segundos
 #    >>> tiempo('euler1f(10**7)')
 #    0.00 segundos
-
+#
 #    >>> tiempo('euler1c(10**8)')
 #    0.72 segundos
 #    >>> tiempo('euler1f(10**8)')
