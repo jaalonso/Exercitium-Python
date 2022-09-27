@@ -28,6 +28,7 @@ from typing import Any
 from hypothesis import given
 from hypothesis import strategies as st
 
+
 # 1ª solución
 def xor1(x: bool, y: bool) -> Any:
     match x, y:
