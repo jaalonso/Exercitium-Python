@@ -64,3 +64,4 @@ Notas:
 + X05-10-22 [[./src/numeros_abundantes_menores_o_iguales_que_n.py][Números abundantes menores o iguales que n]].
 + J06-10-22 [[./src/todos_los_abundantes_hasta_n_son_pares.py][Todos los abundantes hasta n son pares]].
 + V07-10-22 [[./src/numeros_abundantes_impares.py][Números abundantes impares]].
++ L10-10-22 [[./src/suma_de_multiplos_de_3_o_5.py][Suma de múltiplos de 3 ó 5]].
