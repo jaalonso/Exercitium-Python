@@ -5,6 +5,12 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
+# En el círculo de radio 2 hay 6 puntos cuyas coordenadas son puntos
+# naturales:
+#    (0,0),(0,1),(0,2),(1,0),(1,1),(2,0)
+# y en de radio 3 hay 11:
+#    (0,0),(0,1),(0,2),(0,3),(1,0),(1,1),(1,2),(2,0),(2,1),(2,2),(3,0)
+#
 # Definir la función
 #    circulo : (int) -> int
 # tal que circulo(n) es el la cantidad de pares de números naturales
