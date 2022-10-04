@@ -25,10 +25,10 @@
 #      errorAproxE(0.001)  ==  1359
 # ---------------------------------------------------------------------
 
+from itertools import dropwhile, islice
 from math import e
-from itertools import islice, dropwhile
-from timeit import Timer, default_timer
 from sys import setrecursionlimit
+from timeit import Timer, default_timer
 from typing import Iterator
 
 from hypothesis import given
