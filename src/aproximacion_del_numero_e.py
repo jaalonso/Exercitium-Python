@@ -16,7 +16,7 @@
 # + aproxE(k) es la lista de los k primeros términos de la sucesión
 #   (1+1/n)**m. Por ejemplo,
 #      aproxE(4) == [2.0, 2.25, 2.37037037037037, 2.44140625]
-#      last (aproxE (7*10^7))  ==  2.7182818287372563
+#      aproxE6(7*10**7)[-1] ==  2.7182818287372563
 # + errorE(x) es el menor número de términos de la sucesión
 #   (1+1/m)**m necesarios para obtener su límite con un error menor que
 #   x. Por ejemplo,
