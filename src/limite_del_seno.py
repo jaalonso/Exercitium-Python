@@ -150,8 +150,8 @@ def errorLimSeno1(x: float) -> int:
     return list(islice((n for n in naturales()
                         if abs(1 - sin(1/n)/(1/n)) < x), 1))[0]
 
-# # 2ª definición de errorLimSeno
-# # ============================
+# 2ª definición de errorLimSeno
+# ============================
 
 def errorLimSeno2(x: float) -> int:
     def aux(n: int) -> int:
@@ -162,7 +162,7 @@ def errorLimSeno2(x: float) -> int:
     return aux(1)
 
 # 3ª definición de errorLimSeno
-# ============================
+# =============================
 
 def errorLimSeno3(x: float) -> int:
     return list(islice(dropwhile(lambda n: abs(1 - sin(1/n)/(1/n)) >= x,
