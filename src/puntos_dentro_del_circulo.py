@@ -22,7 +22,7 @@
 #    circulo(100)  ==  7955
 # ---------------------------------------------------------------------
 
-from math import sqrt, trunc, ceil
+from math import ceil, sqrt, trunc
 from timeit import Timer, default_timer
 
 from hypothesis import given
