@@ -49,24 +49,25 @@ Notas:
 + 16-09-22 [[./src/reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
 + 19-09-22 [[./src/igualdad_de_conjuntos.py][Igualdad de conjuntos]].
 + 20-09-22 [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
-+ X21-09-22 [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
-+ J22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
-+ J22-09-22 [[./src/divisores_de_un_numero.py][Divisores de un número]].
-+ V23-09-22 [[./src/divisores_primos.py][Divisores primos]].
-+ L26-09-22 [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
-+ M27-09-22 [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
-+ X28-09-22 [[./src/suma_de_los_cuadrados_de_los_primeros_numeros_naturales.py][Suma de los cuadrados de los primeros números naturales]].
-+ X29-09-22 [[./src/suma_de_cuadrados_menos_cuadrado_de_la_suma.py][Suma de cuadrados menos cuadrado de la suma]].
-+ J30-09-22 [[./src/triangulo_aritmetico.py][Triángulo aritmético]].
-+ S01-10-22 [[./src/suma_de_divisores.py][Suma de divisores]].
-+ L03-10-22 [[./src/numeros_perfectos.py][Números perfectos]].
-+ M04-10-22 [[./src/numeros_abundantes.py][Números abundantes]].
-+ X05-10-22 [[./src/numeros_abundantes_menores_o_iguales_que_n.py][Números abundantes menores o iguales que n]].
-+ J06-10-22 [[./src/todos_los_abundantes_hasta_n_son_pares.py][Todos los abundantes hasta n son pares]].
-+ V07-10-22 [[./src/numeros_abundantes_impares.py][Números abundantes impares]].
-+ L10-10-22 [[./src/suma_de_multiplos_de_3_o_5.py][Suma de múltiplos de 3 ó 5]].
-+ M11-10-22 [[./src/puntos_dentro_del_circulo.py][Puntos dentro del círculo]].
-+ X12-10-22 [[./src/aproximacion_del_numero_e.py][Aproximación del número e]].
-+ J13-10-22 [[./src/limite_del_seno.py][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
++ 21-09-22 [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
++ 22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
++ 22-09-22 [[./src/divisores_de_un_numero.py][Divisores de un número]].
++ 23-09-22 [[./src/divisores_primos.py][Divisores primos]].
++ 26-09-22 [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
++ 27-09-22 [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
++ 28-09-22 [[./src/suma_de_los_cuadrados_de_los_primeros_numeros_naturales.py][Suma de los cuadrados de los primeros números naturales]].
++ 29-09-22 [[./src/suma_de_cuadrados_menos_cuadrado_de_la_suma.py][Suma de cuadrados menos cuadrado de la suma]].
++ 30-09-22 [[./src/triangulo_aritmetico.py][Triángulo aritmético]].
++ 01-10-22 [[./src/suma_de_divisores.py][Suma de divisores]].
++ 03-10-22 [[./src/numeros_perfectos.py][Números perfectos]].
++ 04-10-22 [[./src/numeros_abundantes.py][Números abundantes]].
++ 05-10-22 [[./src/numeros_abundantes_menores_o_iguales_que_n.py][Números abundantes menores o iguales que n]].
++ 06-10-22 [[./src/todos_los_abundantes_hasta_n_son_pares.py][Todos los abundantes hasta n son pares]].
++ 07-10-22 [[./src/numeros_abundantes_impares.py][Números abundantes impares]].
++ 10-10-22 [[./src/suma_de_multiplos_de_3_o_5.py][Suma de múltiplos de 3 ó 5]].
++ 11-10-22 [[./src/puntos_dentro_del_circulo.py][Puntos dentro del círculo]].
++ 12-10-22 [[./src/aproximacion_del_numero_e.py][Aproximación del número e]].
++ 13-10-22 [[./src/limite_del_seno.py][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
 + V14-10-22 [[./src/calculo_de_pi_mediante_la_formula_de_Leibniz.py][Cálculo del número π mediante la fórmula de Leibniz]].
 + L17-10-22 [[./src/ternas_pitagoricas.py][Ternas pitagóricas]].
++ M18-10-22 [[./src/ternas_pitagoricas_con_suma_dada.py][Ternas pitagóricas con suma dada]].

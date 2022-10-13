@@ -66,8 +66,8 @@ def test_pitagoricas(n: int) -> None:
 #    src> poetry run pytest -q ternas_pitagoricas.py
 #    1 passed in 1.83s
 
-# Comparación de eficiencia de pitagoricas
-# ======================================
+# Comparación de eficiencia
+# =========================
 
 def tiempo(e: str) -> None:
     """Tiempo (en segundos) de evaluar la expresión e."""
