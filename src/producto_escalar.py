@@ -16,13 +16,13 @@
 #    productoEscalar([1, 2, 3], [4, 5, 6])  ==  32
 # ---------------------------------------------------------------------
 
-from timeit import Timer, default_timer
 from operator import mul
-from numpy import dot
 from sys import setrecursionlimit
+from timeit import Timer, default_timer
 
 from hypothesis import given
 from hypothesis import strategies as st
+from numpy import dot
 
 setrecursionlimit(10**6)
 
