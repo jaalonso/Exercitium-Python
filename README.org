@@ -72,3 +72,4 @@ Notas:
 + L17-10-22 [[./src/ternas_pitagoricas.py][Ternas pitagóricas]].
 + M18-10-22 [[./src/ternas_pitagoricas_con_suma_dada.py][Ternas pitagóricas con suma dada]].
 + X19-10-22 [[./src/producto_escalar.py][Producto escalar]].
++ J20-10-22 [[./src/suma_elementos_consecutivos.py][Suma elementos consecutivos]].
