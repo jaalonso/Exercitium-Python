@@ -68,6 +68,7 @@ Notas:
 + 11-10-22 [[./src/puntos_dentro_del_circulo.py][Puntos dentro del círculo]].
 + 12-10-22 [[./src/aproximacion_del_numero_e.py][Aproximación del número e]].
 + 13-10-22 [[./src/limite_del_seno.py][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
-+ V14-10-22 [[./src/calculo_de_pi_mediante_la_formula_de_Leibniz.py][Cálculo del número π mediante la fórmula de Leibniz]].
++ 14-10-22 [[./src/calculo_de_pi_mediante_la_formula_de_Leibniz.py][Cálculo del número π mediante la fórmula de Leibniz]].
 + L17-10-22 [[./src/ternas_pitagoricas.py][Ternas pitagóricas]].
 + M18-10-22 [[./src/ternas_pitagoricas_con_suma_dada.py][Ternas pitagóricas con suma dada]].
++ X19-10-22 [[./src/producto_escalar.py][Producto escalar]].

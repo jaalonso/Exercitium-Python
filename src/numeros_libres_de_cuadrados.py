@@ -16,7 +16,6 @@
 # Por ejemplo,
 #    libreDeCuadrados(70)  ==  True
 #    libreDeCuadrados(40)  ==  False
-#    libreDeCuadrados (product (take 30000 primes))  ==  True
 # ---------------------------------------------------------------------
 
 from sys import setrecursionlimit
