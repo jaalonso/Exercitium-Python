@@ -6,12 +6,12 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    sumaConsecutivos :: [Integer] -> [Integer]
-# tal que (sumaConsecutivos xs) es la suma de los pares de elementos
+#    sumaConsecutivos : (list[int]) -> list[int]
+# tal que sumaConsecutivos(xs) es la suma de los pares de elementos
 # consecutivos de la lista xs. Por ejemplo,
-#    sumaConsecutivos([3, 1, 5, 2])      ==  [4, 6, 7]
-#    sumaConsecutivos([3])               ==  []
-#    last (sumaConsecutivos [1..10^8])  ==  199999999
+#    sumaConsecutivos([3, 1, 5, 2])           ==  [4, 6, 7]
+#    sumaConsecutivos([3])                    ==  []
+#    sumaConsecutivos(range(1, 1+10**8))[-1]  ==  199999999
 # ---------------------------------------------------------------------
 
 from operator import add
