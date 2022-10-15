@@ -73,3 +73,4 @@ Notas:
 + M18-10-22 [[./src/ternas_pitagoricas_con_suma_dada.py][Ternas pitagóricas con suma dada]].
 + X19-10-22 [[./src/producto_escalar.py][Producto escalar]].
 + J20-10-22 [[./src/suma_elementos_consecutivos.py][Suma elementos consecutivos]].
++ V21-10-22 [[./src/representacion_densa_de_polinomios.py][Representación densa de polinomios]].
