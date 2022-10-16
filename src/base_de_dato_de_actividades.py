@@ -87,6 +87,3 @@ def musicos2(bd: BD) -> list[str]:
 
 def vivas(bd: BD, a: int) -> list[str]:
     return [p[0] for p in bd if p[2] <= a <= p[3]]
-
-# vivas :: [(String,String,Int,Int)] -> Int -> [String]
-# vivas bd a = [x | (x,_,a1,a2) <- bd, a1 <= a, a <= a2]
