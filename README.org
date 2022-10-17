@@ -17,61 +17,62 @@ Notas:
 
 * Ejercicios
 
-+ 08-08-22 [[./src/media_aritmetica_de_tres_numeros.py][Media aritmética de tres números]].
-+ 09-08-22 [[./src/suma_de_monedas.py][Suma de monedas]].
-+ 10-08-22 [[./src/volumen_de_la_esfera.py][Volumen de la esfera]].
-+ 11-08-22 [[./src/area_corona_circular.py][Área de la corona circular]].
-+ 12-08-22 [[./src/ultimo_digito.py][Último dígito]].
-+ 15-08-22 [[./src/maximo_de_tres_numeros.py][Máximo de tres números]].
-+ 16-08-22 [[./src/el_primero_al_final.py][El primero al final]].
-+ 17-08-22 [[./src/los_primeros_al_final.py][Los primeros al final]].
-+ 18-08-22 [[./src/rango_de_una_lista.py][Rango de una lista]].
-+ 19-08-02 [[./src/reconocimiento_de_palindromos.py][Reconocimiento de palíndromos]].
-+ 22-08-22 [[./src/interior_de_una_lista.py][Interior de una lista]].
-+ 23-08-22 [[./src/elementos_finales.py][Elementos finales]].
-+ 24-08-22 [[./src/segmento_de_una_lista.py][Segmento de una lista]].
-+ 25-08-22 [[./src/primeros_y_ultimos_elementos.py][Primeros y últimos elementos]].
-+ 26-08-22 [[./src/elemento_mediano.py][Elemento mediano]].
-+ 29-08-22 [[./src/tres_iguales.py][Tres iguales]].
-+ 30-08-22 [[./src/tres_diferentes.py][Tres diferentes]].
-+ 31-08-22 [[./src/division_segura.py][División segura]].
-+ 01-09-22 [[./src/disyuncion_excluyente.py][Disyunción excluyente]].
-+ 02-09-22 [[./src/mayor_rectangulo.py][Mayor rectángulo]].
-+ 05-06-22 [[./src/intercambio_de_componentes_de_un_par.py][Intercambio de componentes de un par]].
-+ 06-09-22 [[./src/distancia_entre_dos_puntos.py][Distancia entre dos puntos]].
-+ 07-09-22 [[./src/permutacion_ciclica.py][Permutación cíclica]].
-+ 08-09-22 [[./src/mayor_numero_con_dos_digitos_dados.py][Mayor número con dos dígitos dados]].
-+ V09-09-22 [[./src/numero_de_raices_de_la_ecuacion_de_segundo_grado.py][Número de raíces de la ecuación de segundo grado]].
-+ 12-09-22 [[./src/raices_de_la_ecuacion_de_segundo_grado.py][Raíces de la ecuación de segundo grado]].
-+ 13-09-22 [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
-+ 14-09-22 [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
-+ 15-09-22 [[./src/numeros_racionales.py][Números racionales]].
-+ 16-09-22 [[./src/reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
-+ 19-09-22 [[./src/igualdad_de_conjuntos.py][Igualdad de conjuntos]].
-+ 20-09-22 [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
-+ 21-09-22 [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
-+ 22-09-22 [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
-+ 22-09-22 [[./src/divisores_de_un_numero.py][Divisores de un número]].
-+ 23-09-22 [[./src/divisores_primos.py][Divisores primos]].
-+ 26-09-22 [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
-+ 27-09-22 [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
-+ 28-09-22 [[./src/suma_de_los_cuadrados_de_los_primeros_numeros_naturales.py][Suma de los cuadrados de los primeros números naturales]].
-+ 29-09-22 [[./src/suma_de_cuadrados_menos_cuadrado_de_la_suma.py][Suma de cuadrados menos cuadrado de la suma]].
-+ 30-09-22 [[./src/triangulo_aritmetico.py][Triángulo aritmético]].
-+ 01-10-22 [[./src/suma_de_divisores.py][Suma de divisores]].
-+ 03-10-22 [[./src/numeros_perfectos.py][Números perfectos]].
-+ 04-10-22 [[./src/numeros_abundantes.py][Números abundantes]].
-+ 05-10-22 [[./src/numeros_abundantes_menores_o_iguales_que_n.py][Números abundantes menores o iguales que n]].
-+ 06-10-22 [[./src/todos_los_abundantes_hasta_n_son_pares.py][Todos los abundantes hasta n son pares]].
-+ 07-10-22 [[./src/numeros_abundantes_impares.py][Números abundantes impares]].
-+ 10-10-22 [[./src/suma_de_multiplos_de_3_o_5.py][Suma de múltiplos de 3 ó 5]].
-+ 11-10-22 [[./src/puntos_dentro_del_circulo.py][Puntos dentro del círculo]].
-+ 12-10-22 [[./src/aproximacion_del_numero_e.py][Aproximación del número e]].
-+ 13-10-22 [[./src/limite_del_seno.py][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
-+ 14-10-22 [[./src/calculo_de_pi_mediante_la_formula_de_Leibniz.py][Cálculo del número π mediante la fórmula de Leibniz]].
-+ L17-10-22 [[./src/ternas_pitagoricas.py][Ternas pitagóricas]].
++ [[./src/media_aritmetica_de_tres_numeros.py][Media aritmética de tres números]].
++ [[./src/suma_de_monedas.py][Suma de monedas]].
++ [[./src/volumen_de_la_esfera.py][Volumen de la esfera]].
++ [[./src/area_corona_circular.py][Área de la corona circular]].
++ [[./src/ultimo_digito.py][Último dígito]].
++ [[./src/maximo_de_tres_numeros.py][Máximo de tres números]].
++ [[./src/el_primero_al_final.py][El primero al final]].
++ [[./src/los_primeros_al_final.py][Los primeros al final]].
++ [[./src/rango_de_una_lista.py][Rango de una lista]].
++ [[./src/reconocimiento_de_palindromos.py][Reconocimiento de palíndromos]].
++ [[./src/interior_de_una_lista.py][Interior de una lista]].
++ [[./src/elementos_finales.py][Elementos finales]].
++ [[./src/segmento_de_una_lista.py][Segmento de una lista]].
++ [[./src/primeros_y_ultimos_elementos.py][Primeros y últimos elementos]].
++ [[./src/elemento_mediano.py][Elemento mediano]].
++ [[./src/tres_iguales.py][Tres iguales]].
++ [[./src/tres_diferentes.py][Tres diferentes]].
++ [[./src/division_segura.py][División segura]].
++ [[./src/disyuncion_excluyente.py][Disyunción excluyente]].
++ [[./src/mayor_rectangulo.py][Mayor rectángulo]].
++ [[./src/intercambio_de_componentes_de_un_par.py][Intercambio de componentes de un par]].
++ [[./src/distancia_entre_dos_puntos.py][Distancia entre dos puntos]].
++ [[./src/permutacion_ciclica.py][Permutación cíclica]].
++ [[./src/mayor_numero_con_dos_digitos_dados.py][Mayor número con dos dígitos dados]].
++ [[./src/numero_de_raices_de_la_ecuacion_de_segundo_grado.py][Número de raíces de la ecuación de segundo grado]].
++ [[./src/raices_de_la_ecuacion_de_segundo_grado.py][Raíces de la ecuación de segundo grado]].
++ [[./src/formula_de_Heron_para_el_area_de_un_triangulo.py][Fórmula de Herón para el área de un triángulo]].
++ [[./src/interseccion_de_intervalos_cerrados.py][Intersección de intervalos cerrados]].
++ [[./src/numeros_racionales.py][Números racionales]].
++ [[./src/reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
++ [[./src/igualdad_de_conjuntos.py][Igualdad de conjuntos]].
++ [[./src/union_conjuntista_de_listas.py][Unión conjuntista de listas]].
++ [[./src/interseccion_conjuntista_de_listas.py][Intersección conjuntista de listas]].
++ [[./src/diferencia_conjuntista_de_listas.py][Diferencia conjuntista de listas]].
++ [[./src/divisores_de_un_numero.py][Divisores de un número]].
++ [[./src/divisores_primos.py][Divisores primos]].
++ [[./src/numeros_libres_de_cuadrados.py][Números libres de cuadrados]].
++ [[./src/suma_de_los_primeros_numeros_naturales.py][Suma de los primeros números naturales]].
++ [[./src/suma_de_los_cuadrados_de_los_primeros_numeros_naturales.py][Suma de los cuadrados de los primeros números naturales]].
++ [[./src/suma_de_cuadrados_menos_cuadrado_de_la_suma.py][Suma de cuadrados menos cuadrado de la suma]].
++ [[./src/triangulo_aritmetico.py][Triángulo aritmético]].
++ [[./src/suma_de_divisores.py][Suma de divisores]].
++ [[./src/numeros_perfectos.py][Números perfectos]].
++ [[./src/numeros_abundantes.py][Números abundantes]].
++ [[./src/numeros_abundantes_menores_o_iguales_que_n.py][Números abundantes menores o iguales que n]].
++ [[./src/todos_los_abundantes_hasta_n_son_pares.py][Todos los abundantes hasta n son pares]].
++ [[./src/numeros_abundantes_impares.py][Números abundantes impares]].
++ [[./src/suma_de_multiplos_de_3_o_5.py][Suma de múltiplos de 3 ó 5]].
++ [[./src/puntos_dentro_del_circulo.py][Puntos dentro del círculo]].
++ [[./src/aproximacion_del_numero_e.py][Aproximación del número e]].
++ [[./src/limite_del_seno.py][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
++ [[./src/calculo_de_pi_mediante_la_formula_de_Leibniz.py][Cálculo del número π mediante la fórmula de Leibniz]].
++ [[./src/ternas_pitagoricas.py][Ternas pitagóricas]].
 + M18-10-22 [[./src/ternas_pitagoricas_con_suma_dada.py][Ternas pitagóricas con suma dada]].
 + X19-10-22 [[./src/producto_escalar.py][Producto escalar]].
 + J20-10-22 [[./src/suma_elementos_consecutivos.py][Suma elementos consecutivos]].
 + V21-10-22 [[./src/representacion_densa_de_polinomios.py][Representación densa de polinomios]].
 + L24-10-22 [[./src/base_de_dato_de_actividades.py][Base de dato de actividades]].
++ M25-10-22 [[./src/potencia_entera.py][Potencia entera]].
