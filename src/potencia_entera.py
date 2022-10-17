@@ -11,8 +11,8 @@
 #    potencia(2, 3)  ==  8
 # ---------------------------------------------------------------------
 
-from operator import mul
 from functools import reduce
+from operator import mul
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
 
