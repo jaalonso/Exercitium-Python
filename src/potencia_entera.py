@@ -117,8 +117,6 @@ def tiempo(e: str) -> None:
 #
 #    >>> tiempo('potencia4(2, 5*10**5)')
 #    2.87 segundos
-#    >>> tiempo('potencia4(2, 5*10**5)')
-#    2.87 segundos
 #    >>> tiempo('potencia5(2, 5*10**5)')
 #    3.17 segundos
 #    >>> tiempo('potencia6(2, 5*10**5)')
