@@ -26,7 +26,6 @@
 from hypothesis import given
 from hypothesis import strategies as st
 
-
 def mcd(a: int, b: int) -> int:
     if b == 0:
         return a
