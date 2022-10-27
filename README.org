@@ -75,7 +75,8 @@ Notas:
 + [[./src/suma_elementos_consecutivos.py][Suma elementos consecutivos]].
 + [[./src/representacion_densa_de_polinomios.py][Representación densa de polinomios]].
 + [[./src/base_de_dato_de_actividades.py][Base de datos de actividades]].
-+ M25-10-22 [[./src/potencia_entera.py][Potencia entera]].
-+ X26-10-22 [[./src/algoritmo_de_Euclides_del_mcd.py][Algoritmo de Euclides del mcd]].
++ [[./src/potencia_entera.py][Potencia entera]].
++ [[./src/algoritmo_de_Euclides_del_mcd.py][Algoritmo de Euclides del mcd]].
 + J27-10-22 [[./src/digitos_de_un_numero.py][Dígitos de un número]].
 + L31-10-22 [[./src/numero_a_partir_de_sus_digitos.py][Número a partir de sus dígitos]].
++ M01-11-22 [[./src/exponente_mayor.py][Exponente_de la mayor potencia de x que divide a y]].
