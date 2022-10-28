@@ -11,7 +11,7 @@
 # ejemplo,
 #    producto([1, 3], [2, 4]) == [(1, 2), (1, 4), (3, 2), (3, 4)]
 #
-# Comprobar con QuickCheck que el número de elementos de (producto xs
+# Comprobar con Hypothesis que el número de elementos de (producto xs
 # ys) es el producto del número de elementos de xs y de ys.
 # -------------------------------------------------------------------
 
