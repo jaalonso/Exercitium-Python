@@ -80,3 +80,4 @@ Notas:
 + J27-10-22 [[./src/digitos_de_un_numero.py][Dígitos de un número]].
 + L31-10-22 [[./src/numero_a_partir_de_sus_digitos.py][Número a partir de sus dígitos]].
 + M01-11-22 [[./src/exponente_mayor.py][Exponente_de la mayor potencia de x que divide a y]].
++ X02-11-22 [[./src/producto_cartesiano_de_dos_conjuntos.py][Producto cartesiano de dos conjuntos]].
