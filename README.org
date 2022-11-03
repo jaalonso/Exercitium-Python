@@ -77,7 +77,9 @@ Notas:
 + [[./src/base_de_dato_de_actividades.py][Base de datos de actividades]].
 + [[./src/potencia_entera.py][Potencia entera]].
 + [[./src/algoritmo_de_Euclides_del_mcd.py][Algoritmo de Euclides del mcd]].
-+ J27-10-22 [[./src/digitos_de_un_numero.py][Dígitos de un número]].
-+ L31-10-22 [[./src/numero_a_partir_de_sus_digitos.py][Número a partir de sus dígitos]].
-+ M01-11-22 [[./src/exponente_mayor.py][Exponente_de la mayor potencia de x que divide a y]].
-+ X02-11-22 [[./src/producto_cartesiano_de_dos_conjuntos.py][Producto cartesiano de dos conjuntos]].
++ [[./src/digitos_de_un_numero.py][Dígitos de un número]].
++ [[./src/numero_a_partir_de_sus_digitos.py][Número a partir de sus dígitos]].
++ [[./src/exponente_mayor.py][Exponente_de la mayor potencia de x que divide a y]].
++ [[./src/producto_cartesiano_de_dos_conjuntos.py][Producto cartesiano de dos conjuntos]].
++ [[./src/subconjuntos_de_un_conjunto.py][Subconjuntos_de_un_conjunto]].
++ V04-11-22 [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
