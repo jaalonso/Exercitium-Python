@@ -82,4 +82,5 @@ Notas:
 + [[./src/exponente_mayor.py][Exponente_de la mayor potencia de x que divide a y]].
 + [[./src/producto_cartesiano_de_dos_conjuntos.py][Producto cartesiano de dos conjuntos]].
 + [[./src/subconjuntos_de_un_conjunto.py][Subconjuntos_de_un_conjunto]].
-+ V04-11-22 [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
++ [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
++ L07-11-22 [[./src/numeros_de_Lychrel.py][Números de Lychrel]].
