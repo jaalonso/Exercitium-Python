@@ -69,13 +69,6 @@ def tiempo(e: str) -> None:
     print(f"{t:0.2f} segundos")
 
 # La comparación es
-#    >>> tiempo('mayorExponente1(2, 2**(2*10**4))')
-
-
-# Comparación de eficiencia
-# =========================
-#
-# La comparación es
 #    >>> tiempo('sumaDigitos1("ab12"*5000)')
 #    0.00 segundos
 #    >>> tiempo('sumaDigitos2("ab12"*5000)')
