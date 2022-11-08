@@ -49,6 +49,12 @@ def mayusculaInicial3(xs: str) -> str:
         return "".join([xs[0].upper()] + list(map(str.lower, xs[1:])))
     return ""
 
+# 4ª solución
+# ===========
+
+def mayusculaInicial4(xs: str) -> str:
+    return xs.capitalize()
+
 # Comprobación de equivalencia
 # ============================
 
@@ -78,3 +84,5 @@ def tiempo(e: str) -> None:
 #    Process Python terminado (killed)
 #    >>> tiempo('len(mayusculaInicial3("aB"*(10**7)))')
 #    1.59 segundos
+#    >>> tiempo('len(mayusculaInicial4("aB"*(10**7)))')
+#    0.13 segundos
