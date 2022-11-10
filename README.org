@@ -85,4 +85,5 @@ Notas:
 + [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
 + [[./src/numeros_de_Lychrel.py][Números de Lychrel]].
 + [[./src/suma_de_digitos_de_cadena.py][Suma de los dígitos de una cadena]].
-+ X09-11-22 [[./src/mayuscula_inicial.py][Poner en mayúscula la primera letra y las restantes en minúsculas]].
++ [[./src/mayuscula_inicial.py][Poner en mayúscula la primera letra y las restantes en minúsculas]].
++ [[./src/mayusculas_iniciales.py][Mayúsculas iniciales]].
