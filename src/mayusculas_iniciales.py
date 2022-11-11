@@ -95,7 +95,6 @@ def tiempo(e: str) -> None:
     print(f"{t:0.2f} segundos")
 
 # La comparación es
-#    >>> tiempo('len(mayusculaInicial1("aB"*(10**7)))')
 #    >>> tiempo('titulo1(["eL","arTE","DE","La","proGraMacion "]*1900)')
 #    0.00 segundos
 #    >>> tiempo('titulo2(["eL","arTE","DE","La","proGraMacion "]*1900)')
