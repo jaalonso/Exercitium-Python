@@ -48,6 +48,9 @@ def posiciones3(x: str, ys: str) -> list[int]:
             r.append(n)
     return r
 
+# Comprobación de equivalencia
+# ============================
+
 # La propiedad es
 @given(st.text(), st.text())
 def test_posiciones(x: str, ys: str) -> None:
