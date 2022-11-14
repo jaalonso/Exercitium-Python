@@ -11,7 +11,7 @@
 # números naturales. Por ejemplo,
 #    sumaDeCuadrados(3)   ==  14
 #    sumaDeCuadrados(100) ==  338350
-#    len(str(sumaDeCuadrados2(10**100)))  ==  300
+#    len(str(sumaDeCuadrados(10**100)))  ==  300
 # ---------------------------------------------------------------------
 
 from functools import reduce

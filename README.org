@@ -88,4 +88,5 @@ Notas:
 + [[./src/mayuscula_inicial.py][Poner en mayúscula la primera letra y las restantes en minúsculas]].
 + [[./src/mayusculas_iniciales.py][Mayúsculas iniciales]].
 + [[./src/posiciones_de_un_caracter_en_una_cadena.py][Posiciones de un carácter en una cadena]].
-+ L14-11-22 [[./src/reconocimiento_de_subcadenas.py][Reconocimiento de subcadenas]].
++ [[./src/reconocimiento_de_subcadenas.py][Reconocimiento de subcadenas]].
++ M-15-11-22 [[./src/segmentos_cuyos_elementos_cumple_una_propiedad.py][Segmentos cuyos elementos cumplen una propiedad]].
