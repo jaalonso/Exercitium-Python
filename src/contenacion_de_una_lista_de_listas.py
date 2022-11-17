@@ -1,5 +1,5 @@
-# contenacion_de_una_lista_de_listas.py
-# Contenación de una lista de listas.
+# concatenacion_de_una_lista_de_listas.py
+# Concatenación de una lista de listas.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 18-noviembre-2022
 # ---------------------------------------------------------------------
@@ -67,7 +67,7 @@ def test_conc(xss: list[list[int]]) -> None:
     assert conc4(xss) == r
 
 # La comprobación es
-#    src> poetry run pytest -q contenacion_de_una_lista_de_listas.py
+#    src> poetry run pytest -q concatenacion_de_una_lista_de_listas.py
 #    1 passed in 0.63s
 
 # Comparación de eficiencia
