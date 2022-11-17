@@ -90,4 +90,5 @@ Notas:
 + [[./src/posiciones_de_un_caracter_en_una_cadena.py][Posiciones de un carácter en una cadena]].
 + [[./src/reconocimiento_de_subcadenas.py][Reconocimiento de subcadenas]].
 + [[./src/segmentos_cuyos_elementos_cumple_una_propiedad.py][Segmentos cuyos elementos cumplen una propiedad]].
-+ X-16-11-22 [[./src/elementos_consecutivos_relacionados.py][Elementos consecutivos relacionados]].
++ [[./src/elementos_consecutivos_relacionados.py][Elementos consecutivos relacionados]].
++ J17-11-22 [[./src/agrupacion_de_elementos_por_posicion.py][Agrupación de elementos por posición]].
