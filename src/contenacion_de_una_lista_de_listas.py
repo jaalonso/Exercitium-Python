@@ -6,12 +6,12 @@
 
 # ---------------------------------------------------------------------
 # Definir, por recursión, la función
-#    conc :: [[a]] -> [a]
-# tal que (conc xss) es la concenación de las listas de xss. Por
+#    conc : (list[list[A]]) -> list[A]
+# tal que conc(xss) es la concenación de las listas de xss. Por
 # ejemplo,
 #    conc([[1,3],[2,4,6],[1,9]])  ==  [1,3,2,4,6,1,9]
 #
-# Comprobar con QuickCheck que la longitud de (conc xss) es la suma de
+# Comprobar con hypothesis que la longitud de conc(xss) es la suma de
 # las longitudes de los elementos de xss.
 # ---------------------------------------------------------------------
 
