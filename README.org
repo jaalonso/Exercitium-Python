@@ -91,4 +91,5 @@ Notas:
 + [[./src/reconocimiento_de_subcadenas.py][Reconocimiento de subcadenas]].
 + [[./src/segmentos_cuyos_elementos_cumple_una_propiedad.py][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/elementos_consecutivos_relacionados.py][Elementos consecutivos relacionados]].
-+ J17-11-22 [[./src/agrupacion_de_elementos_por_posicion.py][Agrupación de elementos por posición]].
++ [[./src/agrupacion_de_elementos_por_posicion.py][Agrupación de elementos por posición]].
++ V18-11-22 [[./src/contenacion_de_una_lista_de_listas.py][Contenación de una lista de listas]].
