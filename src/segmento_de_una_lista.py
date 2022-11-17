@@ -24,14 +24,20 @@ A = TypeVar('A')
 # 1ª definición
 def segmento1(m: int, n: int, xs: list[A]) -> list[A]:
     ys = xs[:n]
+    if m == 0:
+        return ys
     return ys[m - 1:]
 
 # 2ª definición
 def segmento2(m: int, n: int, xs: list[A]) -> list[A]:
+    if m == 0:
+        return xs[:n]
     return xs[m-1:n]
 
 # La propiedad de equivalencia es
-@given(st.integers(), st.integers(), st.lists(st.integers()))
+@given(st.integers(min_value=0),
+       st.integers(min_value=0),
+       st.lists(st.integers()))
 def test_equiv_segmento(m: int, n: int, xs: list[int]) -> None:
     assert segmento1(m, n, xs) == segmento2(m, n, xs)
 

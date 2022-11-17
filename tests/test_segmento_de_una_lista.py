@@ -9,6 +9,8 @@ def test_segmento():
     assert segmento2(3, 5, [3, 4, 1, 2, 7, 9, 0]) == [1, 2, 7]
     assert segmento2(5, 3, [3, 4, 1, 2, 7, 9, 0]) == []
 
-@given(st.integers(), st.integers(), st.lists(st.integers()))
+@given(st.integers(min_value=0),
+       st.integers(min_value=0),
+       st.lists(st.integers()))
 def test_equiv_segmento(m, n, xs):
     assert segmento1(m, n, xs) == segmento2(m, n, xs)
