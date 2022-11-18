@@ -101,10 +101,6 @@ def tiempo(e: str) -> None:
 def test_long_conc(xss: list[list[int]]) -> None:
     assert len(conc1(xss)) == sum(map(len, xss))
 
-# prop_long_conc :: [[Int]] -> Bool
-# prop_long_conc xss =
-#   length (conc1 xss) == sum (map length xss)
-#
 # La comprobación es
-#    λ> quickCheck prop_long_conc
-#    +++ OK, passed 100 tests.
+#    src> poetry run pytest -q concatenacion_de_una_lista_de_listas.py
+#    2 passed in 0.81s

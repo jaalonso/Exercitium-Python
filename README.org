@@ -92,4 +92,5 @@ Notas:
 + [[./src/segmentos_cuyos_elementos_cumple_una_propiedad.py][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/elementos_consecutivos_relacionados.py][Elementos consecutivos relacionados]].
 + [[./src/agrupacion_de_elementos_por_posicion.py][Agrupación de elementos por posición]].
-+ V18-11-22 [[./src/contenacion_de_una_lista_de_listas.py][Contenación de una lista de listas]].
++ [[./src/contenacion_de_una_lista_de_listas.py][Contenación de una lista de listas]].
++ L21-12-22 [[./src/aplica_segun_propiedad.py][Aplica según propiedad]].
