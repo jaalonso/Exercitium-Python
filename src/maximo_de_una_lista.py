@@ -6,8 +6,8 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    maximo :: Ord a => [a] -> a
-# tal que (maximo xs) es el máximo de la lista xs. Por ejemplo,
+#    maximo : (list[A]) -> A:
+# tal que maximo(xs) es el máximo de la lista xs. Por ejemplo,
 #    maximo([3,7,2,5])                  ==  7
 #    maximo(["todo","es","falso"])      ==  "todo"
 #    maximo(["menos","alguna","cosa"])  ==  "menos"
