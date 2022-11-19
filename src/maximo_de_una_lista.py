@@ -17,11 +17,10 @@ from abc import abstractmethod
 from functools import reduce
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
-from typing import Any, TypeVar
+from typing import Any, TypeVar, Protocol
 
 from hypothesis import given
 from hypothesis import strategies as st
-from typing_extensions import Protocol
 
 setrecursionlimit(10**6)
 
