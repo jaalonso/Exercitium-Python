@@ -10,4 +10,4 @@ def test_filtraAplica() -> None:
                          filtraAplica4, filtraAplica5]:
         assert filtraAplica(lambda x: x + 4,
                             lambda x: x < 3,
-                            range(1, 7)) == [5, 6]
+                            list(range(1, 7))) == [5, 6]
