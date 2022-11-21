@@ -63,7 +63,7 @@ def maximo2(xs: list[A]) -> A:
 # ===========
 
 def maximo3(xs: list[A]) -> A:
-    return max(*xs)
+    return max(xs)
 
 # ============================
 
