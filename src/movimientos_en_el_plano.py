@@ -15,15 +15,16 @@
 #    movimientos : (Posicion, list[Direccion]) -> Posicion
 # tales que
 # + opuesta(d) es la dirección opuesta de d. Por ejemplo,
-#      opuesta('Izquierda') == 'Derecha'
+#      opuesta1(Direccion.Izquierda) == Direccion.Derecha
 # + movimiento(p d) es la posición reultante de moverse, desde la
 #   posición p, un paso en la dirección d . Por ejemplo,
-#      movimiento((2 , 5), 'Arriba')        == (2, 6)
-#      movimiento((2, 5), opuesta('Abajo')) == (2, 6)
+#      movimiento1((2, 5), Direccion.Arriba)          == (2, 6)
+#      movimiento1((2, 5), opuesta1(Direccion.Abajo)) == (2, 6)
 # + movimientos(p, ds) es la posición obtenida aplicando la lista de
 #   movimientos según las direcciones de ds a la posición p. Por
 #   ejemplo,
-#      movimientos((2, 5),  ['Arriba', 'Izquierda']) == (1, 6)
+#     >>> movimientos1((2, 5), [Direccion.Arriba, Direccion.Izquierda])
+#     (1, 6)
 # ---------------------------------------------------------------------
 
 from functools import reduce
