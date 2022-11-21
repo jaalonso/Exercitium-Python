@@ -38,14 +38,15 @@ Direccion = Enum('Direccion', ['Izquierda', 'Derecha', 'Arriba', 'Abajo'])
 # ========================
 
 def opuesta1(d: Direccion) -> Direccion:
-    if d == 'Izquierda':
-        return 'Derecha'
-    if d == 'Derecha':
-        return 'Izquierda'
-    if d == 'Arriba':
-        return 'Abajo'
-    if d ==  'Abajo':
-        return 'Arriba'
+    if d == Direccion.Izquierda:
+        return Direccion.Derecha
+    if d == Direccion.Derecha:
+        return Direccion.Izquierda
+    if d == Direccion.Arriba:
+        return Direccion.Abajo
+    if d == Direccion.Abajo:
+        return Direccion.Arriba
+    assert False
 
 # 2ª definición de opuesta
 # ========================
@@ -67,14 +68,15 @@ def opuesta2(d: Direccion) -> Direccion:
 
 def movimiento1(p: Posicion, d: Direccion) -> Posicion:
     (x, y) = p
-    if d == 'Izquierda':
+    if d == Direccion.Izquierda:
         return (x - 1, y)
-    if d == 'Derecha':
+    if d == Direccion.Derecha:
         return (x + 1, y)
-    if d == 'Arriba':
+    if d == Direccion.Arriba:
         return (x, y + 1)
-    if d == 'Abajo':
+    if d == Direccion.Abajo:
         return (x, y - 1)
+    assert False
 
 # 2ª definición de movimiento
 # ===========================
