@@ -93,5 +93,7 @@ Notas:
 + [[./src/elementos_consecutivos_relacionados.py][Elementos consecutivos relacionados]].
 + [[./src/agrupacion_de_elementos_por_posicion.py][Agrupación de elementos por posición]].
 + [[./src/contenacion_de_una_lista_de_listas.py][Contenación de una lista de listas]].
-+ L21-nov [[./src/aplica_segun_propiedad.py][Aplica según propiedad]].
-+ M22-nov [[./src/maximo_de_una_lista.py][Máximo de una lista]].
++ [[./src/aplica_segun_propiedad.py][Aplica según propiedad]].
++ [[./src/maximo_de_una_lista.py][Máximo de una lista]].
++ [[./src/movimientos_en_el_plano.py][Movimientos en el plano]].
++ J24 [[./src/el_tipo_de_figuras_geometricas.py][El tipo de figuras geométricas]].

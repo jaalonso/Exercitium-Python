@@ -22,7 +22,7 @@ from typing import TypeVar
 
 from hypothesis import given
 from hypothesis import strategies as st
-from numpy import transpose, array
+from numpy import array, transpose
 
 setrecursionlimit(10**6)
 

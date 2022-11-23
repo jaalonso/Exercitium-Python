@@ -17,7 +17,7 @@ from abc import abstractmethod
 from functools import reduce
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
-from typing import Any, TypeVar, Protocol
+from typing import Any, Protocol, TypeVar
 
 from hypothesis import given
 from hypothesis import strategies as st

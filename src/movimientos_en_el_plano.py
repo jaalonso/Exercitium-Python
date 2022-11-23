@@ -27,9 +27,8 @@
 #     (1, 6)
 # ---------------------------------------------------------------------
 
-from functools import reduce
-
 from enum import Enum
+from functools import reduce
 
 Posicion = tuple[int, int]
 
@@ -54,14 +53,14 @@ def opuesta1(d: Direccion) -> Direccion:
 
 def opuesta2(d: Direccion) -> Direccion:
     match d:
-        case 'Izquierda':
-            return 'Derecha'
-        case 'Derecha':
-            return 'Izquierda'
-        case 'Arriba':
-            return 'Abajo'
-        case 'Abajo':
-            return 'Arriba'
+        case Direccion.Izquierda:
+            return Direccion.Derecha
+        case Direccion.Derecha:
+            return Direccion.Izquierda
+        case Direccion.Arriba:
+            return Direccion.Abajo
+        case Direccion.Abajo:
+            return Direccion.Arriba
     assert False
 
 # 1ª definición de movimiento
@@ -85,13 +84,13 @@ def movimiento1(p: Posicion, d: Direccion) -> Posicion:
 def movimiento2(p: Posicion, d: Direccion) -> Posicion:
     (x, y) = p
     match d:
-        case 'Izquierda':
+        case Direccion.Izquierda:
             return (x - 1, y)
-        case 'Derecha':
+        case Direccion.Derecha:
             return (x + 1, y)
-        case 'Arriba':
+        case Direccion.Arriba:
             return (x, y + 1)
-        case 'Abajo':
+        case Direccion.Abajo:
             return (x, y - 1)
     assert False
 
