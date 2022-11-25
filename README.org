@@ -96,4 +96,5 @@ Notas:
 + [[./src/aplica_segun_propiedad.py][Aplica según propiedad]].
 + [[./src/maximo_de_una_lista.py][Máximo de una lista]].
 + [[./src/movimientos_en_el_plano.py][Movimientos en el plano]].
-+ J24 [[./src/el_tipo_de_figuras_geometricas.py][El tipo de figuras geométricas]].
++ [[./src/el_tipo_de_figuras_geometricas.py][El tipo de figuras geométricas]].
++ [[./src/el_tipo_de_los_numeros_naturales.py][El tipo de los números naturales]].
