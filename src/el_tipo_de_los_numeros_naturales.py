@@ -73,7 +73,3 @@ def suma(m: Nat, n: Nat) -> Nat:
         case Suc(m):
             return Suc(suma(m, n))
     assert False
-
-# suma :: Nat -> Nat -> Nat
-# suma Cero    n = n
-# suma (Suc m) n = Suc (suma m n)
