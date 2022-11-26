@@ -28,7 +28,6 @@
 #    3
 # ---------------------------------------------------------------------
 
-
 from dataclasses import dataclass
 from typing import Generic, TypeVar
 
@@ -54,10 +53,3 @@ def longitud(xs: Lista[A]) -> int:
         case Cons(_, xs):
             return 1 + longitud(xs)
     assert False
-
-
-# data Lista a = Nil | Cons a (Lista a)
-#
-# longitud :: Lista a -> Int
-# longitud Nil         = 0
-# longitud (Cons _ xs) = 1 + longitud xs
