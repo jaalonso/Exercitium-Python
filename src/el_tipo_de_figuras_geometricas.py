@@ -36,6 +36,7 @@
 from dataclasses import dataclass
 from math import pi
 
+
 @dataclass
 class Figura:
     """Figuras geométricas"""

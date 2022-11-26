@@ -41,6 +41,7 @@
 
 from dataclasses import dataclass
 
+
 @dataclass
 class Nat:
     pass
