@@ -59,8 +59,8 @@ class Hoja(Arbol[A]):
 
 @dataclass
 class Nodo(Arbol[A]):
-    i: Arbol
-    d: Arbol
+    i: Arbol[A]
+    d: Arbol[A]
 
 def altura(a: Arbol[A]) -> int:
     match a:
