@@ -19,15 +19,15 @@
 #
 # El tipo de los árboles binarios se puede definir por
 #    @dataclass
-#    class Arbol:
+#    class Arbol(Generic[A]):
 #        pass
 #
 #    @dataclass
-#    class Hoja(Arbol):
+#    class Hoja(Arbol[A]):
 #        x: int
 #
 #    @dataclass
-#    class Nodo(Arbol):
+#    class Nodo(Arbol[A]):
 #        i: Arbol
 #        d: Arbol
 #
@@ -45,22 +45,24 @@
 # ---------------------------------------------------------------------
 
 from dataclasses import dataclass
+from typing import Generic, TypeVar
 
+A = TypeVar("A")
 
 @dataclass
-class Arbol:
+class Arbol(Generic[A]):
     pass
 
 @dataclass
-class Hoja(Arbol):
+class Hoja(Arbol[A]):
     x: int
 
 @dataclass
-class Nodo(Arbol):
+class Nodo(Arbol[A]):
     i: Arbol
     d: Arbol
 
-def altura(a: Arbol) -> int:
+def altura(a: Arbol[A]) -> int:
     match a:
         case Hoja(_):
             return 0
