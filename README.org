@@ -100,7 +100,8 @@ Notas:
 + [[./src/el_tipo_de_los_numeros_naturales.py][El tipo de los números naturales]].
 + [[./src/el_tipo_de_las_listas.py][El tipo de las listas]].
 + [[./src/el_tipo_de_los_arboles_binarios.py][El tipo de_los árboles binarios]].
-+ X30 [[./src/variables_de_una_formula.py][El tipo de las fórmulas proposicionales: Variables de una fórmula]].
-+ J01 [[./src/valor_de_una_formula.py][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
-+ V02 [[./src/interpretaciones_de_una_formula.py][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].
-+ L05 [[./src/validez_de_una_formula.py][El tipo de las fórmulas proposicionales: Reconocedor de tautologías]].
++ [[./src/variables_de_una_formula.py][El tipo de las fórmulas proposicionales: Variables de una fórmula]].
++ [[./src/valor_de_una_formula.py][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
++ [[./src/interpretaciones_de_una_formula.py][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].
++ [[./src/validez_de_una_formula.py][El tipo de las fórmulas proposicionales: Reconocedor de tautologías]].
++ [[./src/altura_de_un_arbol_binario.py][Altura de un árbol binario]].
