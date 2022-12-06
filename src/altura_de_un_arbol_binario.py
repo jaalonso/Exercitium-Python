@@ -24,7 +24,7 @@
 #
 #    @dataclass
 #    class Hoja(Arbol[A]):
-#        x: int
+#        x: A
 #
 #    @dataclass
 #    class Nodo(Arbol[A]):
@@ -55,7 +55,7 @@ class Arbol(Generic[A]):
 
 @dataclass
 class Hoja(Arbol[A]):
-    x: int
+    x: A
 
 @dataclass
 class Nodo(Arbol[A]):
