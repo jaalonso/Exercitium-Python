@@ -6,19 +6,6 @@
 
 # ---------------------------------------------------------------------
 # El tipo de las listas, con elementos de tipo a, se puede definir por
-@dataclass
-class Lista(Generic[A]):
-    pass
-
-@dataclass
-class Nil(Lista[A]):
-    pass
-
-@dataclass
-class Cons(Lista[A]):
-    x: A
-    xs: Lista[A]
-
 #    @dataclass
 #    class Lista(Generic[A]):
 #        pass
