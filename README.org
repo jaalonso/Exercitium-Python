@@ -105,3 +105,4 @@ Notas:
 + [[./src/interpretaciones_de_una_formula.py][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].
 + [[./src/validez_de_una_formula.py][El tipo de las fórmulas proposicionales: Reconocedor de tautologías]].
 + [[./src/altura_de_un_arbol_binario.py][Altura de un árbol binario]].
++ [[./src/aplicacion_de_una_funcion_a_un_arbol.py][Aplicación de una función a un árbol]].
