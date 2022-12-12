@@ -6,12 +6,29 @@
 
 # ---------------------------------------------------------------------
 # Se considera el tipo de las expresiones aritméticas definido por
-#    data Expr =
-#        Lit Int
-#      | Suma Expr Expr
-#      | Op Expr
-#      | SiCero Expr Expr Expr
-#      deriving (Eq, Show)
+#    @dataclass
+#    class Expr:
+#        pass
+#
+#    @dataclass
+#    class Lit(Expr):
+#        x: int
+#
+#    @dataclass
+#    class Suma(Expr):
+#        x: Expr
+#        y: Expr
+#
+#    @dataclass
+#    class Op(Expr):
+#        x: Expr
+#
+#    @dataclass
+#    class SiCero(Expr):
+#        x: Expr
+#        y: Expr
+#        z: Expr
+#
 # formado por
 # + literales (p.e. Lit 7),
 # + sumas (p.e. Suma (Lit 7) (Suma (Lit 3) (Lit 5)))
@@ -64,4 +81,20 @@ def valor(e: Expr) -> int:
             return -valor(x)
         case SiCero(x, y, z):
             return valor(y) if valor(x) == 0 else valor(z)
+    assert False
+
+# 2ª solución
+# ===========
+
+def valor2(e: Expr) -> int:
+    if isinstance(e, Lit):
+        return e.x
+    if isinstance(e, Suma):
+        return valor2(e.x) + valor2(e.y)
+    if isinstance(e, Op):
+        return -valor2(e.x)
+    if isinstance(e, SiCero):
+        if valor2(e.x) == 0:
+            return valor2(e.y)
+        return valor2(e.z)
     assert False
