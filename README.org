@@ -110,3 +110,4 @@ Notas:
 + [[./src/arbol_con_las_hojas_en_la_profundidad_dada.py][Árbol con las hojas en la profundidad dada]].
 + [[./src/valor_de_una_expresion_aritmetica.py][El tipo de las expresiones aritméticas: Valor_de_una_expresión]].
 + [[./src/valor_de_la_resta.py][El tipo de las expresiones aritméticas: Valor de la resta]].
++ X14 [[./src/numero_de_operaciones_en_una_expresion.py][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
