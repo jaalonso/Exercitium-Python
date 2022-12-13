@@ -104,13 +104,13 @@ def mismaForma2(a: Arbol[A], b: Arbol[B]) -> bool:
 # Comprobación de equivalencia
 # ============================
 
-# arbolArbitrario(n) es un árbol aleatorio de altura n. Por ejemplo,
+# arbolArbitrario(n) es un árbol aleatorio de orden n. Por ejemplo,
 #    >>> arbolArbitrario(3)
 #    Nodo(i=Hoja(x=2), d=Nodo(i=Hoja(x=5), d=Hoja(x=2)))
 #    >>> arbolArbitrario(3)
 #    Nodo(i=Nodo(i=Hoja(x=6), d=Hoja(x=9)), d=Hoja(x=1))
 def arbolArbitrario(n: int) -> Arbol[int]:
-    if n <= 1:
+    if n == 0:
         return Hoja(randint(1, 10 * n))
     k = min(randint(1, n), n - 1)
     return Nodo(arbolArbitrario(k), arbolArbitrario(n - k))
