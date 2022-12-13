@@ -48,7 +48,11 @@
 # ---------------------------------------------------------------------
 
 from dataclasses import dataclass
+from random import randint
 from typing import Callable, Generic, TypeVar
+
+from hypothesis import given
+from hypothesis import strategies as st
 
 A = TypeVar("A")
 B = TypeVar("B")
@@ -96,3 +100,29 @@ def mapArbol(f: Callable[[A], B], a: Arbol[A]) -> Arbol[B]:
 
 def mismaForma2(a: Arbol[A], b: Arbol[B]) -> bool:
     return mapArbol(lambda x: 0, a) == mapArbol(lambda x: 0, b)
+
+# Comprobación de equivalencia
+# ============================
+
+# arbolArbitrario(n) es un árbol aleatorio de altura n. Por ejemplo,
+#    >>> arbolArbitrario(3)
+#    Nodo(i=Hoja(x=2), d=Nodo(i=Hoja(x=5), d=Hoja(x=2)))
+#    >>> arbolArbitrario(3)
+#    Nodo(i=Nodo(i=Hoja(x=6), d=Hoja(x=9)), d=Hoja(x=1))
+def arbolArbitrario(n: int) -> Arbol[int]:
+    if n <= 1:
+        return Hoja(randint(1, 10 * n))
+    k = min(randint(1, n), n - 1)
+    return Nodo(arbolArbitrario(k), arbolArbitrario(n - k))
+
+# La propiedad es
+@given(st.integers(min_value=1, max_value=10),
+       st.integers(min_value=1, max_value=10))
+def test_mismaForma(n1: int, n2: int) -> None:
+    a1 = arbolArbitrario(n1)
+    a2 = arbolArbitrario(n2)
+    assert mismaForma1(a1, a2) == mismaForma2(a1, a2)
+
+# La comprobación es
+#    src> poetry run pytest -q arboles_con_la_misma_forma.py
+#    1 passed in 0.22s
