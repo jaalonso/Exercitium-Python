@@ -103,7 +103,7 @@ def arbolArbitrario(n: int) -> Arbol[int]:
 
 # La propiedad es
 @given(st.integers(min_value=1, max_value=10))
-def test_mismaForma(n: int) -> None:
+def test_nHojas(n: int) -> None:
     a = arbolArbitrario(n)
     assert nHojas(a) == nNodos(a) + 1
 
