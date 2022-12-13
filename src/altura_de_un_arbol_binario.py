@@ -16,7 +16,6 @@
 #    ejArbol = Nodo(Nodo(Hoja(1), Hoja(4)),
 #                   Nodo(Hoja(6), Hoja(9)))
 #
-#
 # El tipo de los árboles binarios se puede definir por
 #    @dataclass
 #    class Arbol(Generic[A]):
