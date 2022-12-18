@@ -92,7 +92,7 @@ Notas:
 + [[./src/segmentos_cuyos_elementos_cumple_una_propiedad.py][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/elementos_consecutivos_relacionados.py][Elementos consecutivos relacionados]].
 + [[./src/agrupacion_de_elementos_por_posicion.py][Agrupación de elementos por posición]].
-+ [[./src/contenacion_de_una_lista_de_listas.py][Contenación de una lista de listas]].
++ [[./src/contenacion_de_una_lista_de_listas.py][Concatenación de una lista de listas]].
 + [[./src/aplica_segun_propiedad.py][Aplica según propiedad]].
 + [[./src/maximo_de_una_lista.py][Máximo de una lista]].
 + [[./src/movimientos_en_el_plano.py][Movimientos en el plano]].
@@ -112,4 +112,5 @@ Notas:
 + [[./src/valor_de_la_resta.py][El tipo de las expresiones aritméticas: Valor de la resta]].
 + [[./src/numero_de_operaciones_en_una_expresion.py][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
 + [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
-+ V16 [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
++ [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
++ L19 [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
