@@ -128,9 +128,8 @@ def postorden(a: Arbol[A]) -> list[A]:
 
 # Las propiedades son
 @given(st.integers(min_value=1, max_value=10))
-def test_espejo_espejo(n: int) -> None:
+def test_espejo(n: int) -> None:
     x = arbolArbitrario(n)
-    print(x)
     assert espejo(espejo(x)) == x
     assert list(reversed(preorden(espejo(x)))) == postorden(x)
     assert postorden(espejo(x)) == list(reversed(preorden(x)))
