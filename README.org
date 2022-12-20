@@ -114,4 +114,5 @@ Notas:
 + [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
 + [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
 + [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
-+ M20 [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
++ [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
++ X21 [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].

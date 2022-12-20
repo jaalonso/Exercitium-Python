@@ -13,7 +13,7 @@
 #     / \
 #    2   4
 # se puede representar por
-#    N 9 (N 3 (H 2) (H 4)) (H 7)
+#    N(9, N(3, H(2), H(4)), H(7))
 #
 # El tipo de los árboles binarios se puede definir por
 #    @dataclass
