@@ -116,3 +116,4 @@ Notas:
 + [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
 + [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
 + X21 [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
++ J22 [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
