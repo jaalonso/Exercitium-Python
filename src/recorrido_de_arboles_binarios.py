@@ -47,9 +47,9 @@
 #      >>> postorden(N(9, N(3, H(2), H(4)), H(7)))
 #      [2, 4, 3, 7, 9]
 #
-# Comprobar con QuickCheck que la longitud de la lista
-# obtenida recorriendo un árbol en cualquiera de los sentidos es igual
-# al número de nodos del árbol más el número de hojas.
+# Comprobar con Hypothesis que la longitud de la lista obtenida
+# recorriendo un árbol en cualquiera de los sentidos es igual al número
+# de nodos del árbol más el número de hojas.
 # ---------------------------------------------------------------------
 
 from dataclasses import dataclass

@@ -98,7 +98,6 @@ def test_filtraAplica(xs: list[int]) -> None:
 #    src> poetry run pytest -q aplica_segun_propiedad.py
 #    1 passed in 0.25s
 
-
 # Comparación de eficiencia
 # =========================
 

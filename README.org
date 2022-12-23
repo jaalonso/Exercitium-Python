@@ -92,7 +92,7 @@ Notas:
 + [[./src/segmentos_cuyos_elementos_cumple_una_propiedad.py][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/elementos_consecutivos_relacionados.py][Elementos consecutivos relacionados]].
 + [[./src/agrupacion_de_elementos_por_posicion.py][Agrupación de elementos por posición]].
-+ [[./src/contenacion_de_una_lista_de_listas.py][Concatenación de una lista de listas]].
++ [[./src/concatenacion_de_una_lista_de_listas.py][Concatenación de una lista de listas]].
 + [[./src/aplica_segun_propiedad.py][Aplica según propiedad]].
 + [[./src/maximo_de_una_lista.py][Máximo de una lista]].
 + [[./src/movimientos_en_el_plano.py][Movimientos en el plano]].
@@ -116,5 +116,6 @@ Notas:
 + [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
 + [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
 + [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
-+ J22 [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
-+ V23 [[./src/suma_de_un_arbol.py][Suma de un árbol]].
++ [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
++ [[./src/suma_de_un_arbol.py][Suma de un árbol]].
++ L26 [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].

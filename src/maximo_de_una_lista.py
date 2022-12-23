@@ -65,6 +65,7 @@ def maximo2(xs: list[A]) -> A:
 def maximo3(xs: list[A]) -> A:
     return max(xs)
 
+# Comprobación de equivalencia
 # ============================
 
 # La propiedad es

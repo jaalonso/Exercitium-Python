@@ -30,5 +30,5 @@ def relacionados1(r: Callable[[A, A], bool], xs: list[A]) -> bool:
 
 def relacionados2(r: Callable[[A, A], bool], xs: list[A]) -> bool:
     if len(xs) >= 2:
-        return r(xs[0], xs[1]) and relacionados1(r, xs[1:])
+        return r(xs[0], xs[1]) and relacionados2(r, xs[1:])
     return True

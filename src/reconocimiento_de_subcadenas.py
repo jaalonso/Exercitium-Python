@@ -5,7 +5,7 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Definir, por recursión, la función
+# Definir la función
 #    esSubcadena : (str, str) -> bool
 # tal que esSubcadena(xs ys) se verifica si xs es una subcadena de ys.
 # Por ejemplo,
