@@ -121,3 +121,4 @@ Notas:
 + [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].
 + M27 [[./src/arboles_balanceados.py][Árboles balanceados]].
 + X28 [[./src/arboles_con_bordes_iguales.py][Árboles con bordes iguales]].
++ J29 [[./src/arboles_con_igual_estructura.py][Árboles con igual estructura]].
