@@ -62,8 +62,6 @@ class N(Arbol[A]):
     i: Arbol[A]
     d: Arbol[A]
 
-# numeroNodos(x) es el número de nodos del árbol x. Por ejemplo,
-#    numeroNodos(N(9, N(3, H(), H()), H()))  ==  2
 def numeroNodos(a: Arbol[A]) -> int:
     match a:
         case H():
@@ -79,5 +77,4 @@ def balanceado(a: Arbol[A]) -> bool:
         case N(_, i, d):
             return abs(numeroNodos(i) - numeroNodos(d)) <= 1 \
                 and balanceado(i) and balanceado(d)
-
     assert False

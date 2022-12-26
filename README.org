@@ -118,5 +118,6 @@ Notas:
 + [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
 + [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
 + [[./src/suma_de_un_arbol.py][Suma de un árbol]].
-+ L26 [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].
++ [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].
 + M27 [[./src/arboles_balanceados.py][Árboles balanceados]].
++ X28 [[./src/arboles_con_bordes_iguales.py][Árboles con bordes iguales]].
