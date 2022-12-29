@@ -125,3 +125,4 @@ Notas:
 + V30 [[./src/existencia_de_elemento_del_arbol_con_propiedad.py][Existencia de elementos del árbol que verifican una propiedad]].
 + L02 [[./src/elementos_del_nivel_k_de_un_arbol.py][Elementos del nivel k de un árbol]].
 + X04 [[./src/valor_de_un_arbol_booleano.py][Valor de un árbol booleano]].
++ J05 [[./src/valor_de_una_expresion_aritmetica_basica.py][Valor de una expresión aritmética básica]].
