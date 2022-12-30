@@ -131,3 +131,4 @@ Notas:
 + M10 [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
 + X11 [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
 + J12 [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
++ V13 [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].

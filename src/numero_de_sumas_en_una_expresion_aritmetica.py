@@ -5,6 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
+# Las expresiones aritméticas con variables pueden representarse usando
+# el siguiente tipo de datos
 #    @dataclass
 #    class Expr:
 #        pass
@@ -67,7 +69,7 @@ class P(Expr):
 
 def sumas(e: Expr) -> int:
     match e:
-        case C(a):
+        case C(_):
             return 0
         case V(x):
             return 0
