@@ -33,8 +33,8 @@
 #    P(X(), S(C(13), X()))
 #
 # Definir la función
-#    numVars :: Expr -> Int
-# tal que (numVars e) es el número de variables en la expresión e. Por
+#    numVars : (Expr) -> int
+# tal que numVars(e) es el número de variables en la expresión e. Por
 # ejemplo,
 #    numVars(C(3))                   ==  0
 #    numVars(X())                    ==  1
