@@ -1,7 +1,7 @@
-# numero_de_sumas_en_una_expresion_aritmetica.py
-# Número de sumas en una expresión aritmética.
+# expresiones_aritmeticas_reducibles.py
+# Expresiones aritméticas reducibles.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 12-enero-2023
+# Sevilla, 14-enero-2023
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -33,12 +33,17 @@
 #    P(C(2), S(V('a'), C(5)))
 #
 # Definir la función
-#    sumas : (Expr) -> int
-# tal que sumas(e) es el número de sumas en la expresión e. Por
-# ejemplo,
-#    sumas(P(V('z'), S(C(3), V('x')))) == 1
-#    sumas(S(V('z'), S(C(3), V('x')))) == 2
-#    sumas(P(V('z'), P(C(3), V('x')))) == 0
+#    reducible : (Expr) -> bool
+# tal que reducible(a) se verifica si a es una expresión reducible; es
+# decir, contiene una operación en la que los dos operandos son números.
+# Por ejemplo,
+#    reducible(S(C(3), C(4)))            == True
+#    reducible(S(C(3), V('x')))          == False
+#    reducible(S(C(3), P(C(4), C(5))))   == True
+#    reducible(S(V('x'), P(C(4), C(5)))) == True
+#    reducible(S(C(3), P(V('x'), C(5)))) == False
+#    reducible(C(3))                     == False
+#    reducible(V('x'))                   == False
 # ---------------------------------------------------------------------
 
 from dataclasses import dataclass
@@ -66,14 +71,18 @@ class P(Expr):
     x: Expr
     y: Expr
 
-def sumas(e: Expr) -> int:
+def reducible(e: Expr) -> bool:
     match e:
         case C(_):
-            return 0
-        case V(x):
-            return 0
-        case S(e1, e2):
-            return 1 + sumas(e1) + sumas(e2)
-        case P(e1, e2):
-            return sumas(e1) + sumas(e2)
+            return False
+        case V(_):
+            return False
+        case S(C(_), C(_)):
+            return True
+        case S(a, b):
+            return reducible(a) or reducible(b)
+        case P(C(_), C(_)):
+            return True
+        case P(a, b):
+            return reducible(a) or reducible(b)
     assert False

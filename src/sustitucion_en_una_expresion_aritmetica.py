@@ -7,13 +7,30 @@
 # ---------------------------------------------------------------------
 # Las expresiones aritméticas con variables pueden representarse usando
 # el siguiente tipo de datos
-#    data Expr = C Int
-#              | V Char
-#              | S Expr Expr
-#              | P Expr Expr
-#      deriving (Eq, Show)
+#    @dataclass
+#    class Expr:
+#        pass
+#
+#    @dataclass
+#    class C(Expr):
+#        x: int
+#
+#    @dataclass
+#    class V(Expr):
+#        x: str
+#
+#    @dataclass
+#    class S(Expr):
+#        x: Expr
+#        y: Expr
+#
+#    @dataclass
+#    class P(Expr):
+#        x: Expr
+#        y: Expr
+#
 # Por ejemplo, la expresión 2*(a+5) se representa por
-#    P (C 2) (S (V 'a') (C 5))
+#    P(C(2), S(V('a'), C(5)))
 #
 # Definir la función
 #    sustitucion : (Expr, list[tuple[str, int]]) -> Expr
