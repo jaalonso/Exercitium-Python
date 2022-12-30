@@ -66,13 +66,3 @@ def sustitucion(e: Expr, ps: list[tuple[str, int]]) -> Expr:
         case (P(e1, e2), ps):
             return P(sustitucion(e1, ps), sustitucion(e2, ps))
     assert False
-
-
-# sustitucion :: Expr -> [(Char, Int)] -> Expr
-# sustitucion e []          = e
-# sustitucion (V c) ((d,n):ps)
-#   | c == d                = C n
-#   | otherwise             = sustitucion (V c) ps
-# sustitucion (C n) _      = C n
-# sustitucion (S e1 e2) ps = S (sustitucion e1 ps) (sustitucion e2 ps)
-# sustitucion (P e1 e2) ps = P (sustitucion e1 ps) (sustitucion e2 ps)
