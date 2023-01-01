@@ -135,3 +135,4 @@ Notas:
 + L16 [[./src/expresiones_aritmeticas_reducibles.py][Expresiones aritméticas reducibles]].
 + M17 [[./src/maximos_valores_de_una_expresion_aritmetica.py][Máximos valores de una expresión aritmética]].
 + X18 [[./src/valor_de_expresiones_aritmeticas_generales.py][Valor de expresiones aritméticas generales]].
++ J19 [[./src/valor_de_una_expresion_vectorial.py][Valor de una expresión vectorial]].
