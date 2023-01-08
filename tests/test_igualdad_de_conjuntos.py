@@ -1,5 +1,6 @@
 from src.igualdad_de_conjuntos import iguales1, iguales2
 
+
 def test_iguales():
     assert iguales1([3, 2, 3], [2, 3])
     assert iguales1([3, 2, 3], [2, 3, 2])

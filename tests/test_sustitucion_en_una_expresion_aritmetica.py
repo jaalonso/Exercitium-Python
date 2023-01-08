@@ -1,5 +1,5 @@
-from src.sustitucion_en_una_expresion_aritmetica import \
-    C, V, S, P, sustitucion
+from src.sustitucion_en_una_expresion_aritmetica import C, P, S, V, sustitucion
+
 
 def test_sustitucion() -> None:
     assert sustitucion(P(V('z'), S(C(3), V('x'))),

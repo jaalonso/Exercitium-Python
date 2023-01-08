@@ -1,5 +1,5 @@
-from src.ternas_pitagoricas import \
-    pitagoricas1, pitagoricas2, pitagoricas3
+from src.ternas_pitagoricas import pitagoricas1, pitagoricas2, pitagoricas3
+
 
 def test_pitagoricas() -> None:
     for pitagoricas in [pitagoricas1, pitagoricas2, pitagoricas3]:

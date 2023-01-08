@@ -70,7 +70,7 @@ def sumas(e: Expr) -> int:
     match e:
         case C(_):
             return 0
-        case V(x):
+        case V(_):
             return 0
         case S(e1, e2):
             return 1 + sumas(e1) + sumas(e2)

@@ -1,5 +1,5 @@
-from src.maximo_de_una_lista import \
-    maximo1, maximo2, maximo3
+from src.maximo_de_una_lista import maximo1, maximo2, maximo3
+
 
 def test_maximo() -> None:
     for maximo in [maximo1, maximo2, maximo3]:

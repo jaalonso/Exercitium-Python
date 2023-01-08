@@ -1,7 +1,5 @@
-from src.triangulo_aritmetico import \
-    triangulo1, \
-    triangulo2, \
-    triangulo3
+from src.triangulo_aritmetico import triangulo1, triangulo2, triangulo3
+
 
 def test_triangulo():
     assert triangulo1(3) == [[1], [2, 3], [4, 5, 6]]

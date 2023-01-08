@@ -1,8 +1,6 @@
-from src.exponente_mayor import \
-    mayorExponente1, \
-    mayorExponente2, \
-    mayorExponente3, \
-    mayorExponente4
+from src.exponente_mayor import (mayorExponente1, mayorExponente2,
+                                 mayorExponente3, mayorExponente4)
+
 
 def test_mayorExponente() -> None:
     for mayorExponente in [mayorExponente1, mayorExponente2,

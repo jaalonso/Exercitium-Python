@@ -1,8 +1,7 @@
-from src.movimientos_en_el_plano import \
-    Direccion, \
-    opuesta1, opuesta2, \
-    movimiento1, movimiento2, \
-    movimientos1, movimientos2
+from src.movimientos_en_el_plano import (Direccion, movimiento1, movimiento2,
+                                         movimientos1, movimientos2, opuesta1,
+                                         opuesta2)
+
 
 def test_movimientos() -> None:
     assert opuesta1(Direccion.Izquierda) == Direccion.Derecha

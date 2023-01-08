@@ -1,5 +1,6 @@
-from src.el_tipo_de_los_numeros_naturales import \
-    nat2int, int2nat, suma, Cero, Suc
+from src.el_tipo_de_los_numeros_naturales import (Cero, Suc, int2nat, nat2int,
+                                                  suma)
+
 
 def test_naturales() -> None:
     assert nat2int(Suc(Suc(Suc(Cero())))) == 3

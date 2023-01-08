@@ -13,37 +13,17 @@
 #    maximo(["menos","alguna","cosa"])  ==  "menos"
 # ---------------------------------------------------------------------
 
-from abc import abstractmethod
 from functools import reduce
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
-from typing import Any, Protocol, TypeVar
+from typing import TypeVar, Union
 
 from hypothesis import given
 from hypothesis import strategies as st
 
 setrecursionlimit(10**6)
 
-A = TypeVar('A', bound="Comparable")
-
-class Comparable(Protocol):
-    """Para comparar"""
-    @abstractmethod
-    def __eq__(self, other: Any) -> bool:
-        pass
-
-    @abstractmethod
-    def __lt__(self: A, other: A) -> bool:
-        pass
-
-    def __gt__(self: A, other: A) -> bool:
-        return (not self < other) and self != other
-
-    def __le__(self: A, other: A) -> bool:
-        return self < other or self == other
-
-    def __ge__(self: A, other: A) -> bool:
-        return not self < other
+A = TypeVar('A', bound=Union[int, float, str])
 
 # 1ª solución
 # ===========

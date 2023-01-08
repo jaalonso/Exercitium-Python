@@ -124,6 +124,7 @@ Notas:
 + [[./src/arboles_con_igual_estructura.py][Árboles con igual estructura]].
 + [[./src/existencia_de_elemento_del_arbol_con_propiedad.py][Existencia de elementos del árbol que verifican una propiedad]].
 + L02 [[./src/elementos_del_nivel_k_de_un_arbol.py][Elementos del nivel k de un árbol]].
++ M03 [[./src/arbol_de_factorizacion.py][Árbol de factorización]].
 + X04 [[./src/valor_de_un_arbol_booleano.py][Valor de un árbol booleano]].
 + J05 [[./src/valor_de_una_expresion_aritmetica_basica.py][Valor de una expresión aritmética básica]].
 + V06 [[./src/aplicacion_de_una_funcion_a_una_expresion_aritmetica.py][Aplicación de una función a una expresión aritmética]].
@@ -136,3 +137,6 @@ Notas:
 + M17 [[./src/maximos_valores_de_una_expresion_aritmetica.py][Máximos valores de una expresión aritmética]].
 + X18 [[./src/valor_de_expresiones_aritmeticas_generales.py][Valor de expresiones aritméticas generales]].
 + J19 [[./src/valor_de_una_expresion_vectorial.py][Valor de una expresión vectorial]].
++ ??? [[./src/pilaConListas.py][El tipo de las pilas mediante listas]].
++ ??? [[./src/transformacion_de_listas_en_pilas.py][Transformación de listas en pilas]].
++ ??? [[./src/filtraPila.py][Filtrar pilas según una propiedad]].

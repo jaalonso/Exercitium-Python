@@ -1,4 +1,5 @@
-from src.altura_de_un_arbol_binario import altura, Nodo, Hoja
+from src.altura_de_un_arbol_binario import Hoja, Nodo, altura
+
 
 def test_altura() -> None:
     assert altura(Hoja(1)) == \

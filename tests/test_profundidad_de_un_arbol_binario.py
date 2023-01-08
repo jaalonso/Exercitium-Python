@@ -1,5 +1,5 @@
-from src.profundidad_de_un_arbol_binario import \
-    H, N, profundidad
+from src.profundidad_de_un_arbol_binario import H, N, profundidad
+
 
 def test_profundidad() -> None:
     assert profundidad(N(9, N(3, H(2), H(4)), H(7))) == 2

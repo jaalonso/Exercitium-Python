@@ -1,5 +1,8 @@
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 from src.tres_iguales import tresIguales1, tresIguales2
+
 
 def test_tresIguales():
     assert tresIguales1(4, 4, 4) is True

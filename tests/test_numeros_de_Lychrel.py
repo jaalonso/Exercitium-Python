@@ -1,15 +1,8 @@
-from src.numeros_de_Lychrel import \
-    esCapicua, \
-    inverso, \
-    siguiente, \
-    busquedaDeCapicua, \
-    capicuaFinal, \
-    orden, \
-    ordenMayor, \
-    ordenEntre, \
-    menorDeOrdenMayor, \
-    menoresdDeOrdenMayor, \
-    islice
+from src.numeros_de_Lychrel import (busquedaDeCapicua, capicuaFinal, esCapicua,
+                                    inverso, islice, menorDeOrdenMayor,
+                                    menoresdDeOrdenMayor, orden, ordenEntre,
+                                    ordenMayor, siguiente)
+
 
 def test_Lychrel() -> None:
     assert esCapicua(252) is True

@@ -1,5 +1,8 @@
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 from src.distancia_entre_dos_puntos import distancia
+
 
 def test_distancia():
     assert distancia((1, 2), (4, 6)) == 5.0

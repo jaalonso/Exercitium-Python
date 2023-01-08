@@ -1,8 +1,6 @@
-from src.subconjuntos_de_un_conjunto import \
-    subconjuntos1, \
-    subconjuntos2, \
-    subconjuntos3, \
-    subconjuntos4
+from src.subconjuntos_de_un_conjunto import (subconjuntos1, subconjuntos2,
+                                             subconjuntos3, subconjuntos4)
+
 
 def test_subconjuntos() -> None:
     for subconjuntos in [subconjuntos1, subconjuntos2, subconjuntos3,

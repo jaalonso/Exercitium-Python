@@ -1,5 +1,7 @@
-from src.ternas_pitagoricas_con_suma_dada import \
-    ternasPitagoricas1, ternasPitagoricas2, ternasPitagoricas3
+from src.ternas_pitagoricas_con_suma_dada import (ternasPitagoricas1,
+                                                  ternasPitagoricas2,
+                                                  ternasPitagoricas3)
+
 
 def test_ternasPitagoricas() -> None:
     for ternasPitagoricas in [ternasPitagoricas1, ternasPitagoricas2,

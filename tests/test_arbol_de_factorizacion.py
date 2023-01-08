@@ -1,5 +1,6 @@
-from src.arbol_de_factorizacion import \
-    H, N, arbolFactorizacion1, arbolFactorizacion2
+from src.arbol_de_factorizacion import (H, N, arbolFactorizacion1,
+                                        arbolFactorizacion2)
+
 
 def test_arbolFactorizacion() -> None:
     for arbolFactorizacion in [arbolFactorizacion1,

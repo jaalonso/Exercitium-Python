@@ -1,13 +1,7 @@
-from src.aproximacion_del_numero_e import \
-    aproxE1, \
-    aproxE2, \
-    aproxE3, \
-    aproxE4, \
-    aproxE5, \
-    aproxE6, \
-    errorAproxE1, \
-    errorAproxE2, \
-    errorAproxE3
+from src.aproximacion_del_numero_e import (aproxE1, aproxE2, aproxE3, aproxE4,
+                                           aproxE5, aproxE6, errorAproxE1,
+                                           errorAproxE2, errorAproxE3)
+
 
 def test_aproxE() -> None:
     for aproxE in [aproxE1, aproxE2, aproxE3, aproxE4, aproxE5,

@@ -1,6 +1,9 @@
-from hypothesis import given, assume, strategies as st
-from src.numeros_racionales\
- import formaReducida, sumaRacional, productoRacional, igualdadRacional
+from hypothesis import assume, given
+from hypothesis import strategies as st
+
+from src.numeros_racionales import (formaReducida, igualdadRacional,
+                                    productoRacional, sumaRacional)
+
 
 def test_numeros_racionales():
     assert formaReducida((4, 10)) == (2, 5)

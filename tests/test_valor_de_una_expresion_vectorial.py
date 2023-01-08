@@ -1,5 +1,6 @@
-from src.valor_de_una_expresion_vectorial import \
-    Vec, Sum, Mul, valorEV1, valorEV2
+from src.valor_de_una_expresion_vectorial import (Mul, Sum, Vec, valorEV1,
+                                                  valorEV2)
+
 
 def test_valoeEV() -> None:
     for valorEV in [valorEV1, valorEV2]:

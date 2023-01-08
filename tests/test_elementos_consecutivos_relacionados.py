@@ -1,5 +1,6 @@
-from src.elementos_consecutivos_relacionados import \
-    relacionados1, relacionados2
+from src.elementos_consecutivos_relacionados import (relacionados1,
+                                                     relacionados2)
+
 
 def test_relacionados() -> None:
     for relacionados in [relacionados1, relacionados2]:

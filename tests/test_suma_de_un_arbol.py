@@ -1,5 +1,5 @@
-from src.suma_de_un_arbol import \
-    H, N, sumaArbol
+from src.suma_de_un_arbol import H, N, sumaArbol
+
 
 def test_sumaArbol() -> None:
     assert sumaArbol(N(2,

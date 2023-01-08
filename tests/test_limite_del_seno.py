@@ -1,7 +1,7 @@
-from src.limite_del_seno import \
-    aproxLimSeno1, aproxLimSeno2, aproxLimSeno3, aproxLimSeno4, \
-    aproxLimSeno5, aproxLimSeno6, errorLimSeno1, errorLimSeno2, \
-    errorLimSeno3
+from src.limite_del_seno import (aproxLimSeno1, aproxLimSeno2, aproxLimSeno3,
+                                 aproxLimSeno4, aproxLimSeno5, aproxLimSeno6,
+                                 errorLimSeno1, errorLimSeno2, errorLimSeno3)
+
 
 def test_limite_seno() -> None:
     for aproxLimSeno in [aproxLimSeno1, aproxLimSeno2, aproxLimSeno3,

@@ -1,10 +1,7 @@
-from src.suma_de_divisores import \
-    sumaDivisores1, \
-    sumaDivisores2, \
-    sumaDivisores3, \
-    sumaDivisores4, \
-    sumaDivisores5, \
-    sumaDivisores6
+from src.suma_de_divisores import (sumaDivisores1, sumaDivisores2,
+                                   sumaDivisores3, sumaDivisores4,
+                                   sumaDivisores5, sumaDivisores6)
+
 
 def test_sumaDivisores():
     assert sumaDivisores1(12) == 28

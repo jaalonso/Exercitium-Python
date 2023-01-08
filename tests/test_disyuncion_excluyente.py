@@ -1,5 +1,8 @@
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 from src.disyuncion_excluyente import xor1, xor2, xor3, xor4, xor5
+
 
 def test_xor():
     for xor in [xor1, xor2, xor3, xor4, xor5]:

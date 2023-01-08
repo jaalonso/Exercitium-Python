@@ -1,5 +1,6 @@
-from src.base_de_dato_de_actividades import \
-    personas, nombres, musicos, seleccion, musicos2, vivas
+from src.base_de_dato_de_actividades import (musicos, musicos2, nombres,
+                                             personas, seleccion, vivas)
+
 
 def test_base_de_datos() -> None:
     assert nombres(personas) == [

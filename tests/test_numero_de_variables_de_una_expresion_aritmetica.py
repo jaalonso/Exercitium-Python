@@ -1,5 +1,6 @@
-from src.numero_de_variables_de_una_expresion_aritmetica import \
-    X, C, S, P, numVars
+from src.numero_de_variables_de_una_expresion_aritmetica import (C, P, S, X,
+                                                                 numVars)
+
 
 def test_numVars() -> None:
     assert numVars(C(3)) == 0

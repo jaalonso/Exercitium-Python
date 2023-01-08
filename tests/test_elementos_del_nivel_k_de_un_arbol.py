@@ -1,5 +1,5 @@
-from src.elementos_del_nivel_k_de_un_arbol import \
-    H, N, nivel
+from src.elementos_del_nivel_k_de_un_arbol import H, N, nivel
+
 
 def test_nivel() -> None:
     assert nivel(0, N(7, N(2, H(5), H(4)), H(9))) == [7]

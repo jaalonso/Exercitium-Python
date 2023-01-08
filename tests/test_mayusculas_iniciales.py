@@ -1,5 +1,5 @@
-from src.mayusculas_iniciales import \
-    titulo1, titulo2, titulo3
+from src.mayusculas_iniciales import titulo1, titulo2, titulo3
+
 
 def test_titulo() -> None:
     for titulo in [titulo1, titulo2, titulo3]:

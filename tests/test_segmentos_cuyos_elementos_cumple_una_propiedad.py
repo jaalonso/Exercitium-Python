@@ -1,5 +1,6 @@
-from src.segmentos_cuyos_elementos_cumple_una_propiedad import \
-    segmentos1, segmentos2
+from src.segmentos_cuyos_elementos_cumple_una_propiedad import (segmentos1,
+                                                                segmentos2)
+
 
 def test_segmentos() -> None:
     for segmentos in [segmentos1, segmentos2]:

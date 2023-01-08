@@ -1,5 +1,6 @@
-from src.reconocimiento_de_subconjunto\
- import subconjunto1, subconjunto2, subconjunto3, subconjunto4
+from src.reconocimiento_de_subconjunto import (subconjunto1, subconjunto2,
+                                               subconjunto3, subconjunto4)
+
 
 def test_subconjunto():
     assert subconjunto1([3, 2, 3], [2, 5, 3, 5]) is True

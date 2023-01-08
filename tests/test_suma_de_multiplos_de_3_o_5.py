@@ -1,5 +1,6 @@
-from src.suma_de_multiplos_de_3_o_5 import \
-    euler1a, euler1b, euler1c, euler1d, euler1e, euler1f
+from src.suma_de_multiplos_de_3_o_5 import (euler1a, euler1b, euler1c, euler1d,
+                                            euler1e, euler1f)
+
 
 def test_euler() -> None:
     assert euler1a(10) == 23

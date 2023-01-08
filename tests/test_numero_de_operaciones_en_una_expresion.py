@@ -1,5 +1,5 @@
-from src.numero_de_operaciones_en_una_expresion import \
-    Lit, Suma, Op, numeroOps
+from src.numero_de_operaciones_en_una_expresion import Lit, Op, Suma, numeroOps
+
 
 def test_numeroOps() -> None:
     assert numeroOps(Lit(3)) == 0

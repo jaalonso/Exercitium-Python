@@ -1,5 +1,6 @@
-from src.arboles_con_bordes_iguales import \
-    arbol1, arbol2, arbol3, arbol4, igualBorde
+from src.arboles_con_bordes_iguales import (arbol1, arbol2, arbol3, arbol4,
+                                            igualBorde)
+
 
 def test_igualBorde() -> None:
     assert igualBorde(arbol1, arbol2) is True

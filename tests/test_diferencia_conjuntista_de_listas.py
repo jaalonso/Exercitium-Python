@@ -1,5 +1,6 @@
-from src.diferencia_conjuntista_de_listas\
-    import diferencia1, diferencia2, diferencia3, diferencia4
+from src.diferencia_conjuntista_de_listas import (diferencia1, diferencia2,
+                                                  diferencia3, diferencia4)
+
 
 def test_diferencia():
     assert diferencia1([3, 2, 5, 6], [5, 7, 3, 4]) == [2, 6]

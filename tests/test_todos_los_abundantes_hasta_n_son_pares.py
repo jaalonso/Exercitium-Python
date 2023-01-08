@@ -1,5 +1,7 @@
-from src.todos_los_abundantes_hasta_n_son_pares import \
-    todosPares1, todosPares2, todosPares3
+from src.todos_los_abundantes_hasta_n_son_pares import (todosPares1,
+                                                        todosPares2,
+                                                        todosPares3)
+
 
 def test_todosPares() -> None:
     assert todosPares1(10)

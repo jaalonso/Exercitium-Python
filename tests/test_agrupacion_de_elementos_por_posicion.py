@@ -1,5 +1,7 @@
-from src.agrupacion_de_elementos_por_posicion import \
-    agrupa1, agrupa2, agrupa3, agrupa4, agrupa5
+from src.agrupacion_de_elementos_por_posicion import (agrupa1, agrupa2,
+                                                      agrupa3, agrupa4,
+                                                      agrupa5)
+
 
 def test_agrupa() -> None:
     for agrupa in [agrupa1, agrupa2, agrupa3, agrupa4, agrupa5]:

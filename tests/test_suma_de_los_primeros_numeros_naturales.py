@@ -1,10 +1,6 @@
-from src.suma_de_los_primeros_numeros_naturales import \
-    suma1, \
-    suma2, \
-    suma3, \
-    suma4, \
-    suma5, \
-    suma6
+from src.suma_de_los_primeros_numeros_naturales import (suma1, suma2, suma3,
+                                                        suma4, suma5, suma6)
+
 
 def test_suma_de_los_primeros_numeros_naturales():
     assert suma1(3) == 6

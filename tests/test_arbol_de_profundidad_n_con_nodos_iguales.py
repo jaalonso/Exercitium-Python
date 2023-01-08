@@ -1,5 +1,5 @@
-from src.arbol_de_profundidad_n_con_nodos_iguales import \
-    H, N, replicateArbol
+from src.arbol_de_profundidad_n_con_nodos_iguales import H, N, replicateArbol
+
 
 def test_replicateArbol() -> None:
     assert replicateArbol(0, 5) == \

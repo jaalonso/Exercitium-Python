@@ -1,5 +1,5 @@
-from src.expresiones_aritmeticas_reducibles import \
-    C, V, S, P, reducible
+from src.expresiones_aritmeticas_reducibles import C, P, S, V, reducible
+
 
 def test_reducible() -> None:
     assert reducible(S(C(3), C(4))) is True

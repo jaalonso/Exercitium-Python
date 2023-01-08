@@ -1,5 +1,5 @@
-from src.el_tipo_de_figuras_geometricas import \
-    area, cuadrado, Circulo, Rect
+from src.el_tipo_de_figuras_geometricas import Circulo, Rect, area, cuadrado
+
 
 def test_figura() -> None:
     assert area(Circulo(1)) == 3.141592653589793

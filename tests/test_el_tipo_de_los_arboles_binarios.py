@@ -1,5 +1,5 @@
-from src.el_tipo_de_los_arboles_binarios import \
-    ejArbol, ocurre, aplana
+from src.el_tipo_de_los_arboles_binarios import aplana, ejArbol, ocurre
+
 
 def test_arboles() -> None:
     assert ocurre(4, ejArbol) is True

@@ -1,9 +1,6 @@
-from src.divisores_primos import \
-    divisoresPrimos1, \
-    divisoresPrimos2, \
-    divisoresPrimos3, \
-    divisoresPrimos4, \
-    divisoresPrimos5
+from src.divisores_primos import (divisoresPrimos1, divisoresPrimos2,
+                                  divisoresPrimos3, divisoresPrimos4,
+                                  divisoresPrimos5)
 
 
 def test_divisoresPrimos():

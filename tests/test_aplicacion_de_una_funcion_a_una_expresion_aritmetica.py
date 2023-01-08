@@ -1,5 +1,6 @@
-from src.aplicacion_de_una_funcion_a_una_expresion_aritmetica import \
-    C, S, P, aplica
+from src.aplicacion_de_una_funcion_a_una_expresion_aritmetica import (C, P, S,
+                                                                      aplica)
+
 
 def test_aplica() -> None:
     assert aplica(lambda x: 2 + x, S(P(C(3), C(5)), P(C(6), C(7)))) == \

@@ -1,5 +1,6 @@
-from src.arbol_con_las_hojas_en_la_profundidad_dada import \
-    Hoja, Nodo, creaArbol
+from src.arbol_con_las_hojas_en_la_profundidad_dada import (Hoja, Nodo,
+                                                            creaArbol)
+
 
 def test_creaArbol() -> None:
     assert creaArbol(2) == \

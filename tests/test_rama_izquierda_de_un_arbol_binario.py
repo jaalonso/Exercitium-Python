@@ -1,5 +1,5 @@
-from src.rama_izquierda_de_un_arbol_binario import \
-    H, N, ramaIzquierda
+from src.rama_izquierda_de_un_arbol_binario import H, N, ramaIzquierda
+
 
 def test_ramaIzquierda() -> None:
     assert ramaIzquierda(N(2,

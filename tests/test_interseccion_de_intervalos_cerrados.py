@@ -1,5 +1,6 @@
 from src.interseccion_de_intervalos_cerrados import interseccion
 
+
 def test_interseccion():
     assert not interseccion([], [3, 5])
     assert not interseccion([3, 5], [])

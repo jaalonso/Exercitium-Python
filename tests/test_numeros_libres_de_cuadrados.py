@@ -1,8 +1,8 @@
-from src.numeros_libres_de_cuadrados import \
-    libreDeCuadrados1, \
-    libreDeCuadrados2, \
-    libreDeCuadrados3, \
-    libreDeCuadrados4
+from src.numeros_libres_de_cuadrados import (libreDeCuadrados1,
+                                             libreDeCuadrados2,
+                                             libreDeCuadrados3,
+                                             libreDeCuadrados4)
+
 
 def test_libreDeCuadrados():
     assert libreDeCuadrados1(70) is True

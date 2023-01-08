@@ -1,5 +1,5 @@
-from src.arboles_con_la_misma_forma import \
-    Hoja, Nodo, mismaForma1, mismaForma2
+from src.arboles_con_la_misma_forma import Hoja, Nodo, mismaForma1, mismaForma2
+
 
 def test_mismaForma() -> None:
     for mismaForma in [mismaForma1, mismaForma2]:

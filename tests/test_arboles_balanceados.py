@@ -1,5 +1,5 @@
-from src.arboles_balanceados import \
-    H, N, balanceado
+from src.arboles_balanceados import H, N, balanceado
+
 
 def test_balanceado() -> None:
     assert balanceado (N(5, H(), N(3, H(), H()))) is True

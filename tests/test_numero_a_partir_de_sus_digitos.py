@@ -1,10 +1,7 @@
-from src.numero_a_partir_de_sus_digitos import \
-    listaNumero1, \
-    listaNumero2, \
-    listaNumero3, \
-    listaNumero4, \
-    listaNumero5, \
-    listaNumero6
+from src.numero_a_partir_de_sus_digitos import (listaNumero1, listaNumero2,
+                                                listaNumero3, listaNumero4,
+                                                listaNumero5, listaNumero6)
+
 
 def test_listaNumero() -> None:
     for listaNumero in [listaNumero1, listaNumero2, listaNumero3,

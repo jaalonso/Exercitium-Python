@@ -1,5 +1,8 @@
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 from src.elementos_finales import finales1, finales2, finales3
+
 
 def test_finales():
     assert finales1(3, [2, 5, 4, 7, 9, 6]) == [7, 9, 6]

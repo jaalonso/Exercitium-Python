@@ -7,11 +7,6 @@
 # ---------------------------------------------------------------------
 # Los árboles binarios con valores en las hojas y en los nodos se
 # definen por
-#    from dataclasses import dataclass
-#    from typing import Generic, TypeVar
-#
-#    A = TypeVar("A")
-#
 #    @dataclass
 #    class Arbol(Generic[A]):
 #        pass

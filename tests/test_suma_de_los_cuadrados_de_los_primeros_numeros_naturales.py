@@ -1,10 +1,7 @@
-from src.suma_de_los_cuadrados_de_los_primeros_numeros_naturales \
-    import sumaDeCuadrados1, \
-    sumaDeCuadrados2, \
-    sumaDeCuadrados3, \
-    sumaDeCuadrados4, \
-    sumaDeCuadrados5, \
-    sumaDeCuadrados6
+from src.suma_de_los_cuadrados_de_los_primeros_numeros_naturales import (
+    sumaDeCuadrados1, sumaDeCuadrados2, sumaDeCuadrados3, sumaDeCuadrados4,
+    sumaDeCuadrados5, sumaDeCuadrados6)
+
 
 def test_suma_de_los_cuadrados_de_los_primeros_numeros_naturales():
     assert sumaDeCuadrados1(3) == 14

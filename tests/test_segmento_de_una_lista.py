@@ -1,5 +1,8 @@
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
+
 from src.segmento_de_una_lista import segmento1, segmento2
+
 
 def test_segmento():
     assert segmento1(3, 4, [3, 4, 1, 2, 7, 9, 0]) == [1, 2]
