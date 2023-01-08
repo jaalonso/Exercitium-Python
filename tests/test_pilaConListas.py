@@ -22,5 +22,5 @@ def test_pila() -> None:
     p.desapila()
     assert str(p) == '3 | 2 | 5'
     assert not p.esVacia()
-    p: Pila[int] = Pila()
-    assert p.esVacia()
+    q: Pila[int] = Pila()
+    assert q.esVacia()
