@@ -1,6 +1,5 @@
 from hypothesis import given
 from hypothesis import strategies as st
-
 from src.intercambio_de_componentes_de_un_par import intercambia
 
 

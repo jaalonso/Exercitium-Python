@@ -1,6 +1,5 @@
 from hypothesis import given
 from hypothesis import strategies as st
-
 from src.el_primero_al_final import rota1a, rota1b
 
 
