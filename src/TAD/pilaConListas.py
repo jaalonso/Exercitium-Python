@@ -62,8 +62,8 @@
 # + esVacia(vacia)
 # + not esVacia(apila(x, p))
 
-from abc import ABC, abstractmethod
 from copy import deepcopy
+from dataclasses import dataclass, field
 from typing import Generic, TypeVar
 
 from hypothesis import given
@@ -71,33 +71,12 @@ from hypothesis import strategies as st
 
 A = TypeVar('A')
 
-# Clase abstracta de las pilas
-# ============================
-
-class PilaAbstracta(ABC, Generic[A]):
-    @abstractmethod
-    def apila(self, x: A) -> None:
-        pass
-
-    @abstractmethod
-    def esVacia(self) -> bool:
-        pass
-
-    @abstractmethod
-    def cima(self) -> A:
-        pass
-
-    @abstractmethod
-    def desapila(self) -> None:
-        pass
-
 # Clase de las pilas mediante Listas
 # ==================================
 
-class Pila(PilaAbstracta[A]):
-
-    def __init__(self) -> None:
-        self._elementos: list[A] = []
+@dataclass
+class Pila(Generic[A]):
+    _elementos: list[A] = field(default_factory=list)
 
     def __str__(self) -> str:
         if len(self._elementos) == 0:

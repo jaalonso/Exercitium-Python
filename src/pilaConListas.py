@@ -1,7 +1,7 @@
 # pilaConListas.py
 # Implementación de las pilas mediante listas.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 2-enero-2023
+# Sevilla, 20-enero-2023
 # ======================================================================
 
 # ---------------------------------------------------------------------
@@ -63,42 +63,26 @@
 # + esVacia(vacia)
 # + not esVacia(apila(x, p))
 #
-# Para implementar las pilas se define la clase abstracta PilaAbstracta
-# y su subclase Pila en la que se representan las pilas mediante
-# lista. El código incompleto de la implementación es
-#    from abc import ABC, abstractmethod
+# El esquema de la definición del tipo de las pilas representadas
+# mediante listas es el siguiente:
+#    from dataclasses import dataclass, field
 #    from copy import deepcopy
 #    from typing import Generic, TypeVar
-#
 #    from hypothesis import given
 #    from hypothesis import strategies as st
-#
 #    A = TypeVar('A')
 #
-#    class PilaAbstracta(ABC, Generic[A]):
-#        @abstractmethod
-#        def apila(self, x: A) -> None:
-#            pass
-#
-#        @abstractmethod
-#        def esVacia(self) -> bool:
-#            pass
-#
-#        @abstractmethod
-#        def cima(self) -> A:
-#            pass
-#
-#        @abstractmethod
-#        def desapila(self) -> None:
-#            pass
-#
-#    class Pila(PilaAbstracta[A]):
-#
-#        def __init__(self) -> None:
-#            pass
+#    @dataclass
+#    class Pila(Generic[A]):
+#        _elementos: list[A] = field(default_factory=list)
 #
 #        def __str__(self) -> str:
-#            pass
+#            if len(self._elementos) == 0:
+#                return '-'
+#            cadena = ''
+#            for x in self._elementos[:-1]:
+#                cadena = cadena + str(x) + ' | '
+#            return cadena + str(self._elementos[-1])
 #
 #        def apila(self, x: A) -> None:
 #            pass
@@ -138,15 +122,15 @@
 #    @given(p=pilaAleatoria(), x=st.integers())
 #    def test_pila(p: Pila[int], x: int) -> None:
 #        pass
+#
 # Completar el código anterior definiendo
-# + Los métodos de la clase Pila; es decir, __init__, __str__, apila,
-#   esVacia, cima y apila.
+# + Los métodos de la clase Pila; es decir, apila, esVacia, cima y apila.
 # + Las funciones sobre pila: vacia, apila, esVacia, cima y apila.
 # + La función test_pila para comprobar las propiedades de las pilas.
 # ---------------------------------------------------------------------
 
-from abc import ABC, abstractmethod
 from copy import deepcopy
+from dataclasses import dataclass, field
 from typing import Generic, TypeVar
 
 from hypothesis import given
@@ -154,33 +138,12 @@ from hypothesis import strategies as st
 
 A = TypeVar('A')
 
-# Clase abstracta de las pilas
-# ============================
-
-class PilaAbstracta(ABC, Generic[A]):
-    @abstractmethod
-    def apila(self, x: A) -> None:
-        pass
-
-    @abstractmethod
-    def esVacia(self) -> bool:
-        pass
-
-    @abstractmethod
-    def cima(self) -> A:
-        pass
-
-    @abstractmethod
-    def desapila(self) -> None:
-        pass
-
 # Clase de las pilas mediante Listas
 # ==================================
 
-class Pila(PilaAbstracta[A]):
-
-    def __init__(self) -> None:
-        self._elementos: list[A] = []
+@dataclass
+class Pila(Generic[A]):
+    _elementos: list[A] = field(default_factory=list)
 
     def __str__(self) -> str:
         if len(self._elementos) == 0:
