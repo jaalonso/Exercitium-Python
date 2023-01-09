@@ -9,7 +9,7 @@
 # código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by)
 # definir las funciones
 #    listaApila : (list[A]) -> Pila[A]
-#    pilaALista :: Pila a -> [a]
+#    pilaALista : (Pila[A]) -> list[A]
 # tales que
 # + listaApila(xs) es la pila formada por los elementos de xs.
 #   Por ejemplo,
@@ -20,9 +20,9 @@
 #      >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
 #      [3, 2, 5]
 #
-# Comprobar con QuickCheck que ambas funciones son inversa; es decir,
-#    pilaAlista (listaApila xs) = xs
-#    listaApila (pilaAlista p)  = p
+# Comprobar con Hypothesis que ambas funciones son inversas; es decir,
+#    pilaAlista(listaApila(xs)) == xs
+#    listaApila(pilaAlista(p))  == p
 # ---------------------------------------------------------------------
 
 from typing import TypeVar
