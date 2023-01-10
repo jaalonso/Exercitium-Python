@@ -5,7 +5,7 @@
 # ======================================================================
 
 # ---------------------------------------------------------------------
-# Utilizando el tipo de las listas (del ejercicio anterior cuyo
+# Utilizando el tipo de las listas (de un ejercicio anterior cuyo
 # código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by)
 # definir la función
 #    filtraPila : (Callable[[A], bool], Pila[A]) -> Pila[A]
@@ -24,10 +24,9 @@ from copy import deepcopy
 from typing import Callable, TypeVar
 
 from hypothesis import given
-from hypothesis import strategies as st
 
-from src.TAD.pilaConListas import \
-    Pila, apila, cima, desapila, esVacia, vacia, pilaAleatoria
+from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
+                                   pilaAleatoria, vacia)
 
 A = TypeVar('A')
 

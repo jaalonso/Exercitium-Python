@@ -1,5 +1,6 @@
 from hypothesis import assume, given
 from hypothesis import strategies as st
+
 from src.numeros_racionales import (formaReducida, igualdadRacional,
                                     productoRacional, sumaRacional)
 

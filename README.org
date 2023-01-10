@@ -140,3 +140,4 @@ Notas:
 + V20 [[./src/pilaConListas.py][El tipo de las pilas mediante listas]].
 + L23 [[./src/transformaciones_pilas_listas.py][Transformación entre pilas y listas]].
 + M24 [[./src/filtraPila.py][Filtrado de pilas según una propiedad]].
++ X25 [[./src/mapPila.py][Aplicación de una función a los elementos de una pila]].

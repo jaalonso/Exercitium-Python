@@ -1,6 +1,7 @@
-from src.transformaciones_pilas_listas import (listaApila1, listaApila2,
+from src.transformaciones_pilas_listas import (apila, listaApila1, listaApila2,
                                                pilaAlista1, pilaAlista2,
-                                               pilaAlista3, apila, vacia)
+                                               pilaAlista3, vacia)
+
 
 def test_transfomaciones_pilas_listas() -> None:
     assert str(listaApila1([3, 2, 5])) == "5 | 2 | 3"

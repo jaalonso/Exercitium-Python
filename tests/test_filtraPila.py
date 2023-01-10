@@ -1,5 +1,6 @@
-from src.filtraPila import (apila, vacia, filtraPila1, filtraPila2,
-                            filtraPila3, filtraPila4)
+from src.filtraPila import (apila, filtraPila1, filtraPila2, filtraPila3,
+                            filtraPila4, vacia)
+
 
 def test_filtraApila() -> None:
     ej = apila(3, apila(4, apila(6, apila(5, vacia()))))
