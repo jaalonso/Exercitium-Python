@@ -13,18 +13,22 @@
 # tales que
 # + listaApila(xs) es la pila formada por los elementos de xs.
 #   Por ejemplo,
-#      >>> print(listaApila1([3, 2, 5]))
-#      5 | 3 | 2
+#      >>> print(listaApila([3, 2, 5]))
+#      5 | 2 | 3
 # + pilaAlista(p) es la lista formada por los elementos de la
 #   lista p. Por ejemplo,
-#      >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
+#      >>> ej = apila(5, apila(2, apila(3, vacia())))
+#      >>> pilaAlista(ej)
 #      [3, 2, 5]
+#      >>> print(ej)
+#      5 | 2 | 3
 #
 # Comprobar con Hypothesis que ambas funciones son inversas; es decir,
 #    pilaAlista(listaApila(xs)) == xs
 #    listaApila(pilaAlista(p))  == p
 # ---------------------------------------------------------------------
 
+from copy import deepcopy
 from typing import TypeVar
 
 from hypothesis import given
@@ -76,12 +80,30 @@ def pilaAlista1(p: Pila[A]) -> list[A]:
 # 2ª definición de pilaAlista
 # ===========================
 
-def pilaAlista2(p: Pila[A]) -> list[A]:
+def pilaAlista2Aux(p: Pila[A]) -> list[A]:
     if p.esVacia():
         return []
     cp = p.cima()
     p.desapila()
-    return pilaAlista2(p) + [cp]
+    return pilaAlista2Aux(p) + [cp]
+
+def pilaAlista2(p: Pila[A]) -> list[A]:
+    p1 = deepcopy(p)
+    return pilaAlista2Aux(p1)
+
+# 3ª definición de pilaAlista
+# ===========================
+
+def pilaAlista3Aux(p: Pila[A]) -> list[A]:
+    r = []
+    while not p.esVacia():
+        r.append(p.cima())
+        p.desapila()
+    return r[::-1]
+
+def pilaAlista3(p: Pila[A]) -> list[A]:
+    p1 = deepcopy(p)
+    return pilaAlista3Aux(p1)
 
 # Comprobación de equivalencia de las definiciones de pilaAlista
 # ==============================================================
@@ -89,6 +111,7 @@ def pilaAlista2(p: Pila[A]) -> list[A]:
 @given(p=pilaAleatoria())
 def test_pilaAlista(p: Pila[int]) -> None:
     assert pilaAlista1(p) == pilaAlista2(p)
+    assert pilaAlista1(p) == pilaAlista3(p)
 
 # Comprobación de las propiedades
 # ===============================
