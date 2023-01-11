@@ -8,7 +8,7 @@
 # Definir la función
 #    subconjunto : (list[A], list[A]) -> bool
 # tal que subconjunto(xs, ys) se verifica si xs es un subconjunto de
-# ys. por ejemplo,
+# ys. Por ejemplo,
 #    subconjunto([3, 2, 3], [2, 5, 3, 5])  ==  True
 #    subconjunto([3, 2, 3], [2, 5, 6, 5])  ==  False
 # ---------------------------------------------------------------------

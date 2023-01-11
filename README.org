@@ -142,3 +142,4 @@ Notas:
 + M24 [[./src/filtraPila.py][Filtrado de pilas según una propiedad]].
 + X25 [[./src/mapPila.py][Aplicación de una función a los elementos de una pila]].
 + J26 [[./src/pertenecePila.py][Pertenencia a una pila]].
++ V27 [[./src/contenidaPila.py][Inclusión de pilas]].
