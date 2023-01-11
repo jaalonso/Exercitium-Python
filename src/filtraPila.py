@@ -5,8 +5,8 @@
 # ======================================================================
 
 # ---------------------------------------------------------------------
-# Utilizando el tipo de las listas (de un ejercicio anterior cuyo
-# código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by)
+# Utilizando el [tipo de las pilas](https://bit.ly/3GTToyK)
+# (cuyo código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by))
 # definir la función
 #    filtraPila : (Callable[[A], bool], Pila[A]) -> Pila[A]
 # tal que filtraPila(p, q) es la pila obtenida con los elementos de

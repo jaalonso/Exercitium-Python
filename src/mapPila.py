@@ -5,8 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Utilizando el tipo de las listas (de un ejercicio anterior cuyo
-# código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by)
+# Utilizando el [tipo de las pilas](https://bit.ly/3GTToyK)
+# (cuyo código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by))
 # definir la función
 #    mapPila : (Callable[[A], A], Pila[A]) -> Pila[A]
 # tal que mapPila(f, p) es la pila formada con las imágenes por f de

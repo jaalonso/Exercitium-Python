@@ -5,8 +5,8 @@
 # ======================================================================
 
 # ---------------------------------------------------------------------
-# Utilizando el tipo de las listas (del ejercicio anterior cuyo
-# código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by)
+# Utilizando el [tipo de las pilas](https://bit.ly/3GTToyK)
+# (cuyo código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by))
 # definir las funciones
 #    listaApila : (list[A]) -> Pila[A]
 #    pilaALista : (Pila[A]) -> list[A]
