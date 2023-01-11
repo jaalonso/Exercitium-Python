@@ -130,7 +130,7 @@ Notas:
 + [[./src/aplicacion_de_una_funcion_a_una_expresion_aritmetica.py][Aplicación de una función a una expresión aritmética]].
 + [[./src/valor_de_una_expresion_aritmetica_con_una_variable.py][Valor de una expresión aritmética con una variable]].
 + [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
-+ X11 [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
++ [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
 + J12 [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
 + V13 [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
 + L16 [[./src/expresiones_aritmeticas_reducibles.py][Expresiones aritméticas reducibles]].
@@ -141,3 +141,4 @@ Notas:
 + L23 [[./src/transformaciones_pilas_listas.py][Transformación entre pilas y listas]].
 + M24 [[./src/filtraPila.py][Filtrado de pilas según una propiedad]].
 + X25 [[./src/mapPila.py][Aplicación de una función a los elementos de una pila]].
++ J26 [[./src/pertenecePila.py][Pertenencia a una pila]].
