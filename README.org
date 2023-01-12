@@ -144,3 +144,4 @@ Notas:
 + J26 [[./src/pertenecePila.py][Pertenencia a una pila]].
 + V27 [[./src/contenidaPila.py][Inclusión de pilas]].
 + L30 [[./src/prefijoPila.py][Reconocimiento de prefijos de pilas]].
++ M31 [[./src/subPila.py][Reconocimiento de subpilas]].
