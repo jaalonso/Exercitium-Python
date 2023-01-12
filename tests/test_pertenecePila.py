@@ -1,6 +1,6 @@
-from src.pertenecePila import (pertenecePila1, pertenecePila2,
-                               pertenecePila3, pertenecePila4, apila,
-                               vacia)
+from src.pertenecePila import (apila, pertenecePila1, pertenecePila2,
+                               pertenecePila3, pertenecePila4, vacia)
+
 
 def test_pertenecePila() -> None:
     for pertenecePila in [pertenecePila1, pertenecePila2,

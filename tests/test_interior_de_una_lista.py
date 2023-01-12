@@ -1,6 +1,5 @@
 from hypothesis import given
 from hypothesis import strategies as st
-
 from src.interior_de_una_lista import interior1, interior2
 
 

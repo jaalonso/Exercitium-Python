@@ -1,6 +1,5 @@
 from hypothesis import given
 from hypothesis import strategies as st
-
 from src.disyuncion_excluyente import xor1, xor2, xor3, xor4, xor5
 
 

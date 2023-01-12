@@ -1,6 +1,6 @@
-from src.contenidaPila import (contenidaPila1, contenidaPila2,
-                               contenidaPila3, contenidaPila4, apila,
-                               vacia)
+from src.contenidaPila import (apila, contenidaPila1, contenidaPila2,
+                               contenidaPila3, contenidaPila4, vacia)
+
 
 def test_contenidaPila() -> None:
     ej1 = apila(3, apila(2, vacia()))
