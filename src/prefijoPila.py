@@ -24,7 +24,6 @@ from copy import deepcopy
 from typing import TypeVar
 
 from hypothesis import given
-from hypothesis import strategies as st
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
