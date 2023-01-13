@@ -132,7 +132,7 @@ Notas:
 + [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
 + [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
 + [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
-+ V13 [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
++ [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
 + L16 [[./src/expresiones_aritmeticas_reducibles.py][Expresiones aritméticas reducibles]].
 + M17 [[./src/maximos_valores_de_una_expresion_aritmetica.py][Máximos valores de una expresión aritmética]].
 + X18 [[./src/valor_de_expresiones_aritmeticas_generales.py][Valor de expresiones aritméticas generales]].
@@ -146,3 +146,4 @@ Notas:
 + L30 [[./src/prefijoPila.py][Reconocimiento de prefijos de pilas]].
 + M31 [[./src/subPila.py][Reconocimiento de subpilas]].
 + X01 [[./src/ordenadaPila.py][Reconocimiento de ordenación de pilas]].
++ J02 [[./src/OrdenaInserPila.hs][Ordenación de pilas por inserción]].
