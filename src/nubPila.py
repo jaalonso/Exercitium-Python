@@ -8,8 +8,8 @@
 # Utilizando el [tipo de dato de las pilas](https://bit.ly/3GTToyK)
 # (cuyo código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
 # definir la función
-#    nubPila :: Eq a => Pila a -> Pila a
-# tal que (nubPila p) es la pila con los elementos de p sin repeticiones.
+#    nubPila : (Pila[A]) -> Pila[A]
+# tal que nubPila(p) es la pila con los elementos de p sin repeticiones.
 # Por ejemplo,
 #    >>> ej = apila(3, apila(1, apila(3, apila(5, vacia()))))
 #    >>> print(ej)
@@ -26,7 +26,7 @@ from hypothesis import given
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
 
-A = TypeVar('A', int, float, str)
+A = TypeVar('A')
 
 # 1ª solución
 # ===========
@@ -82,7 +82,7 @@ def pilaAlista(p: Pila[A]) -> list[A]:
     dp = desapila(p)
     return pilaAlista(dp) + [cp]
 
-def nub(xs):
+def nub(xs: list[A]) -> list[A]:
     return [x for i, x in enumerate(xs) if x not in xs[:i]]
 
 def nubPila2(p: Pila[A]) -> Pila[A]:
