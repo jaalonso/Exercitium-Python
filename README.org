@@ -147,3 +147,4 @@ Notas:
 + M31 [[./src/subPila.py][Reconocimiento de subpilas]].
 + X01 [[./src/ordenadaPila.py][Reconocimiento de ordenación de pilas]].
 + J02 [[./src/OrdenaInserPila.hs][Ordenación de pilas por inserción]].
++ V03 [[./src/nubPila.py][Eliminación de repeticiones en una pila]].
