@@ -18,7 +18,7 @@
 from copy import deepcopy
 from typing import TypeVar
 
-from hypothesis import given, assume
+from hypothesis import assume, given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)

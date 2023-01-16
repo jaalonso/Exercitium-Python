@@ -133,7 +133,7 @@ Notas:
 + [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
 + [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
 + [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
-+ L16 [[./src/expresiones_aritmeticas_reducibles.py][Expresiones aritméticas reducibles]].
++ [[./src/expresiones_aritmeticas_reducibles.py][Expresiones aritméticas reducibles]].
 + M17 [[./src/maximos_valores_de_una_expresion_aritmetica.py][Máximos valores de una expresión aritmética]].
 + X18 [[./src/valor_de_expresiones_aritmeticas_generales.py][Valor de expresiones aritméticas generales]].
 + J19 [[./src/valor_de_una_expresion_vectorial.py][Valor de una expresión vectorial]].

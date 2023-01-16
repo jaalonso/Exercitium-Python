@@ -54,11 +54,11 @@ def pilaAlista(p: Pila[A]) -> list[A]:
     dp = desapila(p)
     return pilaAlista(dp) + [cp]
 
-# ordenadalista(xs, ys) se verifica si xs es una ordenadalista de ys. Por
+# ordenadaLista(xs, ys) se verifica si xs es una lista ordenada. Por
 # ejemplo,
-#    >>> ordenadalista([3,2], [5,3,2,7])
+#    >>> ordenadaLista([2, 5, 8])
 #    True
-#    >>> ordenadalista([3,2], [5,3,7,2])
+#    >>> ordenadalista([2, 8, 5])
 #    False
 def ordenadaLista(xs: list[A]) -> bool:
     return all((x <= y for (x, y) in zip(xs, xs[1:])))
