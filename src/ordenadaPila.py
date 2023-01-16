@@ -24,13 +24,14 @@ from hypothesis import given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import pilaAlista
 
 A = TypeVar('A', int, float, str)
 
 # 1ª solución
 # ===========
 
-def ordenadaPila1(p: Pila[A]) -> bool:
+def ordenadaPila(p: Pila[A]) -> bool:
     if esVacia(p):
         return True
     cp = cima(p)
@@ -38,21 +39,14 @@ def ordenadaPila1(p: Pila[A]) -> bool:
     if esVacia(dp):
         return True
     cdp = cima(dp)
-    return cp <= cdp and ordenadaPila1(dp)
+    return cp <= cdp and ordenadaPila(dp)
 
 # 2ª solución
 # ===========
 
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
-#    [3, 2, 5]
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usará la función pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 # ordenadaLista(xs, ys) se verifica si xs es una lista ordenada. Por
 # ejemplo,
@@ -103,7 +97,7 @@ def ordenadaPila4(p: Pila[A]) -> bool:
 # La propiedad es
 @given(p=pilaAleatoria())
 def test_ordenadaPila(p: Pila[int]) -> None:
-    r = ordenadaPila1(p)
+    r = ordenadaPila(p)
     assert ordenadaPila2(p) == r
     assert ordenadaPila3(p) == r
     assert ordenadaPila4(p) == r

@@ -25,32 +25,26 @@ from hypothesis import strategies as st
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import pilaAlista
 
 A = TypeVar('A')
 
 # 1ª solución
 # ===========
 
-def pertenecePila1(x: A, p: Pila[A]) -> bool:
+def pertenecePila(x: A, p: Pila[A]) -> bool:
     if esVacia(p):
         return False
     cp = cima(p)
     dp = desapila(p)
-    return x == cp or pertenecePila1(x, dp)
+    return x == cp or pertenecePila(x, dp)
 
 # 2ª solución
 # ===========
 
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
-#    [3, 2, 5]
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usará la función pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 def pertenecePila2(x: A, p: Pila[A]) -> bool:
     return x in pilaAlista(p)
@@ -90,7 +84,7 @@ def pertenecePila4(x: A, p: Pila[A]) -> bool:
 # La propiedad es
 @given(x=st.integers(), p=pilaAleatoria())
 def test_pertenecePila(x: int, p: Pila[int]) -> None:
-    r = pertenecePila1(x, p)
+    r = pertenecePila(x, p)
     assert pertenecePila2(x, p) == r
     assert pertenecePila3(x, p) == r
     assert pertenecePila4(x, p) == r

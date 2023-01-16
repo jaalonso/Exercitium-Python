@@ -28,24 +28,17 @@ from hypothesis import strategies as st
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import (pilaAlista)
+from src.pertenecePila import (pertenecePila)
 
 A = TypeVar('A')
 
 # 1ª solución
 # ===========
 
-# pertenecePila(x, p) se verifica si x es un elemento de la pila p. Por
-# ejemplo,
-#    >>> pertenecePila(2, apila(5, apila(2, apila(3, vacia()))))
-#    True
-#    >>> pertenecePila(4, apila(5, apila(2, apila(3, vacia()))))
-#    False
-def pertenecePila(x: A, p: Pila[A]) -> bool:
-    if esVacia(p):
-        return False
-    cp = cima(p)
-    dp = desapila(p)
-    return x == cp or pertenecePila(x, dp)
+# Se usará la función pertenecePila del ejercicio
+# "Pertenencia a una pila" que se encuentra en
+# https://bit.ly/3WdM9GC
 
 def contenidaPila1(p1: Pila[A], p2: Pila[A]) -> bool:
     if esVacia(p1):
@@ -57,16 +50,9 @@ def contenidaPila1(p1: Pila[A], p2: Pila[A]) -> bool:
 # 2ª solución
 # ===========
 
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
-#    [3, 2, 5]
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usará la función pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 def contenidaPila2(p1: Pila[A], p2: Pila[A]) -> bool:
     return set(pilaAlista(p1)) <= set(pilaAlista(p2))

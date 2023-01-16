@@ -27,6 +27,7 @@ from hypothesis import given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import (pilaAlista, listaApila)
 
 A = TypeVar('A')
 
@@ -46,28 +47,9 @@ def filtraPila1(p: Callable[[A], bool], q: Pila[A]) -> Pila[A]:
 # 2ª solución
 # ===========
 
-# listaApila(xs) es la pila formada por los elementos de xs.
-# Por ejemplo,
-#    >>> print(listaApila1([3, 2, 5]))
-#    5 | 3 | 2
-def listaApila(ys: list[A]) -> Pila[A]:
-    def aux(xs: list[A]) -> Pila[A]:
-        if not xs:
-            return vacia()
-        return apila(xs[0], aux(xs[1:]))
-
-    return aux(list(reversed(ys)))
-
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
-#    [3, 2, 5]
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usarán las funciones listaApila y pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 def filtraPila2(p: Callable[[A], bool], q: Pila[A]) -> Pila[A]:
     return listaApila(list(filter(p, pilaAlista(q))))

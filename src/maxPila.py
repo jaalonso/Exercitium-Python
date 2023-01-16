@@ -22,6 +22,7 @@ from hypothesis import assume, given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import pilaAlista
 
 A = TypeVar('A', int, float, str)
 
@@ -38,19 +39,9 @@ def maxPila1(p: Pila[A]) -> A:
 # 2ª solución
 # ===========
 
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> ej = apila(5, apila(2, apila(3, vacia())))
-#    >>> pilaAlista(ej)
-#    [3, 2, 5]
-#    >>> print(ej)
-#    5 | 2 | 3
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usará la función pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 def maxPila2(p: Pila[A]) -> A:
     return max(pilaAlista(p))

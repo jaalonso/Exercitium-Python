@@ -27,31 +27,17 @@ from hypothesis import given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import pilaAlista
+from src.prefijoPila import prefijoPila
 
 A = TypeVar('A')
 
 # 1ª solución
 # ===========
 
-# prefijoPila(p1, p2) se verifica si la pila p1 es justamente un prefijo
-# de la pila p2. Por ejemplo,
-#    >>> ej1 = apila(4, apila(2, vacia()))
-#    >>> ej2 = apila(4, apila(2, apila(5, vacia())))
-#    >>> ej3 = apila(5, apila(4, apila(2, vacia())))
-#    >>> prefijoPila(ej1, ej2)
-#    True
-#    >>> prefijoPila(ej1, ej3)
-#    False
-def prefijoPila(p1: Pila[A], p2: Pila[A]) -> bool:
-    if esVacia(p1):
-        return True
-    if esVacia(p2):
-        return False
-    cp1 = cima(p1)
-    dp1 = desapila(p1)
-    cp2 = cima(p2)
-    dp2 = desapila(p2)
-    return cp1 == cp2 and prefijoPila(dp1, dp2)
+# Se usará la función PrefijoPila del ejercicio
+# "Reconocimiento de prefijos de pilas" que se encuentra en
+# https://bit.ly/3Xqu7lo
 
 def subPila1(p1: Pila[A], p2: Pila[A]) -> bool:
     if esVacia(p1):
@@ -69,16 +55,9 @@ def subPila1(p1: Pila[A], p2: Pila[A]) -> bool:
 # 2ª solución
 # ===========
 
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
-#    [3, 2, 5]
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usará la función pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 # sublista(xs, ys) se verifica si xs es una sublista de ys. Por
 # ejemplo,

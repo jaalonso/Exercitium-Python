@@ -27,13 +27,14 @@ from hypothesis import given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import (pilaAlista)
 
 A = TypeVar('A')
 
 # 1ª solución
 # ===========
 
-def prefijoPila1(p1: Pila[A], p2: Pila[A]) -> bool:
+def prefijoPila(p1: Pila[A], p2: Pila[A]) -> bool:
     if esVacia(p1):
         return True
     if esVacia(p2):
@@ -42,21 +43,14 @@ def prefijoPila1(p1: Pila[A], p2: Pila[A]) -> bool:
     dp1 = desapila(p1)
     cp2 = cima(p2)
     dp2 = desapila(p2)
-    return cp1 == cp2 and prefijoPila1(dp1, dp2)
+    return cp1 == cp2 and prefijoPila(dp1, dp2)
 
 # 2ª solución
 # ===========
 
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> pilaAlista(apila(5, apila(2, apila(3, vacia()))))
-#    [3, 2, 5]
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usará la función pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 def esSufijoLista(xs: list[A], ys: list[A]) -> bool:
     if not xs:
@@ -107,7 +101,7 @@ def prefijoPila4(p1: Pila[A], p2: Pila[A]) -> bool:
 # La propiedad es
 @given(p1=pilaAleatoria(), p2=pilaAleatoria())
 def test_prefijoPila(p1: Pila[int], p2: Pila[int]) -> None:
-    r = prefijoPila1(p1, p2)
+    r = prefijoPila(p1, p2)
     assert prefijoPila2(p1, p2) == r
     assert prefijoPila3(p1, p2) == r
     assert prefijoPila4(p1, p2) == r

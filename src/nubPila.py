@@ -25,24 +25,17 @@ from hypothesis import given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import (pilaAlista, listaApila)
+from src.pertenecePila import pertenecePila
 
 A = TypeVar('A')
 
 # 1ª solución
 # ===========
 
-# pertenecePila(x, p) se verifica si x es un elemento de la pila p. Por
-# ejemplo,
-#    >>> pertenecePila(2, apila(5, apila(2, apila(3, vacia()))))
-#    True
-#    >>> pertenecePila(4, apila(5, apila(2, apila(3, vacia()))))
-#    False
-def pertenecePila(x: A, p: Pila[A]) -> bool:
-    if esVacia(p):
-        return False
-    cp = cima(p)
-    dp = desapila(p)
-    return x == cp or pertenecePila(x, dp)
+# Se usará la función pertenecePila del ejercicio
+# "Pertenencia a una pila" que se encuentra en
+# https://bit.ly/3WdM9GC
 
 def nubPila1(p: Pila[A]) -> Pila[A]:
     if esVacia(p):
@@ -56,31 +49,9 @@ def nubPila1(p: Pila[A]) -> Pila[A]:
 # 2ª solución
 # ===========
 
-# listaApila(xs) es la pila formada por los elementos de xs.
-# Por ejemplo,
-#    >>> print(listaApila([3, 2, 5]))
-#    5 | 2 | 3
-def listaApila(ys: list[A]) -> Pila[A]:
-    def aux(xs: list[A]) -> Pila[A]:
-        if not xs:
-            return vacia()
-        return apila(xs[0], aux(xs[1:]))
-
-    return aux(list(reversed(ys)))
-
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> ej = apila(5, apila(2, apila(3, vacia())))
-#    >>> pilaAlista(ej)
-#    [3, 2, 5]
-#    >>> print(ej)
-#    5 | 2 | 3
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usarán las funciones listaApila y pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 def nub(xs: list[A]) -> list[A]:
     return [x for i, x in enumerate(xs) if x not in xs[:i]]

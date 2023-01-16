@@ -42,7 +42,7 @@ A = TypeVar('A')
 # 1ª definición de listaApila
 # ===========================
 
-def listaApila1(ys: list[A]) -> Pila[A]:
+def listaApila(ys: list[A]) -> Pila[A]:
     def aux(xs: list[A]) -> Pila[A]:
         if not xs:
             return vacia()
@@ -65,17 +65,17 @@ def listaApila2(xs: list[A]) -> Pila[A]:
 # La propiedad es
 @given(st.lists(st.integers()))
 def test_listaApila(xs: list[int]) -> None:
-    assert listaApila1(xs) == listaApila2(xs)
+    assert listaApila(xs) == listaApila2(xs)
 
 # 1ª definición de pilaAlista
 # ===========================
 
-def pilaAlista1(p: Pila[A]) -> list[A]:
+def pilaAlista(p: Pila[A]) -> list[A]:
     if esVacia(p):
         return []
     cp = cima(p)
     dp = desapila(p)
-    return pilaAlista1(dp) + [cp]
+    return pilaAlista(dp) + [cp]
 
 # 2ª definición de pilaAlista
 # ===========================
@@ -110,8 +110,8 @@ def pilaAlista3(p: Pila[A]) -> list[A]:
 
 @given(p=pilaAleatoria())
 def test_pilaAlista(p: Pila[int]) -> None:
-    assert pilaAlista1(p) == pilaAlista2(p)
-    assert pilaAlista1(p) == pilaAlista3(p)
+    assert pilaAlista(p) == pilaAlista2(p)
+    assert pilaAlista(p) == pilaAlista3(p)
 
 # Comprobación de las propiedades
 # ===============================
@@ -119,12 +119,12 @@ def test_pilaAlista(p: Pila[int]) -> None:
 # La primera propiedad es
 @given(st.lists(st.integers()))
 def test_1_listaApila(xs: list[int]) -> None:
-    assert pilaAlista1(listaApila1(xs)) == xs
+    assert pilaAlista(listaApila(xs)) == xs
 
 # La segunda propiedad es
 @given(p=pilaAleatoria())
 def test_2_listaApila(p: Pila[int]) -> None:
-    assert listaApila1(pilaAlista1(p)) == p
+    assert listaApila(pilaAlista(p)) == p
 
 # La comprobación es
 #      src> poetry run pytest -v transformaciones_pilas_listas.py

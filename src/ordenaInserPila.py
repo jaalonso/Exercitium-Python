@@ -25,6 +25,8 @@ from hypothesis import given
 
 from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
                                    pilaAleatoria, vacia)
+from src.transformaciones_pilas_listas import (pilaAlista, listaApila)
+from src.ordenadaPila import ordenadaPila
 
 A = TypeVar('A', int, float, str)
 
@@ -50,31 +52,9 @@ def ordenaInserPila1(p: Pila[A]) -> Pila[A]:
 # 2ª solución
 # ===========
 
-# listaApila(xs) es la pila formada por los elementos de xs.
-# Por ejemplo,
-#    >>> print(listaApila([3, 2, 5]))
-#    5 | 2 | 3
-def listaApila(ys: list[A]) -> Pila[A]:
-    def aux(xs: list[A]) -> Pila[A]:
-        if not xs:
-            return vacia()
-        return apila(xs[0], aux(xs[1:]))
-
-    return aux(list(reversed(ys)))
-
-# pilaAlista(p) es la lista formada por los elementos de la
-# lista p. Por ejemplo,
-#    >>> ej = apila(5, apila(2, apila(3, vacia())))
-#    >>> pilaAlista(ej)
-#    [3, 2, 5]
-#    >>> print(ej)
-#    5 | 2 | 3
-def pilaAlista(p: Pila[A]) -> list[A]:
-    if esVacia(p):
-        return []
-    cp = cima(p)
-    dp = desapila(p)
-    return pilaAlista(dp) + [cp]
+# Se usarán las funciones listaApila y pilaAlista del ejercicio
+# "Transformaciones entre pilas y listas" que se encuentra en
+# https://bit.ly/3ZHewQ8
 
 def insertaLista(x: A, ys: list[A]) -> list[A]:
     if not ys:
@@ -122,21 +102,9 @@ def test_ordenaInserPila(p: Pila[int]) -> None:
 # Comprobación de la propiedad
 # ============================
 
-# ordenadaPila(p) se verifica si los elementos de la pila p están
-# ordenados en orden creciente. Por ejemplo,
-#    >>> ordenadaPila(apila(1, apila(5, apila(6, vacia()))))
-#    True
-#    >>> ordenadaPila(apila(1, apila(0, apila(6, vacia()))))
-#    False
-def ordenadaPila(p: Pila[A]) -> bool:
-    if esVacia(p):
-        return True
-    cp = cima(p)
-    dp = desapila(p)
-    if esVacia(dp):
-        return True
-    cdp = cima(dp)
-    return cp <= cdp and ordenadaPila(dp)
+# Se usará la función ordenadaPila del ejercicio
+# "Reconocimiento de ordenación de pilas" que se encuentra en
+# https://bit.ly/3COqRbK
 
 # La propiedad es
 @given(p=pilaAleatoria())
