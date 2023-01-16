@@ -122,9 +122,8 @@ def test_ordenaInserPila(p: Pila[int]) -> None:
 # Comprobación de la propiedad
 # ============================
 
-#    ordenadaPila : (Pila[A]) -> bool
-# tal que ordenadaPila(p) se verifica si los elementos de la pila p
-# están ordenados en orden creciente. Por ejemplo,
+# ordenadaPila(p) se verifica si los elementos de la pila p están
+# ordenados en orden creciente. Por ejemplo,
 #    >>> ordenadaPila(apila(1, apila(5, apila(6, vacia()))))
 #    True
 #    >>> ordenadaPila(apila(1, apila(0, apila(6, vacia()))))
