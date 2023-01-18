@@ -1,5 +1,6 @@
 from hypothesis import given
 from hypothesis import strategies as st
+
 from src.tres_iguales import tresIguales1, tresIguales2
 
 

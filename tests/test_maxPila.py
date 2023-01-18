@@ -1,5 +1,4 @@
-from src.maxPila import (apila, maxPila1, maxPila2,
-                         maxPila3, maxPila4, vacia)
+from src.maxPila import apila, maxPila1, maxPila2, maxPila3, maxPila4, vacia
 
 
 def test_ordenaInserApila() -> None:

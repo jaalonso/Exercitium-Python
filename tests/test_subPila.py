@@ -1,5 +1,5 @@
-from src.subPila import (apila, subPila1, subPila2, subPila3,
-                         vacia)
+from src.subPila import apila, subPila1, subPila2, subPila3, vacia
+
 
 def test_subPila() -> None:
     ej1 = apila(2, apila(3, vacia()))

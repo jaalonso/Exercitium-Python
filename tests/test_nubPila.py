@@ -1,5 +1,4 @@
-from src.nubPila import (apila, nubPila1, nubPila2,
-                         nubPila3, vacia)
+from src.nubPila import apila, nubPila1, nubPila2, nubPila3, vacia
 
 
 def test_nubApila() -> None:

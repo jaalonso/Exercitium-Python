@@ -1,5 +1,6 @@
 from hypothesis import given
 from hypothesis import strategies as st
+
 from src.elementos_finales import finales1, finales2, finales3
 
 

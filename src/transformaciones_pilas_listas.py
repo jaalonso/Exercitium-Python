@@ -34,8 +34,8 @@ from typing import TypeVar
 from hypothesis import given
 from hypothesis import strategies as st
 
-from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
-                                   pilaAleatoria, vacia)
+from src.TAD.pila import (Pila, apila, cima, desapila, esVacia, pilaAleatoria,
+                          vacia)
 
 A = TypeVar('A')
 

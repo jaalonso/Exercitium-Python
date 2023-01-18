@@ -1,5 +1,6 @@
 from hypothesis import given
 from hypothesis import strategies as st
+
 from src.segmento_de_una_lista import segmento1, segmento2
 
 

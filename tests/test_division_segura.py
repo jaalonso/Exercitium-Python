@@ -1,5 +1,6 @@
 from hypothesis import given
 from hypothesis import strategies as st
+
 from src.division_segura import divisionSegura1, divisionSegura2
 
 
