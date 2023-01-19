@@ -1,5 +1,5 @@
-# pilaConListas.py
-# Implementación de las pilas mediante listas.
+# pilaConDeque.py
+# Implementación de las pilas mediante deque.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 2-enero-2023
 # ======================================================================
@@ -58,6 +58,7 @@ __all__ = [
     'pilaAleatoria'
 ]
 
+from collections import deque
 from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import Generic, TypeVar
@@ -72,18 +73,18 @@ A = TypeVar('A')
 
 @dataclass
 class Pila(Generic[A]):
-    _elementos: list[A] = field(default_factory=list)
+    _elementos: deque[A] = field(default_factory=deque)
 
     def __str__(self) -> str:
         if len(self._elementos) == 0:
             return '-'
         cadena = ''
-        for x in self._elementos[:-1]:
+        for x in self._elementos:
             cadena = cadena + str(x) + ' | '
-        return cadena + str(self._elementos[-1])
+        return cadena[:-3]
 
     def apila(self, x: A) -> None:
-        self._elementos.insert(0, x)
+        self._elementos.appendleft(x)
 
     def esVacia(self) -> bool:
         return len(self._elementos) == 0
@@ -92,7 +93,7 @@ class Pila(Generic[A]):
         return self._elementos[0]
 
     def desapila(self) -> None:
-        self._elementos.pop(0)
+        self._elementos.popleft()
 
 # Funciones del tipo de las listas
 # ================================
@@ -102,9 +103,9 @@ def vacia() -> Pila[A]:
     return p
 
 def apila(x: A, p: Pila[A]) -> Pila[A]:
-    aux = deepcopy(p)
-    aux.apila(x)
-    return aux
+    _aux = deepcopy(p)
+    _aux.apila(x)
+    return _aux
 
 def esVacia(p: Pila[A]) -> bool:
     return p.esVacia()
@@ -113,9 +114,9 @@ def cima(p: Pila[A]) -> A:
     return p.cima()
 
 def desapila(p: Pila[A]) -> Pila[A]:
-    aux = deepcopy(p)
-    aux.desapila()
-    return aux
+    _aux = deepcopy(p)
+    _aux.desapila()
+    return _aux
 
 # Generador de pilas
 # ==================
@@ -140,5 +141,5 @@ def test_pila(p: Pila[int], x: int) -> None:
     assert not esVacia(apila(x, p))
 
 # La comprobación es
-#    > poetry run pytest -q pilaConListas.py
+#    > poetry run pytest -q pilaConQueue.py
 #    1 passed in 0.25s
