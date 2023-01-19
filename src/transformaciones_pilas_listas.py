@@ -5,8 +5,7 @@
 # ======================================================================
 
 # ---------------------------------------------------------------------
-# Utilizando el [tipo de las pilas](https://bit.ly/3GTToyK)
-# (cuyo código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by))
+# Utilizando el [tipo abstacto de datos de las pilas](https://bit.ly/3GTToyK)
 # definir las funciones
 #    listaApila : (list[A]) -> Pila[A]
 #    pilaALista : (Pila[A]) -> list[A]

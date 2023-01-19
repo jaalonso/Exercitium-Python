@@ -5,8 +5,7 @@
 # ======================================================================
 
 # ---------------------------------------------------------------------
-# Utilizando el [tipo de las pilas](https://bit.ly/3GTToyK)
-# (cuyo código se encuentra en [pilaConListas.py](https://bit.ly/3VVt8by))
+# Utilizando el [tipo abstracto de las pilas de las pilas](https://bit.ly/3GTToyK),
 # definir la función
 #    pertenecePila : (A, Pila[A]) -> bool
 # tal que pertenecePila(x, p) se verifica si x es un elemento de la
