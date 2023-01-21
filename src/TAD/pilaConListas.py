@@ -5,11 +5,10 @@
 # ======================================================================
 
 # Se define la clase Pila con los siguientes métodos:
-#    + vacia() es la pila vacía.
-#    + apila(x, p) es la pila obtenida añadiendo x al principio de p.
-#    + cima(p) es la cima de la pila p.
-#    + desapila(p) es la pila obtenida suprimiendo la cima de p.
-#    + esVacia(p) se verifica si p es la pila vacía.
+#    + apila(x) añade x al principio de la pila.
+#    + cima() devuelve la cima de la pila.
+#    + desapila() elimina la cima de la pila.
+#    + esVacia() se verifica si la pila es vacía.
 # Por ejemplo,
 #    >>> p = Pila()
 #    >>> print(p)

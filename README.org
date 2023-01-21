@@ -137,9 +137,9 @@ Notas:
 + [[./src/maximos_valores_de_una_expresion_aritmetica.py][Máximos valores de una expresión aritmética]].
 + [[./src/valor_de_expresiones_aritmeticas_generales.py][Valor de expresiones aritméticas generales]].
 + [[./src/valor_de_una_expresion_vectorial.py][Valor de una expresión vectorial]].
-+ V20 [[./src/TAD/pila.py][El tipo abstracto de datos de las pilas]].
-+ V20 [[./src/TAD/pilaConListas.py][El tipo de datos de las pilas mediante listas]].
-+ V20 [[./src/TAD/pilaConDeque.py][El tipo de datos de las pilas mediante deque]].
++ [[./src/TAD/pila.py][El tipo abstracto de datos de las pilas]].
++ [[./src/TAD/pilaConListas.py][El tipo de datos de las pilas mediante listas]].
++ [[./src/TAD/pilaConDeque.py][El tipo de datos de las pilas mediante deque]].
 + L23 [[./src/transformaciones_pilas_listas.py][Transformación entre pilas y listas]].
 + M24 [[./src/filtraPila.py][Filtrado de pilas según una propiedad]].
 + X25 [[./src/mapPila.py][Aplicación de una función a los elementos de una pila]].
@@ -151,3 +151,6 @@ Notas:
 + J02 [[./src/ordenaInserPila.py][Ordenación de pilas por inserción]].
 + V03 [[./src/nubPila.py][Eliminación de repeticiones en una pila]].
 + L06 [[./src/maxPila.py][Máximo elemento de una pila]].
++ M07 [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
++ M07 [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
++ M07 [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].

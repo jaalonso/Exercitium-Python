@@ -1,8 +1,8 @@
-from src.TAD.colaConListas import (Cola, vacia, inserta, primero, resto,
-                                   esVacia)
+from src.TAD.colaConListas import Cola, esVacia, inserta, primero, resto, vacia
+
 
 def test_cola() -> None:
-    c = Cola()
+    c: Cola[int] = Cola()
     assert str(c) == "-"
     c.inserta(5)
     c.inserta(2)
