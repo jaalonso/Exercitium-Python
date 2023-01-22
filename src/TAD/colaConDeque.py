@@ -75,41 +75,74 @@ class Cola(Generic[A]):
     _elementos: deque[A] = field(default_factory=deque)
 
     def __str__(self) -> str:
+        """
+        Devuelve una cadena con los elementos de la cola separados por " | ".
+        Si la cola está vacía, devuelve "-".
+        """
         if self.esVacia():
             return '-'
         return ' | '.join(map(str, self._elementos))
 
     def inserta(self, x: A) -> None:
+        """
+        Inserta el elemento x en la cola.
+        """
         self._elementos.append(x)
 
     def esVacia(self) -> bool:
+        """
+        Devuelve si la cola está vacía.
+        """
         return not self._elementos
 
     def primero(self) -> A:
+        """
+        Devuelve el primer elemento de la cola.
+        """
         return self._elementos[0]
 
     def resto(self) -> None:
+        """
+        Elimina el primer elemento de la cola.
+        """
         self._elementos.popleft()
 
 # Funciones del tipo de las deque
 # ================================
 
 def vacia() -> Cola[A]:
+    """
+    Crea y devuelve una cola vacía de tipo A.
+    """
     c: Cola[A] = Cola()
     return c
 
 def inserta(x: A, c: Cola[A]) -> Cola[A]:
+    """
+    Inserta un elemento x en la cola c y devuelve una nueva cola con
+    el elemento insertado.
+    """
     _aux = deepcopy(c)
     _aux.inserta(x)
     return _aux
 
 def esVacia(c: Cola[A]) -> bool:
+    """
+    Devuelve True si la cola está vacía, False si no lo está.
+    """
     return c.esVacia()
 
 def primero(c: Cola[A]) -> A:
+    """
+    Devuelve el primer elemento de la cola c.
+    """
     return c.primero()
 
 def resto(c: Cola[A]) -> Cola[A]:
+    """
+    Elimina el primer elemento de la cola c y devuelve una copia de la
+    cola resultante.
+    """
     _aux = deepcopy(c)
     _aux.resto()
     return _aux
@@ -118,7 +151,16 @@ def resto(c: Cola[A]) -> Cola[A]:
 # ==================
 
 def colaAleatoria() -> st.SearchStrategy[Cola[int]]:
+    """
+    Genera una cola aleatoria de enteros utilizando el módulo "hypothesis".
+
+    Utiliza la función "builds" para construir una cola a partir de una lista
+    de enteros generada aleatoriamente.
+    """
     def _creaCola(elementos: list[int]) -> Cola[int]:
+        """
+        Crea una cola de enteros a partir de una lista de elementos.
+        """
         cola: Cola[int] = vacia()
         for x in elementos:
             cola = inserta(x, cola)

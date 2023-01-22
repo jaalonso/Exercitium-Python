@@ -153,4 +153,5 @@ Notas:
 + L06 [[./src/maxPila.py][Máximo elemento de una pila]].
 + M07 [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
 + M07 [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
++ M07 [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
 + M07 [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].

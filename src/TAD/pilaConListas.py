@@ -74,41 +74,76 @@ class Pila(Generic[A]):
     _elementos: list[A] = field(default_factory=list)
 
     def __str__(self) -> str:
+        """
+        Devuelve una cadena con los elementos de la pila separados por " | ".
+        Si la pila está vacía, devuelve "-".
+        """
         if len(self._elementos) == 0:
             return '-'
         return " | ".join(str(x) for x in self._elementos)
 
     def apila(self, x: A) -> None:
+        """
+        Agrega el elemento x al inicio de la pila.
+        """
         self._elementos.insert(0, x)
 
     def esVacia(self) -> bool:
+        """
+        Verifica si la pila está vacía.
+
+        Devuelve True si la pila está vacía, False en caso contrario.
+        """
         return not self._elementos
 
     def cima(self) -> A:
+        """
+        Devuelve el elemento en la cima de la pila.
+        """
         return self._elementos[0]
 
     def desapila(self) -> None:
+        """
+        Elimina el elemento en la cima de la pila.
+        """
         self._elementos.pop(0)
 
 # Funciones del tipo de las listas
 # ================================
 
 def vacia() -> Pila[A]:
+    """
+    Crea y devuelve una pila vacía de tipo A.
+    """
     p: Pila[A] = Pila()
     return p
 
 def apila(x: A, p: Pila[A]) -> Pila[A]:
+    """
+    Añade un elemento x al tope de la pila p y devuelve una copia de la
+    pila modificada.
+    """
     aux = deepcopy(p)
     aux.apila(x)
     return aux
 
 def esVacia(p: Pila[A]) -> bool:
+    """
+    Devuelve True si la pila está vacía, False si no lo está.
+    """
     return p.esVacia()
 
 def cima(p: Pila[A]) -> A:
+    """
+    Devuelve el elemento en la cima de la pila p.
+    """
     return p.cima()
 
 def desapila(p: Pila[A]) -> Pila[A]:
+    """
+    Elimina el elemento en la cima de la pilla p y devuelve una copia de la
+    pila resultante.
+    """
     aux = deepcopy(p)
     aux.desapila()
     return aux
@@ -117,6 +152,13 @@ def desapila(p: Pila[A]) -> Pila[A]:
 # ==================
 
 def pilaAleatoria() -> st.SearchStrategy[Pila[int]]:
+    """
+    Genera una estrategia de búsqueda para generar pilas de enteros de
+    forma aleatoria.
+
+    Utiliza la librería Hypothesis para generar una lista de enteros y
+    luego se convierte en una instancia de la clase pila.
+    """
     return st.lists(st.integers()).map(Pila)
 
 # Comprobación de las propiedades de las pilas

@@ -75,18 +75,39 @@ class Cola(Generic[A]):
     _segunda: list[A] = field(default_factory=list)
 
     def _elementos(self) -> list[A]:
+        """
+        Devuelve una lista con los elementos de la cola en orden.
+        """
         return self._primera + self._segunda[::-1]
 
     def __str__(self) -> str:
+        """
+        Devuelve una cadena con los elementos de la cola separados por " | ".
+        Si la cola está vacía, devuelve "-".
+        """
         elementos = self._elementos()
         if not elementos:
             return "-"
         return " | ".join(map(str, elementos))
 
     def __eq__(self, c) -> bool:
+        """
+        Comprueba si la cola actual es igual a otra cola.
+        Se considera que dos colas son iguales si tienen los mismos
+        elementos en el mismo orden.
+
+        Parámetro:
+        - c (Cola): La cola con la que se va a comparar.
+
+        Devuelve True si las dos colas son iguales, False en caso
+        contrario.
+        """
         return self._elementos() == c._elementos()
 
     def inserta(self, y: A) -> None:
+        """
+        Inserta el elemento y en la cola.
+        """
         xs = self._primera
         ys = self._segunda
         # Si no hay elementos en la primera lista, se inserta en la segunda
@@ -100,12 +121,21 @@ class Cola(Generic[A]):
             ys.insert(0, y)
 
     def esVacia(self) -> bool:
+        """
+        Devuelve si la cola está vacía.
+        """
         return not self._primera
 
     def primero(self) -> A:
+        """
+        Devuelve el primer elemento de la cola.
+        """
         return self._primera[0]
 
     def resto(self) -> None:
+        """
+        Elimina el primer elemento de la cola.
+        """
         xs = self._primera
         ys = self._segunda
         del xs[0]
@@ -117,21 +147,38 @@ class Cola(Generic[A]):
 # ================================
 
 def vacia() -> Cola[A]:
+    """
+    Crea y devuelve una cola vacía de tipo A.
+    """
     c: Cola[A] = Cola()
     return c
 
 def inserta(x: A, c: Cola[A]) -> Cola[A]:
+    """
+    Inserta un elemento x en la cola c y devuelve una nueva cola con
+    el elemento insertado.
+    """
     _aux = deepcopy(c)
     _aux.inserta(x)
     return _aux
 
 def esVacia(c: Cola[A]) -> bool:
+    """
+    Devuelve True si la cola está vacía, False si no lo está.
+    """
     return c.esVacia()
 
 def primero(c: Cola[A]) -> A:
+    """
+    Devuelve el primer elemento de la cola c.
+    """
     return c.primero()
 
 def resto(c: Cola[A]) -> Cola[A]:
+    """
+    Elimina el primer elemento de la cola c y devuelve una copia de la
+    cola resultante.
+    """
     _aux = deepcopy(c)
     _aux.resto()
     return _aux
@@ -140,6 +187,13 @@ def resto(c: Cola[A]) -> Cola[A]:
 # ==================
 
 def colaAleatoria() -> st.SearchStrategy[Cola[int]]:
+    """
+    Genera una estrategia de búsqueda para generar colas de enteros de
+    forma aleatoria.
+
+    Utiliza la librería Hypothesis para generar una lista de enteros y
+    luego se convierte en una instancia de la clase cola.
+    """
     return st.lists(st.integers()).map(Cola)
 
 # Comprobación de las propiedades de las colas

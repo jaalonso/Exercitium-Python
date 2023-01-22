@@ -74,44 +74,76 @@ class Cola(Generic[A]):
     _elementos: list[A] = field(default_factory=list)
 
     def __str__(self) -> str:
-        if len(self._elementos) == 0:
+        """
+        Devuelve una cadena con los elementos de la cola separados por " | ".
+        Si la cola está vacía, devuelve "-".
+        """
+        if not self._elementos:
             return '-'
-        cadena = ''
-        for x in self._elementos[:-1]:
-            cadena = cadena + str(x) + ' | '
-        return cadena + str(self._elementos[-1])
+        return ' | '.join(str(x) for x in self._elementos)
 
     def inserta(self, x: A) -> None:
+        """
+        Inserta el elemento x al final de la cola.
+        """
         self._elementos.append(x)
 
     def esVacia(self) -> bool:
-        return len(self._elementos) == 0
+        """
+        Comprueba si la cola está vacía.
+
+        Devuelve True si la cola está vacía, False en caso contrario.
+        """
+        return not self._elementos
 
     def primero(self) -> A:
+        """
+        Devuelve el primer elemento de la cola.
+        """
         return self._elementos[0]
 
     def resto(self) -> None:
+        """
+        Elimina el primer elemento de la cola
+        """
         self._elementos.pop(0)
 
 # Funciones del tipo de las listas
 # ================================
 
 def vacia() -> Cola[A]:
+    """
+    Crea y devuelve una cola vacía de tipo A.
+    """
     c: Cola[A] = Cola()
     return c
 
 def inserta(x: A, c: Cola[A]) -> Cola[A]:
+    """
+    Inserta un elemento x en la cola c y devuelve una nueva cola con
+    el elemento insertado.
+    """
     _aux = deepcopy(c)
     _aux.inserta(x)
     return _aux
 
 def esVacia(c: Cola[A]) -> bool:
+    """
+    Devuelve True si la cola está vacía, False si no lo está.
+    """
     return c.esVacia()
 
 def primero(c: Cola[A]) -> A:
+    """
+    Devuelve el primer elemento de la cola c.
+    """
     return c.primero()
 
 def resto(c: Cola[A]) -> Cola[A]:
+    """
+    Elimina el primer elemento de la cola c y devuelve una copia de la
+    cola resultante.
+    """
     _aux = deepcopy(c)
     _aux.resto()
     return _aux
@@ -120,6 +152,13 @@ def resto(c: Cola[A]) -> Cola[A]:
 # ==================
 
 def colaAleatoria() -> st.SearchStrategy[Cola[int]]:
+    """
+    Genera una estrategia de búsqueda para generar colas de enteros de
+    forma aleatoria.
+
+    Utiliza la librería Hypothesis para generar una lista de enteros y
+    luego se convierte en una instancia de la clase cola.
+    """
     return st.lists(st.integers()).map(Cola)
 
 # Comprobación de las propiedades de las colas
