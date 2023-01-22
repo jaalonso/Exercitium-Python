@@ -120,12 +120,7 @@ def resto(c: Cola[A]) -> Cola[A]:
 # ==================
 
 def colaAleatoria() -> st.SearchStrategy[Cola[int]]:
-    def _build_cola(elementos: list[int]) -> Cola[int]:
-        cola: Cola[int] = vacia()
-        for x in elementos:
-            cola = inserta(x, cola)
-        return cola
-    return st.builds(_build_cola, st.lists(st.integers()))
+    return st.lists(st.integers()).map(Cola)
 
 # Comprobación de las propiedades de las colas
 # ============================================

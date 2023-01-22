@@ -75,18 +75,15 @@ class Cola(Generic[A]):
     _elementos: deque[A] = field(default_factory=deque)
 
     def __str__(self) -> str:
-        if len(self._elementos) == 0:
+        if self.esVacia():
             return '-'
-        cadena = ''
-        for x in self._elementos:
-            cadena = cadena + str(x) + ' | '
-        return cadena[:-3]
+        return ' | '.join(map(str, self._elementos))
 
     def inserta(self, x: A) -> None:
         self._elementos.append(x)
 
     def esVacia(self) -> bool:
-        return len(self._elementos) == 0
+        return not self._elementos
 
     def primero(self) -> A:
         return self._elementos[0]
@@ -121,12 +118,12 @@ def resto(c: Cola[A]) -> Cola[A]:
 # ==================
 
 def colaAleatoria() -> st.SearchStrategy[Cola[int]]:
-    def _build_cola(elementos: list[int]) -> Cola[int]:
+    def _creaCola(elementos: list[int]) -> Cola[int]:
         cola: Cola[int] = vacia()
         for x in elementos:
             cola = inserta(x, cola)
         return cola
-    return st.builds(_build_cola, st.lists(st.integers()))
+    return st.builds(_creaCola, st.lists(st.integers()))
 
 # Comprobación de las propiedades de las colas
 # ============================================

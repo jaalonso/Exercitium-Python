@@ -75,20 +75,13 @@ class Cola(Generic[A]):
     _segunda: list[A] = field(default_factory=list)
 
     def _elementos(self) -> list[A]:
-        xs = self._primera
-        ys = self._segunda
-        return xs + list(reversed(ys))
+        return self._primera + self._segunda[::-1]
 
     def __str__(self) -> str:
-        def aux(xs: list[A]) -> str:
-            if len(xs) == 0:
-                return '-'
-            cadena = ''
-            for x in xs[:-1]:
-                cadena = cadena + str(x) + ' | '
-            return cadena + str(xs[-1])
-
-        return aux(self._elementos())
+        elementos = self._elementos()
+        if not elementos:
+            return "-"
+        return " | ".join(map(str, elementos))
 
     def __eq__(self, c) -> bool:
         return self._elementos() == c._elementos()
@@ -96,15 +89,18 @@ class Cola(Generic[A]):
     def inserta(self, y: A) -> None:
         xs = self._primera
         ys = self._segunda
+        # Si no hay elementos en la primera lista, se inserta en la segunda
         if not xs:
             ys.insert(0, y)
-            xs.extend(ys[::-1])
+            # Se invierte la segunda lista y se asigna a la primera
+            self._primera = ys[::-1]
             self._segunda = []
-        if xs:
+        else:
+            # Si hay elementos en la primera lista, se inserta en la segunda
             ys.insert(0, y)
 
     def esVacia(self) -> bool:
-        return len(self._primera) == 0
+        return not self._primera
 
     def primero(self) -> A:
         return self._primera[0]
@@ -114,7 +110,7 @@ class Cola(Generic[A]):
         ys = self._segunda
         del xs[0]
         if not xs:
-            xs.extend(ys[::-1])
+            self._primera = ys[::-1]
             self._segunda = []
 
 # Funciones del tipo de las listas
@@ -144,12 +140,7 @@ def resto(c: Cola[A]) -> Cola[A]:
 # ==================
 
 def colaAleatoria() -> st.SearchStrategy[Cola[int]]:
-    def _build_cola(elementos: list[int]) -> Cola[int]:
-        cola: Cola[int] = vacia()
-        for x in elementos:
-            cola = inserta(x, cola)
-        return cola
-    return st.builds(_build_cola, st.lists(st.integers()))
+    return st.lists(st.integers()).map(Cola)
 
 # Comprobación de las propiedades de las colas
 # ============================================

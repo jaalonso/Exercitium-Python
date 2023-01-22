@@ -77,10 +77,7 @@ class Pila(Generic[A]):
     def __str__(self) -> str:
         if len(self._elementos) == 0:
             return '-'
-        cadena = ''
-        for x in self._elementos:
-            cadena = cadena + str(x) + ' | '
-        return cadena[:-3]
+        return ' | '.join(str(x) for x in self._elementos)
 
     def apila(self, x: A) -> None:
         self._elementos.appendleft(x)
@@ -121,12 +118,11 @@ def desapila(p: Pila[A]) -> Pila[A]:
 # ==================
 
 def pilaAleatoria() -> st.SearchStrategy[Pila[int]]:
-    def _build_pila(elementos: list[int]) -> Pila[int]:
+    def _creaPila(elementos: list[int]) -> Pila[int]:
         pila: Pila[int] = vacia()
-        for x in elementos:
-            pila = apila(x, pila)
+        pila._elementos.extendleft(elementos)
         return pila
-    return st.builds(_build_pila, st.lists(st.integers()))
+    return st.builds(_creaPila, st.lists(st.integers()))
 
 # Comprobación de las propiedades de las pilas
 # ============================================
