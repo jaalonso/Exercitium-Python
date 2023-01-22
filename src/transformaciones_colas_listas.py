@@ -8,14 +8,14 @@
 # Utilizando el [tipo abstracto de datos de las colas](https://bit.ly/3GTToyK)
 # definir las funciones
 #    listaAcola : (list[A]) -> Cola[A]
-#    colaALista : (Cola[A]) -> list[A]
+#    colaAlista : (Cola[A]) -> list[A]
 # tales que
 # + listaAcola(xs) es la cola formada por los elementos de xs.
 #   Por ejemplo,
 #      >>> print(listaAcola([3, 2, 5]))
 #      3 | 2 | 5
-# + colaAlista(p) es la lista formada por los elementos de la
-#   lista p. Por ejemplo,
+# + colaAlista(c) es la lista formada por los elementos de la
+#   cola c. Por ejemplo,
 #      >>> ej = inserta(5, inserta(2, inserta(3, vacia())))
 #      >>> colaAlista(ej)
 #      [3, 2, 5]

@@ -8,14 +8,14 @@
 # Utilizando el [tipo abstacto de datos de las pilas](https://bit.ly/3GTToyK)
 # definir las funciones
 #    listaApila : (list[A]) -> Pila[A]
-#    pilaALista : (Pila[A]) -> list[A]
+#    pilaAlista : (Pila[A]) -> list[A]
 # tales que
 # + listaApila(xs) es la pila formada por los elementos de xs.
 #   Por ejemplo,
 #      >>> print(listaApila([3, 2, 5]))
 #      5 | 2 | 3
 # + pilaAlista(p) es la lista formada por los elementos de la
-#   lista p. Por ejemplo,
+#   pila p. Por ejemplo,
 #      >>> ej = apila(5, apila(2, apila(3, vacia())))
 #      >>> pilaAlista(ej)
 #      [3, 2, 5]
