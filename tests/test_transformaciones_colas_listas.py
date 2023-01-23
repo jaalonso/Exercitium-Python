@@ -1,6 +1,7 @@
-from src.transformaciones_colas_listas import \
-    (inserta, listaAcola, listaAcola2, colaAlista, colaAlista2,
-     colaAlista3, vacia)
+from src.transformaciones_colas_listas import (colaAlista, colaAlista2,
+                                               colaAlista3, inserta,
+                                               listaAcola, listaAcola2, vacia)
+
 
 def test_transfomaciones_colas_listas() -> None:
     assert str(listaAcola([3, 2, 5])) == "3 | 2 | 5"

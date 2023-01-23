@@ -42,7 +42,8 @@ __all__ = [
     'desapila',
     'pilaAleatoria'
 ]
-from src.TAD.pilaConListas import (Pila, vacia, apila, esVacia, cima,
-                                   desapila, pilaAleatoria)
+from src.TAD.pilaConListas import (Pila, apila, cima, desapila, esVacia,
+                                   pilaAleatoria, vacia)
+
 # from src.TAD.pilaConDeque import (Pila, apila, cima, desapila, esVacia,
 #                                   pilaAleatoria, vacia)

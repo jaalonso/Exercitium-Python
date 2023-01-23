@@ -59,7 +59,7 @@ __all__ = [
 
 from copy import deepcopy
 from dataclasses import dataclass, field
-from typing import Generic, TypeVar
+from typing import Any, Generic, TypeVar
 
 from hypothesis import assume, given
 from hypothesis import strategies as st
@@ -90,7 +90,7 @@ class Cola(Generic[A]):
             return "-"
         return " | ".join(map(str, elementos))
 
-    def __eq__(self, c) -> bool:
+    def __eq__(self, c: Any) -> bool:
         """
         Comprueba si la cola actual es igual a otra cola.
         Se considera que dos colas son iguales si tienen los mismos

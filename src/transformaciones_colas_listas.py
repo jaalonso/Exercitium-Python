@@ -33,8 +33,8 @@ from typing import TypeVar
 from hypothesis import given
 from hypothesis import strategies as st
 
-from src.TAD.cola import (Cola, inserta, primero, resto, esVacia, vacia,
-                          colaAleatoria)
+from src.TAD.cola import (Cola, colaAleatoria, esVacia, inserta, primero,
+                          resto, vacia)
 
 A = TypeVar('A')
 

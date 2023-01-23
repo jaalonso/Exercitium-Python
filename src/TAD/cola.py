@@ -47,6 +47,7 @@ __all__ = [
 ]
 from src.TAD.colaConListas import (Cola, colaAleatoria, esVacia, inserta,
                                    primero, resto, vacia)
+
 # from src.TAD.colaConDosListas import (Cola, colaAleatoria, esVacia, inserta,
 #                                       primero, resto, vacia)
 # from src.TAD.colaConDeque import (Cola, vacia, inserta, primero, resto,
