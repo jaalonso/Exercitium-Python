@@ -140,8 +140,8 @@ Notas:
 + [[./src/TAD/pila.py][El tipo abstracto de datos de las pilas]].
 + [[./src/TAD/pilaConListas.py][El tipo de datos de las pilas mediante listas]].
 + [[./src/TAD/pilaConDeque.py][El tipo de datos de las pilas mediante deque]].
-+ L23 [[./src/transformaciones_pilas_listas.py][TAD de las pilas: Transformación entre pilas y listas]].
-+ M24 [[./src/filtraPila.py][TAD de las pilas: Filtrado de pilas según una propiedad]].
++ [[./src/transformaciones_pilas_listas.py][TAD de las pilas: Transformación entre pilas y listas]].
++ [[./src/filtraPila.py][TAD de las pilas: Filtrado de pilas según una propiedad]].
 + X25 [[./src/mapPila.py][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
 + J26 [[./src/pertenecePila.py][TAD de las pilas: Pertenencia a una pila]].
 + V27 [[./src/contenidaPila.py][TAD de las pilas: Inclusión de pilas]].
@@ -157,3 +157,5 @@ Notas:
 + M07 [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
 + X08 [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
 + J09 [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
++ V10 [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
++ L13 [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
