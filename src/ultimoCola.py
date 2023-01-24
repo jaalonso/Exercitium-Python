@@ -94,8 +94,12 @@ def ultimoCola5(c: Cola[A]) -> A:
         raise ValueError("cola vacia")
     return colaAlista(c)[-1]
 
+# Comprobación de equivalencia
+# ============================
+
+# La propiedad es
 @given(c=colaAleatoria())
-def test_2_listaAcola(c: Cola[int]) -> None:
+def test_ultimoCola(c: Cola[int]) -> None:
     assume(not esVacia(c))
     r = ultimoCola(c)
     assert ultimoCola2(c) == r
