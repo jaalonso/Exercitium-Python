@@ -1,6 +1,7 @@
-from src.algunoVerifica import \
-    (algunoVerifica1, algunoVerifica2, algunoVerifica3, algunoVerifica4,
-     algunoVerifica5, vacia, inserta)
+from src.algunoVerifica import (algunoVerifica1, algunoVerifica2,
+                                algunoVerifica3, algunoVerifica4,
+                                algunoVerifica5, inserta, vacia)
+
 
 def test_algunoVerifica() -> None:
     for algunoVerifica in [algunoVerifica1, algunoVerifica2,
