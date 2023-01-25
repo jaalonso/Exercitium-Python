@@ -94,7 +94,7 @@ def algunoVerifica5(p: Callable[[A], bool], c: Cola[A]) -> bool:
 
 # La propiedad es
 @given(c=colaAleatoria())
-def test_filtraPila(c: Cola[int]) -> None:
+def test_algunoVerifica(c: Cola[int]) -> None:
     r = algunoVerifica1(lambda x: x > 0, c)
     assert algunoVerifica2(lambda x: x > 0, c) == r
     assert algunoVerifica3(lambda x: x > 0, c) == r
