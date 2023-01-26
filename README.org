@@ -143,7 +143,7 @@ Notas:
 + [[./src/transformaciones_pilas_listas.py][TAD de las pilas: Transformación entre pilas y listas]].
 + [[./src/filtraPila.py][TAD de las pilas: Filtrado de pilas según una propiedad]].
 + [[./src/mapPila.py][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
-+ J26 [[./src/pertenecePila.py][TAD de las pilas: Pertenencia a una pila]].
++ [[./src/pertenecePila.py][TAD de las pilas: Pertenencia a una pila]].
 + V27 [[./src/contenidaPila.py][TAD de las pilas: Inclusión de pilas]].
 + L30 [[./src/prefijoPila.py][TAD de las pilas: Reconocimiento de prefijos de pilas]].
 + M31 [[./src/subPila.py][TAD de las pilas: Reconocimiento de subpilas]].
@@ -161,3 +161,4 @@ Notas:
 + L13 [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
 + M14 [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + X15 [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
++ J16 [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
