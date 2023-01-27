@@ -167,3 +167,4 @@ Notas:
 + M21 [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
 + X22 [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
 + J23 [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
++ V24 [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
