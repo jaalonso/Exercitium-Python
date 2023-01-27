@@ -163,3 +163,4 @@ Notas:
 + X15 [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
 + J16 [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
 + V17 [[./src/agrupaColas.py][TAD de las colas: Agrupación de colas]].
++ L20 [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
