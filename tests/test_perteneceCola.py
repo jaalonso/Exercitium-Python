@@ -1,5 +1,5 @@
-from src.perteneceCola import \
-    (perteneceCola, perteneceCola2, vacia, inserta)
+from src.perteneceCola import inserta, perteneceCola, perteneceCola2, vacia
+
 
 def test_perteneceCola() -> None:
     for perteneceCola_ in [perteneceCola, perteneceCola2]:

@@ -30,8 +30,8 @@ from typing import TypeVar
 from hypothesis import given
 from hypothesis import strategies as st
 
-from src.TAD.cola import (Cola, colaAleatoria, inserta, vacia)
 from src.intercalaColas import intercalaColas
+from src.TAD.cola import Cola, colaAleatoria, inserta, vacia
 
 A = TypeVar('A')
 

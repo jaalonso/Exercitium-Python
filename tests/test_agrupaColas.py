@@ -1,5 +1,5 @@
-from src.agrupaColas import \
-    (agrupaColas1, agrupaColas2, vacia, inserta)
+from src.agrupaColas import agrupaColas1, agrupaColas2, inserta, vacia
+
 
 def test_agrupaColas() -> None:
     ej1 = inserta(2, inserta(5, vacia()))

@@ -25,8 +25,8 @@ from typing import TypeVar
 from hypothesis import given
 
 from src.perteneceCola import perteneceCola
-from src.TAD.cola import (Cola, primero, resto, esVacia, vacia, inserta,
-                          colaAleatoria)
+from src.TAD.cola import (Cola, colaAleatoria, esVacia, inserta, primero,
+                          resto, vacia)
 from src.transformaciones_colas_listas import colaAlista
 
 A = TypeVar('A')

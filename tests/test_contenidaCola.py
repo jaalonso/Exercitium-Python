@@ -1,5 +1,5 @@
-from src.contenidaCola import (inserta, contenidaCola1, contenidaCola2,
-                               contenidaCola3, contenidaCola4, vacia)
+from src.contenidaCola import (contenidaCola1, contenidaCola2, contenidaCola3,
+                               contenidaCola4, inserta, vacia)
 
 
 def test_contenidaCola() -> None:
