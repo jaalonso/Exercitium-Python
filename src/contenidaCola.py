@@ -39,7 +39,7 @@ def contenidaCola1(c1: Cola[A], c2: Cola[A]) -> bool:
         return True
     return perteneceCola(primero(c1), c2) and contenidaCola1(resto(c1), c2)
 
-# L función perteneceCola está definida en el ejercicio
+# La función perteneceCola está definida en el ejercicio
 # "Pertenencia a una cola" que se encuentra en
 # https://bit.ly/3RcVgqb
 
