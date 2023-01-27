@@ -8,8 +8,8 @@
 # Utilizando el [tipo abstracto de datos de las colas](https://bit.ly/3QWTsRL),
 # definir la función
 #    contenidaCola : (Cola[A], Cola[A]) -> bool
-# tal que contenidaCola(c1, c2) se verifica si todos los elementos de
-# de la cola c1 son elementos de la cola c2. Por ejemplo,
+# tal que contenidaCola(c1, c2) se verifica si todos los elementos de la
+# cola c1 son elementos de la cola c2. Por ejemplo,
 #    >>> ej1 = inserta(3, inserta(2, vacia()))
 #    >>> ej2 = inserta(3, inserta(4, vacia()))
 #    >>> ej3 = inserta(5, inserta(2, inserta(3, vacia())))
