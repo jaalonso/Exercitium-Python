@@ -166,3 +166,4 @@ Notas:
 + L20 [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
 + M21 [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
 + X22 [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
++ J23 [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
