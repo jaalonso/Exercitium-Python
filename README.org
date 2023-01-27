@@ -168,3 +168,4 @@ Notas:
 + X22 [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
 + J23 [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
 + V24 [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
++ L27 [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
