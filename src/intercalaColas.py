@@ -127,7 +127,7 @@ def intercalaColas5(c1: Cola[A], c2: Cola[A]) -> Cola[A]:
 
 # La propiedad es
 @given(c1=colaAleatoria(), c2=colaAleatoria())
-def test_extiendeCola(c1: Cola[int], c2: Cola[int]) -> None:
+def test_intercalaCola(c1: Cola[int], c2: Cola[int]) -> None:
     r = intercalaColas(c1, c2)
     assert intercalaColas2(c1, c2) == r
     assert intercalaColas3(c1, c2) == r

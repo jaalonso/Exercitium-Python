@@ -20,7 +20,7 @@
 #      >>> colaAlista(ej)
 #      [3, 2, 5]
 #      >>> print(ej)
-#      5 | 2 | 3
+#      3 | 2 | 5
 #
 # Comprobar con Hypothesis que ambas funciones son inversas; es decir,
 #    colaAlista(listaAcola(xs)) == xs

@@ -169,3 +169,8 @@ Notas:
 + J23 [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
 + V24 [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
 + L27 [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
++ M28 [[./src/TAD/conjunto.py][El tipo abstracto de datos de los conjuntos]].
++ M28 [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ M28 [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ M28 [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ M28 [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].

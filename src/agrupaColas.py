@@ -60,7 +60,7 @@ def agrupaColas2(cs: list[Cola[A]]) -> Cola[A]:
 
 # La propiedad es
 @given(st.lists(colaAleatoria(), max_size=4))
-def test_extiendeCola(cs: list[Cola[int]]) -> None:
+def test_agrupaCola(cs: list[Cola[int]]) -> None:
     assert agrupaColas1(cs) == agrupaColas2(cs)
 
 # La comprobación es
