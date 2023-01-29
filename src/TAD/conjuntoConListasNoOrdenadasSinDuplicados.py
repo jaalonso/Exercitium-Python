@@ -1,5 +1,5 @@
 # conjuntoConListasNoOrdenadasSinDuplicados.py
-# Implementación de conjuntos mediante listas no ordenadas con duplicados.
+# Implementación de los conjuntos mediante listas no ordenadas sin duplicados.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 28-enero-2023
 # ---------------------------------------------------------------------
