@@ -20,7 +20,7 @@
 #      [2, 3, 5]
 #
 # Comprobar con Hypothesis que ambas funciones son inversa; es decir,
-#    conjuntoAlista (listaAconjunto xs) = sort (nub xs)
+#    conjuntoAlista (listaAconjunto xs) = sorted(list(set(xs)))
 #    listaAconjunto (conjuntoAlista c)  = c
 # ---------------------------------------------------------------------
 
@@ -129,24 +129,6 @@ def test_1_listaAconjunto(xs: list[int]) -> None:
 @given(c=conjuntoAleatorio())
 def test_2_listaAconjunto(c: Conj[int]) -> None:
     assert listaAconjunto(conjuntoAlista(c)) == c
-
-# La primera propiedad es
-# prop_1_listaAconjunto :: [Int] -> Bool
-# prop_1_listaAconjunto xs =
-#   conjuntoAlista (listaAconjunto xs) == sort (nub xs)
-#
-# La comprobación es
-#    λ> quickCheck prop_1_listaAconjunto
-#    +++ OK, passed 100 tests.
-#
-# La segunda propiedad es
-# prop_2_listaAconjunto :: Conj Int -> Bool
-# prop_2_listaAconjunto c =
-#   listaAconjunto (conjuntoAlista c) == c
-#
-# La comprobación es
-#    λ> quickCheck prop_2_listaAconjunto
-#    +++ OK, passed 100 tests.
 
 # La comprobación de las propiedades es
 #    > poetry run pytest -v transformaciones_conjuntos_listas.py
