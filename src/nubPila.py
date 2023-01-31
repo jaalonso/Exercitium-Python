@@ -11,9 +11,9 @@
 # tal que nubPila(p) es la pila con los elementos de p sin repeticiones.
 # Por ejemplo,
 #    >>> ej = apila(3, apila(1, apila(3, apila(5, vacia()))))
-#    >>> print(ej)
+#    >>> ej
 #    3 | 1 | 3 | 5
-#    >>> print(nubPila1(ej))
+#    >>> nubPila1(ej)
 #    1 | 3 | 5
 # ---------------------------------------------------------------------
 

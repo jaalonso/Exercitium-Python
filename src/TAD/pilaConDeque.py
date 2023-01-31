@@ -11,18 +11,18 @@
 #    + esVacia() se verifica si la pila es vacía.
 # Por ejemplo,
 #    >>> p = Pila()
-#    >>> print(p)
+#    >>> p
 #    -
 #    >>> p.apila(5)
 #    >>> p.apila(2)
 #    >>> p.apila(3)
 #    >>> p.apila(4)
-#    >>> print(p)
+#    >>> p
 #    4 | 3 | 2 | 5
 #    >>> p.cima()
 #    4
 #    >>> p.desapila()
-#    >>> print(p)
+#    >>> p
 #    3 | 2 | 5
 #    >>> p.esVacia()
 #    False
@@ -31,17 +31,17 @@
 #    True
 #
 # Además se definen las correspondientes funciones. Por ejemplo,
-#    >>> print(vacia())
+#    >>> vacia()
 #    -
-#    >>> print(apila(4, apila(3, apila(2, apila(5, vacia())))))
+#    >>> apila(4, apila(3, apila(2, apila(5, vacia()))))
 #    4 | 3 | 2 | 5
-#    >>> print(cima(apila(4, apila(3, apila(2, apila(5, vacia()))))))
+#    >>> cima(apila(4, apila(3, apila(2, apila(5, vacia())))))
 #    4
-#    >>> print(desapila(apila(4, apila(3, apila(2, apila(5, vacia()))))))
+#    >>> desapila(apila(4, apila(3, apila(2, apila(5, vacia())))))
 #    3 | 2 | 5
-#    >>> print(esVacia(apila(4, apila(3, apila(2, apila(5, vacia()))))))
+#    >>> esVacia(apila(4, apila(3, apila(2, apila(5, vacia())))))
 #    False
-#    >>> print(esVacia(vacia()))
+#    >>> esVacia(vacia())
 #    True
 #
 # Finalmente, se define un generador aleatorio de pilas y se comprueba
@@ -74,7 +74,7 @@ A = TypeVar('A')
 class Pila(Generic[A]):
     _elementos: deque[A] = field(default_factory=deque)
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         """
         Devuelve una cadena con los elementos de la pila separados por " | ".
         Si la pila está vacía, devuelve "-".

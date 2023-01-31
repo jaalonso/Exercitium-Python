@@ -12,7 +12,7 @@
 # tales que
 # + listaApila(xs) es la pila formada por los elementos de xs.
 #   Por ejemplo,
-#      >>> print(listaApila([3, 2, 5]))
+#      >>> listaApila([3, 2, 5])
 #      5 | 2 | 3
 # + pilaAlista(p) es la lista formada por los elementos de la
 #   pila p. Por ejemplo,

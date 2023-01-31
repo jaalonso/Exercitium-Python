@@ -14,13 +14,13 @@
 #    >>> ej1 = inserta(2, inserta(5, vacia()))
 #    >>> ej2 = inserta(3, inserta(7, inserta(4, vacia())))
 #    >>> ej3 = inserta(9, inserta(0, inserta(1, inserta(6, vacia()))))
-#    >>> print(agrupaColas([]))
+#    >>> agrupaColas([])
 #    -
-#    >>> print(agrupaColas([ej1]))
+#    >>> agrupaColas([ej1])
 #    5 | 2
-#    >>> print(agrupaColas([ej1, ej2]))
+#    >>> agrupaColas([ej1, ej2])
 #    5 | 4 | 2 | 7 | 3
-#    >>> print(agrupaColas([ej1, ej2, ej3]))
+#    >>> agrupaColas([ej1, ej2, ej3])
 #    5 | 6 | 4 | 1 | 2 | 0 | 7 | 9 | 3
 # ---------------------------------------------------------------------
 

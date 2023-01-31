@@ -11,11 +11,11 @@
 # tal que filtraPila(p, q) es la pila obtenida con los elementos de
 # pila q que verifican el predicado p, en el mismo orden. Por ejemplo,
 #    >>> ej = apila(3, apila(4, apila(6, apila(5, vacia()))))
-#    >>> print(filtraPila(lambda x: x % 2 == 0, ej))
+#    >>> filtraPila(lambda x: x % 2 == 0, ej)
 #    4 | 6
-#    >>> print(filtraPila(lambda x: x % 2 == 1, ej))
+#    >>> filtraPila(lambda x: x % 2 == 1, ej)
 #    3 | 5
-#    >>> print(ej)
+#    >>> ej
 #    3 | 4 | 6 | 5
 # ---------------------------------------------------------------------
 

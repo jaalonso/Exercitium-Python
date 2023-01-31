@@ -145,33 +145,34 @@ Notas:
 + [[./src/mapPila.py][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
 + [[./src/pertenecePila.py][TAD de las pilas: Pertenencia a una pila]].
 + [[./src/contenidaPila.py][TAD de las pilas: Inclusión de pilas]].
-+ L30 [[./src/prefijoPila.py][TAD de las pilas: Reconocimiento de prefijos de pilas]].
-+ M31 [[./src/subPila.py][TAD de las pilas: Reconocimiento de subpilas]].
-+ X01 [[./src/ordenadaPila.py][TAD de las pilas: Reconocimiento de ordenación de pilas]].
-+ J02 [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
-+ V03 [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
-+ L06 [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
-+ M07 [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
-+ M07 [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
-+ M07 [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
-+ M07 [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
-+ X08 [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
-+ J09 [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
-+ V10 [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
-+ L13 [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
-+ M14 [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
-+ X15 [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
-+ J16 [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
-+ V17 [[./src/agrupaColas.py][TAD de las colas: Agrupación de colas]].
-+ L20 [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
-+ M21 [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
-+ X22 [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
-+ J23 [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
-+ V24 [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
-+ L27 [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
-+ M28 [[./src/TAD/conjunto.py][El tipo abstracto de datos de los conjuntos]].
-+ M28 [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
-+ M28 [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
-+ M28 [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
-+ M28 [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].
++ [[./src/prefijoPila.py][TAD de las pilas: Reconocimiento de prefijos de pilas]].
++ M31-Ene [[./src/subPila.py][TAD de las pilas: Reconocimiento de subpilas]].
++ X01-Feb [[./src/ordenadaPila.py][TAD de las pilas: Reconocimiento de ordenación de pilas]].
++ J02-Feb [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
++ V03-Feb [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
++ L06-Feb [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
++ M07-Feb [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
++ M07-Feb [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
++ M07-Feb [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
++ M07-Feb [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
++ X08-Feb [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
++ J09-Feb [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
++ V10-Feb [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
++ L13-Feb [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
++ M14-Feb [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
++ X15-Feb [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
++ J16-Feb [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
++ V17-Feb [[./src/agrupaColas.py][TAD de las colas: Agrupación de colas]].
++ L20-Feb [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
++ M21-Feb [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
++ X22-Feb [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
++ J23-Feb [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
++ V24-Feb [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
++ L27-Feb [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
++ M28-Feb [[./src/TAD/conjunto.py][El tipo abstracto de datos de los conjuntos]].
++ M28-Feb [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ M28-Feb [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ M28-Feb [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ M28-Feb [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].
 + X01-Mar [[./src/transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ J02-Mar [[./src/tAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].

@@ -11,18 +11,18 @@
 #    + esVacia() se verifica si la cola es vacía.
 # Por ejemplo,
 #    >>> c = Cola()
-#    >>> print(c)
+#    >>> c
 #    -
 #    >>> c.inserta(5)
 #    >>> c.inserta(2)
 #    >>> c.inserta(3)
 #    >>> c.inserta(4)
-#    >>> print(c)
+#    >>> c
 #    5 | 2 | 3 | 4
 #    >>> c.primero()
 #    5
 #    >>> c.resto()
-#    >>> print(c)
+#    >>> c
 #    2 | 3 | 4
 #    >>> c.esVacia()
 #    False
@@ -31,13 +31,13 @@
 #    True
 #
 # Además se definen las correspondientes funciones. Por ejemplo,
-#    >>> print(vacia())
+#    >>> vacia()
 #    -
-#    >>> print(inserta(4, inserta(3, inserta(2, inserta(5, vacia())))))
+#    >>> inserta(4, inserta(3, inserta(2, inserta(5, vacia()))))
 #    5 | 2 | 3 | 4
 #    >>> primero(inserta(4, inserta(3, inserta(2, inserta(5, vacia())))))
 #    5
-#    >>> print(resto(inserta(4, inserta(3, inserta(2, inserta(5, vacia()))))))
+#    >>> resto(inserta(4, inserta(3, inserta(2, inserta(5, vacia())))))
 #    2 | 3 | 4
 #    >>> esVacia(inserta(4, inserta(3, inserta(2, inserta(5, vacia())))))
 #    False
@@ -80,7 +80,7 @@ class Cola(Generic[A]):
         """
         return self._primera + self._segunda[::-1]
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         """
         Devuelve una cadena con los elementos de la cola separados por " | ".
         Si la cola está vacía, devuelve "-".

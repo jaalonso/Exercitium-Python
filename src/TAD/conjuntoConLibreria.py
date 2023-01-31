@@ -12,19 +12,19 @@
 #    + esVacia() se verifica si la cola es vacía.
 # Por ejemplo,
 #    >>> c = Conj()
-#    >>> print(c)
+#    >>> c
 #    {}
 #    >>> c.inserta(5)
 #    >>> c.inserta(2)
 #    >>> c.inserta(3)
 #    >>> c.inserta(4)
 #    >>> c.inserta(5)
-#    >>> print(c)
+#    >>> c
 #    {2, 3, 4, 5}
 #    >>> c.menor()
 #    2
 #    >>> c.elimina(3)
-#    >>> print(c)
+#    >>> c
 #    {2, 4, 5}
 #    >>> c.pertenece(4)
 #    True
@@ -46,13 +46,13 @@
 #    True
 #
 # Además se definen las correspondientes funciones. Por ejemplo,
-#    >>> print(vacio())
+#    >>> vacio()
 #    {}
-#    >>> print(inserta(5, inserta(3, inserta(2, inserta(5, vacio())))))
+#    >>> inserta(5, inserta(3, inserta(2, inserta(5, vacio()))))
 #    {2, 3, 5}
 #    >>> menor(inserta(5, inserta(3, inserta(2, inserta(5, vacio())))))
 #    2
-#    >>> print(elimina(5, inserta(5, inserta(3, inserta(2, inserta(5, vacio()))))))
+#    >>> elimina(5, inserta(5, inserta(3, inserta(2, inserta(5, vacio())))))
 #    {2, 3}
 #    >>> pertenece(5, inserta(5, inserta(3, inserta(2, inserta(5, vacio())))))
 #    True
@@ -95,7 +95,7 @@ A = TypeVar('A', int, float, str)
 class Conj(Generic[A]):
     _elementos: set[A] = field(default_factory=set)
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         xs = [str(x) for x in self._elementos]
         return "{" + ", ".join(xs) + "}"
 

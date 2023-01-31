@@ -11,9 +11,9 @@
 # tal que mapPila(f, p) es la pila formada con las imágenes por f de
 # los elementos de pila p, en el mismo orden. Por ejemplo,
 #    >>> ej = apila(5, apila(2, apila(7, vacia())))
-#    >>> print(mapPila1(lambda x: x + 1, ej))
+#    >>> mapPila1(lambda x: x + 1, ej)
 #    6 | 3 | 8
-#    >>> print(ej)
+#    >>> ej
 #    5 | 2 | 7
 # ---------------------------------------------------------------------
 

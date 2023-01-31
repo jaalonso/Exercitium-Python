@@ -13,13 +13,13 @@
 # ejemplo,
 #    >>> ej1 = inserta(3, inserta(2, vacia()))
 #    >>> ej2 = inserta(5, inserta(3, inserta(4, vacia())))
-#    >>> print(ej1)
+#    >>> ej1
 #    2 | 3
-#    >>> print(ej2)
+#    >>> ej2
 #    4 | 3 | 5
-#    >>> print(extiendeCola(ej1, ej2))
+#    >>> extiendeCola(ej1, ej2)
 #    2 | 3 | 4 | 3 | 5
-#    >>> print(extiendeCola(ej2, ej1))
+#    >>> extiendeCola(ej2, ej1)
 #    4 | 3 | 5 | 2 | 3
 # ---------------------------------------------------------------------
 

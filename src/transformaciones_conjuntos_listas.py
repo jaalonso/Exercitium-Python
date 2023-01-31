@@ -12,7 +12,7 @@
 # tales que
 # + listaAconjunto(xs) es el conjunto formado por los elementos de xs.
 #   Por ejemplo,
-#      >>> print(listaAconjunto([3, 2, 5]))
+#      >>> listaAconjunto([3, 2, 5])
 #      {2, 3, 5}
 # + conjuntoAlista(c) es la lista formada por los elementos del
 #   conjunto c. Por ejemplo,
@@ -24,8 +24,8 @@
 #    listaAconjunto (conjuntoAlista c)  = c
 # ---------------------------------------------------------------------
 
-from functools import reduce
 from copy import deepcopy
+from functools import reduce
 from typing import TypeVar
 
 from hypothesis import given

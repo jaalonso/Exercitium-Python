@@ -13,9 +13,9 @@
 # los elementos de c1. Por ejemplo,
 #    >>> ej1 = inserta(3, inserta(5, vacia()))
 #    >>> ej2 = inserta(0, inserta(7, inserta(4, inserta(9, vacia()))))
-#    >>> print(intercalaColas(ej1, ej2))
+#    >>> intercalaColas(ej1, ej2)
 #    5 | 9 | 3 | 4 | 7 | 0
-#    >>> print(intercalaColas(ej2, ej1))
+#    >>> intercalaColas(ej2, ej1)
 #    9 | 5 | 4 | 3 | 7 | 0
 # ---------------------------------------------------------------------
 

@@ -10,7 +10,7 @@
 #    ordenaInserPila : (A, Pila[A]) -> Pila[A]
 # tal que ordenaInserPila(p) es la pila obtenida ordenando por
 # inserción los los elementos de la pila p. Por ejemplo,
-#    >>> print(ordenaInserPila(apila(4, apila(1, apila(3, vacia())))))
+#    >>> ordenaInserPila(apila(4, apila(1, apila(3, vacia()))))
 #    1 | 3 | 4
 #
 # Comprobar con Hypothesis que la pila ordenaInserPila(p) está

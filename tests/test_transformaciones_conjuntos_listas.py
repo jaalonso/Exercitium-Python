@@ -1,6 +1,8 @@
-from src.transformaciones_conjuntos_listas import \
-    (conjuntoAlista, conjuntoAlista2, conjuntoAlista3, inserta,
-     listaAconjunto, listaAconjunto2, vacio)
+from src.transformaciones_conjuntos_listas import (conjuntoAlista,
+                                                   conjuntoAlista2,
+                                                   conjuntoAlista3, inserta,
+                                                   listaAconjunto,
+                                                   listaAconjunto2, vacio)
 
 
 def test_transfomaciones_conjuntos_listas() -> None:
