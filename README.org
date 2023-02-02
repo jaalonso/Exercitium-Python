@@ -177,3 +177,4 @@ Notas:
 + X01-Mar [[./src/TAD_transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
 + J02-Mar [[./src/TAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].
 + V03-Mar [[./src/TAD_subconjuntoPropio.py][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
++ L06-Mar [[./src/TAD_Conjunto_unitario.py][TAD de los conjuntos: Conjunto unitario]].
