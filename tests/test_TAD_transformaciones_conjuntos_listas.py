@@ -1,7 +1,7 @@
 from src.TAD_Transformaciones_conjuntos_listas import (conjuntoAlista,
                                                        conjuntoAlista2,
-                                                       conjuntoAlista3, inserta,
-                                                       listaAconjunto,
+                                                       conjuntoAlista3,
+                                                       inserta, listaAconjunto,
                                                        listaAconjunto2, vacio)
 
 

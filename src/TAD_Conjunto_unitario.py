@@ -14,7 +14,7 @@
 
 from typing import TypeVar
 
-from src.TAD.conjunto import (Conj, inserta, vacio)
+from src.TAD.conjunto import Conj, inserta, vacio
 
 A = TypeVar('A', int, float, str)
 

@@ -1,4 +1,5 @@
-from src.TAD_subconjuntoPropio import (inserta, vacio, subconjuntoPropio)
+from src.TAD_subconjuntoPropio import inserta, subconjuntoPropio, vacio
+
 
 def test_subconjuntoPropio() -> None:
     ej1 = inserta(5, inserta(2, vacio()))
