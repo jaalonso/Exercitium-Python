@@ -174,5 +174,5 @@ Notas:
 + M28-Feb [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
 + M28-Feb [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
 + M28-Feb [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].
-+ X01-Mar [[./src/transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
-+ J02-Mar [[./src/tAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].
++ X01-Mar [[./src/TAD_transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ J02-Mar [[./src/TAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].

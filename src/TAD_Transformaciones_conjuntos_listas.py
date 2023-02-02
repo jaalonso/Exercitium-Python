@@ -1,4 +1,4 @@
-# transformaciones_conjuntos_listas.py
+# TAD_Transformaciones_conjuntos_listas.py
 # TAD de los conjuntos: Transformaciones entre conjuntos y listas.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 1-marzo-2023
@@ -131,7 +131,7 @@ def test_2_listaAconjunto(c: Conj[int]) -> None:
     assert listaAconjunto(conjuntoAlista(c)) == c
 
 # La comprobación de las propiedades es
-#    > poetry run pytest -v transformaciones_conjuntos_listas.py
+#    > poetry run pytest -v TAD_Transformaciones_conjuntos_listas.py
 #       test_listaAconjunto PASSED
 #       test_conjuntoAlista PASSED
 #       test_1_listaAconjunto PASSED

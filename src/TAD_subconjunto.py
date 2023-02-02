@@ -1,4 +1,4 @@
-# tAD_subconjunto.py
+# TAD_subconjunto.py
 # TAD de los conjuntos: Reconocimiento de subconjunto.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 01-marzo-2023
@@ -26,7 +26,7 @@ from hypothesis import given
 
 from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
                               inserta, menor, pertenece, vacio)
-from src.transformaciones_conjuntos_listas import conjuntoAlista
+from src.TAD_Transformaciones_conjuntos_listas import conjuntoAlista
 
 A = TypeVar('A', int, float, str)
 
@@ -104,5 +104,5 @@ def test_subconjunto(c1: Conj[int], c2: Conj[int]) -> None:
     assert subconjunto5(c1, c2) == r
 
 # La comprobación de las propiedades es
-#    > poetry run pytest -q tAD_subconjunto.py
+#    > poetry run pytest -q TAD_subconjunto.py
 #    1 passed in 0.37s

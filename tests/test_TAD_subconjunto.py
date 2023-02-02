@@ -1,4 +1,4 @@
-from src.tAD_subconjunto import (inserta, subconjunto, subconjunto2,
+from src.TAD_subconjunto import (inserta, subconjunto, subconjunto2,
                                  subconjunto3, subconjunto4, subconjunto5,
                                  vacio)
 
