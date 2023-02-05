@@ -182,3 +182,4 @@ Notas:
 + X08-Mar [[./src/TAD_Union_de_dos_conjuntos.py][TAD de los conjuntos: Unión de dos conjuntos]].
 + J09-Mar [[./src/TAD_Union_de_varios_conjuntos.py][TAD de los conjuntos: Unión de varios conjuntos]].
 + V10-Mar [[./src/TAD_Interseccion_de_dos_conjuntos.py][TAD de los conjuntos: Intersección de dos conjuntos]].
++ L13-Mar [[./src/TAD_Interseccion_de_varios_conjuntos.py][TAD de los conjuntos: Intersección de varios conjuntos]].
