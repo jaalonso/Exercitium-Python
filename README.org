@@ -146,10 +146,10 @@ Notas:
 + [[./src/pertenecePila.py][TAD de las pilas: Pertenencia a una pila]].
 + [[./src/contenidaPila.py][TAD de las pilas: Inclusión de pilas]].
 + [[./src/prefijoPila.py][TAD de las pilas: Reconocimiento de prefijos de pilas]].
-+ M31-Ene [[./src/subPila.py][TAD de las pilas: Reconocimiento de subpilas]].
-+ X01-Feb [[./src/ordenadaPila.py][TAD de las pilas: Reconocimiento de ordenación de pilas]].
-+ J02-Feb [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
-+ V03-Feb [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
++ [[./src/subPila.py][TAD de las pilas: Reconocimiento de subpilas]].
++ [[./src/ordenadaPila.py][TAD de las pilas: Reconocimiento de ordenación de pilas]].
++ [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
++ [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
 + L06-Feb [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
 + M07-Feb [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
 + M07-Feb [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
@@ -181,3 +181,4 @@ Notas:
 + M07-Mar [[./src/TAD_Numero_de_elementos_de_un_conjunto.py][TAD de los conjuntos: Número de elementos de un conjunto]].
 + X08-Mar [[./src/TAD_Union_de_dos_conjuntos.py][TAD de los conjuntos: Unión de dos conjuntos]].
 + J09-Mar [[./src/TAD_Union_de_varios_conjuntos.py][TAD de los conjuntos: Unión de varios conjuntos]].
++ V10-Mar [[./src/TAD_Interseccion_de_dos_conjuntos.py][TAD de los conjuntos: Intersección de dos conjuntos]].
