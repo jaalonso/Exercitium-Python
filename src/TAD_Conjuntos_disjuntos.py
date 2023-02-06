@@ -20,11 +20,9 @@
 # ---------------------------------------------------------------------
 
 from copy import deepcopy
-from functools import reduce
 from typing import TypeVar
 
 from hypothesis import given
-from hypothesis import strategies as st
 
 from src.TAD.conjunto import (Conj, conjuntoAleatorio, inserta, vacio,
                               esVacio, menor, elimina, pertenece)
