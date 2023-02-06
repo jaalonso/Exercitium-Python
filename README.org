@@ -150,7 +150,7 @@ Notas:
 + [[./src/ordenadaPila.py][TAD de las pilas: Reconocimiento de ordenación de pilas]].
 + [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
 + [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
-+ L06-Feb [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
++ [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
 + M07-Feb [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
 + M07-Feb [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
 + M07-Feb [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
@@ -183,3 +183,4 @@ Notas:
 + J09-Mar [[./src/TAD_Union_de_varios_conjuntos.py][TAD de los conjuntos: Unión de varios conjuntos]].
 + V10-Mar [[./src/TAD_Interseccion_de_dos_conjuntos.py][TAD de los conjuntos: Intersección de dos conjuntos]].
 + L13-Mar [[./src/TAD_Interseccion_de_varios_conjuntos.py][TAD de los conjuntos: Intersección de varios conjuntos]].
++ M14-Mar [[./src/TAD_Conjuntos_disjuntos.py][TAD de los conjuntos: Conjuntos disjuntos]].
