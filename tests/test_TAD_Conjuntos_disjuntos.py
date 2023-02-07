@@ -1,6 +1,7 @@
-from src.TAD_Conjuntos_disjuntos import \
-    (disjuntos, disjuntos2, disjuntos3, disjuntos4, disjuntos5, inserta,
-     vacio)
+from src.TAD_Conjuntos_disjuntos import (disjuntos, disjuntos2, disjuntos3,
+                                         disjuntos4, disjuntos5, inserta,
+                                         vacio)
+
 
 def test_disjuntos() -> None:
     ej1 = inserta(2, inserta(5, vacio()))

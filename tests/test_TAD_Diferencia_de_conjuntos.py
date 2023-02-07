@@ -1,5 +1,7 @@
-from src.TAD_Diferencia_de_conjuntos import \
-    (diferencia, diferencia2, diferencia3, diferencia4, inserta, vacio)
+from src.TAD_Diferencia_de_conjuntos import (diferencia, diferencia2,
+                                             diferencia3, diferencia4, inserta,
+                                             vacio)
+
 
 def test_diferencia() -> None:
     ej1 = inserta(5, inserta(3, inserta(2, inserta(7, vacio()))))

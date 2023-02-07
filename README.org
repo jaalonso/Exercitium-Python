@@ -151,10 +151,10 @@ Notas:
 + [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
 + [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
 + [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
-+ M07-Feb [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
-+ M07-Feb [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
-+ M07-Feb [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
-+ M07-Feb [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
++ [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
++ [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
++ [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
++ [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
 + X08-Feb [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
 + J09-Feb [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
 + V10-Feb [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
@@ -185,3 +185,4 @@ Notas:
 + L13-Mar [[./src/TAD_Interseccion_de_varios_conjuntos.py][TAD de los conjuntos: Intersección de varios conjuntos]].
 + M14-Mar [[./src/TAD_Conjuntos_disjuntos.py][TAD de los conjuntos: Conjuntos disjuntos]].
 + X15-Mar [[./src/TAD_Diferencia_de_conjuntos.py][TAD de los conjuntos: Diferencia de conjuntos]].
++ J16-Mar [[./src/TAD_Diferencia_simetrica.py][TAD de los conjuntos: Diferencia simétrica]].

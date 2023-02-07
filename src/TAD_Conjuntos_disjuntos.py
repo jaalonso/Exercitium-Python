@@ -24,10 +24,10 @@ from typing import TypeVar
 
 from hypothesis import given
 
-from src.TAD.conjunto import (Conj, conjuntoAleatorio, inserta, vacio,
-                              esVacio, menor, elimina, pertenece)
+from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
+                              inserta, menor, pertenece, vacio)
 from src.TAD_Interseccion_de_dos_conjuntos import interseccion
-from src.TAD_Transformaciones_conjuntos_listas import (conjuntoAlista)
+from src.TAD_Transformaciones_conjuntos_listas import conjuntoAlista
 
 A = TypeVar('A', int, float, str)
 
