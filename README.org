@@ -155,7 +155,7 @@ Notas:
 + [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
 + [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
 + [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
-+ X08-Feb [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
++ [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
 + J09-Feb [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
 + V10-Feb [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
 + L13-Feb [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
@@ -186,3 +186,4 @@ Notas:
 + M14-Mar [[./src/TAD_Conjuntos_disjuntos.py][TAD de los conjuntos: Conjuntos disjuntos]].
 + X15-Mar [[./src/TAD_Diferencia_de_conjuntos.py][TAD de los conjuntos: Diferencia de conjuntos]].
 + J16-Mar [[./src/TAD_Diferencia_simetrica.py][TAD de los conjuntos: Diferencia simétrica]].
++ V17-Mar [[./src/TAD_Subconjunto_por_propiedad.py][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
