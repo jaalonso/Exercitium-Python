@@ -159,7 +159,7 @@ Notas:
 + [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
 
 ** Para febrero
-+ V10 [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
++ [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
 + L13 [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
 + M14 [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + X15 [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
@@ -192,3 +192,5 @@ Notas:
 + J16 [[./src/TAD_Diferencia_simetrica.py][TAD de los conjuntos: Diferencia simétrica]].
 + V17 [[./src/TAD_Subconjunto_por_propiedad.py][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
 + L20 [[./src/TAD_Particion_por_una_propiedad.py][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
++ M21 [[./src/TAD_Particion_segun_un_numero.py][TAD de los conjuntos: Partición según un número]].
++ X22 [[./src/TAD_mapC.py][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
