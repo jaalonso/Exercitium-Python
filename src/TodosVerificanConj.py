@@ -23,8 +23,7 @@ from hypothesis import given
 
 from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
                               inserta, menor, vacio)
-from src.TAD_Transformaciones_conjuntos_listas import (conjuntoAlista,
-                                                       listaAconjunto)
+from src.TAD_Transformaciones_conjuntos_listas import (conjuntoAlista)
 
 A = TypeVar('A', int, float, str)
 
