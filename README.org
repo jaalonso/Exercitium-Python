@@ -157,10 +157,10 @@ Notas:
 + [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
 + [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
 + [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
++ [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
++ [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
 
 ** Para febrero
-+ [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
-+ L13 [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
 + M14 [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + X15 [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
 + J16 [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
@@ -194,3 +194,4 @@ Notas:
 + L20 [[./src/TAD_Particion_por_una_propiedad.py][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
 + M21 [[./src/TAD_Particion_segun_un_numero.py][TAD de los conjuntos: Partición según un número]].
 + X22 [[./src/TAD_mapC.py][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
++ J23 [[./src/TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
