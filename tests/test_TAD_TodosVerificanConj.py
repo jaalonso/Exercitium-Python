@@ -1,5 +1,5 @@
-from src.TodosVerificanConj import (inserta, todos, todos2, todos3, todos4,
-                                    vacio)
+from src.TAD_TodosVerificanConj import (inserta, todos, todos2, todos3, todos4,
+                                        vacio)
 
 
 def test_todos() -> None:

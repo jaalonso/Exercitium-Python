@@ -194,4 +194,4 @@ Notas:
 + L20 [[./src/TAD_Particion_por_una_propiedad.py][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
 + M21 [[./src/TAD_Particion_segun_un_numero.py][TAD de los conjuntos: Partición según un número]].
 + X22 [[./src/TAD_mapC.py][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
-+ J23 [[./src/TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
++ J23 [[./src/TAD_TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].

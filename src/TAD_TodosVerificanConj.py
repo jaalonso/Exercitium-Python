@@ -1,4 +1,4 @@
-# TodosVerificanConj.py
+# TAD_TodosVerificanConj.py
 # TAD de los conjuntos: Todos los elementos verifican una propiedad.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 23-marzo-2023
@@ -89,5 +89,5 @@ def test_todos(c: Conj[int]) -> None:
     assert todos4(lambda x: x % 2 == 0, c) == r
 
 # La comprobación es
-#    src> poetry run pytest -q TodosVerificanConj.py
+#    src> poetry run pytest -q TAD_TodosVerificanConj.py
 #    1 passed in 0.28s
