@@ -12,11 +12,20 @@
 #    unitario 5 == {5}
 # ---------------------------------------------------------------------
 
-from typing import TypeVar
+from __future__ import annotations
+
+from abc import abstractmethod
+from typing import Protocol, TypeVar
 
 from src.TAD.conjunto import Conj, inserta, vacio
 
-A = TypeVar('A', int, float, str)
+
+class Comparable(Protocol):
+    @abstractmethod
+    def __lt__(self: A, otro: A) -> bool:
+        pass
+
+A = TypeVar('A', bound=Comparable)
 
 def unitario(x: A) -> Conj[A]:
     return inserta(x, vacio())

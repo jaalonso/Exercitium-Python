@@ -22,13 +22,22 @@
 #    False
 # ---------------------------------------------------------------------
 
-from typing import TypeVar
+from __future__ import annotations
+
+from abc import abstractmethod
+from typing import Protocol, TypeVar
 
 from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
                               inserta, menor, pertenece, vacio)
 from src.TAD_subconjunto import subconjunto
 
-A = TypeVar('A', int, float, str)
+
+class Comparable(Protocol):
+    @abstractmethod
+    def __lt__(self: A, otro: A) -> bool:
+        pass
+
+A = TypeVar('A', bound=Comparable)
 
 def subconjuntoPropio(c1: Conj[A], c2: Conj[A]) -> bool:
     return subconjunto(c1, c2) and c1 != c2

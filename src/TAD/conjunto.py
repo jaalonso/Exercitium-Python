@@ -55,19 +55,24 @@ __all__ = [
     'menor',
     'elimina',
     'pertenece',
-    'esVacio'
+    'esVacio',
+    'conjuntoAleatorio'
 ]
 
-from src.TAD.conjuntoConListasNoOrdenadasConDuplicados import (
-    Conj, conjuntoAleatorio, elimina, esVacio, inserta, menor, pertenece,
-    vacio)
+# from src.TAD.conjuntoConListasNoOrdenadasConDuplicados import (
+#     Conj, conjuntoAleatorio, elimina, esVacio, inserta,
+#     menor, pertenece, vacio)
 
 # from src.TAD.conjuntoConListasNoOrdenadasSinDuplicados import (
 #     Conj, conjuntoAleatorio, elimina, esVacio, inserta, menor, pertenece,
 #     vacio)
-# from src.TAD.conjuntoConListasOrdenadasSinDuplicados import (
-#     Conj, conjuntoAleatorio, elimina, esVacio, inserta, menor, pertenece,
-#     vacio)
+
+from src.TAD.conjuntoConListasOrdenadasSinDuplicados import (Conj,
+                                                             conjuntoAleatorio,
+                                                             elimina, esVacio,
+                                                             inserta, menor,
+                                                             pertenece, vacio)
+
 # from src.TAD.conjuntoConLibreria import (
 #     Conj, conjuntoAleatorio, elimina, esVacio, inserta, menor, pertenece,
 #     vacio)

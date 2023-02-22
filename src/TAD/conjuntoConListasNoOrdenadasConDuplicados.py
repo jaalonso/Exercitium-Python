@@ -69,6 +69,8 @@
 # comprueba que los conjuntos cumplen las propiedades de su
 # especificación.
 
+from __future__ import annotations
+
 __all__ = [
     'Conj',
     'vacio',
@@ -76,17 +78,25 @@ __all__ = [
     'menor',
     'elimina',
     'pertenece',
-    'esVacio'
+    'esVacio',
+    'conjuntoAleatorio'
 ]
 
+from abc import abstractmethod
 from copy import deepcopy
 from dataclasses import dataclass, field
-from typing import Any, Generic, TypeVar
+from typing import Any, Generic, Protocol, TypeVar
 
 from hypothesis import given
 from hypothesis import strategies as st
 
-A = TypeVar('A', int, float, str)
+
+class Comparable(Protocol):
+    @abstractmethod
+    def __lt__(self: A, otro: A) -> bool:
+        pass
+
+A = TypeVar('A', bound=Comparable)
 
 # Clase de los conjuntos mediante listas no ordenadas con duplicados
 # ==================================================================
@@ -205,13 +215,14 @@ def conjuntoAleatorio() -> st.SearchStrategy[Conj[int]]:
 # Las propiedades son
 @given(c=conjuntoAleatorio(), x=st.integers(), y=st.integers())
 def test_conjuntos(c: Conj[int], x: int, y: int) -> None:
+    v: Conj[int] = vacio()
     assert inserta(x, inserta(x, c)) == inserta(x, c)
     assert inserta(x, inserta(y, c)) == inserta(y, inserta(x, c))
-    assert not pertenece(x, vacio())
+    assert not pertenece(x, v)
     assert pertenece(y, inserta(x, c)) == (x == y) or pertenece(y, c)
-    assert elimina(x, vacio()) == vacio()
+    assert elimina(x, v) == v
 
-    def relacion(x, y, c):
+    def relacion(x: int, y: int, c: Conj[int]) -> Conj[int]:
         if x == y:
             return elimina(x, c)
         return inserta(y, elimina(x, c))

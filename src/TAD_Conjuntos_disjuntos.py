@@ -19,8 +19,11 @@
 #    False
 # ---------------------------------------------------------------------
 
+from __future__ import annotations
+
+from abc import abstractmethod
 from copy import deepcopy
-from typing import TypeVar
+from typing import Protocol, TypeVar
 
 from hypothesis import given
 
@@ -29,7 +32,13 @@ from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
 from src.TAD_Interseccion_de_dos_conjuntos import interseccion
 from src.TAD_Transformaciones_conjuntos_listas import conjuntoAlista
 
-A = TypeVar('A', int, float, str)
+
+class Comparable(Protocol):
+    @abstractmethod
+    def __lt__(self: A, otro: A) -> bool:
+        pass
+
+A = TypeVar('A', bound=Comparable)
 
 # 1ª solución
 # ===========

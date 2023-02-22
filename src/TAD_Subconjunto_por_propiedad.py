@@ -17,8 +17,11 @@
 #    {5, 7}
 # ---------------------------------------------------------------------
 
+from __future__ import annotations
+
+from abc import abstractmethod
 from copy import deepcopy
-from typing import Callable, TypeVar
+from typing import Callable, Protocol, TypeVar
 
 from hypothesis import given
 
@@ -27,7 +30,13 @@ from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
 from src.TAD_Transformaciones_conjuntos_listas import (conjuntoAlista,
                                                        listaAconjunto)
 
-A = TypeVar('A', int, float, str)
+
+class Comparable(Protocol):
+    @abstractmethod
+    def __lt__(self: A, otro: A) -> bool:
+        pass
+
+A = TypeVar('A', bound=Comparable)
 
 # 1ª solución
 # ===========
