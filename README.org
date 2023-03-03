@@ -162,25 +162,23 @@ Notas:
 + [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
 + [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
-
-** Para febrero
-+ V17 [[./src/agrupaColas.py][TAD de las colas: Agrupación de colas]].
-+ L20 [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
-+ M21 [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
-+ X22 [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
-+ J23 [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
-+ V24 [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
-+ L27 [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
-+ M28 [[./src/TAD/conjunto.py][El tipo abstracto de datos de los conjuntos]].
-+ M28 [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
-+ M28 [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
-+ M28 [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
-+ M28 [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].
++ [[./src/agrupaColas.py][TAD de las colas: Agrupación de colas]].
++ [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
++ [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
++ [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
++ [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
++ [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
++ [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
++ [[./src/TAD/conjunto.py][El tipo abstracto de datos de los conjuntos]].
++ [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].
++ [[./src/TAD_transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ [[./src/TAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].
++ [[./src/TAD_subconjuntoPropio.py][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
 
 ** Para marzo
-+ X01 [[./src/TAD_transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
-+ J02 [[./src/TAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].
-+ V03 [[./src/TAD_subconjuntoPropio.py][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
 + L06 [[./src/TAD_Conjunto_unitario.py][TAD de los conjuntos: Conjunto unitario]].
 + M07 [[./src/TAD_Numero_de_elementos_de_un_conjunto.py][TAD de los conjuntos: Número de elementos de un conjunto]].
 + X08 [[./src/TAD_Union_de_dos_conjuntos.py][TAD de los conjuntos: Unión de dos conjuntos]].
@@ -197,3 +195,4 @@ Notas:
 + J23 [[./src/TAD_TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
 + V24 [[./src/TAD_AlgunosVerificanConj.py][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
 + L27 [[./src/TAD_Producto_cartesiano.py][TAD de los conjuntos: TAD_Producto_cartesiano]].
++ M28 [[./src/Universo_y_grafo_de_una_relacion_binaria.py][Universo y grafo de una relación binaria]].

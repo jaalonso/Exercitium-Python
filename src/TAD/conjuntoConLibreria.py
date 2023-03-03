@@ -203,9 +203,10 @@ def conjuntoAleatorio() -> st.SearchStrategy[Conj[int]]:
 def test_conjuntos(c: Conj[int], x: int, y: int) -> None:
     assert inserta(x, inserta(x, c)) == inserta(x, c)
     assert inserta(x, inserta(y, c)) == inserta(y, inserta(x, c))
-    assert not pertenece(x, vacio())
+    v: Conj[int] = vacio()
+    assert not pertenece(x, v)
     assert pertenece(y, inserta(x, c)) == (x == y) or pertenece(y, c)
-    assert elimina(x, vacio()) == vacio()
+    assert elimina(x, v) == v
 
     def relacion(x: int, y: int, c: Conj[int]) -> Conj[int]:
         if x == y:

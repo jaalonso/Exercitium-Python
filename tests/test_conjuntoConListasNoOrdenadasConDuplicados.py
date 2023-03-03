@@ -6,7 +6,7 @@ from src.TAD.conjuntoConListasNoOrdenadasConDuplicados import (Conj, elimina,
 
 
 def test_conjuntos() -> None:
-    c = Conj()
+    c: Conj[int] = Conj()
     assert str(c) == "{}"
     c.inserta(5)
     c.inserta(2)
@@ -25,7 +25,7 @@ def test_conjuntos() -> None:
     c = Conj()
     c.inserta(2)
     c.inserta(5)
-    d = Conj()
+    d: Conj[int] = Conj()
     d.inserta(5)
     d.inserta(2)
     d.inserta(5)

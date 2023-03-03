@@ -45,7 +45,7 @@ def divide(x: A, c: Conj[A]) -> tuple[Conj[A], Conj[A]]:
     mc = menor(c)
     rc = elimina(mc, c)
     (c1, c2) = divide(x, rc)
-    if mc <= x:
+    if mc < x or mc == x:
         return (inserta(mc, c1), c2)
     return (c1, inserta(mc, c2))
 
@@ -53,7 +53,7 @@ def divide(x: A, c: Conj[A]) -> tuple[Conj[A], Conj[A]]:
 # ===========
 
 def divide2(x: A, c: Conj[A]) -> tuple[Conj[A], Conj[A]]:
-    return particion(lambda y: y <= x, c)
+    return particion(lambda y: y < x or y == x, c)
 
 # La función particion está definida en el ejercicio
 # "Partición de un conjunto según una propiedad" que se encuentra en
@@ -68,7 +68,7 @@ def divide3Aux(x: A, c: Conj[A]) -> tuple[Conj[A], Conj[A]]:
     while not esVacio(c):
         mc = menor(c)
         c = elimina(mc, c)
-        if mc <= x:
+        if mc < x or mc == x:
             r = inserta(mc, r)
         else:
             s = inserta(mc, s)
@@ -87,7 +87,7 @@ def divide4Aux(x: A, c: Conj[A]) -> tuple[Conj[A], Conj[A]]:
     while not c.esVacio():
         mc = c.menor()
         c.elimina(mc)
-        if mc <= x:
+        if mc < x:
             r.inserta(mc)
         else:
             s.inserta(mc)
