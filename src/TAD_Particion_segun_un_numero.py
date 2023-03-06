@@ -87,7 +87,7 @@ def divide4Aux(x: A, c: Conj[A]) -> tuple[Conj[A], Conj[A]]:
     while not c.esVacio():
         mc = c.menor()
         c.elimina(mc)
-        if mc < x:
+        if mc < x or mc == x:
             r.inserta(mc)
         else:
             s.inserta(mc)
