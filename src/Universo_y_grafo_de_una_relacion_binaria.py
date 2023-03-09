@@ -5,12 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Una relación binaria R sobre un conjunto A se puede representar
-# mediante un par (xs,ps) donde xs es la lista de los elementos de A
-# (el universo de R) y ps es la lista de pares de R (el grafo de R).
-#
-# Definir el tipo de dato Rel, para representar las relaciones
-# binarias sobre A, y las siguientes funciones
+# Usando el [tipo de las relaciones binarias](https://bit.ly/3IVVqOT),
+# definir las siguientes funciones
 #    universo : (Rel[A]) -> list[A]
 #    grafo    : (Rel[A]) -> list[tuple[A, A]]
 # tales que
@@ -28,8 +24,6 @@ from typing import TypeVar
 A = TypeVar('A')
 
 Rel = tuple[list[A], list[tuple[A, A]]]
-
-r: Rel[int] = (list(range(1, 10)), [(1, 3), (2, 6), (8, 9), (2, 7)])
 
 def universo(r: Rel[A]) -> list[A]:
     return r[0]
