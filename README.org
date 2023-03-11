@@ -199,3 +199,6 @@ Notas:
 + M29 [[./src/Universo_y_grafo_de_una_relacion_binaria.py][Universo y grafo de una relación binaria]].
 + X30 [[./src/Relaciones_reflexivas.py][Relaciones reflexivas]].
 + J31 [[./src/Relaciones_simetricas.py][Relaciones simétricas]].
+
+** Para abril
++ L03 [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
