@@ -202,3 +202,4 @@ Notas:
 
 ** Para abril
 + L03 [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
++ M04 [[./src/Reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
