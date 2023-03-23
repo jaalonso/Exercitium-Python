@@ -190,9 +190,9 @@ Notas:
 + [[./src/TAD_Particion_por_una_propiedad.py][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
 + [[./src/TAD_Particion_segun_un_numero.py][TAD de los conjuntos: Partición según un número]].
 + [[./src/TAD_mapC.py][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
++ [[./src/TAD_TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
 
 ** Para marzo
-+ J23 [[./src/TAD_TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
 + V24 [[./src/TAD_AlgunosVerificanConj.py][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
 + L27 [[./src/TAD_Producto_cartesiano.py][TAD de los conjuntos: TAD_Producto_cartesiano]].
 + M28 [[./src/Relaciones_binarias.py][Relaciones binarias]].
@@ -206,3 +206,4 @@ Notas:
 + X05 [[./src/Relaciones_transitivas.py][Relaciones transitivas]].
 + V07 [[./src/Relaciones_irreflexivas.py][Relaciones irreflexivas]].
 + L10 [[./src/Relaciones_antisimetricas.py][Relaciones antisimétricas]].
++ M11 [[./src/Relaciones_totales.py][Relaciones totales]].
