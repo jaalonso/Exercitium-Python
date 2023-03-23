@@ -7,8 +7,8 @@
 # ---------------------------------------------------------------------
 # Usando el [tipo de las relaciones binarias](https://bit.ly/3IVVqOT),
 # definir la función
-#    total :: Eq a => Rel a -> Bool
-# tal que (total r) se verifica si la relación r es total; es decir, si
+#    total : (Rel[A]) -> bool
+# tal que total(r) se verifica si la relación r es total; es decir, si
 # para cualquier par x, y de elementos del universo de r, se tiene que
 # x está relacionado con y o y está relacionado con x. Por ejemplo,
 #    total (([1,3],[(1,1),(3,1),(3,3)]))  ==  True
