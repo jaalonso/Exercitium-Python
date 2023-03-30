@@ -195,10 +195,10 @@ Notas:
 + [[./src/TAD_Producto_cartesiano.py][TAD de los conjuntos: TAD_Producto_cartesiano]].
 + [[./src/Relaciones_binarias.py][Relaciones binarias]].
 + [[./src/Universo_y_grafo_de_una_relacion_binaria.py][Universo y grafo de una relación binaria]].
++ [[./src/Relaciones_reflexivas.py][Relaciones reflexivas]].
 
 ** Para marzo
-+ X30 [[./src/Relaciones_reflexivas.py][Relaciones reflexivas]].
-+ J31 [[./src/Relaciones_simetricas.py][Relaciones simétricas]].
++ V31 [[./src/Relaciones_simetricas.py][Relaciones simétricas]].
 
 ** Para abril
 + L03 [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
@@ -208,3 +208,4 @@ Notas:
 + L10 [[./src/Relaciones_antisimetricas.py][Relaciones antisimétricas]].
 + M11 [[./src/Relaciones_totales.py][Relaciones totales]].
 + X12 [[./src/Clausura_reflexiva.py][Clausura reflexiva]].
++ J13 [[./src/Clausura_simetrica.py][Clausura simétrica]].
