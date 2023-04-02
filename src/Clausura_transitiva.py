@@ -7,13 +7,13 @@
 # ---------------------------------------------------------------------
 # Usando el [tipo de las relaciones binarias](https://bit.ly/3IVVqOT),
 # definir la función
-#    clausuraTransitiva :: Eq a => Rel a -> Rel a
-# tal que (clausuraTransitiva r) es la clausura transitiva de r; es
+#    clausuraTransitiva : (Rel[A]) -> Rel[A]
+# tal que clausuraTransitiva(r) es la clausura transitiva de r; es
 # decir, la menor relación transitiva que contiene a r. Por ejemplo,
 #    >>> clausuraTransitiva (([1, 2, 3, 4, 5, 6], [(1, 2), (2, 5), (5, 6)]))
 #    ([1, 2, 3, 4, 5, 6], [(1, 2), (2, 5), (5, 6), (2, 6), (1, 5), (1, 6)])
 #
-# Comprobar con QuickCheck que clausuraTransitiva es transitiva.
+# Comprobar con Hypothesis que clausuraTransitiva es transitiva.
 # ---------------------------------------------------------------------
 
 from typing import TypeVar
