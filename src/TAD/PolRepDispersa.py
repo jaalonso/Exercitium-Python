@@ -216,11 +216,11 @@ def consPol(n: int, b: A, p: Polinomio[A]) -> Polinomio[A]:
 # Generador de polinomios
 # =======================
 
-
+# normal(ps) es la representación dispersa de un término.
 def normal(ps: list[tuple[int,A]]) -> list[tuple[int,A]]:
     xs = sorted(list({p[0] for p in ps}), reverse=True)
     ys = [p[1] for p in ps]
-    return [(x, y) for (x, y) in list(zip(xs, ys)) if y != 0]
+    return [(x, y) for (x, y) in zip(xs, ys) if y != 0]
 
 # polinomioAleatorio() genera polinomios aleatorios. Por ejemplo,
 #    >>> polinomioAleatorio().example()
