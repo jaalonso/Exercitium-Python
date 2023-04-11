@@ -1,17 +1,19 @@
-# PolRepDensa.py
-# Implementación de polinomios mediante listas densas.
+# PolRepDispersa.hs
+# Implementación de polinomios mediante listas dispersas.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 17-abril-2023
 # ---------------------------------------------------------------------
 
-# Representaremos un polinomio por la lista de sus coeficientes ordenados
-# en orden decreciente según el grado. Por ejemplo, el polinomio
+# Representaremos un polinomio mediante una lista de pares (grado,coef),
+# ordenados en orden decreciente según el grado. Por ejemplo, el
+# polinomio
 #    6x^4 -5x^2 + 4x -7
 # se representa por
-#    [6,0,-2,4,-7].
+#    [(4,6),(2,-5),(1,4),(0,-7)].
 #
-# En la representación se supone que, si la lista no es vacía, su
-# primer elemento es distinto de cero.
+# En la representación se supone que los primeros elementos de los
+# pares forman una sucesión estrictamente decreciente y que los
+# segundos elementos son distintos de cero.
 #
 # Se define la clase Conj con los siguientes métodos:
 #    + esPolCero() se verifica si es el polinomio cero.
@@ -131,42 +133,42 @@ A = TypeVar('A', int, float, complex)
 
 @dataclass
 class Polinomio(Generic[A]):
-    _coeficientes: list[A] = field(default_factory=list)
+    _terminos: list[tuple[int, A]] = field(default_factory=list)
 
     def esPolCero(self) -> bool:
-        return self._coeficientes == []
+        return self._terminos == []
 
     def grado(self) -> int:
         if self.esPolCero():
             return 0
-        return len(self._coeficientes) - 1
+        return self._terminos[0][0]
 
     def coefLider(self) -> A:
         if self.esPolCero():
             return 0
-        return self._coeficientes[0]
+        return self._terminos[0][1]
 
     def restoPol(self) -> Polinomio[A]:
-        xs = self._coeficientes
+        xs = self._terminos
         if len(xs) <= 1:
             return Polinomio([])
-        if xs[1] == 0:
-            return Polinomio(list(dropwhile(lambda x: x == 0, xs[2:])))
         return Polinomio(xs[1:])
 
     def consPol(self, n: int, b: A) -> Polinomio[A]:
-      m = self.grado()
-      c = self.coefLider()
-      xs = self._coeficientes
-      if self.esPolCero():
-          return Polinomio([b] + ([0] * n))
-      if n > m:
-          return Polinomio([b] + ([0] * (n-m-1)) + xs)
-      if n < m:
-          return self.restoPol().consPol(n, b).consPol(m, c)
-      if b + c == 0:
-          return Polinomio(list(dropwhile(lambda x: x == 0, xs[1:])))
-      return Polinomio([b + c] + xs[1:])
+        m = self.grado()
+        c = self.coefLider()
+        xs = self._terminos
+        if b == 0:
+            return self
+        if self.esPolCero():
+            return Polinomio([(n, b)])
+        if n > m:
+            return Polinomio([(n, b)] + xs)
+        if n < m:
+            return Polinomio(xs[1:]).consPol(n, b).consPol(m, c)
+        if b + c == 0:
+            return Polinomio(xs[1:])
+        return Polinomio([(n, b + c)] + xs[1:])
 
     def __repr__(self) -> str:
         n = self.grado()
@@ -214,25 +216,21 @@ def consPol(n: int, b: A, p: Polinomio[A]) -> Polinomio[A]:
 # Generador de polinomios
 # =======================
 
-# normal(xs) es la lista obtenida eliminando los ceros iniciales de
-# xs. Por ejmplo,
-#    >>> normal([0,0,5,0])
-#    [5, 0]
-#    >>> normal([0,0,0,0])
-#    []
-def normal(xs: list[A]) -> list[A]:
-    return list(dropwhile(lambda x: x == 0, xs))
+
+def normal(ps: list[tuple[int,A]]) -> list[tuple[int,A]]:
+    xs = sorted(list({p[0] for p in ps}), reverse=True)
+    ys = [p[1] for p in ps]
+    return [(x, y) for (x, y) in list(zip(xs, ys)) if y != 0]
 
 # polinomioAleatorio() genera polinomios aleatorios. Por ejemplo,
 #    >>> polinomioAleatorio().example()
-#    9*x^6 + -7*x^5 + 7*x^3 + x^2 + 7
+#    -4*x^8 + -5*x^7 + -4*x^6 + -4*x^5 + -8*x^3
 #    >>> polinomioAleatorio().example()
-#    -3*x^7 + 8*x^6 + 2*x^5 + x^4 + -1*x^3 + -6*x^2 + 8*x + -6
-#    >>> polinomioAleatorio().example()
-#    x^2 + 7*x + -1
+#    -7*x^9 + -8*x^6 + -8*x^3 + 2*x^2 + -1*x + 4
 def polinomioAleatorio() -> st.SearchStrategy[Polinomio[int]]:
-    return st.lists(st.integers(min_value=-9, max_value=9), max_size=10)\
-             .map(lambda xs: normal(xs))\
+    return st.lists(st.tuples(st.integers(min_value=0, max_value=9),
+                              st.integers(min_value=-9, max_value=9)))\
+             .map(lambda ps: normal(ps))\
              .map(Polinomio)
 
 # Comprobación de las propiedades de los polinomios
@@ -277,13 +275,13 @@ def test_restoPol(p: Polinomio[int], n: int, b: int) -> None:
     assert restoPol(consPol(n, b, p)) == p
 
 # La comprobación es
-#    > poetry run pytest -v PolRepDensa.py
+#    > poetry run pytest -v PolRepDispersa.py
 #
-#    PolRepDensa.py::test_esPolCero1 PASSED
-#    PolRepDensa.py::test_esPolCero2 PASSED
-#    PolRepDensa.py::test_consPol PASSED
-#    PolRepDensa.py::test_grado PASSED
-#    PolRepDensa.py::test_coefLider PASSED
-#    PolRepDensa.py::test_restoPol PASSED
+#    PolRepDispersa.py::test_esPolCero1 PASSED
+#    PolRepDispersa.py::test_esPolCero2 PASSED
+#    PolRepDispersa.py::test_consPol PASSED
+#    PolRepDispersa.py::test_grado PASSED
+#    PolRepDispersa.py::test_coefLider PASSED
+#    PolRepDispersa.py::test_restoPol PASSED
 #
-#    === 6 passed in 1.64s ===
+#    === 6 passed in 1.74s ===

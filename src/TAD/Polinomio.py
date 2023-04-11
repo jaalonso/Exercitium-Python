@@ -1,7 +1,7 @@
 # Polinomio.py
 # El tipo abstracto de datos de los polinomios.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 28-febrero-2023
+# Sevilla, 17-abril-2023
 # ---------------------------------------------------------------------
 
 # Un polinomio es una expresión matemática compuesta por una suma de
@@ -58,9 +58,8 @@ __all__ = [
     'polinomioAleatorio'
 ]
 
-from src.TAD.PolRepDensa import (Polinomio, polCero, esPolCero, consPol,
-                                 grado, coefLider, restoPol,
-                                 polinomioAleatorio)
+from src.TAD.PolRepDensa import (Polinomio, coefLider, consPol, esPolCero,
+                                 grado, polCero, polinomioAleatorio, restoPol)
 
 # from src.TAD.PolRepDispersa import (Polinomio, polCero, esPolCero,
 #                                     consPol, grado, coefLider,
