@@ -15,7 +15,7 @@
 # pares forman una sucesión estrictamente decreciente y que los
 # segundos elementos son distintos de cero.
 #
-# Se define la clase Conj con los siguientes métodos:
+# Se define la clase Polinomio con los siguientes métodos:
 #    + esPolCero() se verifica si es el polinomio cero.
 #    + consPol(n, b) es el polinomio obtenido añadiendo el térmiono bx^n
 #    + grado() es el grado del polinomio.
@@ -216,7 +216,7 @@ def consPol(n: int, b: A, p: Polinomio[A]) -> Polinomio[A]:
 # Generador de polinomios
 # =======================
 
-# normal(ps) es la representación dispersa de un término.
+# normal(ps) es la representación dispersa de un polinomio.
 def normal(ps: list[tuple[int,A]]) -> list[tuple[int,A]]:
     xs = sorted(list({p[0] for p in ps}), reverse=True)
     ys = [p[1] for p in ps]

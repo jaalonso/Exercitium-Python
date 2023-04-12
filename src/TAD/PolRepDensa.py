@@ -13,7 +13,7 @@
 # En la representación se supone que, si la lista no es vacía, su
 # primer elemento es distinto de cero.
 #
-# Se define la clase Conj con los siguientes métodos:
+# Se define la clase Polinomio con los siguientes métodos:
 #    + esPolCero() se verifica si es el polinomio cero.
 #    + consPol(n, b) es el polinomio obtenido añadiendo el térmiono bx^n
 #    + grado() es el grado del polinomio.
