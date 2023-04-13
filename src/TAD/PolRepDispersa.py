@@ -116,12 +116,8 @@ __all__ = [
     'polinomioAleatorio'
 ]
 
-import random
-from abc import abstractmethod
-from copy import deepcopy
 from dataclasses import dataclass, field
-from itertools import dropwhile
-from typing import Any, Generic, TypeVar
+from typing import Generic, TypeVar
 
 from hypothesis import assume, given
 from hypothesis import strategies as st
@@ -217,7 +213,7 @@ def consPol(n: int, b: A, p: Polinomio[A]) -> Polinomio[A]:
 # =======================
 
 # normal(ps) es la representación dispersa de un polinomio.
-def normal(ps: list[tuple[int,A]]) -> list[tuple[int,A]]:
+def normal(ps: list[tuple[int, A]]) -> list[tuple[int, A]]:
     xs = sorted(list({p[0] for p in ps}), reverse=True)
     ys = [p[1] for p in ps]
     return [(x, y) for (x, y) in zip(xs, ys) if y != 0]

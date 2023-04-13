@@ -1,5 +1,5 @@
 # Polinomios_Transformaciones_dispersa_y_densa.py
-# TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa.
+# Pol: Transformaciones entre las representaciones dispersa y densa.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 18-abril-2023
 # ---------------------------------------------------------------------
@@ -121,7 +121,7 @@ def dispersaAdensa2(ps: list[tuple[int, A]]) -> list[A]:
     if not ps:
         return []
     n = ps[0][0]
-    return [coeficiente(ps, m) for m in range(n,-1,-1)]
+    return [coeficiente(ps, m) for m in range(n, -1, -1)]
 
 # 3ª definición de dispersaAdensa
 # ===============================
@@ -139,7 +139,7 @@ def dispersaAdensa3(ps: list[tuple[int, A]]) -> list[A]:
 # ==============================================
 
 # normalDispersa(ps) es la representación dispersa de un polinomio.
-def normalDispersa(ps: list[tuple[int,A]]) -> list[tuple[int,A]]:
+def normalDispersa(ps: list[tuple[int, A]]) -> list[tuple[int, A]]:
     xs = sorted(list({p[0] for p in ps}), reverse=True)
     ys = [p[1] for p in ps]
     return [(x, y) for (x, y) in zip(xs, ys) if y != 0]

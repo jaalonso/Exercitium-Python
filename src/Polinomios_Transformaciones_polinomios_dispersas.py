@@ -5,8 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Utilizando el [tipo abstracto de datos de los polinomios](https://bit.ly/3KwqXYu)
-# definir las funciones
+# Utilizando el [tipo abstracto de datos de los polinomios]
+# (https://bit.ly/3KwqXYu) definir las funciones
 #    dispersaApolinomio : (list[tuple[int, A]]) -> Polinomio[A]
 #    polinomioAdispersa : (Polinomio[A]) -> list[tuple[int, A]]
 # tales que
@@ -16,7 +16,8 @@
 #      9*x^6 + 5*x^3 + 4*x + 7
 # + polinomioAdispersa(p) es la representación dispersa del polinomio
 #   p. Por ejemplo,
-#      >>> ejPol = consPol(6, 9, consPol(3, 5, consPol(1, 4, consPol(0, 7, polCero()))))
+#      >>> ejPol1 = consPol(3, 5, consPol(1, 4, consPol(0, 7, polCero())))
+#      >>> ejPol = consPol(6, 9, ejPol1)
 #      >>> ejPol
 #      9*x^6 + 5*x^3 + 4*x + 7
 #      >>> polinomioAdispersa(ejPol)
@@ -25,18 +26,16 @@
 # Comprobar con Hypothesis que ambas funciones son inversas.
 # ---------------------------------------------------------------------
 
-from functools import reduce
-from itertools import dropwhile
 from typing import TypeVar
 
 from hypothesis import given
-from hypothesis import strategies as st
-
-A = TypeVar('A', int, float, complex)
 
 from src.Polinomios_Transformaciones_dispersa_y_densa import dispersaAleatoria
 from src.TAD.Polinomio import (Polinomio, coefLider, consPol, esPolCero, grado,
                                polCero, polinomioAleatorio, restoPol)
+
+A = TypeVar('A', int, float, complex)
+
 
 # 1ª definición de dispersaApolinomio
 # ===================================
@@ -81,7 +80,8 @@ def polinomioAdispersa(p: Polinomio[A]) -> list[tuple[int, A]]:
 
 # La primera propiedad es
 @given(ps=dispersaAleatoria())
-def test_polinomioAdispersa_dispersaApolinomio(ps: list[tuple[int, int]]) -> None:
+def test_polinomioAdispersa_dispersaApolinomio(ps: list[tuple[int,
+                                                              int]]) -> None:
     assert polinomioAdispersa(dispersaApolinomio(ps)) == ps
 
 # La segunda propiedad es

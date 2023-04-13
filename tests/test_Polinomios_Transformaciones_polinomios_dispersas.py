@@ -1,7 +1,7 @@
-from src.Polinomios_Transformaciones_polinomios_dispersas import \
-    (dispersaApolinomio, dispersaApolinomio2, polinomioAdispersa)
+from src.Polinomios_Transformaciones_polinomios_dispersas import (
+    dispersaApolinomio, dispersaApolinomio2, polinomioAdispersa)
+from src.TAD.Polinomio import consPol, polCero
 
-from src.TAD.Polinomio import (polCero, consPol)
 
 def test_Transformaciones_polinomios_dispersas() -> None:
     for dispersaApolinomio_ in [dispersaApolinomio,

@@ -114,12 +114,9 @@ __all__ = [
     'polinomioAleatorio'
 ]
 
-import random
-from abc import abstractmethod
-from copy import deepcopy
 from dataclasses import dataclass, field
 from itertools import dropwhile
-from typing import Any, Generic, TypeVar
+from typing import Generic, TypeVar
 
 from hypothesis import assume, given
 from hypothesis import strategies as st
@@ -155,18 +152,18 @@ class Polinomio(Generic[A]):
         return Polinomio(xs[1:])
 
     def consPol(self, n: int, b: A) -> Polinomio[A]:
-      m = self.grado()
-      c = self.coefLider()
-      xs = self._coeficientes
-      if self.esPolCero():
-          return Polinomio([b] + ([0] * n))
-      if n > m:
-          return Polinomio([b] + ([0] * (n-m-1)) + xs)
-      if n < m:
-          return self.restoPol().consPol(n, b).consPol(m, c)
-      if b + c == 0:
-          return Polinomio(list(dropwhile(lambda x: x == 0, xs[1:])))
-      return Polinomio([b + c] + xs[1:])
+        m = self.grado()
+        c = self.coefLider()
+        xs = self._coeficientes
+        if self.esPolCero():
+            return Polinomio([b] + ([0] * n))
+        if n > m:
+            return Polinomio([b] + ([0] * (n-m-1)) + xs)
+        if n < m:
+            return self.restoPol().consPol(n, b).consPol(m, c)
+        if b + c == 0:
+            return Polinomio(list(dropwhile(lambda x: x == 0, xs[1:])))
+        return Polinomio([b + c] + xs[1:])
 
     def __repr__(self) -> str:
         n = self.grado()
