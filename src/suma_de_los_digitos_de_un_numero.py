@@ -13,6 +13,8 @@
 #    sumaDigitos(20045) == 11
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from functools import reduce
 from math import factorial
 from operator import add

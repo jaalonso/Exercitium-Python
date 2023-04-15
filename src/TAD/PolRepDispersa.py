@@ -132,7 +132,7 @@ class Polinomio(Generic[A]):
     _terminos: list[tuple[int, A]] = field(default_factory=list)
 
     def esPolCero(self) -> bool:
-        return self._terminos == []
+        return not self._terminos
 
     def grado(self) -> int:
         if self.esPolCero():
@@ -233,8 +233,7 @@ def polinomioAleatorio() -> st.SearchStrategy[Polinomio[int]]:
 # =================================================
 
 # Las propiedades son
-@given(p=polinomioAleatorio())
-def test_esPolCero1(p: Polinomio[int]) -> None:
+def test_esPolCero1() -> None:
     assert esPolCero(polCero())
 
 @given(p=polinomioAleatorio(),

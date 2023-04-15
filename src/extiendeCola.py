@@ -23,6 +23,8 @@
 #    4 | 3 | 5 | 2 | 3
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from copy import deepcopy
 from typing import TypeVar
 

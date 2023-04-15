@@ -1,0 +1,10 @@
+[MESSAGES CONTROL]
+disable=
+    invalid-name,
+    missing-function-docstring,
+    missing-class-docstring,
+    missing-module-docstring,
+    too-few-public-methods
+
+[DESIGN]
+max-returns=9

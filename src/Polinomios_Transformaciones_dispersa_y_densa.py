@@ -79,7 +79,7 @@ def normalDensa(xs: list[A]) -> list[A]:
 #    [-3, -1, 2, 0, -9]
 def densaAleatoria() -> st.SearchStrategy[list[int]]:
     return st.lists(st.integers(min_value=-9, max_value=9))\
-             .map(lambda xs: normalDensa(xs))
+             .map(normalDensa)
 
 # La propiedad es
 @given(xs=densaAleatoria())
@@ -97,7 +97,7 @@ def dispersaAdensa(ps: list[tuple[int, A]]) -> list[A]:
     if len(ps) == 1:
         return [ps[0][1]] + [0] * ps[0][0]
     (n, a) = ps[0]
-    (m, b) = ps[1]
+    (m, _) = ps[1]
     return [a] + [0] * (n-m-1) + dispersaAdensa(ps[1:])
 
 # 2ª definición de dispersaAdensa
@@ -155,7 +155,7 @@ def normalDispersa(ps: list[tuple[int, A]]) -> list[tuple[int, A]]:
 def dispersaAleatoria() -> st.SearchStrategy[list[tuple[int, int]]]:
     return st.lists(st.tuples(st.integers(min_value=0, max_value=9),
                               st.integers(min_value=-9, max_value=9)))\
-             .map(lambda ps: normalDispersa(ps))
+             .map(normalDispersa)
 
 # La propiedad es
 @given(ps=dispersaAleatoria())

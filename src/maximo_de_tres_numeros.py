@@ -14,4 +14,4 @@
 # ---------------------------------------------------------------------
 
 def maxTres(x: int, y: int, z: int) -> int:
-    return max(x, max(y, z))
+    return max(x, y, z)

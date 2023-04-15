@@ -24,6 +24,8 @@
 #    5 | 6 | 4 | 1 | 2 | 0 | 7 | 9 | 3
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from functools import reduce
 from typing import TypeVar
 

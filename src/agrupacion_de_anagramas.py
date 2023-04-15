@@ -10,40 +10,29 @@
 # anagramas de "amor".
 #
 # Definir la función
-#    anagramas : List[str]) -> List[List[str]]
+#    anagramas : list[str]) -> list[list[str]]
 # tal que anagramas(cs) es la lista de las listas de anagramas de cs. Por
 # ejemplo,
 #    >>> anagramas(['mora', 'pirata', 'roma', 'ana', 'patria', 'ramo'])
 #    [['mora', 'roma', 'ramo'], ['pirata', 'patria'], ['ana']]
 # ----------------------------------------------------------------------
 
-from typing import Dict, List
-
-
-def ordenada(c):
-    # type: (str) -> str
-    """es la cadena obtenida ordenando los caracteres de la cadena
-    cs. Por ejemplo,
-       >>> ordenada('sevilla')
-       'aeillsv'
-    """
+# ordenada(c) es la cadena obtenida ordenando los caracteres de la cadena
+# cs. Por ejemplo,
+#    >>> ordenada('sevilla')
+#    'aeillsv'
+def ordenada(c: str) -> str:
     return "".join(sorted(c))
 
-
-def anagramas(cs):
-    # type: (List[str]) -> List[List[str]]
-    """Es la lista de las listas de anagramas de cs. Por ejemplo,
-       >>> anagramas(['mora', 'pirata', 'roma', 'ana', 'patria', 'ramo'])
-       [['mora', 'roma', 'ramo'], ['pirata', 'patria'], ['ana']]
-    """
-    d = {}  # type: Dict[str, List[str]]
+def anagramas(cs: list[str]) -> list[list[str]]:
+    d: dict[str, list[str]] = {}
     for c in cs:
         co = ordenada(c)
         if co in d:
             d[co].append(c)
         else:
             d[co] = [c]
-    return [d[c] for c in d]
+    return list(d.values())
 
 # Referencias
 # ===========

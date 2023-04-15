@@ -86,8 +86,10 @@ def filtraAplica5(f: Callable[[A], B],
 # La propiedad es
 @given(st.lists(st.integers()))
 def test_filtraAplica(xs: list[int]) -> None:
-    f = lambda x: x + 4
-    p = lambda x: x < 3
+    def f(x: int) -> int:
+        return x + 4
+    def p(x: int) -> bool:
+        return x < 3
     r = filtraAplica1(f, p, xs)
     assert filtraAplica2(f, p, xs) == r
     assert filtraAplica3(f, p, xs) == r

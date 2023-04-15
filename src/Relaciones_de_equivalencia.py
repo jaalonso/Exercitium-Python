@@ -20,7 +20,7 @@
 
 from typing import TypeVar
 
-from src.Relaciones_binarias import Rel, relacionArbitraria
+from src.Relaciones_binarias import Rel
 from src.Relaciones_reflexivas import reflexiva
 from src.Relaciones_simetricas import simetrica
 from src.Relaciones_transitivas import transitiva

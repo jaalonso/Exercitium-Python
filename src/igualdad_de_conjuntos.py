@@ -15,6 +15,8 @@
 #    iguales([2, 3], [4, 5])       == False
 # ---------------------------------------------------------------------
 
+# pylint: disable=arguments-out-of-order
+
 from timeit import Timer, default_timer
 from typing import Any
 

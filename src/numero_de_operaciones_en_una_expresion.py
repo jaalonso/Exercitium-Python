@@ -70,7 +70,7 @@ class SiCero(Expr):
 
 def numeroOps(e: Expr) -> int:
     match e:
-        case Lit(n):
+        case Lit(_):
             return 0
         case Suma(x, y):
             return 1 + numeroOps(x) + numeroOps(y)

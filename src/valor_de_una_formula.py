@@ -1,39 +1,10 @@
-# Valor_de_una_formula.hs
+# valor_de_una_formula.py
 # El tipo de las fórmulas proposicionales: Valor de una fórmula
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 01-diciembre-2022
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# El tipo de las fórmulas proposicionales se puede definir por
-#    @dataclass
-#    class FProp:
-#        pass
-#
-#    @dataclass
-#    class Const(FProp):
-#        x: bool
-#
-#    @dataclass
-#    class Var(FProp):
-#        x: str
-#
-#    @dataclass
-#    class Neg(FProp):
-#        x: FProp
-#
-#    @dataclass
-#    class Conj(FProp):
-#        x: FProp
-#        y: FProp
-#
-#    @dataclass
-#    class Impl(FProp):
-#        x: FProp
-#        y: FProp
-# de modo que la fórmula A → ⊥ ∧ ¬B se representa por
-#    Impl(Var('A'), Conj(Const(False), Neg (Var('B'))))
-#
 # Una interpretación de una fórmula es una función de sus variables en
 # los booleanos. Por ejemplo, la interpretación que a la variable A le
 # asigna verdadero y a la B falso se puede representar por
@@ -53,8 +24,9 @@
 #                 | F | F | F     | T     |
 #                 |---+---+-------+-------|
 #
-# Definir la función
-#    (i: Interpretacion, f: FProp) -> bool:
+# Usando el tipo de las fórmulas proposicionales definido en el
+# [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
+#    valor: (Interpretacion, FProp) -> bool:
 # tal que valor(i, p) es el valor de la fórmula p en la interpretación
 # i. Por ejemplo,
 #    >>> p = Impl(Var('A'), Conj(Var('A'), Var('B')))
@@ -64,34 +36,7 @@
 #    False
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-
-
-@dataclass
-class FProp:
-    pass
-
-@dataclass
-class Const(FProp):
-    x: bool
-
-@dataclass
-class Var(FProp):
-    x: str
-
-@dataclass
-class Neg(FProp):
-    x: FProp
-
-@dataclass
-class Conj(FProp):
-    x: FProp
-    y: FProp
-
-@dataclass
-class Impl(FProp):
-    x: FProp
-    y: FProp
+from src.tipo_de_formulas import Conj, Const, FProp, Impl, Neg, Var
 
 Interpretacion = list[tuple[str, bool]]
 

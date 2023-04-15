@@ -35,7 +35,7 @@ from hypothesis import given
 from hypothesis import strategies as st
 
 from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
-                              inserta, menor, pertenece, vacio)
+                              inserta, menor, vacio)
 
 
 class Comparable(Protocol):

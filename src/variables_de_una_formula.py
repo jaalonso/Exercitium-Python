@@ -5,36 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# El tipo de las fórmulas proposicionales se puede definir por
-#    @dataclass
-#    class FProp:
-#        pass
-#
-#    @dataclass
-#    class Const(FProp):
-#        x: bool
-#
-#    @dataclass
-#    class Var(FProp):
-#        x: str
-#
-#    @dataclass
-#    class Neg(FProp):
-#        x: FProp
-#
-#    @dataclass
-#    class Conj(FProp):
-#        x: FProp
-#        y: FProp
-#
-#    @dataclass
-#    class Impl(FProp):
-#        x: FProp
-#        y: FProp
-# de modo que la fórmula A → ⊥ ∧ ¬B se representa por
-#    Impl(Var('A'), Conj(Const(False), Neg (Var('B'))))
-#
-# Definir la función
+# Usando el tipo de las fórmulas proposicionales definido en el
+# [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
 #    variables : (FProp) -> list[str]:
 # tal que variables(p) es la lista de las variables de la fórmula
 # p. Por ejemplo,
@@ -44,34 +16,8 @@
 #    ['A', 'A', 'B']
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.tipo_de_formulas import Conj, Const, FProp, Impl, Neg, Var
 
-
-@dataclass
-class FProp:
-    pass
-
-@dataclass
-class Const(FProp):
-    x: bool
-
-@dataclass
-class Var(FProp):
-    x: str
-
-@dataclass
-class Neg(FProp):
-    x: FProp
-
-@dataclass
-class Conj(FProp):
-    x: FProp
-    y: FProp
-
-@dataclass
-class Impl(FProp):
-    x: FProp
-    y: FProp
 
 def variables(f: FProp) -> list[str]:
     match f:

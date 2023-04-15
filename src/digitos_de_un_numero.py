@@ -12,6 +12,8 @@
 #    digitos(320274)  ==  [3, 2, 0, 2, 7, 4]
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from math import factorial
 from sys import setrecursionlimit
 from timeit import Timer, default_timer

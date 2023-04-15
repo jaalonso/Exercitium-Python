@@ -22,13 +22,14 @@
 #    False
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from __future__ import annotations
 
 from abc import abstractmethod
 from typing import Protocol, TypeVar
 
-from src.TAD.conjunto import (Conj, conjuntoAleatorio, elimina, esVacio,
-                              inserta, menor, pertenece, vacio)
+from src.TAD.conjunto import Conj, inserta, vacio
 from src.TAD_subconjunto import subconjunto
 
 

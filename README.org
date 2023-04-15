@@ -100,6 +100,7 @@ Notas:
 + [[./src/el_tipo_de_los_numeros_naturales.py][El tipo de los números naturales]].
 + [[./src/el_tipo_de_las_listas.py][El tipo de las listas]].
 + [[./src/el_tipo_de_los_arboles_binarios.py][El tipo de_los árboles binarios]].
++ [[./src/tipo_de_formulas.py][El tipo de las fórmulas proposicionales]].
 + [[./src/variables_de_una_formula.py][El tipo de las fórmulas proposicionales: Variables de una fórmula]].
 + [[./src/valor_de_una_formula.py][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
 + [[./src/interpretaciones_de_una_formula.py][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].

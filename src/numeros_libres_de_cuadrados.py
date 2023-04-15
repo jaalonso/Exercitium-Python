@@ -18,6 +18,8 @@
 #    libreDeCuadrados(40)  ==  False
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
 

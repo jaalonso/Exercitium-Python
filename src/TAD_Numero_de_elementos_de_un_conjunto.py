@@ -14,6 +14,8 @@
 #    cardinal(inserta(4, inserta(5, inserta(4, vacio())))) == 2
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from __future__ import annotations
 
 from abc import abstractmethod

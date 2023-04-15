@@ -14,6 +14,8 @@
 #    len(divisores1(factorial(25)))  ==  340032
 #  ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from math import factorial, sqrt
 from sys import setrecursionlimit
 from timeit import Timer, default_timer

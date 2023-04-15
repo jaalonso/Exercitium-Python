@@ -19,6 +19,8 @@
 #    3 | 4 | 6 | 5
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from copy import deepcopy
 from typing import Callable, TypeVar
 

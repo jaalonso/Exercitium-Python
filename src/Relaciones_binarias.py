@@ -23,7 +23,7 @@
 # las relaciones que genera son relaciones binarias.
 # ---------------------------------------------------------------------
 
-from random import choice, randint, sample
+from random import randint, sample
 from typing import TypeVar
 
 from hypothesis import given
