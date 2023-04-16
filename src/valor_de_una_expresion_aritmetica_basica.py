@@ -5,55 +5,16 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Las expresiones aritméticas básicas pueden representarse usando el
-# siguiente tipo de datos
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class C(Expr):
-#        x: int
-#
-#    @dataclass
-#    class S(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class P(Expr):
-#        x: Expr
-#        y: Expr
-# Por ejemplo, la expresión 2*(3+7) se representa por
-#    P(C(2), S(C(3), C(7)))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas básicas]
+# (https://bit.ly/43EuWL4), definir la función
 #    valor : (Expr) -> int:
 # tal que valor(e) es el valor de la expresión aritmética e. Por
 # ejemplo,
 #    valor(P(C(2), S(C(3), C(7))))  ==  20
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.expresion_aritmetica_basica import C, Expr, P, S
 
-
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class C(Expr):
-    x: int
-
-@dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
 
 def valor(e: Expr) -> int:
     match e:

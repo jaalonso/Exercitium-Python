@@ -5,29 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Las expresiones aritméticas básicas pueden representarse usando el
-# siguiente tipo de datos
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class C(Expr):
-#        x: int
-#
-#    @dataclass
-#    class S(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class P(Expr):
-#        x: Expr
-#        y: Expr
-# Por ejemplo, la expresión 2*(3+7) se representa por
-#    P(C(2), S(C(3), C(7)))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas básicas]
+# (https://bit.ly/43EuWL4), definir la función
 #    aplica : (Callable[[int], int], Expr) -> Expr
 # tal que aplica(f, e) es la expresión obtenida aplicando la función f
 # a cada uno de los números de la expresión e. Por ejemplo,
@@ -37,27 +16,10 @@
 #    S(P(C(6), C(10)), P(C(12), C(14)))
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
 from typing import Callable
 
+from src.expresion_aritmetica_basica import C, Expr, P, S
 
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class C(Expr):
-    x: int
-
-@dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
 
 def aplica(f: Callable[[int], int], e: Expr) -> Expr:
     match e:

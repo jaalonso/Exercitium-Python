@@ -127,6 +127,7 @@ Notas:
 + [[./src/elementos_del_nivel_k_de_un_arbol.py][Elementos del nivel k de un árbol]].
 + [[./src/arbol_de_factorizacion.py][Árbol de factorización]].
 + [[./src/valor_de_un_arbol_booleano.py][Valor de un árbol booleano]].
++ [[./src/expresion_aritmetica_basica.py][Expresiones aritméticas básicas]].
 + [[./src/valor_de_una_expresion_aritmetica_basica.py][Valor de una expresión aritmética básica]].
 + [[./src/aplicacion_de_una_funcion_a_una_expresion_aritmetica.py][Aplicación de una función a una expresión aritmética]].
 + [[./src/valor_de_una_expresion_aritmetica_con_una_variable.py][Valor de una expresión aritmética con una variable]].
@@ -198,17 +199,17 @@ Notas:
 + [[./src/Universo_y_grafo_de_una_relacion_binaria.py][Universo y grafo de una relación binaria]].
 + [[./src/Relaciones_reflexivas.py][Relaciones reflexivas]].
 + [[./src/Relaciones_simetricas.py][Relaciones simétricas]].
++ [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
++ [[./src/Reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
++ [[./src/Relaciones_transitivas.py][Relaciones transitivas]].
++ [[./src/Relaciones_irreflexivas.py][Relaciones irreflexivas]].
++ [[./src/Relaciones_antisimetricas.py][Relaciones antisimétricas]].
++ [[./src/Relaciones_totales.py][Relaciones totales]].
++ [[./src/Clausura_reflexiva.py][Clausura reflexiva]].
++ [[./src/Clausura_simetrica.py][Clausura simétrica]].
++ [[./src/Clausura_transitiva.py][Clausura transitiva]].
 
 ** Para abril
-+ L03 [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
-+ M04 [[./src/Reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
-+ X05 [[./src/Relaciones_transitivas.py][Relaciones transitivas]].
-+ V07 [[./src/Relaciones_irreflexivas.py][Relaciones irreflexivas]].
-+ L10 [[./src/Relaciones_antisimetricas.py][Relaciones antisimétricas]].
-+ M11 [[./src/Relaciones_totales.py][Relaciones totales]].
-+ X12 [[./src/Clausura_reflexiva.py][Clausura reflexiva]].
-+ J13 [[./src/Clausura_simetrica.py][Clausura simétrica]].
-+ V14 [[./src/Clausura_transitiva.py][Clausura transitiva]].
 + L17 [[./src/TAD/Polinomio.py][El tipo abstracto de datos de los polinomios]].
 + L17 [[./src/TAD/PolRepTDA.py][El TAD de los polinomios mediante tipos algebraicos]].
 + L17 [[./src/TAD/PolRepDensa.py][El TAD de los polinomios mediante listas densas]].
