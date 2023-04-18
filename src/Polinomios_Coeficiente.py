@@ -19,9 +19,10 @@
 #    0
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from typing import TypeVar
 
-# pylint: disable=unused-import
 from src.TAD.Polinomio import (Polinomio, coefLider, consPol, grado, polCero,
                                restoPol)
 

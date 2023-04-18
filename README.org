@@ -208,12 +208,12 @@ Notas:
 + [[./src/Clausura_reflexiva.py][Clausura reflexiva]].
 + [[./src/Clausura_simetrica.py][Clausura simétrica]].
 + [[./src/Clausura_transitiva.py][Clausura transitiva]].
++ [[./src/TAD/Polinomio.py][El tipo abstracto de datos de los polinomios]].
++ [[./src/TAD/PolRepTDA.py][El TAD de los polinomios mediante tipos algebraicos]].
++ [[./src/TAD/PolRepDensa.py][El TAD de los polinomios mediante listas densas]].
++ [[./src/TAD/PolRepDispersa.py][El TAD de los polinomios mediante listas dispersas]].
 
 ** Para abril
-+ L17 [[./src/TAD/Polinomio.py][El tipo abstracto de datos de los polinomios]].
-+ L17 [[./src/TAD/PolRepTDA.py][El TAD de los polinomios mediante tipos algebraicos]].
-+ L17 [[./src/TAD/PolRepDensa.py][El TAD de los polinomios mediante listas densas]].
-+ L17 [[./src/TAD/PolRepDispersa.py][El TAD de los polinomios mediante listas dispersas]].
 + M18 [[./src/Polinomios_Transformaciones_dispersa_y_densa.py][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
 + X19 [[./src/Polinomios_Transformaciones_polinomios_dispersas.py][TAD de los polinomios: Transformaciones entre polinomios y listas dispersas]].
 + J20 [[./src/Polinomios_Coeficiente.py][TAD de los polinomios: Coeficiente del término de grado k]].
