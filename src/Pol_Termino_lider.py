@@ -54,5 +54,5 @@ def test_termLider(p: Polinomio[int]) -> None:
     assert termLider(p) == termLider2(p)
 
 # La comprobación es
-#    > poetry run pytest -q Pol_Crea_termino.py
+#    > poetry run pytest -q Pol_Termino_lider.py
 #    1 passed in 0.21s
