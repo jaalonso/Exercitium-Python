@@ -45,3 +45,5 @@ def test_creaTermino(n: int, a: int) -> None:
     assert creaTermino(n, a) == creaTermino2(n, a)
 
 # La comprobación es
+#    > poetry run pytest -q Pol_Crea_termino.py
+#    1 passed in 0.21s
