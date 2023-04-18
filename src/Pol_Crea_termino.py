@@ -18,7 +18,7 @@ from typing import TypeVar
 from hypothesis import given
 from hypothesis import strategies as st
 
-from src.TAD.Polinomio import (Polinomio, consPol, polCero)
+from src.TAD.Polinomio import Polinomio, consPol, polCero
 
 A = TypeVar('A', int, float, complex)
 

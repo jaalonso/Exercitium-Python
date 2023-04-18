@@ -23,9 +23,9 @@ from typing import TypeVar
 
 from hypothesis import given
 
-from src.TAD.Polinomio import (Polinomio, coefLider, grado, polCero,
-                               consPol, polinomioAleatorio)
-from src.Pol_Crea_termino import (creaTermino)
+from src.Pol_Crea_termino import creaTermino
+from src.TAD.Polinomio import (Polinomio, coefLider, consPol, grado, polCero,
+                               polinomioAleatorio)
 
 A = TypeVar('A', int, float, complex)
 
