@@ -25,6 +25,8 @@
 # Comprobar con Hypothesis que ambas funciones son inversas.
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from typing import TypeVar
 
 from hypothesis import given
