@@ -74,13 +74,13 @@ def sumaPol2(p: Polinomio[A], q: Polinomio[A]) -> Polinomio[A]:
 def test_sumaPol(p: Polinomio[int], q: Polinomio[int]) -> None:
     assert sumaPol(p, q) == sumaPol2(p,q)
 
-# Propiedad. El polinomio cero es el elemento neutro de la suma.
+# El polinomio cero es el elemento neutro de la suma.
 @given(p=polinomioAleatorio())
 def test_neutroSumaPol(p: Polinomio[int]) -> None:
     assert sumaPol(polCero(), p) == p
     assert sumaPol(p, polCero()) == p
 
-# -- Propiedad. La suma es conmutativa.
+# La suma es conmutativa.
 @given(p=polinomioAleatorio(), q=polinomioAleatorio())
 def test_conmutativaSuma(p: Polinomio[int], q: Polinomio[int]) -> None:
     assert sumaPol(p, q) == sumaPol(q, p)
