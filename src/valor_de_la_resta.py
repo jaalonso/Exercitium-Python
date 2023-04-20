@@ -5,50 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Se considera el tipo de las expresiones aritméticas definido por
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class Lit(Expr):
-#        x: int
-#
-#    @dataclass
-#    class Suma(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class Op(Expr):
-#        x: Expr
-#
-#    @dataclass
-#    class SiCero(Expr):
-#        x: Expr
-#        y: Expr
-#        z: Expr
-#
-# formado por
-# + literales (p.e. Lit 7),
-# + sumas (p.e. Suma (Lit 7) (Suma (Lit 3) (Lit 5)))
-# + opuestos (p.e. Op (Suma (Op (Lit 7)) (Suma (Lit 3) (Lit 5))))
-# + expresiones condicionales (p.e. (SiCero (Lit 3) (Lit 4) (Lit 5))
-#
-# La función para calcular el valor de una expresión es
-#    def valor(e: Expr) -> int:
-#        match e:
-#            case Lit(n):
-#                return n
-#            case Suma(x, y):
-#                return valor(x) + valor(y)
-#            case Op(x):
-#                return -valor(x)
-#            case SiCero(x, y, z):
-#                return valor(y) if valor(x) == 0 else valor(z)
-#        assert False
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas](https://bit.ly/40vCQUh),
+# definir la función
 #    resta : (Expr, Expr) -> Expr
 # tal que resta(e1, e2) es la expresión correspondiente a la diferencia
 # de e1 y e2. Por ejemplo,
@@ -58,53 +16,20 @@
 #    valor(resta(x, y)) == valor(x) - valor(y)
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
 from random import choice, randint
 
 from hypothesis import given
 from hypothesis import strategies as st
 
+from src.tipo_expresion_aritmetica import Expr, Lit, Op, SiCero, Suma
+from src.valor_de_una_expresion_aritmetica import valor
 
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class Lit(Expr):
-    x: int
-
-@dataclass
-class Suma(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class Op(Expr):
-    x: Expr
-
-@dataclass
-class SiCero(Expr):
-    x: Expr
-    y: Expr
-    z: Expr
-
-def valor(e: Expr) -> int:
-    match e:
-        case Lit(n):
-            return n
-        case Suma(x, y):
-            return valor(x) + valor(y)
-        case Op(x):
-            return -valor(x)
-        case SiCero(x, y, z):
-            return valor(y) if valor(x) == 0 else valor(z)
-    assert False
 
 def resta(x: Expr, y: Expr) -> Expr:
     return Suma(x, Op(y))
 
-# -- Comprobación de la propiedad
-# -- ============================
+# Comprobación de la propiedad
+# ============================
 
 # exprArbitraria(n) es una expresión aleatoria de tamaño n. Por
 # ejemplo,

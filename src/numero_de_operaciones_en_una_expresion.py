@@ -5,68 +5,16 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Se considera el tipo de las expresiones aritméticas definido por
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class Lit(Expr):
-#        x: int
-#
-#    @dataclass
-#    class Suma(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class Op(Expr):
-#        x: Expr
-#
-#    @dataclass
-#    class SiCero(Expr):
-#        x: Expr
-#        y: Expr
-#        z: Expr
-#
-# formado por
-# + literales (p.e. Lit 7),
-# + sumas (p.e. Suma (Lit 7) (Suma (Lit 3) (Lit 5)))
-# + opuestos (p.e. Op (Suma (Op (Lit 7)) (Suma (Lit 3) (Lit 5))))
-# + expresiones condicionales (p.e. (SiCero (Lit 3) (Lit 4) (Lit 5))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas](https://bit.ly/40vCQUh),
+# definir la función
 #    numeroOps :: Expr -> Int
 # tal que (numeroOps e) es el número de operaciones de e. Por ejemplo,
 #    numeroOps(Lit(3))                   == 0
 #    numeroOps(Suma(Lit(7), Op(Lit(5)))) == 2
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.tipo_expresion_aritmetica import Expr, Lit, Op, SiCero, Suma
 
-
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class Lit(Expr):
-    x: int
-
-@dataclass
-class Suma(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class Op(Expr):
-    x: Expr
-
-@dataclass
-class SiCero(Expr):
-    x: Expr
-    y: Expr
-    z: Expr
 
 def numeroOps(e: Expr) -> int:
     match e:
