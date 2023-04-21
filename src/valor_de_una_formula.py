@@ -24,8 +24,8 @@
 #                 | F | F | F     | T     |
 #                 |---+---+-------+-------|
 #
-# Usando el tipo de las fórmulas proposicionales definido en el
-# [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
+# Usando el [tipo de las fórmulas proposicionales](https://bit.ly/3L3G2SX),
+# definir la función
 #    valor: (Interpretacion, FProp) -> bool:
 # tal que valor(i, p) es el valor de la fórmula p en la interpretación
 # i. Por ejemplo,

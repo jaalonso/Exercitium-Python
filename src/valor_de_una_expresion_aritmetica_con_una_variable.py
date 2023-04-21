@@ -5,64 +5,16 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Las expresiones aritméticas construidas con una variable (denotada
-# por X), los números enteros y las operaciones de sumar y multiplicar
-# se pueden representar mediante el tipo de datos Expr definido por
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class X(Expr):
-#        pass
-#
-#    @dataclass
-#    class C(Expr):
-#        x: int
-#
-#    @dataclass
-#    class S(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class P(Expr):
-#        x: Expr
-#        y: Expr
-# Por ejemplo, la expresión X*(13+X) se representa por
-#    P(X(), S(C(13), X()))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas con una variable](https://bit.ly/40mwjeF),
+# definir la función
 #    valor : (Expr, int) -> int
 # tal que valor(e, n) es el valor de la expresión e cuando se
 # sustituye su variable por n. Por ejemplo,
 #    valor(P(X(), S(C(13), X())), 2)  ==  30
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.expresion_aritmetica_con_una_variable import C, Expr, P, S, X
 
-
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class X(Expr):
-    pass
-
-@dataclass
-class C(Expr):
-    x: int
-
-@dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
 
 def valor(e: Expr, n: int) -> int:
     match e:

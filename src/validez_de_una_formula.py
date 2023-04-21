@@ -10,8 +10,8 @@
 # + (A ∧ B) → A es una tautología
 # + A → (A ∧ B) no es una tautología
 #
-# Usando el tipo de las fórmulas proposicionales definido en el
-# [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
+# Usando el [tipo de las fórmulas proposicionales](https://bit.ly/3L3G2SX),
+# definir la función
 #    esTautologia :: FProp -> Bool
 # tal que (esTautologia p) se verifica si la fórmula p es una
 # tautología. Por ejemplo,

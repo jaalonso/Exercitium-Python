@@ -5,34 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Las expresiones aritméticas construidas con una variable (denotada
-# por X), los números enteros y las operaciones de sumar y multiplicar
-# se pueden representar mediante el tipo de datos Expr definido por
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class X(Expr):
-#        pass
-#
-#    @dataclass
-#    class C(Expr):
-#        x: int
-#
-#    @dataclass
-#    class S(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class P(Expr):
-#        x: Expr
-#        y: Expr
-# Por ejemplo, la expresión X*(13+X) se representa por
-#    P(X(), S(C(13), X()))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas con una variable](https://bit.ly/40mwjeF),
+# definir la función
 #    numVars : (Expr) -> int
 # tal que numVars(e) es el número de variables en la expresión e. Por
 # ejemplo,
@@ -41,30 +15,8 @@
 #    numVars(P(X(), S(C(13), X())))  ==  2
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.expresion_aritmetica_con_una_variable import C, Expr, P, S, X
 
-
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class X(Expr):
-    pass
-
-@dataclass
-class C(Expr):
-    x: int
-
-@dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
 
 def numVars(e: Expr) -> int:
     match e:

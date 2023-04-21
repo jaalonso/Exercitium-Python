@@ -5,32 +5,7 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# El árbol binario
-#         9
-#        / \
-#       /   \
-#      3     7
-#     / \
-#    2   4
-# se puede representar por
-#    N(9, N(3, H(2), H(4)), H(7))
-#
-# El tipo de los árboles binarios se puede definir por
-#    @dataclass
-#    class Arbol(Generic[A]):
-#        pass
-#
-#    @dataclass
-#    class H(Arbol[A]):
-#        x: A
-#
-#    @dataclass
-#    class N(Arbol[A]):
-#        x: A
-#        i: Arbol[A]
-#        d: Arbol[A]
-#
-# Definir la función
+# Usando el [tipo de los árboles binarios](???), definir la función
 #    takeArbol : (int, Arbol[A]) -> Arbol[A]
 # tal que takeArbol(n, t) es el subárbol de t de profundidad n. Por
 # ejemplo,
@@ -47,28 +22,15 @@
 # menor o igual que n, para todo número natural n y todo árbol x.
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-from random import choice, randint
-from typing import Generic, TypeVar
+from typing import TypeVar
 
 from hypothesis import given
 from hypothesis import strategies as st
 
+from src.arboles_binarios import Arbol, H, N, arbolArbitrario
+from src.profundidad_de_un_arbol_binario import profundidad
+
 A = TypeVar("A")
-
-@dataclass
-class Arbol(Generic[A]):
-    pass
-
-@dataclass
-class H(Arbol[A]):
-    x: A
-
-@dataclass
-class N(Arbol[A]):
-    x: A
-    i: Arbol[A]
-    d: Arbol[A]
 
 def takeArbol(n: int, a: Arbol[A]) -> Arbol[A]:
     match (n, a):
@@ -78,40 +40,6 @@ def takeArbol(n: int, a: Arbol[A]) -> Arbol[A]:
             return H(x)
         case (n, N(x, i, d)):
             return N(x, takeArbol(n - 1, i), takeArbol(n - 1, d))
-    assert False
-
-# Generador para las comprobaciones
-# =================================
-
-# (arbolArbitrario n) es un árbol aleatorio de orden n. Por ejemplo,
-#    >>> arbolArbitrario(4)
-#    N(x=2, i=H(x=1), d=H(x=9))
-#    >>> arbolArbitrario(4)
-#    H(x=10)
-#    >>> arbolArbitrario(4)
-#    N(x=4, i=N(x=7, i=H(x=4), d=H(x=0)), d=H(x=6))
-def arbolArbitrario(n: int) -> Arbol[int]:
-    if n <= 1:
-        return H(randint(0, 10))
-    m = n // 2
-    return choice([H(randint(0, 10)),
-                   N(randint(0, 10),
-                     arbolArbitrario(m),
-                     arbolArbitrario(m))])
-
-# Función auxiliar para la comprobación
-# =====================================
-
-# profundidad(x) es la profundidad del árbol x. Por ejemplo,
-#    profundidad(N(9, N(3, H(2), H(4)), H(7)))              ==  2
-#    profundidad(N(9, N(3, H(2), N(1, H(4), H(5))), H(7)))  ==  3
-#    profundidad(N(4, N(5, H(4), H(2)), N(3, H(7), H(4))))  ==  2
-def profundidad(a: Arbol[A]) -> int:
-    match a:
-        case H(_):
-            return 0
-        case N(_, i, d):
-            return 1 + max(profundidad(i), profundidad(d))
     assert False
 
 # Comprobación de la propiedad

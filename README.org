@@ -113,12 +113,13 @@ Notas:
 + [[./src/valor_de_una_expresion_aritmetica.py][El tipo de las expresiones aritméticas: Valor_de_una_expresión]].
 + [[./src/valor_de_la_resta.py][El tipo de las expresiones aritméticas: Valor de la resta]].
 + [[./src/numero_de_operaciones_en_una_expresion.py][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
-+ [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
-+ [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
-+ [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
-+ [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
-+ [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
-+ [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
++ + [[./src/arboles_binarios.py][Árboles binarios]].
++ + [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
++ + [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
++ + [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
++ + [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
++ + [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
++ + [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
 + [[./src/suma_de_un_arbol.py][Suma de un árbol]].
 + [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].
 + [[./src/arboles_balanceados.py][Árboles balanceados]].
@@ -131,6 +132,7 @@ Notas:
 + [[./src/expresion_aritmetica_basica.py][Expresiones aritméticas básicas]].
 + [[./src/valor_de_una_expresion_aritmetica_basica.py][Valor de una expresión aritmética básica]].
 + [[./src/aplicacion_de_una_funcion_a_una_expresion_aritmetica.py][Aplicación de una función a una expresión aritmética]].
++ [[./src/expresion_aritmetica_con_una_variable.py][Tipo de expresiones aritméticas con una variable]].
 + [[./src/valor_de_una_expresion_aritmetica_con_una_variable.py][Valor de una expresión aritmética con una variable]].
 + [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
 + [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].

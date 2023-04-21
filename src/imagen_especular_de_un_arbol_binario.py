@@ -5,32 +5,7 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# El árbol binario
-#         9
-#        / \
-#       /   \
-#      3     7
-#     / \
-#    2   4
-# se puede representar por
-#    N(9, N(3, H(2), H(4)), H(7))
-#
-# El tipo de los árboles binarios se puede definir por
-#    @dataclass
-#    class Arbol(Generic[A]):
-#        pass
-#
-#    @dataclass
-#    class H(Arbol[A]):
-#        x: A
-#
-#    @dataclass
-#    class N(Arbol[A]):
-#        x: A
-#        i: Arbol[A]
-#        d: Arbol[A]
-#
-# Definir la función
+# Usando el [tipo de los árboles binarios](???), definir la función
 #    espejo : (Arbol[A]) -> Arbol[A]
 # tal que espejo(x) es la imagen especular del árbol x. Por ejemplo,
 #    espejo(N(9, N(3, H(2), H(4)), H(7))) == N(9, H(7), N(3, H(4), H(2)))
@@ -42,28 +17,15 @@
 #    postorden(espejo(x)) == list(reversed(preorden(x)))
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-from random import choice, randint
-from typing import Generic, TypeVar
+from typing import TypeVar
 
 from hypothesis import given
 from hypothesis import strategies as st
 
+from src.arboles_binarios import Arbol, H, N, arbolArbitrario
+from src.recorrido_de_arboles_binarios import postorden, preorden
+
 A = TypeVar("A")
-
-@dataclass
-class Arbol(Generic[A]):
-    pass
-
-@dataclass
-class H(Arbol[A]):
-    x: A
-
-@dataclass
-class N(Arbol[A]):
-    x: A
-    i: Arbol[A]
-    d: Arbol[A]
 
 def espejo(a: Arbol[A]) -> Arbol[A]:
     match a:
@@ -71,56 +33,6 @@ def espejo(a: Arbol[A]) -> Arbol[A]:
             return H(x)
         case N(x, i, d):
             return N(x, espejo(d), espejo(i))
-    assert False
-
-# Generador para las comprobaciones
-# =================================
-
-# (arbolArbitrario n) es un árbol aleatorio de orden n. Por ejemplo,
-#    >>> arbolArbitrario(4)
-#    N(x=2, i=H(x=1), d=H(x=9))
-#    >>> arbolArbitrario(4)
-#    H(x=10)
-#    >>> arbolArbitrario(4)
-#    N(x=4, i=N(x=7, i=H(x=4), d=H(x=0)), d=H(x=6))
-def arbolArbitrario(n: int) -> Arbol[int]:
-    if n <= 1:
-        return H(randint(0, 10))
-    m = n // 2
-    return choice([H(randint(0, 10)),
-                   N(randint(0, 10),
-                     arbolArbitrario(m),
-                     arbolArbitrario(m))])
-
-# Funciones auxiliares para la comprobación
-# =========================================
-
-# preorden(x) es la lista correspondiente al recorrido preorden del
-# árbol x; es decir, primero visita la raíz del árbol, a continuación
-# recorre el subárbol izquierdo y, finalmente, recorre el subárbol
-# derecho. Por ejemplo,
-#    >>> preorden(N(9, N(3, H(2), H(4)), H(7)))
-#    [9, 3, 2, 4, 7]
-def preorden(a: Arbol[A]) -> list[A]:
-    match a:
-        case H(x):
-            return [x]
-        case N(x, i, d):
-            return [x] + preorden(i) + preorden(d)
-    assert False
-
-# (postorden x) es la lista correspondiente al recorrido postorden
-# del árbol x; es decir, primero recorre el subárbol izquierdo, a
-# continuación el subárbol derecho y, finalmente, la raíz del
-# árbol. Por ejemplo,
-#    >>> postorden(N(9, N(3, H(2), H(4)), H(7)))
-#    [2, 4, 3, 7, 9]
-def postorden(a: Arbol[A]) -> list[A]:
-    match a:
-        case H(x):
-            return [x]
-        case N(x, i, d):
-            return postorden(i) + postorden(d) + [x]
     assert False
 
 # Comprobación de las propiedades

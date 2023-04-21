@@ -5,8 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el tipo de las fórmulas proposicionales definido en el
-# [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
+# Usando el [tipo de las fórmulas proposicionales](https://bit.ly/3L3G2SX),
+# definir la función
 #    variables : (FProp) -> list[str]:
 # tal que variables(p) es la lista de las variables de la fórmula
 # p. Por ejemplo,
