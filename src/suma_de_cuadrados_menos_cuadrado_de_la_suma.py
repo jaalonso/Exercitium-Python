@@ -25,6 +25,10 @@ from timeit import Timer, default_timer
 from hypothesis import given
 from hypothesis import strategies as st
 
+from src.suma_de_los_cuadrados_de_los_primeros_numeros_naturales import (
+    sumaDeCuadrados1, sumaDeCuadrados2, sumaDeCuadrados3, sumaDeCuadrados4,
+    sumaDeCuadrados5, sumaDeCuadrados6)
+
 setrecursionlimit(10**6)
 
 # 1ª solución
@@ -38,13 +42,6 @@ def euler6a(n: int) -> int:
 def suma1(n: int) -> int:
     return sum(range(1, n + 1))
 
-# sumaDeCuadrados(n) es la suma de los cuadrados de los
-# primeros n números; es decir, 1^2 + 2^2 + ... + n^2. Por ejemplo,
-#    sumaDeCuadrados(3)    ==  14
-#    sumaDeCuadrados(100)  ==  338350
-def sumaDeCuadrados1(n: int) -> int:
-    return sum(x**2 for x in range(1, n + 1))
-
 # 2ª solución
 # ===========
 
@@ -53,10 +50,6 @@ def euler6b(n: int) -> int:
 
 def suma2(n: int) -> int:
     return (1 + n) * n // 2
-
-def sumaDeCuadrados2(n: int) -> int:
-    return n * (n + 1) * (2 * n + 1) // 6
-
 # 3ª solución
 # ===========
 
@@ -68,11 +61,6 @@ def suma3(n: int) -> int:
         return 1
     return n + suma3(n - 1)
 
-def sumaDeCuadrados3(n: int) -> int:
-    if n == 1:
-        return 1
-    return n**2 + sumaDeCuadrados3(n - 1)
-
 # 4ª solución
 # ===========
 
@@ -81,9 +69,6 @@ def euler6d(n: int) -> int:
 
 def suma4(n: int) -> int:
     return reduce(add, range(1, n + 1))
-
-def sumaDeCuadrados4(n: int) -> int:
-    return reduce(add, (x**2 for x in range(1, n + 1)))
 
 # 5ª solución
 # ===========
@@ -98,13 +83,6 @@ def suma5(n: int) -> int:
         x = x + 1
     return r
 
-def sumaDeCuadrados5(n: int) -> int:
-    x, r = 1, 0
-    while x <= n:
-        r = r + x**2
-        x = x + 1
-    return r
-
 # 6ª solución
 # ===========
 
@@ -115,12 +93,6 @@ def suma6(n: int) -> int:
     r = 0
     for x in range(1, n + 1):
         r = r + x
-    return r
-
-def sumaDeCuadrados6(n: int) -> int:
-    r = 0
-    for x in range(1, n + 1):
-        r = r + x**2
     return r
 
 # Comprobación de equivalencia
