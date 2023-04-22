@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el [tipo de los árboles binarios](???), definir la función
+# Usando el [tipo de los árboles binarios](https://bit.ly/3H53exA),
+# definir la función
 #    takeArbol : (int, Arbol[A]) -> Arbol[A]
 # tal que takeArbol(n, t) es el subárbol de t de profundidad n. Por
 # ejemplo,

@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el [tipo de los árboles binarios](???), definir las funciones
+# Usando el [tipo de los árboles binarios](https://bit.ly/3H53exA),
+# definir las funciones
 #    nHojas : (Arbol[A]) -> int
 #    nNodos : (Arbol[A]) -> int
 # tales que

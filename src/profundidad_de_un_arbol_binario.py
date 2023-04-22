@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el [tipo de los árboles binarios](???), definir la función
+# Usando el [tipo de los árboles binarios](https://bit.ly/3H53exA),
+# definir la función
 #    profundidad : (Arbol[A]) -> int
 # tal que profundidad(x) es la profundidad del árbol x. Por ejemplo,
 #    profundidad(N(9, N(3, H(2), H(4)), H(7)))              ==  2

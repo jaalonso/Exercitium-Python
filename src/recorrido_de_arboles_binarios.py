@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el [tipo de los árboles binarios](???), definir las funciones
+# Usando el [tipo de los árboles binarios](https://bit.ly/3H53exA),
+# definir las funciones
 #    preorden  : (Arbol[A]) -> list[A]
 #    postorden : (Arbol[A]) -> list[A]
 # tales que

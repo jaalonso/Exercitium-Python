@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el [tipo de los árboles binarios](???), definir la función
+# Usando el [tipo de los árboles binarios](https://bit.ly/3H53exA),
+# definir la función
 #    replicateArbol : (int, A) -> Arbol[A]
 # tal que (replicate n x) es el árbol de profundidad n cuyos nodos son
 # x. Por ejemplo,

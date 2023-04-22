@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el [tipo de los árboles binarios](???), definir la función
+# Usando el [tipo de los árboles binarios](https://bit.ly/3H53exA),
+# definir la función
 #    espejo : (Arbol[A]) -> Arbol[A]
 # tal que espejo(x) es la imagen especular del árbol x. Por ejemplo,
 #    espejo(N(9, N(3, H(2), H(4)), H(7))) == N(9, H(7), N(3, H(4), H(2)))
