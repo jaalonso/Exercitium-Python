@@ -36,22 +36,6 @@ class N(Arbol[A]):
     i: Arbol[A]
     d: Arbol[A]
 
-def nHojas(a: Arbol[A]) -> int:
-    match a:
-        case H(_):
-            return 1
-        case N(_, i, d):
-            return nHojas(i) + nHojas(d)
-    assert False
-
-def nNodos(a: Arbol[A]) -> int:
-    match a:
-        case H(_):
-            return 0
-        case N(_, i, d):
-            return 1 + nNodos(i) + nNodos(d)
-    assert False
-
 # Generador de árboles
 # ====================
 

@@ -225,3 +225,4 @@ Notas:
 + M25 [[./src/Pol_Termino_lider.py][TAD de los polinomios: Término líder de un polinomio]].
 + X26 [[./src/Pol_Suma_de_polinomios.py][TAD de los polinomios: Suma de polinomios]].
 + J27 [[./src/Pol_Producto_polinomios.py][TAD de los polinomios: Producto de polinomios]].
++ V28 [[./src/Pol_Valor_de_un_polinomio_en_un_punto.py][TAD de los polinomios: Valor de un polinomio en un punto]].
