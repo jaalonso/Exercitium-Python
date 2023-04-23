@@ -21,14 +21,12 @@
 #    31
 # --------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from typing import TypeVar
 
-from hypothesis import given
-
-from src.Pol_Suma_de_polinomios import sumaPol
-from src.Pol_Termino_lider import termLider
 from src.TAD.Polinomio import (Polinomio, coefLider, consPol, esPolCero, grado,
-                               polCero, polinomioAleatorio, restoPol)
+                               polCero, restoPol)
 
 A = TypeVar('A', int, float, complex)
 
