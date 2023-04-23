@@ -1,4 +1,4 @@
-#+TITLE: Soluciones de los problemas de Exercitium con Python
+S#+TITLE: Soluciones de los problemas de Exercitium con Python
 
 Este repositorio contiene las soluciones de los problemas de [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]]
 con Python.
@@ -105,6 +105,7 @@ Notas:
 + [[./src/valor_de_una_formula.py][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
 + [[./src/interpretaciones_de_una_formula.py][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].
 + [[./src/validez_de_una_formula.py][El tipo de las fórmulas proposicionales: Reconocedor de tautologías]].
++ [[./src/arbol_binario_valores_en_hojas.py][El tipo de los árboles binarios con valores en las hojas]].
 + [[./src/altura_de_un_arbol_binario.py][Altura de un árbol binario]].
 + [[./src/aplicacion_de_una_funcion_a_un_arbol.py][Aplicación de una función a un árbol]].
 + [[./src/arboles_con_la_misma_forma.py][Árboles con la misma forma]].
@@ -113,13 +114,14 @@ Notas:
 + [[./src/valor_de_una_expresion_aritmetica.py][El tipo de las expresiones aritméticas: Valor_de_una_expresión]].
 + [[./src/valor_de_la_resta.py][El tipo de las expresiones aritméticas: Valor de la resta]].
 + [[./src/numero_de_operaciones_en_una_expresion.py][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
-+ [[./src/arboles_binarios.py][Árboles binarios]].
++ [[./src/arboles_binarios.py][Clase de los árboles binarios]].
 + [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
 + [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
 + [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
 + [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
 + [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
 + [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
++ [[./src/arboles_binarios_con_valores_en_los_nodos.py][Árboles binarios con valores en los nodos]].
 + [[./src/suma_de_un_arbol.py][Suma de un árbol]].
 + [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].
 + [[./src/arboles_balanceados.py][Árboles balanceados]].

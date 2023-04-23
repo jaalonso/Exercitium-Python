@@ -5,33 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# El árbol binario
-#         ·
-#        / \
-#       /   \
-#      ·     ·
-#     / \   / \
-#    1   4 6   9
-# se puede representar por
-#    ejArbol = Nodo(Nodo(Hoja(1), Hoja(4)),
-#                   Nodo(Hoja(6), Hoja(9)))
-#
-#
-# El tipo de los árboles binarios se puede definir por
-#    @dataclass
-#    class Arbol(Generic[A]):
-#        pass
-#
-#    @dataclass
-#    class Hoja(Arbol[A]):
-#        x: A
-#
-#    @dataclass
-#    class Nodo(Arbol[A]):
-#        i: Arbol
-#        d: Arbol
-#
-# Definir la función
+# Usando el [tipo de los árboles binarios con los valores en las hojas]
+# (https://bit.ly/3N5RuyE), definir la función
 #    mismaForma : (Arbol[A], Arbol[B]) -> bool
 # tal que mismaForma(t1, t2) se verifica si t1 y t2 tienen la misma
 # estructura. Por ejemplo,
@@ -47,28 +22,17 @@
 #    True
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-from random import randint
-from typing import Callable, Generic, TypeVar
+from typing import TypeVar
 
 from hypothesis import given
 from hypothesis import strategies as st
 
+from src.aplicacion_de_una_funcion_a_un_arbol import mapArbol
+from src.arbol_binario_valores_en_hojas import (Arbol, Hoja, Nodo,
+                                                arbolArbitrario)
+
 A = TypeVar("A")
 B = TypeVar("B")
-
-@dataclass
-class Arbol(Generic[A]):
-    pass
-
-@dataclass
-class Hoja(Arbol[A]):
-    x: A
-
-@dataclass
-class Nodo(Arbol[A]):
-    i: Arbol[A]
-    d: Arbol[A]
 
 # -- 1ª solución
 # -- ===========
@@ -86,34 +50,11 @@ def mismaForma1(a: Arbol[A], b: Arbol[B]) -> bool:
 # -- 2ª solución
 # -- ===========
 
-# mapArbol(f, t) es el árbolo obtenido aplicando la función f a
-# los elementos del árbol t. Por ejemplo,
-#    >>> mapArbol(lambda x: 1 + x, Nodo(Hoja(2), Hoja(4)))
-#    Nodo(i=Hoja(x=3), d=Hoja(x=5))
-def mapArbol(f: Callable[[A], B], a: Arbol[A]) -> Arbol[B]:
-    match a:
-        case Hoja(x):
-            return Hoja(f(x))
-        case Nodo(i, d):
-            return Nodo(mapArbol(f, i), mapArbol(f, d))
-    assert False
-
 def mismaForma2(a: Arbol[A], b: Arbol[B]) -> bool:
     return mapArbol(lambda x: 0, a) == mapArbol(lambda x: 0, b)
 
 # Comprobación de equivalencia
 # ============================
-
-# arbolArbitrario(n) es un árbol aleatorio de orden n. Por ejemplo,
-#    >>> arbolArbitrario(3)
-#    Nodo(i=Hoja(x=2), d=Nodo(i=Hoja(x=5), d=Hoja(x=2)))
-#    >>> arbolArbitrario(3)
-#    Nodo(i=Nodo(i=Hoja(x=6), d=Hoja(x=9)), d=Hoja(x=1))
-def arbolArbitrario(n: int) -> Arbol[int]:
-    if n == 0:
-        return Hoja(randint(1, 10 * n))
-    k = min(randint(1, n), n - 1)
-    return Nodo(arbolArbitrario(k), arbolArbitrario(n - k))
 
 # La propiedad es
 @given(st.integers(min_value=1, max_value=10),

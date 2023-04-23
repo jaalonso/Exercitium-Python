@@ -5,33 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# El árbol binario
-#         ·
-#        / \
-#       /   \
-#      ·     ·
-#     / \   / \
-#    1   4 6   9
-# se puede representar por
-#    ejArbol = Nodo(Nodo(Hoja(1), Hoja(4)),
-#                   Nodo(Hoja(6), Hoja(9)))
-#
-#
-# El tipo de los árboles binarios se puede definir por
-#    @dataclass
-#    class Arbol(Generic[A]):
-#        pass
-#
-#    @dataclass
-#    class Hoja(Arbol[A]):
-#        x: A
-#
-#    @dataclass
-#    class Nodo(Arbol[A]):
-#        i: Arbol
-#        d: Arbol
-#
-# Definir la función
+# Usando el [tipo de los árboles binarios con los valores en las hojas]
+# (https://bit.ly/3N5RuyE), definir la función
 #    mapArbol : (Callable[[A], B], Arbol[A]) -> Arbol[B]
 # tal que mapArbol(f, t) es el árbolo obtenido aplicando la función f a
 # los elementos del árbol t. Por ejemplo,
@@ -39,24 +14,12 @@
 #    Nodo(i=Hoja(x=3), d=Hoja(x=5))
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-from typing import Callable, Generic, TypeVar
+from typing import Callable, TypeVar
+
+from src.arbol_binario_valores_en_hojas import Arbol, Hoja, Nodo
 
 A = TypeVar("A")
 B = TypeVar("B")
-
-@dataclass
-class Arbol(Generic[A]):
-    pass
-
-@dataclass
-class Hoja(Arbol[A]):
-    x: A
-
-@dataclass
-class Nodo(Arbol[A]):
-    i: Arbol[A]
-    d: Arbol[A]
 
 def mapArbol(f: Callable[[A], B], a: Arbol[A]) -> Arbol[B]:
     match a:

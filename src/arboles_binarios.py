@@ -39,7 +39,7 @@ class N(Arbol[A]):
 # Generador de árboles
 # ====================
 
-# (arbolArbitrario n) es un árbol aleatorio de orden n. Por ejemplo,
+# arbolArbitrario(n) es un árbol aleatorio de orden n. Por ejemplo,
 #    >>> arbolArbitrario(4)
 #    N(x=2, i=H(x=1), d=H(x=9))
 #    >>> arbolArbitrario(4)
