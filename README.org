@@ -114,7 +114,7 @@ Notas:
 + [[./src/valor_de_una_expresion_aritmetica.py][El tipo de las expresiones aritméticas: Valor_de_una_expresión]].
 + [[./src/valor_de_la_resta.py][El tipo de las expresiones aritméticas: Valor de la resta]].
 + [[./src/numero_de_operaciones_en_una_expresion.py][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
-+ [[./src/arboles_binarios.py][Clase de los árboles binarios]].
++ [[./src/arboles_binarios.py][El tipo de los árboles binarios con valores en nodos y hojas]].
 + [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
 + [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
 + [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
@@ -228,3 +228,6 @@ Notas:
 + X26 [[./src/Pol_Suma_de_polinomios.py][TAD de los polinomios: Suma de polinomios]].
 + J27 [[./src/Pol_Producto_polinomios.py][TAD de los polinomios: Producto de polinomios]].
 + V28 [[./src/Pol_Valor_de_un_polinomio_en_un_punto.py][TAD de los polinomios: Valor de un polinomio en un punto]].
+
+** Para mayo
++ L01 [[./src/Pol_Comprobacion_de_raices_de_polinomios.py][TAD de los polinomios: Comprobación de raíces de polinomios]].
