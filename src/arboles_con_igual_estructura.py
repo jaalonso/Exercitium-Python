@@ -5,21 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Los árboles binarios con valores en las hojas y en los nodos se
-# definen por
-#    @dataclass
-#    class Arbol(Generic[A]):
-#        pass
+# Usaremos el [tipo de los árboles binarios](https://bit.ly/3H53exA).
 #
-#    @dataclass
-#    class H(Arbol[A]):
-#        x: A
-#
-#    @dataclass
-#    class N(Arbol[A]):
-#        x: A
-#        i: Arbol[A]
-#        d: Arbol[A]
 # Por ejemplo, los árboles
 #         5              8             5           5
 #        / \            / \           / \         / \
@@ -42,24 +29,11 @@
 #    igualEstructura(ej3arbol1, ej3arbol4) == False
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-from typing import Generic, TypeVar
+from typing import TypeVar
+
+from src.arboles_binarios import Arbol, H, N
 
 A = TypeVar("A")
-
-@dataclass
-class Arbol(Generic[A]):
-    pass
-
-@dataclass
-class H(Arbol[A]):
-    x: A
-
-@dataclass
-class N(Arbol[A]):
-    x: A
-    i: Arbol[A]
-    d: Arbol[A]
 
 ej3arbol1: Arbol[int] = N(5, N(9, H(1), H(4)), N(7, H(6), H(8)))
 ej3arbol2: Arbol[int] = N(8, N(9, H(1), H(4)), N(3, H(6), H(2)))

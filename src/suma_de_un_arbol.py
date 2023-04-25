@@ -5,31 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Los árboles binarios con valores en los nodos se pueden definir por
-#    @dataclass
-#    class Arbol:
-#        pass
-#
-#    @dataclass
-#    class H(Arbol):
-#        pass
-#
-#    @dataclass
-#    class N(Arbol):
-#        x: int
-#        i: Arbol
-#        d: Arbol
-# Por ejemplo, el árbol
-#         9
-#        / \
-#       /   \
-#      8     6
-#     / \   / \
-#    3   2 4   5
-# se puede representar por
-#    N(9, N(8, N(3, H(), H()), N(2, H(), H())), N(6, N(4, H(), H()), N(5, H(), H())))
-#
-# Definir la función
+# Usando el [tipo de los árboles binarios con valores en los nodos]
+# (https://bit.ly/40Pplzj), definir la función
 #    sumaArbol : (Arbol) -> int
 # tal sumaArbol(x) es la suma de los valores que hay en el árbol x.
 # Por ejemplo,
@@ -37,24 +14,10 @@
 #    21
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.arbol_binario_valores_en_nodos import Arbol, H, N
 
 
-@dataclass
-class Arbol:
-    pass
-
-@dataclass
-class H(Arbol):
-    pass
-
-@dataclass
-class N(Arbol):
-    x: int
-    i: Arbol
-    d: Arbol
-
-def sumaArbol(a: Arbol) -> int:
+def sumaArbol(a: Arbol[int]) -> int:
     match a:
         case H():
             return 0

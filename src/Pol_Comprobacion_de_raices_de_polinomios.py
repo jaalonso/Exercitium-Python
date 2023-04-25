@@ -19,6 +19,8 @@
 #    False
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from typing import TypeVar
 
 from src.Pol_Valor_de_un_polinomio_en_un_punto import valor

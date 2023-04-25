@@ -5,19 +5,9 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Los árboles binarios con valores en las hojas se pueden definir por
-#    @dataclass
-#    class Arbol(Generic[A]):
-#        pass
+# Usaremos el [tipo de los árboles binarios con los valores en las
+# hojas](https://bit.ly/3N5RuyE).
 #
-#    @dataclass
-#    class H(Arbol[A]):
-#        x: A
-#
-#    @dataclass
-#    class N(Arbol[A]):
-#        i: Arbol[A]
-#        d: Arbol[A]
 # Por ejemplo, los árboles
 #    árbol1          árbol2       árbol3     árbol4
 #       o              o           o           o
@@ -40,37 +30,25 @@
 #    igualBorde(arbol1, arbol4)  ==  False
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-from typing import Generic, TypeVar
+from typing import TypeVar
+
+from src.arbol_binario_valores_en_hojas import Arbol, Hoja, Nodo
 
 A = TypeVar("A")
 
-@dataclass
-class Arbol(Generic[A]):
-    pass
-
-@dataclass
-class H(Arbol[A]):
-    x: A
-
-@dataclass
-class N(Arbol[A]):
-    i: Arbol[A]
-    d: Arbol[A]
-
-arbol1: Arbol[int] = N(H(1), N(H(2), H(3)))
-arbol2: Arbol[int] = N(N(H(1), H(2)), H(3))
-arbol3: Arbol[int] = N(N(H(1), H(4)), H(3))
-arbol4: Arbol[int] = N(N(H(2), H(3)), H(1))
+arbol1: Arbol[int] = Nodo(Hoja(1), Nodo(Hoja(2), Hoja(3)))
+arbol2: Arbol[int] = Nodo(Nodo(Hoja(1), Hoja(2)), Hoja(3))
+arbol3: Arbol[int] = Nodo(Nodo(Hoja(1), Hoja(4)), Hoja(3))
+arbol4: Arbol[int] = Nodo(Nodo(Hoja(2), Hoja(3)), Hoja(1))
 
 # borde(t) es el borde del árbol t; es decir, la lista de las hojas
 # del árbol t leídas de izquierda a derecha. Por ejemplo,
 #    borde(arbol4)  ==  [2, 3, 1]
 def borde(a: Arbol[A]) -> list[A]:
     match a:
-        case H(x):
+        case Hoja(x):
             return [x]
-        case N(i, d):
+        case Nodo(i, d):
             return borde(i) + borde(d)
     assert False
 

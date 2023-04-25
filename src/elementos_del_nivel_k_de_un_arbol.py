@@ -5,35 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Los árboles binarios con valores en las hojas y en los nodos se
-# definen por
-#    @dataclass
-#    class Arbol(Generic[A]):
-#        pass
-#
-#    @dataclass
-#    class H(Arbol[A]):
-#        x: A
-#
-#    @dataclass
-#    class N(Arbol[A]):
-#        x: A
-#        i: Arbol[A]
-#        d: Arbol[A]
-# Por ejemplo, el árbol
-#         7
-#        / \
-#       /   \
-#      2     9
-#     / \
-#    5   4
-# se representa por
-#    N(7, N(2, H(5), H(4)), H(9))
-#
-# Un elemento de un árbol se dirá de nivel k si aparece en el árbol a
-# distancia k  de la raíz.
-#
-# Definir la función
+# Usando el [tipo de los árboles binarios](https://bit.ly/3H53exA),
+# definir la función
 #    nivel : (int, Arbol[A]) -> list[A]
 # tal que nivel(k, a) es la lista de los elementos de nivel k del árbol
 # a. Por ejemplo,
@@ -47,24 +20,11 @@
 #     []
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
-from typing import Generic, TypeVar
+from typing import TypeVar
+
+from src.arboles_binarios import Arbol, H, N
 
 A = TypeVar("A")
-
-@dataclass
-class Arbol(Generic[A]):
-    pass
-
-@dataclass
-class H(Arbol[A]):
-    x: A
-
-@dataclass
-class N(Arbol[A]):
-    x: A
-    i: Arbol[A]
-    d: Arbol[A]
 
 def nivel(k: int, a: Arbol[A]) -> list[A]:
     match (k, a):

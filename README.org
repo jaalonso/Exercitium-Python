@@ -99,44 +99,45 @@ Notas:
 + [[./src/el_tipo_de_figuras_geometricas.py][El tipo de figuras geométricas]].
 + [[./src/el_tipo_de_los_numeros_naturales.py][El tipo de los números naturales]].
 + [[./src/el_tipo_de_las_listas.py][El tipo de las listas]].
-+ [[./src/el_tipo_de_los_arboles_binarios.py][El tipo de_los árboles binarios]].
-+ [[./src/tipo_de_formulas.py][El tipo de las fórmulas proposicionales]].
-+ [[./src/variables_de_una_formula.py][El tipo de las fórmulas proposicionales: Variables de una fórmula]].
-+ [[./src/valor_de_una_formula.py][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
-+ [[./src/interpretaciones_de_una_formula.py][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].
-+ [[./src/validez_de_una_formula.py][El tipo de las fórmulas proposicionales: Reconocedor de tautologías]].
++ [[./src/arboles_binarios.py][El tipo de los árboles binarios con valores en los nodos y en las hojas]].
+  + [[./src/pertenencia_de_un_elemento_a_un_arbol.py][Pertenencia de un elemento a un árbol]].
+  + [[./src/aplanamiento_de_un_arbol.py][Aplanamiento de un árbol]].
+  + [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
+  + [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
+  + [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
+  + [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
+  + [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
+  + [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
+  + [[./src/arboles_con_igual_estructura.py][Árboles con igual estructura]].
+  + [[./src/existencia_de_elemento_del_arbol_con_propiedad.py][Existencia de elementos del árbol que verifican una propiedad]].
+  + [[./src/elementos_del_nivel_k_de_un_arbol.py][Elementos del nivel k de un árbol]].
 + [[./src/arbol_binario_valores_en_hojas.py][El tipo de los árboles binarios con valores en las hojas]].
-+ [[./src/altura_de_un_arbol_binario.py][Altura de un árbol binario]].
-+ [[./src/aplicacion_de_una_funcion_a_un_arbol.py][Aplicación de una función a un árbol]].
-+ [[./src/arboles_con_la_misma_forma.py][Árboles con la misma forma]].
-+ [[./src/arbol_con_las_hojas_en_la_profundidad_dada.py][Árbol con las hojas en la profundidad dada]].
-+ [[./src/tipo_expresion_aritmetica.py][El tipo de las expresiones aritméticas]].
-+ [[./src/valor_de_una_expresion_aritmetica.py][El tipo de las expresiones aritméticas: Valor_de_una_expresión]].
-+ [[./src/valor_de_la_resta.py][El tipo de las expresiones aritméticas: Valor de la resta]].
-+ [[./src/numero_de_operaciones_en_una_expresion.py][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
-+ [[./src/arboles_binarios.py][El tipo de los árboles binarios con valores en nodos y hojas]].
-+ [[./src/numero_de_hojas_de_un_arbol_binario.py][Número de hojas de un árbol binario]].
-+ [[./src/profundidad_de_un_arbol_binario.py][Profundidad de un árbol binario]].
-+ [[./src/recorrido_de_arboles_binarios.py][Recorrido de árboles binarios]].
-+ [[./src/imagen_especular_de_un_arbol_binario.py][Imagen especular de un árbol binario]].
-+ [[./src/subarbol_de_profundidad_dada.py][Subárbol de profundidad dada]].
-+ [[./src/arbol_de_profundidad_n_con_nodos_iguales.py][Árbol de profundidad n con nodos iguales]].
-+ [[./src/arboles_binarios_con_valores_en_los_nodos.py][Árboles binarios con valores en los nodos]].
-+ [[./src/suma_de_un_arbol.py][Suma de un árbol]].
-+ [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].
-+ [[./src/arboles_balanceados.py][Árboles balanceados]].
-+ [[./src/arboles_con_bordes_iguales.py][Árboles con bordes iguales]].
-+ [[./src/arboles_con_igual_estructura.py][Árboles con igual estructura]].
-+ [[./src/existencia_de_elemento_del_arbol_con_propiedad.py][Existencia de elementos del árbol que verifican una propiedad]].
-+ [[./src/elementos_del_nivel_k_de_un_arbol.py][Elementos del nivel k de un árbol]].
+  + [[./src/altura_de_un_arbol_binario.py][Altura de un árbol binario]].
+  + [[./src/aplicacion_de_una_funcion_a_un_arbol.py][Aplicación de una función a un árbol]].
+  + [[./src/arboles_con_la_misma_forma.py][Árboles con la misma forma]].
+  + [[./src/arboles_con_bordes_iguales.py][Árboles con bordes iguales]].
+  + [[./src/arbol_con_las_hojas_en_la_profundidad_dada.py][Árbol con las hojas en la profundidad dada]].
++ [[./src/arbol_binario_valores_en_nodos.py][El tipo de los árboles binarios con valores en los nodos]].
+  + [[./src/suma_de_un_arbol.py][Suma de un árbol]].
+  + [[./src/rama_izquierda_de_un_arbol_binario.py][Rama izquierda de un árbol binario]].
+  + [[./src/arboles_balanceados.py][Árboles balanceados]].
 + [[./src/arbol_de_factorizacion.py][Árbol de factorización]].
 + [[./src/valor_de_un_arbol_booleano.py][Valor de un árbol booleano]].
-+ [[./src/expresion_aritmetica_basica.py][Expresiones aritméticas básicas]].
-+ [[./src/valor_de_una_expresion_aritmetica_basica.py][Valor de una expresión aritmética básica]].
-+ [[./src/aplicacion_de_una_funcion_a_una_expresion_aritmetica.py][Aplicación de una función a una expresión aritmética]].
++ [[./src/tipo_de_formulas.py][El tipo de las fórmulas proposicionales]].
+  + [[./src/variables_de_una_formula.py][Variables de una fórmula]].
+  + [[./src/valor_de_una_formula.py][Valor de una fórmula]].
+  + [[./src/interpretaciones_de_una_formula.py][Interpretaciones de una fórmula]].
+  + [[./src/validez_de_una_formula.py][Reconocedor de tautologías]].
++ [[./src/tipo_expresion_aritmetica.py][El tipo de las expresiones aritméticas]].
+  + [[./src/valor_de_una_expresion_aritmetica.py][Valor_de_una_expresión]].
+  + [[./src/valor_de_la_resta.py][Valor de la resta]].
+  + [[./src/numero_de_operaciones_en_una_expresion.py][Número de operaciones en una expresión]].
++ [[./src/expresion_aritmetica_basica.py][El tipo de las expresiones aritméticas básicas]].
+  + [[./src/valor_de_una_expresion_aritmetica_basica.py][Valor de una expresión aritmética básica]].
+  + [[./src/aplicacion_de_una_funcion_a_una_expresion_aritmetica.py][Aplicación de una función a una expresión aritmética]].
 + [[./src/expresion_aritmetica_con_una_variable.py][Tipo de expresiones aritméticas con una variable]].
-+ [[./src/valor_de_una_expresion_aritmetica_con_una_variable.py][Valor de una expresión aritmética con una variable]].
-+ [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
+  + [[./src/valor_de_una_expresion_aritmetica_con_una_variable.py][Valor de una expresión aritmética con una variable]].
+  + [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
 + [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
 + [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
 + [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
@@ -145,82 +146,82 @@ Notas:
 + [[./src/valor_de_expresiones_aritmeticas_generales.py][Valor de expresiones aritméticas generales]].
 + [[./src/valor_de_una_expresion_vectorial.py][Valor de una expresión vectorial]].
 + [[./src/TAD/pila.py][El tipo abstracto de datos de las pilas]].
-+ [[./src/TAD/pilaConListas.py][El tipo de datos de las pilas mediante listas]].
-+ [[./src/TAD/pilaConDeque.py][El tipo de datos de las pilas mediante deque]].
-+ [[./src/transformaciones_pilas_listas.py][TAD de las pilas: Transformación entre pilas y listas]].
-+ [[./src/filtraPila.py][TAD de las pilas: Filtrado de pilas según una propiedad]].
-+ [[./src/mapPila.py][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
-+ [[./src/pertenecePila.py][TAD de las pilas: Pertenencia a una pila]].
-+ [[./src/contenidaPila.py][TAD de las pilas: Inclusión de pilas]].
-+ [[./src/prefijoPila.py][TAD de las pilas: Reconocimiento de prefijos de pilas]].
-+ [[./src/subPila.py][TAD de las pilas: Reconocimiento de subpilas]].
-+ [[./src/ordenadaPila.py][TAD de las pilas: Reconocimiento de ordenación de pilas]].
-+ [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
-+ [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
-+ [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
+  + [[./src/TAD/pilaConListas.py][El tipo de datos de las pilas mediante listas]].
+  + [[./src/TAD/pilaConDeque.py][El tipo de datos de las pilas mediante deque]].
+  + [[./src/transformaciones_pilas_listas.py][TAD de las pilas: Transformación entre pilas y listas]].
+  + [[./src/filtraPila.py][TAD de las pilas: Filtrado de pilas según una propiedad]].
+  + [[./src/mapPila.py][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
+  + [[./src/pertenecePila.py][TAD de las pilas: Pertenencia a una pila]].
+  + [[./src/contenidaPila.py][TAD de las pilas: Inclusión de pilas]].
+  + [[./src/prefijoPila.py][TAD de las pilas: Reconocimiento de prefijos de pilas]].
+  + [[./src/subPila.py][TAD de las pilas: Reconocimiento de subpilas]].
+  + [[./src/ordenadaPila.py][TAD de las pilas: Reconocimiento de ordenación de pilas]].
+  + [[./src/ordenaInserPila.py][TAD de las pilas: Ordenación de pilas por inserción]].
+  + [[./src/nubPila.py][TAD de las pilas: Eliminación de repeticiones en una pila]].
+  + [[./src/maxPila.py][TAD de las pilas: Máximo elemento de una pila]].
 + [[./src/TAD/cola.py][El tipo abstracto de datos de las colas]].
-+ [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
-+ [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
-+ [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
-+ [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
-+ [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
-+ [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
-+ [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
-+ [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
-+ [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
-+ [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
-+ [[./src/agrupaColas.py][TAD de las colas: Agrupación de colas]].
-+ [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
-+ [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
-+ [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
-+ [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
-+ [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
-+ [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
+  + [[./src/TAD/colaConListas.py][El tipo de datos de las colas mediante listas]].
+  + [[./src/TAD/colaConDosListas.py][El tipo de datos de las colas mediante dos listas]].
+  + [[./src/TAD/colaConDeque.py][El tipo de datos de las colas mediante deque]].
+  + [[./src/transformaciones_colas_listas.py][TAD de las colas: Transformaciones entre colas y listas]].
+  + [[./src/ultimoCola.py][TAD de las colas: Último elemento]].
+  + [[./src/longitudCola.py][TAD de las colas: Longitud de una cola]].
+  + [[./src/todosVerifican.py][TAD de las colas: Todos los elementos verifican una propiedad]].
+  + [[./src/algunoVerifica.py][TAD de las colas: Alguno de los elementos verifican una propiedad]].
+  + [[./src/extiendeCola.py][TAD de las colas: Extensión de colas]].
+  + [[./src/intercalaColas.py][TAD de las colas: Intercalado de dos colas]].
+  + [[./src/agrupaColas.py][TAD de las colas: Agrupación de colas]].
+  + [[./src/perteneceCola.py][TAD de las colas: Pertenencia a una cola]].
+  + [[./src/contenidaCola.py][TAD de las colas: Inclusión de colas]].
+  + [[./src/prefijoCola.py][TAD de las colas: Reconocimiento de prefijos de colas]].
+  + [[./src/subCola.py][TAD de las colas: Reconocimiento de subcolas]].
+  + [[./src/ordenadaCola.py][TAD de las colas: Reconocimiento de ordenación de colas]].
+  + [[./src/maxCola.py][TAD de las colas: Máximo elemento de una cola]].
 + [[./src/TAD/conjunto.py][El tipo abstracto de datos de los conjuntos]].
-+ [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
-+ [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
-+ [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
-+ [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].
-+ [[./src/TAD_Transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
-+ [[./src/TAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].
-+ [[./src/TAD_subconjuntoPropio.py][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
-+ [[./src/TAD_Conjunto_unitario.py][TAD de los conjuntos: Conjunto unitario]].
-+ [[./src/TAD_Numero_de_elementos_de_un_conjunto.py][TAD de los conjuntos: Número de elementos de un conjunto]].
-+ [[./src/TAD_Union_de_dos_conjuntos.py][TAD de los conjuntos: Unión de dos conjuntos]].
-+ [[./src/TAD_Union_de_varios_conjuntos.py][TAD de los conjuntos: Unión de varios conjuntos]].
-+ [[./src/TAD_Interseccion_de_dos_conjuntos.py][TAD de los conjuntos: Intersección de dos conjuntos]].
-+ [[./src/TAD_Interseccion_de_varios_conjuntos.py][TAD de los conjuntos: Intersección de varios conjuntos]].
-+ [[./src/TAD_Conjuntos_disjuntos.py][TAD de los conjuntos: Conjuntos disjuntos]].
-+ [[./src/TAD_Diferencia_de_conjuntos.py][TAD de los conjuntos: Diferencia de conjuntos]].
-+ [[./src/TAD_Diferencia_simetrica.py][TAD de los conjuntos: Diferencia simétrica]].
-+ [[./src/TAD_Subconjunto_por_propiedad.py][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
-+ [[./src/TAD_Particion_por_una_propiedad.py][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
-+ [[./src/TAD_Particion_segun_un_numero.py][TAD de los conjuntos: Partición según un número]].
-+ [[./src/TAD_mapC.py][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
-+ [[./src/TAD_TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
-+ [[./src/TAD_AlgunosVerificanConj.py][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
-+ [[./src/TAD_Producto_cartesiano.py][TAD de los conjuntos: TAD_Producto_cartesiano]].
+  + [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
+  + [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
+  + [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
+  + [[./src/TAD/conjuntoConLibreria.py][El tipo de datos de los conjuntos mediante librería]].
+  + [[./src/TAD_Transformaciones_conjuntos_listas.py][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
+  + [[./src/TAD_subconjunto.py][TAD de los conjuntos: Reconocimiento de subconjunto]].
+  + [[./src/TAD_subconjuntoPropio.py][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
+  + [[./src/TAD_Conjunto_unitario.py][TAD de los conjuntos: Conjunto unitario]].
+  + [[./src/TAD_Numero_de_elementos_de_un_conjunto.py][TAD de los conjuntos: Número de elementos de un conjunto]].
+  + [[./src/TAD_Union_de_dos_conjuntos.py][TAD de los conjuntos: Unión de dos conjuntos]].
+  + [[./src/TAD_Union_de_varios_conjuntos.py][TAD de los conjuntos: Unión de varios conjuntos]].
+  + [[./src/TAD_Interseccion_de_dos_conjuntos.py][TAD de los conjuntos: Intersección de dos conjuntos]].
+  + [[./src/TAD_Interseccion_de_varios_conjuntos.py][TAD de los conjuntos: Intersección de varios conjuntos]].
+  + [[./src/TAD_Conjuntos_disjuntos.py][TAD de los conjuntos: Conjuntos disjuntos]].
+  + [[./src/TAD_Diferencia_de_conjuntos.py][TAD de los conjuntos: Diferencia de conjuntos]].
+  + [[./src/TAD_Diferencia_simetrica.py][TAD de los conjuntos: Diferencia simétrica]].
+  + [[./src/TAD_Subconjunto_por_propiedad.py][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
+  + [[./src/TAD_Particion_por_una_propiedad.py][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
+  + [[./src/TAD_Particion_segun_un_numero.py][TAD de los conjuntos: Partición según un número]].
+  + [[./src/TAD_mapC.py][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
+  + [[./src/TAD_TodosVerificanConj.py][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
+  + [[./src/TAD_AlgunosVerificanConj.py][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
+  + [[./src/TAD_Producto_cartesiano.py][TAD de los conjuntos: TAD_Producto_cartesiano]].
 + [[./src/Relaciones_binarias.py][Relaciones binarias]].
-+ [[./src/Universo_y_grafo_de_una_relacion_binaria.py][Universo y grafo de una relación binaria]].
-+ [[./src/Relaciones_reflexivas.py][Relaciones reflexivas]].
-+ [[./src/Relaciones_simetricas.py][Relaciones simétricas]].
-+ [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
-+ [[./src/Reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
-+ [[./src/Relaciones_transitivas.py][Relaciones transitivas]].
-+ [[./src/Relaciones_irreflexivas.py][Relaciones irreflexivas]].
-+ [[./src/Relaciones_antisimetricas.py][Relaciones antisimétricas]].
-+ [[./src/Relaciones_totales.py][Relaciones totales]].
-+ [[./src/Clausura_reflexiva.py][Clausura reflexiva]].
-+ [[./src/Clausura_simetrica.py][Clausura simétrica]].
-+ [[./src/Clausura_transitiva.py][Clausura transitiva]].
+  + [[./src/Universo_y_grafo_de_una_relacion_binaria.py][Universo y grafo de una relación binaria]].
+  + [[./src/Relaciones_reflexivas.py][Relaciones reflexivas]].
+  + [[./src/Relaciones_simetricas.py][Relaciones simétricas]].
+  + [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
+  + [[./src/Reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
+  + [[./src/Relaciones_transitivas.py][Relaciones transitivas]].
+  + [[./src/Relaciones_irreflexivas.py][Relaciones irreflexivas]].
+  + [[./src/Relaciones_antisimetricas.py][Relaciones antisimétricas]].
+  + [[./src/Relaciones_totales.py][Relaciones totales]].
+  + [[./src/Clausura_reflexiva.py][Clausura reflexiva]].
+  + [[./src/Clausura_simetrica.py][Clausura simétrica]].
+  + [[./src/Clausura_transitiva.py][Clausura transitiva]].
 + [[./src/TAD/Polinomio.py][El tipo abstracto de datos de los polinomios]].
-+ [[./src/TAD/PolRepTDA.py][El TAD de los polinomios mediante tipos algebraicos]].
-+ [[./src/TAD/PolRepDensa.py][El TAD de los polinomios mediante listas densas]].
-+ [[./src/TAD/PolRepDispersa.py][El TAD de los polinomios mediante listas dispersas]].
-+ [[./src/Pol_Transformaciones_dispersa_y_densa.py][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
-+ [[./src/Pol_Transformaciones_polinomios_dispersas.py][TAD de los polinomios: Transformaciones entre polinomios y listas dispersas]].
-+ [[./src/Pol_Coeficiente.py][TAD de los polinomios: Coeficiente del término de grado k]].
-+ [[./src/Pol_Transformaciones_polinomios_densas.py][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
+  + [[./src/TAD/PolRepTDA.py][El TAD de los polinomios mediante tipos algebraicos]].
+  + [[./src/TAD/PolRepDensa.py][El TAD de los polinomios mediante listas densas]].
+  + [[./src/TAD/PolRepDispersa.py][El TAD de los polinomios mediante listas dispersas]].
+  + [[./src/Pol_Transformaciones_dispersa_y_densa.py][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
+  + [[./src/Pol_Transformaciones_polinomios_dispersas.py][TAD de los polinomios: Transformaciones entre polinomios y listas dispersas]].
+  + [[./src/Pol_Coeficiente.py][TAD de los polinomios: Coeficiente del término de grado k]].
+  + [[./src/Pol_Transformaciones_polinomios_densas.py][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
 
 ** Para abril
 + L24 [[./src/Pol_Crea_termino.py][TAD de los polinomios: Construcción de términos]].
@@ -231,3 +232,4 @@ Notas:
 
 ** Para mayo
 + L01 [[./src/Pol_Comprobacion_de_raices_de_polinomios.py][TAD de los polinomios: Comprobación de raíces de polinomios]].
++ M02 [[./src/Pol_Derivada_de_un_polinomio.py][TAD de los polinomios: Derivada de un polinomio]].
