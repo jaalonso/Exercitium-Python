@@ -233,3 +233,4 @@ Notas:
 ** Para mayo
 + L01 [[./src/Pol_Comprobacion_de_raices_de_polinomios.py][TAD de los polinomios: Comprobación de raíces de polinomios]].
 + M02 [[./src/Pol_Derivada_de_un_polinomio.py][TAD de los polinomios: Derivada de un polinomio]].
++ X03 [[./src/Pol_Resta_de_polinomios.py][TAD de los polinomios: Resta de polinomios]].
