@@ -5,34 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Las expresiones aritméticas con variables pueden representarse usando
-# el siguiente tipo de datos
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class C(Expr):
-#        x: int
-#
-#    @dataclass
-#    class V(Expr):
-#        x: str
-#
-#    @dataclass
-#    class S(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class P(Expr):
-#        x: Expr
-#        y: Expr
-#
-# Por ejemplo, la expresión 2*(a+5) se representa por
-#    P(C(2), S(V('a'), C(5)))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas con variables]
+# (https://bit.ly/3HfB0QO), definir la función
 #    sumas : (Expr) -> int
 # tal que sumas(e) es el número de sumas en la expresión e. Por
 # ejemplo,
@@ -41,30 +15,8 @@
 #    sumas(P(V('z'), P(C(3), V('x')))) == 0
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.expresion_aritmetica_con_variables import C, Expr, P, S, V
 
-
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class C(Expr):
-    x: int
-
-@dataclass
-class V(Expr):
-    x: str
-
-@dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
 
 def sumas(e: Expr) -> int:
     match e:

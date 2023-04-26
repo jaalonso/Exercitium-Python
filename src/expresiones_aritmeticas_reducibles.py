@@ -5,34 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Las expresiones aritméticas con variables pueden representarse usando
-# el siguiente tipo de datos
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class C(Expr):
-#        x: int
-#
-#    @dataclass
-#    class V(Expr):
-#        x: str
-#
-#    @dataclass
-#    class S(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class P(Expr):
-#        x: Expr
-#        y: Expr
-#
-# Por ejemplo, la expresión 2*(a+5) se representa por
-#    P(C(2), S(V('a'), C(5)))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas con variables]
+# (https://bit.ly/3HfB0QO), definir la función
 #    reducible : (Expr) -> bool
 # tal que reducible(a) se verifica si a es una expresión reducible; es
 # decir, contiene una operación en la que los dos operandos son números.
@@ -46,30 +20,8 @@
 #    reducible(V('x'))                   == False
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.expresion_aritmetica_con_variables import C, Expr, P, S, V
 
-
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class C(Expr):
-    x: int
-
-@dataclass
-class V(Expr):
-    x: str
-
-@dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
 
 def reducible(e: Expr) -> bool:
     match e:

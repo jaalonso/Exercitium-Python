@@ -5,34 +5,8 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Las expresiones aritméticas con variables pueden representarse usando
-# el siguiente tipo de datos
-#    @dataclass
-#    class Expr:
-#        pass
-#
-#    @dataclass
-#    class C(Expr):
-#        x: int
-#
-#    @dataclass
-#    class V(Expr):
-#        x: str
-#
-#    @dataclass
-#    class S(Expr):
-#        x: Expr
-#        y: Expr
-#
-#    @dataclass
-#    class P(Expr):
-#        x: Expr
-#        y: Expr
-#
-# Por ejemplo, la expresión 2*(a+5) se representa por
-#    P(C(2), S(V('a'), C(5)))
-#
-# Definir la función
+# Usando el [tipo de las expresiones aritméticas con variables]
+# (https://bit.ly/3HfB0QO), definir la función
 #    sustitucion : (Expr, list[tuple[str, int]]) -> Expr
 # tal que sustitucion(e s) es la expresión obtenida sustituyendo las
 # variables de la expresión e según se indica en la sustitución s. Por
@@ -43,30 +17,8 @@
 #    P(C(9), S(C(3), V('y')))
 # ---------------------------------------------------------------------
 
-from dataclasses import dataclass
+from src.expresion_aritmetica_con_variables import C, Expr, P, S, V
 
-
-@dataclass
-class Expr:
-    pass
-
-@dataclass
-class C(Expr):
-    x: int
-
-@dataclass
-class V(Expr):
-    x: str
-
-@dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
-
-@dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
 
 def sustitucion(e: Expr, ps: list[tuple[str, int]]) -> Expr:
     match (e, ps):

@@ -135,13 +135,14 @@ Notas:
 + [[./src/expresion_aritmetica_basica.py][El tipo de las expresiones aritméticas básicas]].
   + [[./src/valor_de_una_expresion_aritmetica_basica.py][Valor de una expresión aritmética básica]].
   + [[./src/aplicacion_de_una_funcion_a_una_expresion_aritmetica.py][Aplicación de una función a una expresión aritmética]].
-+ [[./src/expresion_aritmetica_con_una_variable.py][Tipo de expresiones aritméticas con una variable]].
++ [[./src/expresion_aritmetica_con_una_variable.py][El tipo de las expresiones aritméticas con una variable]].
   + [[./src/valor_de_una_expresion_aritmetica_con_una_variable.py][Valor de una expresión aritmética con una variable]].
   + [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
-+ [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
-+ [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
-+ [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
-+ [[./src/expresiones_aritmeticas_reducibles.py][Expresiones aritméticas reducibles]].
++ [[./src/Expresion_aritmetica_con_variables.py][El tipo de las expresiones aritméticas con variables]].
+  + [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
+  + [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
+  + [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
+  + [[./src/expresiones_aritmeticas_reducibles.py][Expresiones aritméticas reducibles]].
 + [[./src/maximos_valores_de_una_expresion_aritmetica.py][Máximos valores de una expresión aritmética]].
 + [[./src/valor_de_expresiones_aritmeticas_generales.py][Valor de expresiones aritméticas generales]].
 + [[./src/valor_de_una_expresion_vectorial.py][Valor de una expresión vectorial]].
