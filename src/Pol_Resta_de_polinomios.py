@@ -8,7 +8,7 @@
 # Usando el [tipo abstracto de los polinomios](https://bit.ly/3KwqXYu),
 # definir la función
 #    restaPol : (Polinomio[A], Polinomio[A]) -> Polinomio[A]
-# tal que restaPol(p, q) es la el polinomio obtenido restándole a p el q. Por
+# tal que restaPol(p, q) es el polinomio obtenido restándole a p el q. Por
 # ejemplo,
 #    >>> ejPol1 = consPol(5,1,consPol(4,5,consPol(2,5,consPol(0,9,polCero()))))
 #    >>> ejPol2 = consPol(4,3,consPol(2,5,consPol(0,3,polCero())))
