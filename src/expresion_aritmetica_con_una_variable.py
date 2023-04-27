@@ -13,23 +13,23 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Expr:
+class Exp:
     pass
 
 @dataclass
-class X(Expr):
+class X(Exp):
     pass
 
 @dataclass
-class C(Expr):
+class C(Exp):
     x: int
 
 @dataclass
-class S(Expr):
-    x: Expr
-    y: Expr
+class S(Exp):
+    x: Exp
+    y: Exp
 
 @dataclass
-class P(Expr):
-    x: Expr
-    y: Expr
+class P(Exp):
+    x: Exp
+    y: Exp

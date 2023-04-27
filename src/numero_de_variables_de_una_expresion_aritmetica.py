@@ -7,7 +7,7 @@
 # ---------------------------------------------------------------------
 # Usando el [tipo de las expresiones aritméticas con una variable](https://bit.ly/40mwjeF),
 # definir la función
-#    numVars : (Expr) -> int
+#    numVars : (Exp) -> int
 # tal que numVars(e) es el número de variables en la expresión e. Por
 # ejemplo,
 #    numVars(C(3))                   ==  0
@@ -15,10 +15,10 @@
 #    numVars(P(X(), S(C(13), X())))  ==  2
 # ---------------------------------------------------------------------
 
-from src.expresion_aritmetica_con_una_variable import C, Expr, P, S, X
+from src.expresion_aritmetica_con_una_variable import C, Exp, P, S, X
 
 
-def numVars(e: Expr) -> int:
+def numVars(e: Exp) -> int:
     match e:
         case X():
             return 1

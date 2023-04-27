@@ -138,7 +138,7 @@ Notas:
 + [[./src/expresion_aritmetica_con_una_variable.py][El tipo de las expresiones aritméticas con una variable]].
   + [[./src/valor_de_una_expresion_aritmetica_con_una_variable.py][Valor de una expresión aritmética con una variable]].
   + [[./src/numero_de_variables_de_una_expresion_aritmetica.py][Número de variables de una expresión aritmética]].
-+ [[./src/Expresion_aritmetica_con_variables.py][El tipo de las expresiones aritméticas con variables]].
++ [[./src/expresion_aritmetica_con_variables.py][El tipo de las expresiones aritméticas con variables]].
   + [[./src/valor_de_una_expresion_aritmetica_con_variables.py][Valor de una expresión aritmética con variables]].
   + [[./src/numero_de_sumas_en_una_expresion_aritmetica.py][Número de sumas en una expresión aritmética]].
   + [[./src/sustitucion_en_una_expresion_aritmetica.py][Sustitución en una expresión aritmética]].
@@ -235,3 +235,4 @@ Notas:
 + L01 [[./src/Pol_Comprobacion_de_raices_de_polinomios.py][TAD de los polinomios: Comprobación de raíces de polinomios]].
 + M02 [[./src/Pol_Derivada_de_un_polinomio.py][TAD de los polinomios: Derivada de un polinomio]].
 + X03 [[./src/Pol_Resta_de_polinomios.py][TAD de los polinomios: Resta de polinomios]].
++ J04 [[./src/Pol_Potencia_de_un_polinomio.py][TAD de los polinomios: Potencia de un polinomio]].
