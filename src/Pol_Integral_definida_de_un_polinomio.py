@@ -9,13 +9,15 @@
 # definir la función
 #    integralDef : (Polinomio[float], float, float) -> float
 # tal que integralDef(p, a, b) es la integral definida del polinomio p
-# cuyos coefientes son números racionales. Por ejemplo,
+# entre a y b. Por ejemplo,
 #    >>> ejPol = consPol(7, 2, consPol(4, 5, consPol(2, 5, polCero())))
 #    >>> ejPol
 #    2*x^7 + 5*x^4 + 5*x^2
 #    >>> integralDef(ejPol, 0, 1)
 #    2.916666666666667
 # ---------------------------------------------------------------------
+
+# pylint: disable=unused-import
 
 from src.Pol_Integral_de_un_polinomio import integral
 from src.Pol_Valor_de_un_polinomio_en_un_punto import valor
