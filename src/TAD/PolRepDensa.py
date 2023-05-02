@@ -155,6 +155,8 @@ class Polinomio(Generic[A]):
         m = self.grado()
         c = self.coefLider()
         xs = self._coeficientes
+        if b == 0:
+            return self
         if self.esPolCero():
             return Polinomio([b] + ([0] * n))
         if n > m:
