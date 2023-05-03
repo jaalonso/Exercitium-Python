@@ -238,3 +238,4 @@ Notas:
 + L08 [[./src/Pol_Integral_definida_de_un_polinomio.py][TAD de los polinomios: Integral definida de un polinomio]].
 + M09 [[./src/Pol_Multiplicacion_de_un_polinomio_por_un_numero.py][TAD de los polinomios: Multiplicación de un polinomio por un número]].
 + X10 [[./src/Pol_Division_de_polinomios.py][TAD de los polinomios: División de polinomios]].
++ J11 [[./src/Pol_Divisibilidad_de_polinomios.py][TAD de los polinomios: Divisibilidad de polinomios]].
