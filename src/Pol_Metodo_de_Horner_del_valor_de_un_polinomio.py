@@ -39,6 +39,8 @@
 #    Fraction(795, 32)
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from functools import reduce
 
 from src.Pol_Transformaciones_polinomios_densas import polinomioAdensa
