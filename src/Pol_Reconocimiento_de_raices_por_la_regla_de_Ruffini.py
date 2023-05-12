@@ -19,6 +19,8 @@
 #    False
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from src.Pol_Regla_de_Ruffini import restoRuffini
 from src.TAD.Polinomio import Polinomio, consPol, polCero
 
