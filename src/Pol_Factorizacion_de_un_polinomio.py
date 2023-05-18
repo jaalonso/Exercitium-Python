@@ -23,6 +23,8 @@
 #    [1*x + -1, 1*x + 1, 1*x + 2, 1]
 # ---------------------------------------------------------------------
 
+# pylint: disable=unused-import
+
 from src.Pol_Raices_enteras_de_un_polinomio import divisores
 from src.Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini import \
     esRaizRuffini
