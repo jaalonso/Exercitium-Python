@@ -206,9 +206,10 @@ Notas:
   + [[./src/Universo_y_grafo_de_una_relacion_binaria.py][Universo y grafo de una relación binaria]].
   + [[./src/Relaciones_reflexivas.py][Relaciones reflexivas]].
   + [[./src/Relaciones_simetricas.py][Relaciones simétricas]].
-  + [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
   + [[./src/Reconocimiento_de_subconjunto.py][Reconocimiento de subconjunto]].
+  + [[./src/Composicion_de_relaciones_binarias_v2.py][Composición de relaciones binarias]].
   + [[./src/Relaciones_transitivas.py][Relaciones transitivas]].
+  + [[./src/Relaciones_de_equivalencia.py][Relaciones de equivalencia]].
   + [[./src/Relaciones_irreflexivas.py][Relaciones irreflexivas]].
   + [[./src/Relaciones_antisimetricas.py][Relaciones antisimétricas]].
   + [[./src/Relaciones_totales.py][Relaciones totales]].
