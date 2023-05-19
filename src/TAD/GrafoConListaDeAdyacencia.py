@@ -14,6 +14,14 @@
 #    + peso(v1, v2) es el peso de la arista que une los vértices v1 y
 #      v2 en el grafo.
 # Por ejemplo,
+#    >>> Grafo(Orientacion.D, (1,3), [((1,2),0),((3,2),0),((2,2),0)])
+#    G D [1, 2, 3] [(1, 2), (2, 2), (3, 2)]
+#    >>> Grafo(Orientacion.ND, (1,3), [((1,2),0),((3,2),0),((2,2),0)])
+#    G ND [1, 2, 3] [(1, 2), (2, 2), (2, 3)]
+#    >>> Grafo(Orientacion.ND, (1,3), [((1,2),0),((3,2),5),((2,2),0)])
+#    G ND [1, 2, 3] [((1, 2), 0), ((2, 2), 0), ((2, 3), 5)]
+#    >>> Grafo(Orientacion.D, (1,3), [((1,2),0),((3,2),5),((2,2),0)])
+#    G D [1, 2, 3] [((1, 2), 0), ((2, 2), 0), ((3, 2), 5)]
 #    >>> ejGrafoND: Grafo = Grafo(Orientacion.ND,
 #                                 (1, 5),
 #                                 [((1, 2), 12), ((1, 3), 34), ((1, 5), 78),
@@ -175,14 +183,18 @@ class Grafo:
         return list(range(x, 1 + y))
 
     def __repr__(self) -> str:
-        if self._orientacion == Orientacion.D:
-            _orientacion_str = "D"
-        else:
-            _orientacion_str = "ND"
-        nodos_str = str(self.nodos())
-        _aristasstr = ", ".join([f"({(v1, v2)}, {p})"
-                                 for ((v1, v2), p) in self._aristas])
-        return f"G {_orientacion_str} ({nodos_str}, [{_aristasstr}])"
+        o = self._orientacion
+        vs = nodos(self)
+        ns = self._aristas
+        escribeOrientacion = "D" if o == Orientacion.D else "ND"
+        ponderado = {p for ((_, _), p) in ns} != {0}
+        aristasReducidas = ns if o == Orientacion.D \
+            else [((x, y), p)
+                  for ((x, y), p) in ns
+                  if x <= y]
+        escribeAristas = str(aristasReducidas) if ponderado \
+            else str([a for (a, _) in aristasReducidas])
+        return f"G {escribeOrientacion} {vs} {escribeAristas}"
 
     def dirigido(self) -> bool:
         return self._orientacion == Orientacion.D
