@@ -114,6 +114,10 @@
 #          ((2, 4), 55), ((2, 5), 32),
 #          ((3, 4), 61), ((3, 5), 44),
 #          ((4, 5), 93)])
+#    >>> creaGrafo_(Orientacion.D, (1,3), [(2, 1), (1, 3)])
+#    G D ([1, 2, 3], [(1, 3), (2, 1)])
+#    >>> creaGrafo_(Orientacion.ND, (1,3), [(2, 1), (1, 3)])
+#    G ND ([1, 2, 3], [(1, 2), (1, 3)])
 #    >>> dirigido(ejGrafoD2)
 #    True
 #    >>> dirigido(ejGrafoND2)
@@ -215,6 +219,11 @@ def creaGrafo(o: Orientacion,
               cs: Cotas,
               as_: list[Arista]) -> Grafo:
     return Grafo(o, cs, as_)
+
+def creaGrafo_(o: Orientacion,
+              cs: Cotas,
+              as_: list[tuple[Vertice, Vertice]]) -> Grafo:
+    return Grafo(o, cs, [((v1, v2), 0) for (v1, v2) in as_])
 
 def dirigido(g: Grafo) -> bool:
     return g.dirigido()

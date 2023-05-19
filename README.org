@@ -250,3 +250,4 @@ Notas:
 + M23 [[./src/TAD/Grafo.py][El tipo abstracto de datos de los grafos]].
 + M23 [[./src/TAD/GrafoConListaDeAdyacencia.py][El TAD de los grafos mediante listas de adyacencia]].
 + X24 [[./src/Grafo_Grafos_completos.py][TAD de los grafos: Grafos_completos]].
++ J25 [[./src/Grafo_Grafos_ciclos.py][TAD de los grafos: Grafos ciclos]].

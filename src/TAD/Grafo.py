@@ -45,25 +45,27 @@
 # + El vértice 4 está conectado con el vértice 5 (peso 93).
 #
 # Las operaciones del tipo abstracto de datos (TAD) de los grafos son
-#    creaGrafo   :: (Ix v,Num p) => Orientacion -> (v,v) -> [(v,v,p)] -> Grafo v p
-#    dirigido    :: (Ix v,Num p) => (Grafo v p) -> Bool
-#    adyacentes  :: (Ix v,Num p) => (Grafo v p) -> v -> [v]
-#    nodos       :: (Ix v,Num p) => (Grafo v p) -> [v]
-#    aristas     :: (Ix v,Num p) => (Grafo v p) -> [(v,v,p)]
-#    aristaEn    :: (Ix v,Num p) => (Grafo v p) -> (v,v) -> Bool
-#    peso        :: (Ix v,Num p) => v -> v -> (Grafo v p) -> p
+#    creaGrafo
+#    creaGrafo_
+#    dirigido
+#    adyacentes
+#    nodos
+#    aristas
+#    aristaEn
+#    peso
 # tales que
-#    + (creaGrafo o cs as) es un grafo (dirigido o no, según el valor
+#    + creaGrafo(o, cs, as) es un grafo (dirigido o no, según el valor
 #       de o), con el par de cotas cs y listas de aristas as (cada
 #       arista es un trío formado por los dos vértices y su peso). Ver
 #       un ejemplo en el siguiente apartado.
-#    + (dirigido g) se verifica si g es dirigido.
-#    + (nodos g) es la lista de todos los nodos del grafo g.
-#    + (aristas g) es la lista de las aristas del grafo g.
-#    + (adyacentes g v) es la lista de los vértices adyacentes al nodo
+#    + creaGrafo_ es la versión de creaGrafo para los grafos sin pesos.
+#    + dirigido(g) se verifica si g es dirigido.
+#    + nodos(g) es la lista de todos los nodos del grafo g.
+#    + aristas(g) es la lista de las aristas del grafo g.
+#    + adyacentes(g, v) es la lista de los vértices adyacentes al nodo
 #      v en el grafo g.
-#    + (aristaEn g a) se verifica si a es una arista del grafo g.
-#    + (peso v1 v2 g) es el peso de la arista que une los vértices v1 y
+#    + aristaEn(g, a) se verifica si a es una arista del grafo g.
+#    + peso(v1, v2, g) es el peso de la arista que une los vértices v1 y
 #      v2 en el grafo g.
 #
 # Usando el TAD de los grafos, el grafo anterior se puede definir por
@@ -92,6 +94,7 @@ __all__ = [
     'Orientacion',
     'Grafo',
     'creaGrafo',
+    'creaGrafo_',
     'dirigido',
     'adyacentes',
     'nodos',
@@ -102,4 +105,5 @@ __all__ = [
 
 from src.TAD.GrafoConListaDeAdyacencia import (Grafo, Orientacion, adyacentes,
                                                aristaEn, aristas, creaGrafo,
-                                               dirigido, nodos, peso)
+                                               creaGrafo_, dirigido, nodos,
+                                               peso)
