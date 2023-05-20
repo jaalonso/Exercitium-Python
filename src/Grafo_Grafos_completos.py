@@ -21,12 +21,12 @@
 #           ((4, 1), 0), ((4, 2), 0), ((4, 3), 0)])
 # ---------------------------------------------------------------------
 
-from src.TAD.Grafo import Grafo, Orientacion, creaGrafo
+from src.TAD.Grafo import Grafo, Orientacion, creaGrafo_
 
 
 def completo(n: int) -> Grafo:
-    return creaGrafo(Orientacion.ND,
-                     (1, n),
-                     [((x, y), 0)
-                      for x in range(1, n + 1)
-                      for y in range(x + 1, n+1)])
+    return creaGrafo_(Orientacion.ND,
+                      (1, n),
+                      [(x, y)
+                       for x in range(1, n + 1)
+                       for y in range(x + 1, n+1)])
