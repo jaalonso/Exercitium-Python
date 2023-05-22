@@ -90,6 +90,8 @@
 # principio, consideraremos sólo la siguiente:
 #    + mediante lista de adyacencia.
 
+# pylint: disable=unused-import
+
 __all__ = [
     'Orientacion',
     'Grafo',
@@ -103,7 +105,8 @@ __all__ = [
     'peso'
     ]
 
-from src.TAD.GrafoConListaDeAdyacencia import (Grafo, Orientacion, adyacentes,
-                                               aristaEn, aristas, creaGrafo,
-                                               creaGrafo_, dirigido, nodos,
-                                               peso)
+from src.TAD.GrafoConListaDeAdyacencia import (Arista, Cotas, Grafo,
+                                               Orientacion, Peso, Vertice,
+                                               adyacentes, aristaEn, aristas,
+                                               creaGrafo, creaGrafo_, dirigido,
+                                               nodos, peso)
