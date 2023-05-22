@@ -16,10 +16,20 @@
 #    3
 # ---------------------------------------------------------------------
 
-# pylint: disable=unused-import
-
 from src.TAD.Grafo import Grafo, Orientacion, creaGrafo_, nodos
 
 
 def nVertices(g: Grafo) -> int:
     return len(nodos(g))
+
+# Verificación
+# ============
+
+def test_nVertices() -> None:
+    assert nVertices(creaGrafo_(Orientacion.D, (1,5), [(1,2),(3,1)])) == 5
+    assert nVertices(creaGrafo_(Orientacion.ND, (2,4), [(1,2),(3,1)])) == 3
+    print("Verificado")
+
+# La verificación es
+#    >>> test_nVertices()
+#    Verificado
