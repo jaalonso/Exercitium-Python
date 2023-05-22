@@ -37,40 +37,20 @@ from src.TAD.Grafo import (Grafo, Orientacion, Vertice, adyacentes, creaGrafo_,
 def incidentes(g: Grafo, v: Vertice) -> list[Vertice]:
     return [x for x in nodos(g) if v in adyacentes(g, x)]
 
-# -- Verificación
-# -- ============
-#
-# verifica :: IO ()
-# verifica = hspec spec
-#
-# spec :: Spec
-# spec = do
-#   it "e1" $
-#     incidentes g1 1 `shouldBe` [3]
-#   it "e2" $
-#     incidentes g1 2 `shouldBe` [1,2,3]
-#   it "e3" $
-#     incidentes g1 3 `shouldBe` []
-#   it "e4" $
-#     incidentes g2 1 `shouldBe` [2,3]
-#   it "e5" $
-#     incidentes g2 2 `shouldBe` [1,2,3]
-#   it "e6" $
-#     incidentes g2 3 `shouldBe` [1,2]
-#   where
-#     g1, g2 :: Grafo Int Int
-#     g1  = creaGrafo' D (1,3) [(1,2),(2,2),(3,1),(3,2)]
-#     g2 = creaGrafo' ND (1,3) [(1,2),(2,2),(3,1),(3,2)]
-#
-# -- La verificación es
-# --    λ> verifica
-# --
-# --    e1
-# --    e2
-# --    e3
-# --    e4
-# --    e5
-# --    e6
-# --
-# --    Finished in 0.0005 seconds
-# --    6 examples, 0 failures
+# Verificación
+# ============
+
+def test_incidentes() -> None:
+    g1 = creaGrafo_(Orientacion.D, (1,3), [(1,2),(2,2),(3,1),(3,2)])
+    g2 = creaGrafo_(Orientacion.ND, (1,3), [(1,2),(2,2),(3,1),(3,2)])
+    assert incidentes(g1,1) == [3]
+    assert incidentes(g1,2) == [1, 2, 3]
+    assert incidentes(g1,3) == []
+    assert incidentes(g2, 1) == [2, 3]
+    assert incidentes(g2, 2) == [1, 2, 3]
+    assert incidentes(g2, 3) == [1, 2]
+    print("Verificado")
+
+# La verificación es
+#    >>> test_incidentes()
+#    Verificado
