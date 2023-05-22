@@ -24,3 +24,15 @@ def grafoCiclo(n: int) -> Grafo:
     return creaGrafo_(Orientacion.ND,
                       (1, n),
                       [(n,1)] + [(x, x + 1) for x in range(1, n)])
+
+# Verificación
+# ============
+
+def test_grafoCiclo() -> None:
+    assert str(grafoCiclo(3)) == \
+        "G ND ([1, 2, 3], [(1, 2), (1, 3), (2, 3)])"
+    print("Verificado")
+
+# La verificación es
+#    >>> test_grafoCiclo()
+#    Verificado
