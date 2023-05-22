@@ -32,8 +32,6 @@
 #    [1, -1, -2]
 # ---------------------------------------------------------------------
 
-# pylint: disable=unused-import
-
 from src.Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini import \
     esRaizRuffini
 from src.Pol_Regla_de_Ruffini import cocienteRuffini
@@ -61,3 +59,21 @@ def raicesRuffini(p: Polinomio[int]) -> list[int]:
         return aux(xs)
 
     return aux([0] + divisores(terminoIndep(p)))
+
+# Verificación
+# ============
+
+def test_raicesRuffini() -> None:
+    ejPol1 = consPol(4, 3, consPol(2, -5, consPol(0, 3, polCero())))
+    assert raicesRuffini(ejPol1) == []
+    ejPol2 = consPol(5, 1, consPol(2, 5, consPol(1, 4, polCero())))
+    assert raicesRuffini(ejPol2) == [0, -1]
+    ejPol3 = consPol(4, 6, consPol(1, 2, polCero()))
+    assert raicesRuffini(ejPol3) == [0]
+    ejPol4 = consPol(3, 1, consPol(2, 2, consPol(1, -1, consPol(0, -2, polCero()))))
+    assert raicesRuffini(ejPol4) == [1, -1, -2]
+    print("Verificado")
+
+# La verificación es
+#    >>> test_raicesRuffini()
+#    Verificado
