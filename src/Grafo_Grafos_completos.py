@@ -30,3 +30,15 @@ def completo(n: int) -> Grafo:
                       [(x, y)
                        for x in range(1, n + 1)
                        for y in range(x + 1, n+1)])
+
+# Verificación
+# ============
+
+def test_completo() -> None:
+    assert str(completo(4)) == \
+        "G ND ([1, 2, 3, 4], [(1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)])"
+    print("Verificado")
+
+# La verificación es
+#    >>> test_completo()
+#    Verificado
