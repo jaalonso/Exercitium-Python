@@ -3,7 +3,6 @@ from hypothesis.strategies import composite
 
 from src.TAD.Grafo import Orientacion, creaGrafo_
 
-
 # Generador de aristas. Por ejemplo,
 #    >>> gen_aristas(5).example()
 #    [(2, 5), (4, 5), (1, 2), (2, 3), (4, 1)]
