@@ -11,10 +11,10 @@
 #
 # Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
 # definir las funciones,
-#    gradoPos :: (Ix v,Num p) => Grafo v p -> v -> Int
-#    gradoNeg :: (Ix v,Num p) => Grafo v p -> v -> Int
+#    gradoPos : (Grafo, Vertice) -> int
+#    gradoNeg : (Grafo, Vertice) -> int
 # tales que
-# + (gradoPos g v) es el grado positivo del vértice v en el grafo g.
+# + gradoPos(g, v) es el grado positivo del vértice v en el grafo g.
 #   Por ejemplo,
 #      g1 = creaGrafo_(Orientacion.ND, (1,5),
 #                      [(1,2),(1,3),(1,5),(2,4),(2,5),(3,4),(3,5),(4,5)])
@@ -26,7 +26,7 @@
 #      0
 #      λ> gradoPos(g2, 1)
 #      3
-# + (gradoNeg g v) es el grado negativo del vértice v en el grafo g.
+# + gradoNeg(g, v) es el grado negativo del vértice v en el grafo g.
 #   Por ejemplo,
 #      λ> gradoNeg(g1, 5)
 #      4
