@@ -11,9 +11,11 @@
 # ---------------------------------------------------------------------
 
 from hypothesis import given
-from src.TAD.Grafo import (nodos)
+
+from src.Grafo_Grados_positivos_y_negativos import gradoNeg, gradoPos
+from src.TAD.Grafo import nodos
 from src.TAD.GrafoGenerador import gen_grafo
-from src.Grafo_Grados_positivos_y_negativos import (gradoPos, gradoNeg)
+
 
 # La propiedad es
 @given(gen_grafo())
