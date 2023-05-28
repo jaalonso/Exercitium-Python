@@ -15,10 +15,11 @@
 
 from hypothesis import given
 
-from src.TAD.Grafo import (nodos)
+from src.Grafo_Grado_de_un_vertice import grado
+from src.Grafo_Numero_de_aristas_de_un_grafo import nAristas
+from src.TAD.Grafo import nodos
 from src.TAD.GrafoGenerador import gen_grafo
-from src.Grafo_Grado_de_un_vertice import (grado)
-from src.Grafo_Numero_de_aristas_de_un_grafo import (nAristas)
+
 
 # La propiedad es
 @given(gen_grafo())
