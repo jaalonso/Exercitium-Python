@@ -67,7 +67,7 @@ def grado(g: Grafo, v: Vertice) -> int:
         return len(incidentes(g, v)) + 1
     return len(incidentes(g, v))
 
-# La propiedad esp
+# La propiedad es
 @given(gen_grafo())
 def test_grado1(g):
     assert len([v for v in nodos(g) if grado(g, v) % 2 == 1]) % 2 == 0
