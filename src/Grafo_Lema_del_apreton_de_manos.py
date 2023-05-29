@@ -9,7 +9,7 @@
 # siguiente propiedad: la suma de los grados de los vértices de g es el
 # doble del número de aristas de g.
 #
-# Comprobar con QuickCheck que para cualquier grafo g, se verifica
+# Comprobar con Hypothesis que para cualquier grafo g, se verifica
 # dicha propiedad.
 # ---------------------------------------------------------------------
 
