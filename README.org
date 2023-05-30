@@ -264,3 +264,4 @@ Notas:
 + M06 [[./src/Grafo_Grado_de_un_vertice.py][TAD de los grafos: Grado de un vértice]].
 + X07 [[./src/Grafo_Lema_del_apreton_de_manos.py][TAD de los grafos: Lema del apretón de manos]].
 + J08 [[./src/Grafo_Grafos_regulares.py][TAD de los grafos: Grafos regulares]].
++ V09 [[./src/Grafo_Grafos_k_regulares.py][TAD de los grafos: Grafos k-regulares]].
