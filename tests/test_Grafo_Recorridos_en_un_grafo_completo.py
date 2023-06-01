@@ -1,0 +1,3 @@
+from src.Grafo_Recorridos_en_un_grafo_completo import test_recorridos
+
+test_recorridos()
