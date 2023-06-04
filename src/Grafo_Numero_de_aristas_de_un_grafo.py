@@ -5,7 +5,7 @@
 # ======================================================================
 
 #  ---------------------------------------------------------------------
-#  Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+#  Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 #  definir la función,
 #     nAristas : (Grafo) -> int
 #  tal que nAristas(g) es el número de aristas del grafo g. Si g es no

@@ -5,7 +5,7 @@
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+# Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 # definir las funciones,
 #    lazos  : (Grafo) -> list[tuple[Vertice, Vertice]]
 #    nLazos : (Grafo) -> int
