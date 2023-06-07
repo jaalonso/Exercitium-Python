@@ -1,0 +1,3 @@
+from src.Grafo_Recorrido_en_anchura import test_recorridoEnAnchura
+
+test_recorridoEnAnchura()
