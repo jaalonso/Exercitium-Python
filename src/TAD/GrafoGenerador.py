@@ -1,3 +1,14 @@
+# GrafoGenerador.py
+# TAD de los grafos: Generadores de grafos.
+# José A. Alonso Jiménez <https://jaalonso.github.io>
+# Sevilla, 5-junio-2023
+# ======================================================================
+
+# ---------------------------------------------------------------------
+# Definir un generador de grafos para comprobar propiedades de grafos
+# con Hypothesis.
+# ---------------------------------------------------------------------
+
 from hypothesis import strategies as st
 from hypothesis.strategies import composite
 
