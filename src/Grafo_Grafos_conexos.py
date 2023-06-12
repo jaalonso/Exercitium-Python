@@ -11,11 +11,11 @@
 #
 # Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 # definir la función,
-#    conexo :: (Ix a, Num p, Eq p) => Grafo a p -> Bool
+#    conexo :: (Grafo) -> bool
 # tal que (conexo g) se verifica si el grafo g es conexo. Por ejemplo,
-#    conexo (creaGrafo' ND (1,3) [(1,2),(3,2)])        ==  True
-#    conexo (creaGrafo' ND (1,4) [(1,2),(3,2),(4,1)])  ==  True
-#    conexo (creaGrafo' ND (1,4) [(1,2),(3,4)])        ==  False
+#    conexo (creaGrafo_(Orientacion.ND, (1,3), [(1,2),(3,2)]))       == True
+#    conexo (creaGrafo_(Orientacion.ND, (1,4), [(1,2),(3,2),(4,1)])) == True
+#    conexo (creaGrafo_(Orientacion.ND, (1,4), [(1,2),(3,4)]))       == False
 # ---------------------------------------------------------------------
 
 from src.Grafo_Recorrido_en_anchura import recorridoEnAnchura

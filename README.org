@@ -268,3 +268,5 @@ Notas:
 + X14 [[./src/Grafo_Recorrido_en_profundidad.py][TAD de los grafos: Recorrido en profundidad]].
 + J15 [[./src/Grafo_Recorrido_en_anchura.py][TAD de los grafos: Recorrido en anchura]].
 + V16 [[./src/Grafo_Grafos_conexos.py][TAD de los grafos: Grafos conexos]].
++ L19 [[./src/Grafo_Coloreado_correcto_de_un_mapa.py][TAD de los grafos: Coloreado correcto de un mapa]].
++ M20 [[./src/Grafo_Nodos_aislados_de_un_grafo.py][TAD de los grafos: Nodos aislados de un grafo]].
