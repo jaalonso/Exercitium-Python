@@ -38,7 +38,8 @@
 
 
 from enum import Enum
-from src.TAD.Grafo import (Grafo, Orientacion, aristas, creaGrafo_)
+
+from src.TAD.Grafo import Grafo, Orientacion, aristas, creaGrafo_
 
 mapa: Grafo = creaGrafo_(Orientacion.ND,
                          (1,7),
@@ -75,3 +76,5 @@ def test_correcta() -> None:
     print("Verificado")
 
 # La verificación es
+#    >>> test_correcta()
+#    Verificado
