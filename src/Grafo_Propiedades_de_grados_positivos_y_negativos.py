@@ -13,13 +13,13 @@
 from hypothesis import given
 
 from src.Grafo_Grados_positivos_y_negativos import gradoNeg, gradoPos
-from src.TAD.Grafo import nodos
+from src.TAD.Grafo import Grafo, nodos
 from src.TAD.GrafoGenerador import gen_grafo
 
 
 # La propiedad es
 @given(gen_grafo())
-def test_sumaGrados(g):
+def test_sumaGrados(g: Grafo) -> None:
     vs = nodos(g)
     assert sum((gradoPos(g, v) for v in vs)) == sum((gradoNeg(g, v) for v in vs))
 

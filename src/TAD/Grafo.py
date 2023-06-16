@@ -95,6 +95,8 @@
 __all__ = [
     'Orientacion',
     'Grafo',
+    'Vertice',
+    'Peso',
     'creaGrafo',
     'creaGrafo_',
     'dirigido',

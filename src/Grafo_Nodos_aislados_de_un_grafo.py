@@ -8,8 +8,9 @@
 # Dado un grafo dirigido G, diremos que un nodo está aislado si o bien
 # de dicho nodo no sale ninguna arista o bien no llega al nodo ninguna
 # arista. Por ejemplo, en el siguiente grafo
-#    grafo1 = creaGrafo D (1,6) [(1,2,0),(1,3,0),(1,4,0),(3,6,0),
-#                                (5,4,0),(6,2,0),(6,5,0)]
+#    grafo1: Grafo = creaGrafo_(Orientacion.D,
+#                               (1,6),
+#                               [(1,2),(1,3),(1,4),(3,6),(5,4),(6,2),(6,5)])
 # podemos ver que del nodo 1 salen 3 aristas pero no llega ninguna, por
 # lo que lo consideramos aislado. Así mismo, a los nodos 2 y 4 llegan
 # aristas pero no sale ninguna, por tanto también estarán aislados.

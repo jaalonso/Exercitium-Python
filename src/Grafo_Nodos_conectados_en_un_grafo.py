@@ -7,13 +7,14 @@
 # ---------------------------------------------------------------------
 # Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 # definir la función,
-#    conectados :: Grafo Int Int -> Int -> Int -> Bool
-# tal que (conectados g v1 v2) se verifica si los vértices v1 y v2
+#    conectados : (Grafo, Vertice, Vertice) -> bool
+# tal que conectados(g, v1, v2) se verifica si los vértices v1 y v2
 # están conectados en el grafo g. Por ejemplo, si grafo1 es el grafo
 # definido por
-#    grafo1 :: Grafo Int Int
-#    grafo1 = creaGrafo' D (1,6) [(1,3),(1,5),(3,5),(5,1),(5,50),
-#                                 (2,4),(2,6),(4,6),(4,4),(6,4)]
+#    grafo1 = creaGrafo_(Orientacion.D,
+#                        (1,6),
+#                        [(1,3),(1,5),(3,5),(5,1),(5,50),
+#                         (2,4),(2,6),(4,6),(4,4),(6,4)])
 # entonces,
 #    conectados grafo1 1 3  ==  True
 #    conectados grafo1 1 4  ==  False
@@ -35,7 +36,7 @@ def conectadosAux(g: Grafo, vs: list[Vertice], ws: list[Vertice]) -> list[Vertic
         return conectadosAux(g, vs, ws)
     return conectadosAux(g, unionV([w], vs), unionV(ws, adyacentes(g, w)))
 
-def conectados (g: Grafo, v1: Vertice, v2: Vertice) -> bool:
+def conectados(g: Grafo, v1: Vertice, v2: Vertice) -> bool:
     return v2 in conectadosAux(g, [], [v1])
 
 

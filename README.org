@@ -271,3 +271,4 @@ Notas:
 + L19 [[./src/Grafo_Coloreado_correcto_de_un_mapa.py][TAD de los grafos: Coloreado correcto de un mapa]].
 + M20 [[./src/Grafo_Nodos_aislados_de_un_grafo.py][TAD de los grafos: Nodos aislados de un grafo]].
 + X21 [[./src/Grafo_Nodos_conectados_en_un_grafo.py][TAD de los grafos: Nodos conectados en un grafo]].
++ J22 [[./src/Grafo_Algoritmo_de_Kruskal.py][TAD de los grafos: Algoritmo de Kruskal]].

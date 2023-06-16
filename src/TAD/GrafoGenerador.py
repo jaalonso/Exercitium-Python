@@ -9,10 +9,12 @@
 # con Hypothesis.
 # ---------------------------------------------------------------------
 
+from typing import Any
+
 from hypothesis import strategies as st
 from hypothesis.strategies import composite
 
-from src.TAD.Grafo import Orientacion, creaGrafo_
+from src.TAD.Grafo import Grafo, Orientacion, creaGrafo_
 
 
 # Generador de aristas. Por ejemplo,
@@ -23,7 +25,7 @@ from src.TAD.Grafo import Orientacion, creaGrafo_
 #    >>> gen_aristas(5).example()
 #    [(5, 3), (3, 2), (1, 3), (5, 2)]
 @composite
-def gen_aristas(draw, n):
+def gen_aristas(draw: Any, n: int) -> list[tuple[int, int]]:
     as_ = draw(st.lists(st.tuples(st.integers(1,n),
                                   st.integers(1,n)),
                         unique=True))
@@ -39,7 +41,7 @@ def gen_aristas(draw, n):
 #    >>> gen_grafoND().example()
 #    G ND ([1, 2, 3, 4, 5, 6], [(1, 3), (2, 4), (3, 3), (3, 5)])
 @composite
-def gen_grafoND(draw):
+def gen_grafoND(draw: Any) -> Grafo:
     n = draw(st.integers(1,10))
     as_ = [(x, y) for (x, y ) in draw(gen_aristas(n)) if x <= y]
     return creaGrafo_(Orientacion.ND, (1,n), as_)
@@ -52,7 +54,7 @@ def gen_grafoND(draw):
 #    >>> gen_grafoD().example()
 #    G D ([1, 2], [])
 @composite
-def gen_grafoD(draw):
+def gen_grafoD(draw: Any) -> Grafo:
     n = draw(st.integers(1,10))
     as_ = draw(gen_aristas(n))
     return creaGrafo_(Orientacion.D, (1,n), as_)
@@ -65,7 +67,7 @@ def gen_grafoD(draw):
 #    >>> gen_grafo().example()
 #    G D ([1, 2, 3, 4, 5, 6, 7], [(1, 3), (3, 4), (5, 5)])
 @composite
-def gen_grafo(draw):
+def gen_grafo(draw: Any) -> Grafo:
     o = draw(st.sampled_from([Orientacion.D, Orientacion.ND]))
     if o == Orientacion.ND:
         return draw(gen_grafoND())

@@ -17,13 +17,13 @@ from hypothesis import given
 
 from src.Grafo_Grado_de_un_vertice import grado
 from src.Grafo_Numero_de_aristas_de_un_grafo import nAristas
-from src.TAD.Grafo import nodos
+from src.TAD.Grafo import Grafo, nodos
 from src.TAD.GrafoGenerador import gen_grafo
 
 
 # La propiedad es
 @given(gen_grafo())
-def test_apreton(g):
+def test_apreton(g: Grafo) -> None:
     assert sum((grado(g, v) for v in nodos(g))) == 2 * nAristas(g)
 
 # La comprobación es
