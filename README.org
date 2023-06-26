@@ -266,12 +266,15 @@ Notas:
   + [[./src/Grafo_Recorrido_en_profundidad.py][TAD de los grafos: Recorrido en profundidad]].
   + [[./src/Grafo_Recorrido_en_anchura.py][TAD de los grafos: Recorrido en anchura]].
   + [[./src/Grafo_Grafos_conexos.py][TAD de los grafos: Grafos conexos]].
+  + [[./src/Grafo_Coloreado_correcto_de_un_mapa.py][TAD de los grafos: Coloreado correcto de un mapa]].
+  + [[./src/Grafo_Nodos_aislados_de_un_grafo.py][TAD de los grafos: Nodos aislados de un grafo]].
+  + [[./src/Grafo_Nodos_conectados_en_un_grafo.py][TAD de los grafos: Nodos conectados en un grafo]].
+  + [[./src/Grafo_Algoritmo_de_Kruskal.py][TAD de los grafos: Algoritmo de Kruskal]].
+  + [[./src/Grafo_Algoritmo_de_Prim.py][TAD de los grafos: Algoritmo de Prim]].
 
 ** Junio 2023
-+ L19 [[./src/Grafo_Coloreado_correcto_de_un_mapa.py][TAD de los grafos: Coloreado correcto de un mapa]].
-+ M20 [[./src/Grafo_Nodos_aislados_de_un_grafo.py][TAD de los grafos: Nodos aislados de un grafo]].
-+ X21 [[./src/Grafo_Nodos_conectados_en_un_grafo.py][TAD de los grafos: Nodos conectados en un grafo]].
-+ J22 [[./src/Grafo_Algoritmo_de_Kruskal.py][TAD de los grafos: Algoritmo de Kruskal]].
-+ V23 [[./src/Grafo_Algoritmo_de_Prim.py][TAD de los grafos: Algoritmo de Prim]].
 + L26 [[./src/DivideVenceras.py][Algoritmo divide y vencerás]].
 + M27 [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.py][Rompecabeza del triominó_mediante divide y vencerás]].
++ X28 [[./src/BusquedaEnProfundidad.py][Búsqueda en espacios de estados por profundidad]].
++ J29 [[./src/BusquedaEnAnchura.py][Búsqueda en espacios de estados por anchura]].
++ V30 [[./src/BEE_Reinas.py][El problema de las n reinas (mediante espacios de estados)]].

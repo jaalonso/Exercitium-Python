@@ -280,3 +280,5 @@ def test_triomino() -> None:
     print("Verificado")
 
 # La verificación es
+#    >>> test_triomino()
+#    Verificado
