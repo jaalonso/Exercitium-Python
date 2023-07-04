@@ -36,7 +36,7 @@
 #   ejemplo,
 #      >>> primeraSolucionNR(8)
 #      [(1,1),(2,5),(3,8),(4,6),(5,3),(6,7),(7,2),(8,4)]
-# + (nSolucionesNR n) es el número de soluciones del problema de las n
+# + nSolucionesNR(n) es el número de soluciones del problema de las n
 #   reinas, por búsqueda en espacio de estados. Por ejemplo,
 #      >>> nSolucionesNR(8)
 #      92
@@ -105,4 +105,5 @@ def test_nReinas() -> None:
     print("Verificado")
 
 # La verificación es
-#
+#    >>> test_nReinas()
+#    Verificado

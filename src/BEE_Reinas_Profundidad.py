@@ -36,7 +36,7 @@
 #   ejemplo,
 #      >>> primeraSolucionNR(8)
 #      [(1, 8), (2, 4), (3, 1), (4, 3), (5, 6), (6, 2), (7, 7), (8, 5)]
-# + (nSolucionesNR n) es el número de soluciones del problema de las n
+# + nSolucionesNR(n) es el número de soluciones del problema de las n
 #   reinas, por búsqueda en espacio de estados. Por ejemplo,
 #      >>> nSolucionesNR(8)
 #      92
