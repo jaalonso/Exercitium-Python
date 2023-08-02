@@ -1,4 +1,5 @@
-from src.TAD.ColaDePrioridadConListas import CPrioridad, esVacia, inserta, primero, resto, vacia
+from src.TAD.ColaDePrioridadConListas import (CPrioridad, esVacia, inserta,
+                                              primero, resto, vacia)
 
 
 def test_CPrioridad() -> None:

@@ -1,19 +1,19 @@
-# BusquedaPrimeroElMejor.py
-# Búsqueda por primero el mejor.
+# BusquedaEnEscalada.py
+# Búsqueda en escalada.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 6-julio-2023
+# Sevilla, 4-agosto-2023
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
-# En la búsqueda por primero el mejos se supone que los estados están
-# ordenados mediante una función, la heurística, que es una rstimación
-# de su coste para llegar a un estado final.
+# En la búsqueda en escalada se supone que los estados están ordenados
+# mediante una función, la heurística, que es una estimación de su
+# coste para llegar a un estado final.
 #
 # Definir la función
-#    buscaPM : (Callable[[A], list[A]], Callable[[A], bool], A) -> Optional[A]
-# tal que buscaPM(s, o, e) es la lista de soluciones del problema de
+#    buscaEscalada(Callable[[A], list[A]], Callable[[A], bool], A) -> Optional[A]
+# tal que buscaEscalada(s, o, e) es la lista de soluciones del problema de
 # espacio de estado definido por la función sucesores s, el objetivo
-# o y estado inicial e, obtenidas buscando por primero el mejor.
+# o y estado inicial e, obtenidas buscando en escalada.
 # ---------------------------------------------------------------------
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ from functools import reduce
 from typing import Callable, Optional, Protocol, TypeVar
 
 from src.TAD.ColaDePrioridad import (CPrioridad, esVacia, inserta, primero,
-                                     resto, vacia)
+                                     vacia)
 
 
 class Comparable(Protocol):
@@ -33,16 +33,16 @@ class Comparable(Protocol):
 
 A = TypeVar('A', bound=Comparable)
 
-def buscaPM(sucesores: Callable[[A], list[A]],
-            esFinal: Callable[[A], bool],
-            inicial: A) -> Optional[A]:
+def buscaEscalada(sucesores: Callable[[A], list[A]],
+                  esFinal: Callable[[A], bool],
+                  inicial: A) -> Optional[A]:
     c: CPrioridad[A] = inserta(inicial, vacia())
 
     while not esVacia(c):
-        if esFinal(primero(c)):
-            return primero(c)
+        x = primero(c)
+        if esFinal(x):
+            return x
 
-        es = sucesores(primero(c))
-        c = reduce(lambda x, y: inserta(y, x), es, resto(c))
+        c = reduce(lambda x, y: inserta(y, x), sucesores(x), vacia())
 
     return None

@@ -1,11 +1,11 @@
-# ColaDePrioridadConListas.py
-# El tipo de datos de las colas de prioridad mediante listas.
+# ColaDePrioridadConHeapq.py
+# El tipo de datos de las colas de prioridad mediante montículos de heapq.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 5-julio-2023
 # ---------------------------------------------------------------------
 
 # Se define la clase CPrioridad con los siguientes métodos:
-#    + inserta(x) añade x a la cola.
+#    + inserta(x) añade x al final de la cola.
 #    + primero() es el primero de la cola.
 #    + resto() elimina el primero de la cola.
 #    + esVacia() se verifica si la cola es vacía.
@@ -44,9 +44,8 @@
 #    >>> esVacia(vacia())
 #    True
 #
-# Finalmente, se define un generador aleatorio de colas de prioridad y
-# se comprueba que las colas de prioridad cumplen las propiedades de su
-# especificación.
+# Finalmente, se define un generador aleatorio de colas y se comprueba
+# que las colas cumplen las propiedades de su especificación.
 
 from __future__ import annotations
 
@@ -62,6 +61,7 @@ __all__ = [
 from abc import abstractmethod
 from copy import deepcopy
 from dataclasses import dataclass, field
+from heapq import heappop, heappush
 from typing import Generic, Protocol, TypeVar
 
 from hypothesis import assume, given
@@ -103,8 +103,7 @@ class CPrioridad(Generic[A]):
         """
         Inserta el elemento x en la cola de prioridad.
         """
-        self._elementos.append(x)
-        self._elementos.sort()
+        heappush(self._elementos, x)
 
     def primero(self) -> A:
         """
@@ -116,7 +115,7 @@ class CPrioridad(Generic[A]):
         """
         Elimina el primer elemento de la cola
         """
-        self._elementos.pop(0)
+        heappop(self._elementos)
 
 # Funciones del tipo de las listas
 # ================================

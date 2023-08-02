@@ -276,13 +276,10 @@ Notas:
 + [[./src/BusquedaEnProfundidad.py][Búsqueda en espacios de estados por profundidad]].
 + [[./src/BEE_Reinas_Profundidad.py][El problema de las n reinas (mediante búsqueda por profundidad en espacios de estados)]].
 + [[./src/BusquedaEnAnchura.py][Búsqueda en espacios de estados por anchura]].
-
-** Junio 2023
-
-** Julio 2023
-+ L03 [[./src/BEE_Reinas_Anchura.py][El problema de las n reinas (mediante búsqueda en espacios de estados por anchura)]].
-+ M04 [[./src/BEE_Mochila.py][El problema de la mochila (mediante espacio de estados)]].
-+ X05 [[./src/TAD/ColaDePrioridad.py][El tipo abstracto de datos de las colas de prioridad]].
-+ X05 [[./src/TAD/ColaDePrioridadConListas.py][El tipo de datos de las colas de prioridad mediante listas]].
-+ J06 [[./src/BusquedaPrimeroElMejor.py][Búsqueda por primero el mejor]].
-+ V07 [[./src/BPM_8Puzzle.py][El problema del 8 puzzle]].
++ [[./src/BEE_Reinas_Anchura.py][El problema de las n reinas (mediante búsqueda en espacios de estados por anchura)]].
++ [[./src/BEE_Mochila.py][El problema de la mochila (mediante espacio de estados)]].
++ [[./src/TAD/ColaDePrioridad.py][El tipo abstracto de datos de las colas de prioridad]].
++ [[./src/TAD/ColaDePrioridadConListas.py][El tipo de datos de las colas de prioridad mediante listas]].
++ [[./src/BusquedaPrimeroElMejor.py][Búsqueda por primero el mejor]].
++ [[./src/BPM_8Puzzle.py][El problema del 8 puzzle]].
++ [[./src/BusquedaEnEscalada.py][Búsqueda en escalada]].
