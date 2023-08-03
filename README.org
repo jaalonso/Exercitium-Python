@@ -322,3 +322,4 @@ Notas:
 + 04 [[./src/BPM_8Puzzle.py][El problema del 8 puzzle]].
 + 04 [[./src/BusquedaEnEscalada.py][Búsqueda en escalada]].
 + 09 [[./src/Escalada_Prim.py][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
++ 14 [[./src/BEE_El_problema_del_granjero.py][El problema del granjero mediante búsqueda en espacio de estado]].
