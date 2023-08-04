@@ -14,18 +14,23 @@
 # + un nodo inicial y
 # + un nodo objetivo que es la solución.
 #
-# Definir la función
-#    buscaProfundidad :: Eq nodo => (nodo -> [nodo]) -> (nodo -> Bool)
-#                                   -> nodo -> [nodo]
-# tal que (buscaProfundidad s o e) es  la lista de soluciones del
-# problema de espacio de estado definido por la función sucesores s, el
-# objetivo o y estado inicial e obtenidas mediante búsqueda en
-# profundidad.
+# Definir las funciones
+#    buscaProfundidad(Callable[[A], list[A]], Callable[[A], bool], A) -> list[A]
+#    buscaProfundidad1(Callable[[A], list[A]], Callable[[A], bool], A) -> Optional[A]
+# tales que
+# + buscaProfundidad(s, o, e) es la lista de soluciones del
+#   problema de espacio de estado definido por la función sucesores s,
+#   el objetivo o y estado inicial e obtenidas mediante búsqueda en
+#   profundidad.
+# + buscaProfundidad1(s, o, e) es la orimera solución del
+#   problema de espacio de estado definido por la función sucesores s,
+#   el objetivo o y estado inicial e obtenidas mediante búsqueda en
+#   profundidad.
 # ---------------------------------------------------------------------
 
 from functools import reduce
 from sys import setrecursionlimit
-from typing import Callable, TypeVar
+from typing import Callable, Optional, TypeVar
 
 from src.TAD.pila import Pila, apila, cima, desapila, esVacia, vacia
 
@@ -46,3 +51,18 @@ def buscaProfundidad(sucesores: Callable[[A], list[A]],
                           desapila(p)))
 
     return aux(apila(inicial, vacia()))
+
+def buscaProfundidad1(sucesores: Callable[[A], list[A]],
+                      esFinal: Callable[[A], bool],
+                      inicial: A) -> Optional[A]:
+    p: Pila[A] = apila(inicial, vacia())
+
+    while not esVacia(p):
+        cp = cima(p)
+        if esFinal(cp):
+            return cp
+
+        es = sucesores(cp)
+        p = reduce(lambda x, y: apila(y, x), es, desapila(p))
+
+    return None

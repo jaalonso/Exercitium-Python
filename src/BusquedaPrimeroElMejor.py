@@ -11,7 +11,7 @@
 #
 # Definir la función
 #    buscaPM : (Callable[[A], list[A]], Callable[[A], bool], A) -> Optional[A]
-# tal que buscaPM(s, o, e) es la lista de soluciones del problema de
+# tal que buscaPM(s, o, e) es la primera de las soluciones del problema de
 # espacio de estado definido por la función sucesores s, el objetivo
 # o y estado inicial e, obtenidas buscando por primero el mejor.
 # ---------------------------------------------------------------------

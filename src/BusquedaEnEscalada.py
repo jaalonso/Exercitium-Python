@@ -10,7 +10,7 @@
 # coste para llegar a un estado final.
 #
 # Definir la función
-#    buscaEscalada(Callable[[A], list[A]], Callable[[A], bool], A) -> Optional[A]
+#    buscaEscalada(Callable[[A], list[A]], Callable[[A], bool], A) -> list[A]
 # tal que buscaEscalada(s, o, e) es la lista de soluciones del problema de
 # espacio de estado definido por la función sucesores s, el objetivo
 # o y estado inicial e, obtenidas buscando en escalada.
