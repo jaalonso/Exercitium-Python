@@ -319,8 +319,9 @@ Notas:
 + [[./src/TAD/ColaDePrioridad.py][El tipo abstracto de datos de las colas de prioridad]].
 + [[./src/TAD/ColaDePrioridadConListas.py][El tipo de datos de las colas de prioridad mediante listas]].
 + [[./src/BusquedaPrimeroElMejor.py][Búsqueda por primero el mejor]].
-+ 04 [[./src/BPM_8Puzzle.py][El problema del 8 puzzle]].
-+ 04 [[./src/BusquedaEnEscalada.py][Búsqueda en escalada]].
++ [[./src/BPM_8Puzzle.py][El problema del 8 puzzle]].
++ [[./src/BusquedaEnEscalada.py][Búsqueda en escalada]].
 + 09 [[./src/Escalada_Prim.py][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
 + 14 [[./src/BEE_El_problema_del_granjero.py][El problema del granjero mediante búsqueda en espacio de estado]].
 + 19 [[./src/BEE_El_problema_de_las_fichas.py][El problema de las fichas mediante búsqueda en espacio de estado]].
++ 24 [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.py][El problema del calendario mediante búsqueda en espacio de estado]].
