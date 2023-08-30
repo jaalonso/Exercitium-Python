@@ -324,7 +324,8 @@ Notas:
 + [[./src/Escalada_Prim.py][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
 + [[./src/BEE_El_problema_del_granjero.py][El problema del granjero mediante búsqueda en espacio de estado]].
 + [[./src/BEE_El_problema_de_las_fichas.py][El problema de las fichas mediante búsqueda en espacio de estado]].
-+ 24 [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.py][El problema del calendario mediante búsqueda en espacio de estado]].
-+ 29 [[./src/El_problema_del_domino.py][El problema del dominó]].
++ [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.py][El problema del calendario mediante búsqueda en espacio de estado]].
++ [[./src/El_problema_del_domino.py][El problema del dominó]].
 + 04 [[./src/Problema_de_suma_cero.py][Problema de suma cero]].
 + 09 [[./src/Problema_de_las_jarras.py][Problema de las jarras]].
++ 14 [[./src/La_funcion_de_Fibonacci_por_programacion_dinamica.py][La función de Fibonacci por programación dinámica]].
