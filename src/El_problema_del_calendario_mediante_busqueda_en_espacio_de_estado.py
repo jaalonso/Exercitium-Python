@@ -56,7 +56,7 @@ import numpy.typing as npt
 
 from src.BusquedaEnProfundidad import buscaProfundidad
 
-Calendario = npt.NDArray[np.complex64]
+Calendario = npt.NDArray[np.int_]
 
 # inicial(n) es el estado inicial para el problema del calendario con
 # n participantes; es decir, una matriz de n fila y n-1 columnas con

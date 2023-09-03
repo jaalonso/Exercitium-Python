@@ -76,7 +76,7 @@ from src.DivideVenceras import divideVenceras
 # Los tableros son matrices de números enteros donde -1 representa el
 # hueco, 0 las posiciones sin rellenar y los números mayores que 0
 # representan los triominós.
-Tablero = npt.NDArray[np.complex64]
+Tablero = npt.NDArray[np.int_]
 
 # Los problemas se representarán mediante pares formados por un número
 # natural mayor que 0 (que indica el número con el que se formará el

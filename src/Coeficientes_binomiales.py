@@ -9,7 +9,7 @@
 # elementos escogidos de un conjunto con n elementos.
 #
 # Definir la función
-#    binomial : int -> int -> int
+#    binomial : (int, int) -> int
 # Por ejemplo,
 #    binomial(6, 3) == 20
 #    binomial(5, 2) == 10
@@ -18,6 +18,9 @@
 
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
+
+import numpy as np
+import numpy.typing as npt
 
 setrecursionlimit(10**6)
 
@@ -56,6 +59,34 @@ def matrizBinomial2(n: int, k: int) -> list[list[int]]:
 
     return q
 
+# 3ª definición (con programación dinámica y numpy)
+# ================================================
+
+def binomial3(n: int, k: int) -> int:
+    return matrizBinomial3(n, k)[n][k]
+
+# (matrizBinomial3 n k) es la matriz de orden (n+1)x(k+1) tal que el
+# valor en la posición (i,j) (con j <= i) es el coeficiente binomial i
+# sobre j. Por ejemplo,
+#    >>> matrizBinomial3(3, 3)
+#    array([[1, 0, 0, 0],
+#           [1, 1, 0, 0],
+#           [1, 2, 1, 0],
+#           [1, 3, 3, 1]])
+def matrizBinomial3(n: int, k: int) -> npt.NDArray[np.int_]:
+    q = np.zeros((n + 1, k + 1), dtype=object)
+
+    for i in range(n + 1):
+        for j in range(min(i, k) + 1):
+            if j == 0:
+                q[i, j] = 1
+            elif i == j:
+                q[i, j] = 1
+            else:
+                q[i, j] = q[i - 1, j - 1] + q[i - 1, j]
+
+    return q
+
 # Comparación de eficiencia
 # =========================
 
@@ -69,6 +100,13 @@ def tiempo(e: str) -> None:
 #    4.26 segundos
 #    >>> tiempo('binomial2(27, 12)')
 #    0.00 segundos
+#    >>> tiempo('binomial3(27, 12)')
+#    0.00 segundos
+#
+# >>> tiempo('binomial2(50000, 12)')
+# 0.18 segundos
+# >>> tiempo('binomial3(50000, 12)')
+# 0.26 segundos
 
 # Verificación
 # ============
@@ -80,6 +118,9 @@ def test_binomial() -> None:
     assert binomial2(6, 3) == 20
     assert binomial2(5, 2) == 10
     assert binomial2(5, 3) == 10
+    assert binomial3(6, 3) == 20
+    assert binomial3(5, 2) == 10
+    assert binomial3(5, 3) == 10
     print("Verificado")
 
 # La verificación es

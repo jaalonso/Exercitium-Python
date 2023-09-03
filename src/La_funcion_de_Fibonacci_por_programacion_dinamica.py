@@ -54,7 +54,7 @@ def vectorFib2(n: int) -> list[int]:
         v[i] = v[i - 1] + v[i - 2]
     return v
 
-# 2ª definición (con programación dinámica y array)
+# 3ª definición (con programación dinámica y array)
 # =================================================
 
 def fib3(n: int) -> int:
@@ -64,7 +64,7 @@ def fib3(n: int) -> int:
 # de la posición i es el i-ésimo número de Finonacci. Por ejemplo,
 #    >>> vectorFib3(7)
 #    array([ 0,  1,  1,  2,  3,  5,  8, 13])
-def vectorFib3(n: int) -> npt.NDArray[np.complex64]:
+def vectorFib3(n: int) -> npt.NDArray[np.int_]:
     v = np.zeros(n + 1, dtype=int)
     v[0] = 0
     v[1] = 1
