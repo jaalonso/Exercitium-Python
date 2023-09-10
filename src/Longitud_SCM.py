@@ -27,12 +27,12 @@
 # largas de dos secuencias de caracteres dadas.
 #
 # Definir la función
-#    longitudSCM :: Eq a => [a] -> [a] -> Int
-# tal que (longitudSCM xs ys) es la longitud de la subsecuencia máxima
+#    longitudSCM : (str, str) -> int
+# tal que longitudSCM(xs, ys) es la longitud de la subsecuencia máxima
 # de xs e ys. Por ejemplo,
-#    longitudSCM "amapola" "matamoscas" == 4
-#    longitudSCM "atamos" "matamoscas"  == 6
-#    longitudSCM "aaa" "bbbb"           == 0
+#    longitudSCM("amapola", "matamoscas") == 4
+#    longitudSCM("atamos", "matamoscas")  == 6
+#    longitudSCM("aaa", "bbbb")           == 0
 # ---------------------------------------------------------------------
 
 from timeit import Timer, default_timer
@@ -52,11 +52,6 @@ def longitudSCM1(xs: str, ys: str) -> int:
 # 2ª definición (con programación dinámica)
 # =========================================
 
-def longitudSCM2(xs: str, ys: str) -> int:
-    n = len(xs)
-    m = len(ys)
-    return matrizLongitudSCM2(xs, ys)[n][m]
-
 # matrizLongitudSCM2(xs, ys) es la matriz de orden (n+1)x(m+1) (donde n
 # y m son los números de elementos de xs e ys, respectivamente) tal que
 # el valor en la posición (i,j) es la longitud de la SCM de los i
@@ -70,7 +65,7 @@ def longitudSCM2(xs: str, ys: str) -> int:
 #     [0, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3],
 #     [0, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3],
 #     [0, 1, 2, 2, 3, 3, 3, 3, 3, 4, 4]]
-#    # Gráficamente,
+# Gráficamente,
 #       m a t a m o s c a s
 #    [0,0,0,0,0,0,0,0,0,0,0,
 # a   0,0,1,1,1,1,1,1,1,1,1,
@@ -91,6 +86,11 @@ def matrizLongitudSCM2(xs: str, ys: str) -> list[list[int]]:
             else:
                 q[i][j] = max(q[i - 1][j], q[i][j - 1])
     return q
+
+def longitudSCM2(xs: str, ys: str) -> int:
+    n = len(xs)
+    m = len(ys)
+    return matrizLongitudSCM2(xs, ys)[n][m]
 
 # Comparación de eficiencia
 # =========================
