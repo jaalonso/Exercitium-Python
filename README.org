@@ -1,4 +1,4 @@
-S#+TITLE: Soluciones de los problemas de Exercitium con Python
+#+TITLE: Soluciones de los problemas de Exercitium con Python
 
 Este repositorio contiene las soluciones de los problemas de [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]]
 con Python.

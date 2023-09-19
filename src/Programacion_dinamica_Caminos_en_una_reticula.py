@@ -15,8 +15,8 @@
 #    |-------+-------+-------+-------|
 #
 # Definir la función
-#    caminos :: (Int,Int) -> [[(Int,Int)]]
-# tal que (caminos (m,n)) es la lista de los caminos en la retícula de
+#    caminos : (tuple[int, int]) -> list[list[tuple[int, int]]]
+# tal que caminos((m,n)) es la lista de los caminos en la retícula de
 # dimensión mxn desde (1,1) hasta (m,n). Por ejemplo,
 #    >>> caminos((2,3))
 #    [[(1, 1), (1, 2), (1, 3), (2, 3)],
