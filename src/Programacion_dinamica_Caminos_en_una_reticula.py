@@ -63,7 +63,6 @@ def caminos1(p: tuple[int, int]) -> list[list[tuple[int, int]]]:
 def caminos2(p: tuple[int, int]) -> list[list[tuple[int, int]]]:
     return [list(reversed(ps)) for ps in diccionarioCaminos(p)[p]]
 
-
 # diccionarioCaminos((m,n)) es el diccionario cuyas claves son los
 # puntos de la retícula mxn y sus valores son los caminos a dichos
 # puntos. Por ejemplo,
