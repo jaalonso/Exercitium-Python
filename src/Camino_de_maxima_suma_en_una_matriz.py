@@ -34,7 +34,7 @@
 # derecha. Por ejemplo,
 #    >>> caminoMaxSuma1([[1,6,11,2],[7,12,3,8],[3,8,4,9]])
 #    [1, 7, 12, 8, 4, 9]
-#    λ> sum (caminoMaxSuma (fromList 500 500 [1..]))
+#    >>> sum(caminoMaxSuma3([list(range(500*n+1, 500*(n+1)+1)) for n in range(500)]))
 #    187001249
 # ---------------------------------------------------------------------
 
