@@ -132,8 +132,8 @@ def tiempo(e: str) -> None:
 #    >>> tiempo('caminoMaxSuma3([list(range(11*n+1, 11*(n+1)+1)) for n in range(12)])')
 #    0.00 segundos
 
-# # Verificación
-# # ============
+# Verificación
+# ============
 
 def test_caminoMaxSuma() -> None:
     assert caminoMaxSuma1([[1,6,11,2],[7,12,3,8],[3,8,4,9]]) == \
