@@ -341,6 +341,9 @@ Notas:
 + [[./src/Maxima_suma_de_los_caminos_en_una_matriz.py][Máxima suma de los caminos en una matriz]].
 + [[./src/Camino_de_maxima_suma_en_una_matriz.py][Camino de máxima suma en una matriz]].
 
+** Cálculo numérico
++ [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.py][Método de Herón para calcular la raíz cuadrada]].
+
 ** Para publicar
-+ 29 [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.py][Método de Herón para calcular la raíz cuadrada]].
 + 04 [[./src/Metodo_de_Newton_para_calcular_raices.py][Método de Newton para calcular raíces]].
++ 09 [[./src/Funciones_inversas_por_el_metodo_de_Newton.py][Funciones inversas por el método de Newton]].

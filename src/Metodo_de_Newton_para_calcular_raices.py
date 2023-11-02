@@ -21,8 +21,8 @@
 #    puntoCero(cos)  ==  1.5707963267949576
 # ---------------------------------------------------------------------
 
+from math import cos, pi, sin
 from typing import Callable
-from math import sin, cos, pi
 
 # 1ª solución
 # ===========
