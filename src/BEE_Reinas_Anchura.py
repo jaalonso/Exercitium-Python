@@ -1,5 +1,5 @@
 # BEE_Reinas_Anchura.py
-# El problema de las n reinas (mediante espacios de estados).
+# El problema de las n reinas (mediante espacios de estados por anchura).
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 30-junio-2023
 # ---------------------------------------------------------------------

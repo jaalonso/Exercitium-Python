@@ -1,5 +1,5 @@
 # DivideVenceras.py
-# Algoritmo divide y vencerás
+# Algoritmo divide y vencerás.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 26-junio-2023
 # ---------------------------------------------------------------------
