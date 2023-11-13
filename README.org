@@ -323,11 +323,11 @@ Notas:
 + [[./src/BusquedaEnEscalada.py][Búsqueda en escalada]].
 + [[./src/Escalada_Prim.py][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
 + [[./src/BEE_El_problema_del_granjero.py][El problema del granjero mediante búsqueda en espacio de estado]].
-+ [[./src/BEE_El_problema_de_las_fichas.py][El problema de las fichas mediante búsqueda en espacio de estado]].
-+ [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.py][El problema del calendario mediante búsqueda en espacio de estado]].
-+ [[./src/El_problema_del_domino.py][El problema del dominó]].
-+ [[./src/Problema_de_suma_cero.py][Problema de suma cero]].
-+ [[./src/Problema_de_las_jarras.py][Problema de las jarras]].
++ [[./src/BEE_El_problema_de_las_fichas.py][El problema de las fichas mediante búsqueda en espacio de estados]].
++ [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.py][El problema del calendario mediante búsqueda en espacio de estados]].
++ [[./src/El_problema_del_domino.py][El problema del dominó mediante búsqueda en espacio de estados]].
++ [[./src/Problema_de_suma_cero.py][Problema de suma cero mediante búsqueda en espacio de estados]].
++ [[./src/Problema_de_las_jarras.py][Problema de las jarras mediante búsqueda en espacio de estados]].
 
 ** Programación dinámica
 
@@ -344,7 +344,9 @@ Notas:
 ** Cálculo numérico
 + [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.py][Método de Herón para calcular la raíz cuadrada]].
 + [[./src/Metodo_de_Newton_para_calcular_raices.py][Método de Newton para calcular raíces]].
++ [[./src/Funciones_inversas_por_el_metodo_de_Newton.py][Funciones inversas por el método de Newton]].
 
 ** Para publicar
-+ 09 [[./src/Funciones_inversas_por_el_metodo_de_Newton.py][Funciones inversas por el método de Newton]].
 + 14 [[./src/Limites_de_sucesiones.py][Límites de sucesiones]].
++ 19 [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.py][Método de bisección para calcular ceros de una función]].
++ 24 [[./src/Raices_enteras.py][Raíces enteras]].

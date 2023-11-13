@@ -1,5 +1,5 @@
 # El_problema_del_domino.py
-# El problema del dominó.
+# El problema del dominó mediante búsqueda en espacio de estados.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 29-agosto-2023
 # ---------------------------------------------------------------------

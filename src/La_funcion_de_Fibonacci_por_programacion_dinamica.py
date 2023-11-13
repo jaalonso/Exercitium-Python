@@ -1,4 +1,4 @@
-# La_funcion_de_Fibonacci_por_programacion_dinamica.hs
+# La_funcion_de_Fibonacci_por_programacion_dinamica.py
 # La función de Fibonacci por programación dinámica.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 14-septiembre-2023
