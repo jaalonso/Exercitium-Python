@@ -6,8 +6,8 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    raizEnt :: Integer -> Integer -> Integer
-# tal que (raizEnt x n) es la raíz entera n-ésima de x; es decir, el
+#    raizEnt : (int, int) -> int
+# tal que raizEnt(x, n) es la raíz entera n-ésima de x; es decir, el
 # mayor número entero y tal que y^n <= x. Por ejemplo,
 #    raizEnt(8, 3)      ==  2
 #    raizEnt(9, 3)      ==  2
@@ -15,8 +15,8 @@
 #    raizEnt(27, 3)     ==  3
 #    raizEnt(10**50, 2) ==  10000000000000000000000000
 #
-# Comprobar con QuickCheck que para todo número natural n,
-#     raizEnt (10^(2*n)) 2 == 10^n
+# Comprobar con Hypothesis que para todo número natural n,
+#     raizEnt(10**(2*n), 2) == 10**n
 # ---------------------------------------------------------------------
 
 from itertools import count, takewhile
