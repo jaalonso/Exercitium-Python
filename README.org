@@ -345,8 +345,9 @@ Notas:
 + [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.py][Método de Herón para calcular la raíz cuadrada]].
 + [[./src/Metodo_de_Newton_para_calcular_raices.py][Método de Newton para calcular raíces]].
 + [[./src/Funciones_inversas_por_el_metodo_de_Newton.py][Funciones inversas por el método de Newton]].
++ [[./src/Limites_de_sucesiones.py][Límites de sucesiones]].
++ [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.py][Método de bisección para calcular ceros de una función]].
 
 ** Para publicar
-+ 14 [[./src/Limites_de_sucesiones.py][Límites de sucesiones]].
-+ 19 [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.py][Método de bisección para calcular ceros de una función]].
 + 24 [[./src/Raices_enteras.py][Raíces enteras]].
++ 29 [[./src/Integracion_por_rectangulos.py][Integración por el método de los rectángulos]].
