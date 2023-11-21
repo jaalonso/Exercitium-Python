@@ -115,3 +115,5 @@ def test_integral() -> None:
     print("Verificado")
 
 # La verificación es
+#    >>> test_integral()
+#    Verificado

@@ -351,3 +351,4 @@ Notas:
 ** Para publicar
 + 24 [[./src/Raices_enteras.py][Raíces enteras]].
 + 29 [[./src/Integracion_por_rectangulos.py][Integración por el método de los rectángulos]].
++ 04 [[./src/Algoritmo_de_bajada.py][Algoritmo de bajada para resolver un sistema triangular inferior]].
