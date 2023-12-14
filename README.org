@@ -347,8 +347,12 @@ Notas:
 + [[./src/Funciones_inversas_por_el_metodo_de_Newton.py][Funciones inversas por el método de Newton]].
 + [[./src/Limites_de_sucesiones.py][Límites de sucesiones]].
 + [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.py][Método de bisección para calcular ceros de una función]].
++ [[./src/Raices_enteras.py][Raíces enteras]].
++ [[./src/Integracion_por_rectangulos.py][Integración por el método de los rectángulos]].
++ [[./src/Algoritmo_de_bajada.py][Algoritmo de bajada para resolver un sistema triangular inferior]].
+
+** Miscelánea
 
 ** Para publicar
-+ 24 [[./src/Raices_enteras.py][Raíces enteras]].
-+ 29 [[./src/Integracion_por_rectangulos.py][Integración por el método de los rectángulos]].
-+ 04 [[./src/Algoritmo_de_bajada.py][Algoritmo de bajada para resolver un sistema triangular inferior]].
++ 09 [[./src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
++ ?? [[./src/ListaVector.py][Transformación de listas a vectores]]. (Pendiente de completar y publicar).

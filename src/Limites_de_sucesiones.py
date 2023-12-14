@@ -6,7 +6,7 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    limite :: (Double -> Double) -> Double -> Double
+#    limite : (Callable[[float], float], float) -> float
 # tal que limite(f, a) es el valor de f en el primer término x tal que,
 # para todo y entre x+1 y x+100, el valor absoluto de la diferencia
 # entre f(y) y f(x) es menor que a. Por ejemplo,

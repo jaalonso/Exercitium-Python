@@ -91,7 +91,7 @@ def test_raizEntP(n: int) -> None:
     assert raizEnt3(10**(2*n), 2) == 10**n
 
 # La comprobación es
-#    >>> test_raizEnt)()
+#    >>> test_raizEntP()
 #    >>>
 
 # Verificación
