@@ -352,7 +352,7 @@ Notas:
 + [[./src/Algoritmo_de_bajada.py][Algoritmo de bajada para resolver un sistema triangular inferior]].
 
 ** Miscelánea
++ [[./src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
 
 ** Para publicar
-+ 09 [[./src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
-+ ?? [[./src/ListaVector.py][Transformación de listas a vectores]]. (Pendiente de completar y publicar).
++ 14 [[./src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].

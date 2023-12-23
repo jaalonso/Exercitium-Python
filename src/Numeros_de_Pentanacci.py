@@ -30,9 +30,9 @@
 # + pentanacci(n) es el n-ésimo número de Pentanacci. Por ejemplo,
 #      >>> pentanacci(14)
 #      3525
-#      >>> pentanacci2(10**5) % 10**30
+#      >>> pentanacci(10**5) % 10**30
 #      482929150584077921552549215816
-#      >>> len(str(pentanacci2(10**5)))
+#      >>> len(str(pentanacci(10**5)))
 #      29357
 # + pentanaccis() genera los números de Pentanacci. Por ejemplo,
 #      >>> list(islice(pentanaccis(), 15))
