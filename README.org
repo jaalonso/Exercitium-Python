@@ -353,6 +353,7 @@ Notas:
 
 ** Miscelánea
 + [[./src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
++ [[./src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].
 
 ** Para publicar
-+ 14 [[./src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].
++ 19 [[./src/Numeros_primos_de_Hilbert.py][Números primos de Hilbert]].
