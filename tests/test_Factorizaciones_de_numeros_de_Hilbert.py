@@ -1,0 +1,3 @@
+from src.Factorizaciones_de_numeros_de_Hilbert import test_factorizacionesH
+
+test_factorizacionesH()
