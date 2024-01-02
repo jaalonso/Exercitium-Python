@@ -1,7 +1,7 @@
 # Sumas_de_dos_primos.py
 # Sumas de dos primos.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 29-julio-2022
+# Sevilla, 29-diciembre-2023
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -11,7 +11,7 @@
 # dos números primos. Por ejemplo,
 #    >>> list(islice(sumasDeDosPrimos1(), 23))
 #    [4,5,6,7,8,9,10,12,13,14,15,16,18,19,20,21,22,24,25,26,28,30,31]
-#    λ> sumasDeDosPrimos !! (5*10^5)
+#    >>> list(islice(sumasDeDosPrimos4(), 5*10**5, 1+5*10**5))[0]
 #    862878
 # ---------------------------------------------------------------------
 

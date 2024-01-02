@@ -355,6 +355,7 @@ Notas:
 + [[./src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
 + [[./src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].
 + [[./src/Numeros_primos_de_Hilbert.py][Números primos de Hilbert]].
++ [[./src/Factorizaciones_de_numeros_de_Hilbert.py][Factorizaciones de números de Hilbert]].
 
 ** Para publicar
-+ 24 [[./src/Factorizaciones_de_numeros_de_Hilbert.py][Factorizaciones de números de Hilbert]].
++ 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
