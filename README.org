@@ -359,3 +359,4 @@ Notas:
 
 ** Para publicar
 + 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
++ 09 [[./src/La_serie_de_Thue_Morse.py][La serie de Thue-Morse]].
