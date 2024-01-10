@@ -30,9 +30,9 @@
 # ---------------------------------------------------------------------
 
 from itertools import count, islice
+from math import floor, log2
 from timeit import Timer, default_timer
 from typing import Iterator, TypeVar
-from math import floor, log2
 
 from hypothesis import given
 from hypothesis import strategies as st
