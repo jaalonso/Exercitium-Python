@@ -23,7 +23,7 @@
 #    >>> list(islice(sucThueMorse(), 30))
 #    [0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0]
 #
-# Comprobar con QuickCheck que si s(n) representa el término n-ésimo de
+# Comprobar con Hypothesis que si s(n) representa el término n-ésimo de
 # la sucesión de Thue-Morse, entonces
 #    s(2n)   = s(n)
 #    s(2n+1) = 1 - s(n)

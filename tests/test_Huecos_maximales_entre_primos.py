@@ -1,0 +1,3 @@
+from src.Huecos_maximales_entre_primos import test_primosYhuecosMaximales
+
+test_primosYhuecosMaximales()

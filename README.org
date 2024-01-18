@@ -357,7 +357,8 @@ Notas:
 + [[./src/Numeros_primos_de_Hilbert.py][Números primos de Hilbert]].
 + [[./src/Factorizaciones_de_numeros_de_Hilbert.py][Factorizaciones de números de Hilbert]].
 
-** Para publicar
+** Enero
 + 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
 + 09 [[./src/La_serie_de_Thue_Morse.py][La serie de Thue-Morse]].
 + 14 [[./src/La_sucesion_de_Thue_Morse.py][La sucesión de Thue-Morse]].
++ 19 [[./src/Huecos_maximales_entre_primos.py][Huecos maximales entre primos]].
