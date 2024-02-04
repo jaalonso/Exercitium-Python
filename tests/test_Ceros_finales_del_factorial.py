@@ -1,0 +1,3 @@
+from src.Ceros_finales_del_factorial import test_cerosDelFactorial
+
+test_cerosDelFactorial()
