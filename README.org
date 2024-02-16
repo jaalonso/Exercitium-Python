@@ -356,11 +356,13 @@ Notas:
 + [[./src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].
 + [[./src/Numeros_primos_de_Hilbert.py][Números primos de Hilbert]].
 + [[./src/Factorizaciones_de_numeros_de_Hilbert.py][Factorizaciones de números de Hilbert]].
++ [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
++ [[./src/La_serie_de_Thue_Morse.py][La serie de Thue-Morse]].
++ [[./src/La_sucesion_de_Thue_Morse.py][La sucesión de Thue-Morse]].
++ [[./src/Huecos_maximales_entre_primos.py][Huecos maximales entre primos]].
++ [[./src/La_funcion_indicatriz_de_Euler.py][La función indicatriz de Euler]].
++ [[./src/Ceros_finales_del_factorial.py][Ceros finales del factorial]].
 
-** Enero
-+ 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
-+ 09 [[./src/La_serie_de_Thue_Morse.py][La serie de Thue-Morse]].
-+ 14 [[./src/La_sucesion_de_Thue_Morse.py][La sucesión de Thue-Morse]].
-+ 19 [[./src/Huecos_maximales_entre_primos.py][Huecos maximales entre primos]].
-+ 24 [[./src/La_funcion_indicatriz_de_Euler.py][La función indicatriz de Euler]].
-+ 29 [[./src/Ceros_finales_del_factorial.py][Ceros finales del factorial]].
+** Febrero
++ 04 [[./src/Primos_cubanos.py][Primos cubanos]].
++ [[./src/Primos_con_cubos.hs][Primos con cubos]].
