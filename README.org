@@ -366,4 +366,4 @@ Notas:
 ** Febrero
 + 04 [[./src/Primos_cubanos.py][Primos cubanos]].
 + 09 [[./src/Cuadrado_mas_cercano.py][Cuadrado más cercano]].
-+ [[./src/Primos_con_cubos.hs][Primos con cubos]].
++ 14 [[./src/Suma_de_cadenas.py][Suma de cadenas]].
