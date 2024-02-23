@@ -6,8 +6,8 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    sumaCadenas :: String -> String -> String
-# tal que (sumaCadenas xs ys) es la cadena formada por el número entero
+#    sumaCadenas : (str, str) -> str
+# tal que sumaCadenas(xs, ys) es la cadena formada por el número entero
 # que es la suma de los números enteros cuyas cadenas que lo
 # representan son xs e ys; además, se supone que la cadena vacía
 # representa al cero. Por ejemplo,
@@ -20,8 +20,6 @@
 #    sumaCadenas("6",   "")   == "6"
 #    sumaCadenas("",    "")   == "0"
 # ---------------------------------------------------------------------
-
-from functools import reduce
 
 # 1ª solución
 # ===========

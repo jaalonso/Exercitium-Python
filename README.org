@@ -367,3 +367,4 @@ Notas:
 + 04 [[./src/Primos_cubanos.py][Primos cubanos]].
 + 09 [[./src/Cuadrado_mas_cercano.py][Cuadrado más cercano]].
 + 14 [[./src/Suma_de_cadenas.py][Suma de cadenas]].
++ 19 [[./src/Sistema_factoradico_de_numeracion.py][Sistema factorádico de numeración]].
