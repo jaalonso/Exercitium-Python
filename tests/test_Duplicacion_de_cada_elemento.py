@@ -1,0 +1,3 @@
+from src.Duplicacion_de_cada_elemento import test_duplicaElementos
+
+test_duplicaElementos()
