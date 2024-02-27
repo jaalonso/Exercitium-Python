@@ -54,18 +54,6 @@ def duplicaElementos4(xs: list[A]) -> list[A]:
         ys.append(x)
     return ys
 
-# 5ª solución
-# ===========
-
-# duplicaElementos5 :: [a] -> [a]
-# duplicaElementos5 = concatMap (replicate 2)
-
-# 6ª solución
-# ===========
-
-# duplicaElementos6 :: [a] -> [a]
-# duplicaElementos6 = (>>= replicate 2)
-
 # Verificación
 # ============
 
