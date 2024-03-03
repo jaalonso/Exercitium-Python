@@ -1,0 +1,3 @@
+from src.Reiteracion_de_suma_de_consecutivos import test_sumaReiterada
+
+test_sumaReiterada()

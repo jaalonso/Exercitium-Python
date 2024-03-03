@@ -362,11 +362,12 @@ Notas:
 + [[./src/Huecos_maximales_entre_primos.py][Huecos maximales entre primos]].
 + [[./src/La_funcion_indicatriz_de_Euler.py][La función indicatriz de Euler]].
 + [[./src/Ceros_finales_del_factorial.py][Ceros finales del factorial]].
++ [[./src/Primos_cubanos.py][Primos cubanos]].
++ [[./src/Cuadrado_mas_cercano.py][Cuadrado más cercano]].
++ [[./src/Suma_de_cadenas.py][Suma de cadenas]].
++ [[./src/Sistema_factoradico_de_numeracion.py][Sistema factorádico de numeración]].
++ [[./src/Duplicacion_de_cada_elemento.py][Duplicación de cada elemento]].
++ [[./src/Suma_de_fila_del_triangulo_de_los_impares.py][Suma de fila del triángulo de los impares]].
 
-** Febrero
-+ 04 [[./src/Primos_cubanos.py][Primos cubanos]].
-+ 09 [[./src/Cuadrado_mas_cercano.py][Cuadrado más cercano]].
-+ 14 [[./src/Suma_de_cadenas.py][Suma de cadenas]].
-+ 19 [[./src/Sistema_factoradico_de_numeracion.py][Sistema factorádico de numeración]].
-+ 24 [[./src/Duplicacion_de_cada_elemento.py][Duplicación de cada elemento]].
-+ 29 [[./src/Suma_de_fila_del_triangulo_de_los_impares.py][Suma de fila del triángulo de los impares]].
+** Marzo
++ 04 [[./src/Reiteracion_de_suma_de_consecutivos.py][Reiteración de suma de consecutivos]].
