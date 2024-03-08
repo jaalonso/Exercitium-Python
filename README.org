@@ -371,3 +371,4 @@ Notas:
 
 ** Marzo
 + 04 [[./src/Reiteracion_de_suma_de_consecutivos.py][Reiteración de suma de consecutivos]].
++ 09 [[./src/Producto_de_los_elementos_de_la_diagonal_principal.py][Producto de los elementos de la diagonal principal]].
