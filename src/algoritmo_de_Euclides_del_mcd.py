@@ -32,7 +32,7 @@ def mcd(a: int, b: int) -> int:
         return a
     return mcd(b, a % b)
 
-# -- La propiedad es
+# La propiedad es
 @given(st.integers(min_value=1, max_value=1000),
        st.integers(min_value=1, max_value=1000))
 def test_mcd(a: int, b: int) -> None:
