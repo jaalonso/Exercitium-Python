@@ -1,0 +1,3 @@
+from src.Mayor_orbita_de_la_sucesion_de_Collatz import test_mayoresGeneradores
+
+test_mayoresGeneradores()

@@ -374,3 +374,4 @@ Notas:
 + 09 [[./src/Producto_de_los_elementos_de_la_diagonal_principal.py][Producto de los elementos de la diagonal principal]].
 + 14 [[./src/Reconocimiento_de_potencias_de_4.py][Reconocimiento de potencias de 4]].
 + 19 [[./src/Exponente_en_la_factorizacion.py][Exponente en la factorización]].
++ 24 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.py][Mayor órbita de la sucesión de Collatz]].
