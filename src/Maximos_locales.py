@@ -103,4 +103,4 @@ def tiempo(e: str) -> None:
 #    >>> tiempo('maximosLocales2([1,2,3]*(10**7))')
 #    3.95 segundos
 #    >>> tiempo('maximosLocales3([1,2,3]*(10**7))')
-#    §1.85 segundos
+#    1.85 segundos
