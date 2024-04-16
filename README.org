@@ -376,5 +376,5 @@ Notas:
 + [[./src/Maximos_locales.py][Máximos locales]].
 
 ** Abril
-
 + 04 [[./src/Caminos_en_un_triangulo.py][Caminos en un triángulo]].
++ 09 [[./src/Maxima_suma_de_caminos_en_un_triangulo.py][Máxima suma de caminos en un triángulo]].

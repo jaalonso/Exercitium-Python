@@ -1,0 +1,3 @@
+from src.Maxima_suma_de_caminos_en_un_triangulo import test_maximaSuma
+
+test_maximaSuma()
