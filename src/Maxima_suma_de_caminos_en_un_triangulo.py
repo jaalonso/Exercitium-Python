@@ -15,20 +15,15 @@
 #    [[3],[7,4],[2,4,6],[8,5,9,3]]
 #
 # Definir la función
-#    maximaSuma :: [[Integer]] -> Integer
-# tal que (maximaSuma xss) es el máximo de las sumas de los elementos
+#    maximaSuma : (list[list[int]]) -> int
+# tal que maximaSuma(xss) es el máximo de las sumas de los elementos
 # de los caminos en el triángulo xss donde los caminos comienzan en el
 # elemento de la primera fila, en cada paso se mueve a uno de  sus dos
 # elementos adyacentes en la fila siguiente y terminan en la última
 # fila. Por ejemplo,
-#    maximaSuma [[3],[7,4]]                    ==  10
-#    maximaSuma [[3],[7,4],[2,4,6]]            ==  14
-#    maximaSuma [[3],[7,4],[2,4,6],[8,5,9,3]]  ==  23
-#    maximaSuma [[n..n+n] | n <- [0..100]]     ==  10100
-#    maximaSuma [[n..n+n] | n <- [0..1000]]    ==  1001000
-#    maximaSuma [[n..n+n] | n <- [0..2000]]    ==  4002000
-#    maximaSuma [[n..n+n] | n <- [0..3000]]    ==  9003000
-#    maximaSuma [[n..n+n] | n <- [0..4000]]    ==  16004000
+#    maximaSuma([[3],[7,4]])                    ==  10
+#    maximaSuma([[3],[7,4],[2,4,6]])            ==  14
+#    maximaSuma([[3],[7,4],[2,4,6],[8,5,9,3]])  ==  23
 # ---------------------------------------------------------------------
 
 from timeit import Timer, default_timer
