@@ -1,0 +1,3 @@
+from src.Primos_equidistantes import test_primosEquidestantes
+
+test_primosEquidestantes()
