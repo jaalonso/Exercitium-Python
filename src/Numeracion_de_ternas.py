@@ -108,7 +108,6 @@ def tiempo(e: str) -> None:
     t = Timer(e, "", default_timer, globals()).timeit(1)
     print(f"{t:0.2f} segundos")
 
-
 # La comparación es
 #    >>> tiempo('posicion1((147,46,116))')
 #    0.72 segundos

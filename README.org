@@ -381,3 +381,4 @@ Notas:
 + 14 [[./src/Numeros_amigos.py][Números amigos]].
 + 19 [[./src/Primos_equidistantes.py][Primos equidistantes]].
 + 24 [[./src/Numeracion_de_ternas.py][Numeración de ternas de naturales]].
++ 29 [[./src/Triangulares_con_cifras.py][Números triangulares con n cifras distintas]].
