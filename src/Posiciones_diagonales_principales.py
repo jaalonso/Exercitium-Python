@@ -54,7 +54,9 @@ from hypothesis import strategies as st
 # 1ª solución
 # ===========
 
-def posicionesDiagonalesPrincipales1(m: int, n: int) -> list[list[tuple[int, int]]]:
+matriz = list[list[tuple[int, int]]]
+
+def posicionesDiagonalesPrincipales1(m: int, n: int) -> matriz:
     def iniciales() -> list[tuple[int, int]]:
         return [(i,1) for i in range(m,1,-1)] + [(1,j) for j in range(1, n+1)]
     def extension(p: tuple[int, int]) -> list[tuple[int, int]]:
@@ -65,7 +67,7 @@ def posicionesDiagonalesPrincipales1(m: int, n: int) -> list[list[tuple[int, int
 # 2ª solución
 # ===========
 
-def posicionesDiagonalesPrincipales2(m: int, n: int) -> list[list[tuple[int, int]]]:
+def posicionesDiagonalesPrincipales2(m: int, n: int) -> matriz:
     return [list(zip(range(i,m+1), range(1,n+1))) for i in range(m,0,-1)] + \
            [list(zip(range(1,m+1), range(j,n+1))) for j in range(2,n+1)]
 

@@ -383,3 +383,4 @@ Notas:
 
 ** Mayo
 + 04 [[./src/Posiciones_diagonales_principales.py][Posiciones de las diagonales principales]].
++ 09 [[./src/Diagonales_principales.py][Diagonales principales de una matriz]].
