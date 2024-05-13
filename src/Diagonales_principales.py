@@ -13,11 +13,11 @@
 #    [[9],[5,10],[1,6,11],[2,7,12],[3,8],[4]]
 #
 # Definir la función
-#    diagonalesPrincipales :: Array (Int,Int) a -> [[a]]
-# tal que (diagonalesPrincipales p) es la lista de las diagonales
+#    diagonalesPrincipales : (list[list[A]]) -> list[list[A]]
+# tal que diagonalesPrincipales(p) es la lista de las diagonales
 # principales de p. Por ejemplo,
-#    λ> diagonalesPrincipales (listArray ((1,1),(3,4)) [1..12])
-#    [[9],[5,10],[1,6,11],[2,7,12],[3,8],[4]]
+#    >>> diagonalesPrincipales([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+#    [[9], [5, 10], [1, 6, 11], [2, 7, 12], [3, 8], [4]]
 # ---------------------------------------------------------------------
 
 from typing import TypeVar
