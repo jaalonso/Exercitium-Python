@@ -1,0 +1,3 @@
+from src.Diferencia_simetrica import test_diferenciaSimetrica
+
+test_diferenciaSimetrica()

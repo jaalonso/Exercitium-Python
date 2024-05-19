@@ -385,3 +385,4 @@ Notas:
 + 04 [[./src/Posiciones_diagonales_principales.py][Posiciones de las diagonales principales]].
 + 09 [[./src/Diagonales_principales.py][Diagonales principales de una matriz]].
 + 14 [[./src/Matriz_Toeplitz.py][Matrices de Toeplitz]].
++ 19 [[./src/Diferencia_simetrica.py][Diferencia simétrica]].
