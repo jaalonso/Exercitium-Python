@@ -386,3 +386,4 @@ Notas:
 + 09 [[./src/Diagonales_principales.py][Diagonales principales de una matriz]].
 + 14 [[./src/Matriz_Toeplitz.py][Matrices de Toeplitz]].
 + 19 [[./src/Diferencia_simetrica.py][Diferencia simétrica]].
++ 24 [[./src/Conjunto_de_primos_relativos.py][Conjunto de primos relativos]].

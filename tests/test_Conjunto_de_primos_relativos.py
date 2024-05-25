@@ -1,0 +1,3 @@
+from src.Conjunto_de_primos_relativos import test_primosRelativos
+
+test_primosRelativos()
