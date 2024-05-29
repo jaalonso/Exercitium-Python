@@ -11,15 +11,15 @@
 # no lo son porque ambos son divisibles por 3.
 #
 # Definir la función
-#    primosRelativos :: [Int] -> Bool
-# tal que (primosRelativos xs) se verifica si los elementos de xs son
+#    primosRelativos : (list[int]) -> bool
+# tal que primosRelativos(xs) se verifica si los elementos de xs son
 # primos relativos dos a dos. Por ejemplo,
-#    primosRelativos [6,35]         ==  True
-#    primosRelativos [6,27]         ==  False
-#    primosRelativos [2,3,4]        ==  False
-#    primosRelativos [6,35,11]      ==  True
-#    primosRelativos [6,35,11,221]  ==  True
-#    primosRelativos [6,35,11,231]  ==  False
+#    primosRelativos([6,35])         ==  True
+#    primosRelativos([6,27])         ==  False
+#    primosRelativos([2,3,4])        ==  False
+#    primosRelativos([6,35,11])      ==  True
+#    primosRelativos([6,35,11,221])  ==  True
+#    primosRelativos([6,35,11,231])  ==  False
 # ---------------------------------------------------------------------
 
 from math import gcd

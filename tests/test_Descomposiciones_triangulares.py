@@ -1,0 +1,3 @@
+from src.Descomposiciones_triangulares import test_descomposicionesTriangulares
+
+test_descomposicionesTriangulares()
