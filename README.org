@@ -388,3 +388,6 @@ Notas:
 + 19 [[./src/Diferencia_simetrica.py][Diferencia simétrica]].
 + 24 [[./src/Conjunto_de_primos_relativos.py][Conjunto de primos relativos]].
 + 29 [[./src/Descomposiciones_triangulares.py][Descomposiciones triangulares]].
+
+** Junio
++ 04 [[./src/Representacion_de_Zeckendorf.py][Representación de Zeckendorf]].

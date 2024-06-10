@@ -21,8 +21,8 @@
 #    15 = 1 + 2 + 3 + 4 + 5
 #
 # Definir la función
-#    descomposicionesTriangulares :: Int -> [(Int, Int, Int)]
-# tal que (descomposicionesTriangulares n) es la lista de las
+#    descomposicionesTriangulares : (int) -> list[tuple[int, int, int]]
+# tal que descomposicionesTriangulares(n) es la lista de las
 # ternas correspondientes a las descomposiciones de n en tres sumandos,
 # como máximo, formados por números triangulares. Por ejemplo,
 #    >>> descomposicionesTriangulares4(4)
