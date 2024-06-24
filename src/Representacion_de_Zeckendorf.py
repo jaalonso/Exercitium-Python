@@ -27,14 +27,14 @@
 #    zeckendorf : (int) -> list[int]
 # tal que zeckendorf(n) es la representación de Zeckendorf de n. Por
 # ejemplo,
-#    >>> zeckendorf1(100)
+#    >>> zeckendorf(100)
 #    [89, 8, 3]
-#    >>> zeckendorf1(200)
+#    >>> zeckendorf(200)
 #    [144, 55, 1]
-#    >>> zeckendorf1(300)
+#    >>> zeckendorf(300)
 #    [233, 55, 8, 3, 1]
-
-#    length (zeckendorf (10^50000)) == 66097
+#    >>> len(zeckendorf(10**5000))
+#    6662
 # ---------------------------------------------------------------------
 
 from itertools import combinations, dropwhile, islice, takewhile

@@ -1,0 +1,3 @@
+from src.Numeros_con_digitos_primos import test_numerosConDigitosPrimos
+
+test_numerosConDigitosPrimos()
