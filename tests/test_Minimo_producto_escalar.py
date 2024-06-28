@@ -1,0 +1,3 @@
+from src.Minimo_producto_escalar import test_menorProductoEscalar
+
+test_menorProductoEscalar()

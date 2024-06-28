@@ -390,3 +390,5 @@ Notas:
 ** Junio
 + 04 [[./src/Representacion_de_Zeckendorf.py][Representación de Zeckendorf]].
 + 09 [[./src/Numeros_con_digitos_primos.py][Números con todos sus dígitos primos]].
++ 14 [[./src/Minimo_producto_escalar.py][Mínimo producto escalar]].
++ 19 [[./src/Particiones_de_enteros_positivos.py][Particiones de enteros positivos]].
