@@ -1,0 +1,3 @@
+from src.Reconocimiento_de_grandes_potencias_de_2 import test_esPotenciaDeDos
+
+test_esPotenciaDeDos()
