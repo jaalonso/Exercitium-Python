@@ -394,3 +394,6 @@ Notas:
 + 19 [[./src/Particiones_de_enteros_positivos.py][Particiones de enteros positivos]].
 + 24 [[./src/Reconocimiento_de_grandes_potencias_de_2.py][Reconocimiento de potencias de 2]].
 + 29 [[./src/Conjunto_de_divisores.py][Conjunto de divisores]].
+
+** Julio
++ 04 [[./src/Numero_de_divisores.py][Número de divisores]].
