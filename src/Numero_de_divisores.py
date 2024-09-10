@@ -6,12 +6,12 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    numeroDivisores :: Integer -> Integer
-# tal que (numeroDivisores x) es el número de divisores de x. Por
+#    numeroDivisores : (int) -> int
+# tal que numeroDivisores(x) es el número de divisores de x. Por
 # ejemplo,
-#    numeroDivisores 12  ==  6
-#    numeroDivisores 25  ==  3
-#    length (show (numeroDivisores (product [1..3*10^4])))  ==  1948
+#    numeroDivisores(12)  ==  6
+#    numeroDivisores(25)  ==  3
+#    len(str(numeroDivisores(prod(range(1, 1+3*10**4)))))  ==  1948
 # ---------------------------------------------------------------------
 
 from itertools import combinations, groupby

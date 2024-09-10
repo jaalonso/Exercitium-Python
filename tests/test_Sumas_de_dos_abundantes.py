@@ -1,0 +1,3 @@
+from src.Sumas_de_dos_abundantes import test_sumasDeDosAbundantes
+
+test_sumasDeDosAbundantes()

@@ -397,3 +397,6 @@ Notas:
 
 ** Julio
 + 04 [[./src/Numero_de_divisores.py][Número de divisores]].
+
+** Septiembre 2024
++ 10 [[./src/Sumas_de_dos_abundantes.py][Sucesión de sumas de dos números abundantes]].
