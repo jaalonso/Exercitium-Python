@@ -1,7 +1,7 @@
 # Exponente_en_la_factorizacion.py
 # Exponente en la factorización.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 19-marzo-2024
+# Sevilla, 8-febrero-22 y 19-marzo-2024
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -15,12 +15,16 @@
 #    exponente(7, 24)  ==  0
 # ---------------------------------------------------------------------
 
+from sys import setrecursionlimit
 from itertools import takewhile
+from timeit import Timer, default_timer
 from typing import Callable, Iterator
 
 from hypothesis import given
 from hypothesis import strategies as st
 from sympy.ntheory import factorint
+
+setrecursionlimit(10**6)
 
 # 1ª solución
 # ===========
@@ -100,3 +104,19 @@ def test_exponente_equiv(x: int, n: int) -> None:
 # La comprobación es
 #    >>> test_exponente_equiv()
 #    >>>
+
+# Comparación de eficiencia
+# =========================
+
+def tiempo(e: str) -> None:
+    """Tiempo (en segundos) de evaluar la expresión e."""
+    t = Timer(e, "", default_timer, globals()).timeit(1)
+    print(f"{t:0.2f} segundos")
+
+# La comparación es
+#    >>> tiempo('exponente1(2, 2**20000)')
+#    0.20 segundos
+#    >>> tiempo('exponente2(2, 2**20000)')
+#    0.18 segundos
+#    >>> tiempo('exponente3(2, 2**20000)')
+#    0.00 segundos
