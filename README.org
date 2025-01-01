@@ -14,6 +14,10 @@ Notas:
 + Los tipos se pueden verificar con [[http://mypy-lang.org/][mypy]]. Por ejemplo,
   : src> mypy media_aritmetica_de_tres_numeros.py
   : Success: no issues found in 1 source file
+  : src> mypy .
+  : Success: no issues found in 341 source files
++ Las importaciones se pueden ordenar con
+  : src> isort .
 
 * Ejercicios
 

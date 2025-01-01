@@ -15,8 +15,8 @@
 #    exponente(7, 24)  ==  0
 # ---------------------------------------------------------------------
 
-from sys import setrecursionlimit
 from itertools import takewhile
+from sys import setrecursionlimit
 from timeit import Timer, default_timer
 from typing import Callable, Iterator
 
