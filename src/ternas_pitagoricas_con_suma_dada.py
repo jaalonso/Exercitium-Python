@@ -1,7 +1,7 @@
 # ternas_pitagoricas_con_suma_dada.py
 # Ternas pitagóricas con suma dada
 # José A. Alonso Jiménez
-# Sevilla, 18-octubre-2022
+# Sevilla, 10-febrero-2022
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -67,12 +67,26 @@ def ternasPitagoricas3(x: int) -> list[tuple[int, int, int]]:
                      for (a, b, c) in aux(x // d)
                      if x % d == 0)))
 
-# Comprobación de equivalencia
-# ============================
+# Verificación
+# ============
+
+def test_ternasPitagoricas() -> None:
+    for ternasPitagoricas in [ternasPitagoricas1, ternasPitagoricas2,
+                              ternasPitagoricas3]:
+        assert ternasPitagoricas(12) == [(3, 4, 5)]
+        assert set(ternasPitagoricas(60)) == set([(10, 24, 26), (15, 20, 25)])
+    print("Verificado")
+
+# La verificación es
+#    >>> test_ternasPitagoricas()
+#    Verificado
+
+# Equivalencia de las definiciones
+# ================================
 
 # La propiedad es
 @given(st.integers(min_value=1, max_value=50))
-def test_ternasPitagoricas(n: int) -> None:
+def test_ternasPitagoricas_equiv(n: int) -> None:
     r = set(ternasPitagoricas1(n))
     assert set(ternasPitagoricas2(n)) == r
     assert set(ternasPitagoricas3(n)) == r
