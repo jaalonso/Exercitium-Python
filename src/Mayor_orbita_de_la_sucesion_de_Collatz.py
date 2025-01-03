@@ -1,7 +1,7 @@
 # Mayor_orbita_de_la_sucesion_de_Collatz.py
 # Mayor órbita de la sucesión de Collatz.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 24-marzo-2024
+# Sevilla, 3-enero-2025
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -187,12 +187,12 @@ def tiempo(e: str) -> None:
 
 # La comprobación es
 #    >>> tiempo('mayoresGeneradores1(10**5)')
-#    4.08 segundos
+#    4.24 segundos
 #    >>> tiempo('mayoresGeneradores2(10**5)')
-#    1.95 segundos
+#    1.81 segundos
 #    >>> tiempo('mayoresGeneradores3(10**5)')
-#    2.16 segundos
+#    2.06 segundos
 #    >>> tiempo('mayoresGeneradores4(10**5)')
-#    1.71 segundos
+#    1.59 segundos
 #    >>> tiempo('mayoresGeneradores5(10**5)')
-#    0.14 segundos
+#    0.12 segundos

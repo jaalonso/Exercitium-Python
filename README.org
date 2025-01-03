@@ -404,3 +404,10 @@ Notas:
 
 ** Septiembre 2024
 + 10 [[./src/Sumas_de_dos_abundantes.py][Sucesión de sumas de dos números abundantes]].
+
+* 2025
+
+** Enero 2025
++ 01 [[./src/Suma_de_multiplos_de_3_o_de_5.py][Suma de múltiplos de 3 o de 5]].
++ 02 [[./src/ternas_pitagoricas_con_suma_dada.py][Ternas pitagóricas con suma dada]].
++ 03 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.py][Mayor órbita de la sucesión de Collatz]].
