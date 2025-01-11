@@ -413,3 +413,4 @@ Notas:
 + 03 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.py][Mayor órbita de la sucesión de Collatz]].
 + 04 [[./src/Caminos_en_un_triangulo.py][Caminos en un triángulo]].
 + 10 [[./src/Maxima_suma_de_caminos_en_un_triangulo.py][Máxima suma de caminos en un triángulo]].
++ 11 [[./src/Numeros_amigos.py][Números amigos]].

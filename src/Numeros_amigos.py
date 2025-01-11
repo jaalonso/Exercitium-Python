@@ -1,7 +1,7 @@
 # Numeros_amigos.py
 # Números amigos
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 14-abril-2024
+# Sevilla, 11-enero-2025
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
