@@ -414,3 +414,5 @@ Notas:
 + 04 [[./src/Caminos_en_un_triangulo.py][Caminos en un triángulo]].
 + 10 [[./src/Maxima_suma_de_caminos_en_un_triangulo.py][Máxima suma de caminos en un triángulo]].
 + 11 [[./src/Numeros_amigos.py][Números amigos]].
++ 15 [[./src/Sucesion_de_numeros_amigos.py][Sucesión de números amigos]].
++ 16 [[./src/Suma_de_numeros_amigos_menores_que_n.py][Suma de los números amigos menores que n]].
