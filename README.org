@@ -416,3 +416,4 @@ Notas:
 + 11 [[./src/Numeros_amigos.py][Números amigos]].
 + 15 [[./src/Sucesion_de_numeros_amigos.py][Sucesión de números amigos]].
 + 16 [[./src/Suma_de_numeros_amigos_menores_que_n.py][Suma de los números amigos menores que n]].
++ 17 [[./src/Elementos_minimales.py][Determinación de los elementos minimales]].
