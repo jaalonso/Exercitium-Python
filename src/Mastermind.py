@@ -32,14 +32,13 @@
 # juego.
 #
 # Definir la función
-#    mastermind :: [Int] -> [Int] -> (Int,Int)
-# tal que (mastermind xs ys) es el par formado por los números de
+#    mastermind : (list[int], list[int]) -> tuple[int, int]
+# tal que mastermind(xs, ys) es el par formado por los números de
 # aciertos y de coincidencias entre xs e ys. Por ejemplo,
-#    mastermind [3,3] [3,2]          ==  (1,0)
-#    mastermind [3,5,3] [3,2,5]      ==  (1,1)
-#    mastermind [3,5,3,2] [3,2,5,3]  ==  (1,3)
-#    mastermind [3,5,3,3] [3,2,5,3]  ==  (2,1)
-#    mastermind [1..10^6] [1..10^6]  ==  (1000000,0)
+#    mastermind([3,3], [3,2])          ==  (1,0)
+#    mastermind([3,5,3], [3,2,5])      ==  (1,1)
+#    mastermind([3,5,3,2], [3,2,5,3])  ==  (1,3)
+#    mastermind([3,5,3,3], [3,2,5,3])  ==  (2,1)
 # ---------------------------------------------------------------------
 
 from sys import setrecursionlimit
@@ -156,15 +155,15 @@ def tiempo(e: str) -> None:
     print(f"{t:0.2f} segundos")
 
 # La comparación es
-#    >>> tiempo('mastermind3(list(range(1, 10**4 + 1)), list(range(2, 20001, 2)))')
+#    >>> tiempo('mastermind3(list(range(1,10**4+1)), list(range(2,20001,2)))')
 #    1.31 segundos
-#    >>> tiempo('mastermind4(list(range(1, 10**4 + 1)), list(range(2, 20001, 2)))')
+#    >>> tiempo('mastermind4(list(range(1,10**4+1)), list(range(2,20001,2)))')
 #    1.17 segundos
-#    >>> tiempo('mastermind1(list(range(1, 10**4 + 1)), list(range(2, 20001, 2)))')
+#    >>> tiempo('mastermind1(list(range(1,10**4+1)), list(range(2,20001,2)))')
 #    3.45 segundos
-#    >>> tiempo('mastermind2(list(range(1, 10**4 + 1)), list(range(2, 20001, 2)))')
+#    >>> tiempo('mastermind2(list(range(1,10**4+1)), list(range(2,20001,2)))')
 #    3.52 segundos
-#    >>> tiempo('mastermind3(list(range(1, 10**4 + 1)), list(range(2, 20001, 2)))')
+#    >>> tiempo('mastermind3(list(range(1,10**4+1)), list(range(2,20001,2)))')
 #    1.32 segundos
-#    >>> tiempo('mastermind4(list(range(1, 10**4 + 1)), list(range(2, 20001, 2)))')
+#    >>> tiempo('mastermind4(list(range(1,10**4+1)), list(range(2,20001,2)))')
 #    1.19 segundos
