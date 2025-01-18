@@ -9,9 +9,12 @@
 #    minimales :: Ord a => [[a]] -> [[a]]
 # tal que (minimales xss) es la lista de los elementos de xss que no
 # están contenidos en otros elementos de xss. Por ejemplo,
-#    minimales([[1,3],[2,3,1],[3,2,5]])        ==  [[2,3,1],[3,2,5]]
-#    minimales([[1,3],[2,3,1],[3,2,5],[3,1]])  ==  [[2,3,1],[3,2,5]]
-#    map sum (minimales [[1..n] | n <- [1..300]])  ==  [45150]
+#    >>> minimales([[1,3],[2,3,1],[3,2,5]])
+#    [[2, 3, 1], [3, 2, 5]]
+#    >>> minimales([[1,3],[2,3,1],[3,2,5],[3,1]])
+#    [[2, 3, 1], [3, 2, 5]]
+#    >>> list(map(sum, minimales([list(range(1, n + 1)) for n in range(1, 301)])))
+#    [45150]
 # ---------------------------------------------------------------------
 
 from collections import Counter
