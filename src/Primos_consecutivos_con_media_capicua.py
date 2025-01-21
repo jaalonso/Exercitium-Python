@@ -6,13 +6,11 @@
 
 # ---------------------------------------------------------------------
 # Definir la lista
-#    primosConsecutivosConMediaCapicua :: [(Int,Int,Int)]
+#    primosConsecutivosConMediaCapicua : () -> Iterator[tuple[int, int, int]]
 # formada por las ternas (x,y,z) tales que x e y son primos
 # consecutivos cuya media, z, es capicúa. Por ejemplo,
 #    >>> list(islice(primosConsecutivosConMediaCapicua1(), 5))
 #    [(3, 5, 4), (5, 7, 6), (7, 11, 9), (97, 101, 99), (109, 113, 111)]
-#    λ> primosConsecutivosConMediaCapicua !! 500
-#    (5687863,5687867,5687865)
 # ---------------------------------------------------------------------
 
 from itertools import count, islice
