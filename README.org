@@ -420,3 +420,4 @@ Notas:
 + 18 [[./src/Mastermind.py][Mastermind]].
 + 19 [[./src/Primos_consecutivos_con_media_capicua.py][Primos consecutivos con media capicúa]].
 + 21 [[./src/Iguales_al_siguiente.py][Iguales al siguiente]].
++ 29 [[./src/Ordenados_por_maximo.py][Ordenación por el máximo]].
