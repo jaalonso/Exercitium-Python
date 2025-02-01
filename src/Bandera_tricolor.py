@@ -13,11 +13,11 @@
 # Definir el tipo de dato Color para representar los colores con los
 # constructores R, A y M correspondientes al rojo, azul y morado y la
 # función
-#    banderaTricolor :: [Color] -> [Color]
-# tal que (banderaTricolor xs) es la bandera tricolor formada con los
+#    banderaTricolor : list[Color] -> list[Color]
+# tal que banderaTricolor(xs) es la bandera tricolor formada con los
 # elementos de xs. Por ejemplo,
-#    banderaTricolor [M,R,A,A,R,R,A,M,M]  ==  [R,R,R,A,A,A,M,M,M]
-#    banderaTricolor [M,R,A,R,R,A]        ==  [R,R,R,A,A,M]
+#    banderaTricolor([M,R,A,A,R,R,A,M,M])  ==  [R,R,R,A,A,A,M,M,M]
+#    banderaTricolor([M,R,A,R,R,A])        ==  [R,R,R,A,A,M]
 # ---------------------------------------------------------------------
 
 # pylint: disable=dangerous-default-value
@@ -88,6 +88,23 @@ def banderaTricolor4(xs: list[Color]) -> list[Color]:
 # ===========
 
 def banderaTricolor5(xs: list[Color]) -> list[Color]:
+    rs: list[Color] = []
+    as_: list[Color] = []
+    ms: list[Color] = []
+    for color in xs:
+        match color:
+            case Color.R:
+                rs.append(color)
+            case Color.A:
+                as_.append(color)
+            case Color.M:
+                ms.append(color)
+    return rs + as_ + ms
+
+# 6ª solución
+# ===========
+
+def banderaTricolor6(xs: list[Color]) -> list[Color]:
     return sorted(xs)
 
 # Verificación
@@ -96,7 +113,7 @@ def banderaTricolor5(xs: list[Color]) -> list[Color]:
 def test_banderaTricolor() -> None:
     for banderaTricolor in [banderaTricolor1, banderaTricolor2,
                             banderaTricolor3, banderaTricolor4,
-                            banderaTricolor5]:
+                            banderaTricolor5, banderaTricolor6]:
         assert banderaTricolor([M,R,A,A,R,R,A,M,M])  ==  [R,R,R,A,A,A,M,M,M]
         assert banderaTricolor([M,R,A,R,R,A])        ==  [R,R,R,A,A,M]
         print(f"Verificado {banderaTricolor.__name__}")
@@ -108,6 +125,7 @@ def test_banderaTricolor() -> None:
 #    Verificado banderaTricolor3
 #    Verificado banderaTricolor4
 #    Verificado banderaTricolor5
+#    Verificado banderaTricolor6
 
 # Comprobación de equivalencia
 # ============================
@@ -118,6 +136,7 @@ def test_banderaTricolor_equiv(xs: list[Color]) -> None:
     assert r == banderaTricolor3(xs)
     assert r == banderaTricolor4(xs)
     assert r == banderaTricolor5(xs)
+    assert r == banderaTricolor6(xs)
 
 # La comprobación es
 #    >>> test_banderaTricolor_equiv()
@@ -144,6 +163,8 @@ def bandera(n: int) -> list[Color]:
 #    >>> tiempo('banderaTricolor4(bandera(6000))')
 #    1.27 segundos
 #    >>> tiempo('banderaTricolor5(bandera(6000))')
+#    0.02 segundos
+#    >>> tiempo('banderaTricolor6(bandera(6000))')
 #    0.00 segundos
 #
 #    >>> tiempo('banderaTricolor1(bandera(10**7))')
@@ -153,4 +174,6 @@ def bandera(n: int) -> list[Color]:
 #    >>> tiempo('banderaTricolor3(bandera(10**7))')
 #    3.25 segundos
 #    >>> tiempo('banderaTricolor5(bandera(10**7))')
+#    8.79 segundos
+#    >>> tiempo('banderaTricolor6(bandera(10**7))')
 #    1.17 segundos
