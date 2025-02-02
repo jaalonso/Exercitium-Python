@@ -1,7 +1,7 @@
 # Posiciones_diagonales_principales.py
-# Posiciones de las diagonales principales
+# Posiciones de las diagonales principales.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 4-mayo-2024
+# Sevilla, 4-febrero-2025
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------

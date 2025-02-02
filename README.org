@@ -423,4 +423,5 @@ Notas:
 + 29 [[./src/Ordenados_por_maximo.py][Ordenación por el máximo]].
 
 ** Febrero 2025
-+ 01 [[./src/Bandera_tricolor.py][La bandera tricolor]].
++ 03 [[./src/Bandera_tricolor.py][La bandera tricolor]].
++ 04 [[./src/Posiciones_diagonales_principales.py][Posiciones de las diagonales principales]].
