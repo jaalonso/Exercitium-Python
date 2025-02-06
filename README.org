@@ -425,4 +425,4 @@ Notas:
 ** Febrero 2025
 + 03 [[./src/Bandera_tricolor.py][La bandera tricolor]].
 + 04 [[./src/Posiciones_diagonales_principales.py][Posiciones de las diagonales principales]].
-+ 05 [[./src/Diagonales_principales.py][Diagonales principales de una matriz]].
++ 06 [[./src/Diagonales_principales.py][Diagonales principales de una matriz]].
