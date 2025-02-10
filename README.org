@@ -426,3 +426,5 @@ Notas:
 + 03 [[./src/Bandera_tricolor.py][La bandera tricolor]].
 + 04 [[./src/Posiciones_diagonales_principales.py][Posiciones de las diagonales principales]].
 + 06 [[./src/Diagonales_principales.py][Diagonales principales de una matriz]].
++ 10 [[./src/Anagramas.py][Anagramas]].
++ 11 [[./src/Primos_equidistantes.py][Primos equidistantes]].

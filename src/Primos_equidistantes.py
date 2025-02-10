@@ -1,7 +1,7 @@
 # Primos_equidistantes.py
 # Primos equidistantes.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 19-abril-2024
+# Sevilla, 11-febrero-2025
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
