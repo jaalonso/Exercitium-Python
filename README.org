@@ -427,4 +427,5 @@ Notas:
 + 04 [[./src/Posiciones_diagonales_principales.py][Posiciones de las diagonales principales]].
 + 06 [[./src/Diagonales_principales.py][Diagonales principales de una matriz]].
 + 10 [[./src/Anagramas.py][Anagramas]].
-+ 11 [[./src/Primos_equidistantes.py][Primos equidistantes]].
++ 14 [[./src/Primos_equidistantes.py][Primos equidistantes]].
++ 18 [[./src/Matriz_Toeplitz.py][Matrices de Toeplitz]].
