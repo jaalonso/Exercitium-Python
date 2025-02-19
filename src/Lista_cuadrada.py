@@ -6,8 +6,8 @@
 
 # ---------------------------------------------------------------------
 # Definir la función
-#    listaCuadrada :: Int -> a -> [a] -> [[a]]
-# tal que (listaCuadrada n x xs) es una lista de n listas de longitud n
+#    listaCuadrada : (int, A, list[A]) -> list[list[A]]
+# tal que listaCuadrada(n, x, xs) es una lista de n listas de longitud n
 # formadas con los elementos de xs completada con x, si no xs no tiene
 # suficientes elementos. Por ejemplo,
 #    >>> listaCuadrada(3, 7, [0,3,5,2,4])
