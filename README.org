@@ -429,3 +429,5 @@ Notas:
 + 10 [[./src/Anagramas.py][Anagramas]].
 + 14 [[./src/Primos_equidistantes.py][Primos equidistantes]].
 + 18 [[./src/Matriz_Toeplitz.py][Matrices de Toeplitz]].
++ 19 [[./src/Maximos_locales.py][Máximos locales]].
++ 20 [[./src/Lista_cuadrada.py][Lista cuadrada]].
