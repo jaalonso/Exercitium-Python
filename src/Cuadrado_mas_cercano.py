@@ -1,7 +1,7 @@
 # Cuadrado_mas_cercano.py
 # Cuadrado más cercano.
-# José A. Alonso Jiménez
-# Sevilla, 9-febrero-2024
+# José A. Alonso Jiménez <https://jaalonso.github.io>
+# Sevilla, 22-abril-2025
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------

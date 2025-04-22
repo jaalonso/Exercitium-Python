@@ -1,7 +1,7 @@
 # Suma_de_cadenas.py
 # Suma de cadenas.
-# José A. Alonso Jiménez
-# Sevilla, 14-febrero-2024
+# José A. Alonso Jiménez <https://jaalonso.github.io>
+# Sevilla, 23-abril-2025
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -24,8 +24,19 @@
 # 1ª solución
 # ===========
 
+# numero(xs) es el número entero representado por la cadena xs
+# suponiendo que la cadena vacía representa al cero.. Por ejemplo,
+#    numero "12"   ==  12
+#    numero "-12"  ==  -12
+#    numero "0"    ==  0
+#    numero ""     ==  0
+def numero(s: str) -> int:
+    if not s:
+        return 0
+    return int(s)
+
 def sumaCadenas1(xs: str, ys: str) -> str:
-    return str(sum(map(int, filter(lambda x: x != '', [xs, ys]))))
+    return str(numero(xs) + numero(ys))
 
 # 2ª solución
 # ===========
@@ -42,27 +53,16 @@ def sumaCadenas2(xs: str, ys: str) -> str:
 # 3ª solución
 # ===========
 
-# numero(xs) es el número entero representado por la cadena xs
-# suponiendo que la cadena vacía representa al cero.. Por ejemplo,
-#    numero "12"   ==  12
-#    numero "-12"  ==  -12
-#    numero "0"    ==  0
-#    numero ""     ==  0
-def numero(s: str) -> int:
-    if not s:
-        return 0
-    return int(s)
-
 def sumaCadenas3(xs: str, ys: str) -> str:
-    return str(numero(xs) + numero(ys))
+    x = int(xs or "0")
+    y = int(ys or "0")
+    return str(x + y)
 
 # 4ª solución
 # ===========
 
 def sumaCadenas4(xs: str, ys: str) -> str:
-    x = int(xs or "0")
-    y = int(ys or "0")
-    return str(x + y)
+    return str(sum(map(int, filter(lambda x: x != '', [xs, ys]))))
 
 # Verificación
 # ============

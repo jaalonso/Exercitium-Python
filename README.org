@@ -431,3 +431,6 @@ Notas:
 + 18 [[./src/Matriz_Toeplitz.py][Matrices de Toeplitz]].
 + 19 [[./src/Maximos_locales.py][Máximos locales]].
 + 20 [[./src/Lista_cuadrada.py][Lista cuadrada]].
+
+** Abril 2025
++ 23 [[./src/Suma_de_cadenas.py][Suma de cadenas]].
