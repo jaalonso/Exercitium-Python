@@ -435,3 +435,4 @@ Notas:
 ** Abril 2025
 + 23 [[./src/Suma_de_cadenas.py][Suma de cadenas]].
 + 24 [[./src/Sistema_factoradico_de_numeracion.py][Sistema factorádico de numeración]].
++ 25 [[./src/Duplicacion_de_cada_elemento.py][Duplicación de cada elemento]].

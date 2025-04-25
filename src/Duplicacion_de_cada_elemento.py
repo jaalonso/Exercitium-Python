@@ -1,7 +1,7 @@
 # Duplicacion_de_cada_elemento.py
 # Duplicación de cada elemento.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
-# Sevilla, 24-febrero-2024
+# Sevilla, 25-abril-2025
 # ======================================================================
 
 # ---------------------------------------------------------------------
