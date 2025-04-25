@@ -15,11 +15,15 @@
 #    'HHaasskkeellll'
 # ---------------------------------------------------------------------
 
+from sys import setrecursionlimit
 from functools import reduce
 from typing import TypeVar
+from timeit import Timer, default_timer
 
 from hypothesis import given
 from hypothesis import strategies as st
+
+setrecursionlimit(10**6)
 
 A = TypeVar('A')
 
@@ -81,3 +85,33 @@ def test_duplicaElementos_equiv(xs: list[int]) -> None:
 # La comprobación es
 #    >>> test_duplicaElementos_equiv()
 #    >>>
+
+# Comparación de eficiencia
+# =========================
+
+def tiempo(e: str) -> None:
+    """Tiempo (en segundos) de evaluar la expresión e."""
+    t = Timer(e, "", default_timer, globals()).timeit(1)
+    print(f"{t:0.2f} segundos")
+
+# La comparación es
+#    >>> tiempo('duplicaElementos1(range(10**4))')
+#    0.59 segundos
+#    >>> tiempo('duplicaElementos2(range(10**4))')
+#    0.20 segundos
+#    >>> tiempo('duplicaElementos3(range(10**4))')
+#    0.00 segundos
+#    >>> tiempo('duplicaElementos4(range(10**4))')
+#    0.00 segundos
+#
+#    >>> tiempo('duplicaElementos2(range(10**5))')
+#    21.69 segundos
+#    >>> tiempo('duplicaElementos3(range(10**5))')
+#    0.02 segundos
+#    >>> tiempo('duplicaElementos4(range(10**5))')
+#    0.04 segundos
+#
+#    >>> tiempo('duplicaElementos3(range(10**7))')
+#    1.88 segundos
+#    >>> tiempo('duplicaElementos4(range(10**7))')
+#    1.03 segundos
