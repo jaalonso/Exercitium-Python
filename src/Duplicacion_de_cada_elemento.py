@@ -15,10 +15,10 @@
 #    'HHaasskkeellll'
 # ---------------------------------------------------------------------
 
-from sys import setrecursionlimit
 from functools import reduce
-from typing import TypeVar
+from sys import setrecursionlimit
 from timeit import Timer, default_timer
+from typing import TypeVar
 
 from hypothesis import given
 from hypothesis import strategies as st
